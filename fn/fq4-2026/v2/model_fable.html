@@ -1,0 +1,309 @@
+<title>FN FQ4-2026 + FY2026 — claude-fable-5</title>
+<style>
+  :root { --paper:#F6F7F8; --card:#FFFFFF; --ink:#1B222B; --muted:#5A6675;
+    --line:#D8DEE5; --accent:#2E5E8E; --accent-soft:#E8EFF6;
+    --pass:#25714B; --pass-bg:#E6F1EB; --warn:#8F6A1C; --warn-bg:#F6EDD6;
+    --fail:#A63B2C; --fail-bg:#F6E2DE;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --sans: "Avenir Next", "Helvetica Neue", "Segoe UI", system-ui, sans-serif; }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#12161B; --card:#1A2027; --ink:#E6E9ED; --muted:#96A1AD;
+      --line:#2C343E; --accent:#6E9FCE; --accent-soft:#1D2836;
+      --pass:#5CB585; --pass-bg:#1C2F26; --warn:#D3A94F; --warn-bg:#322910;
+      --fail:#D4715F; --fail-bg:#38201B; } }
+  :root[data-theme="dark"] { --paper:#12161B; --card:#1A2027; --ink:#E6E9ED;
+    --muted:#96A1AD; --line:#2C343E; --accent:#6E9FCE; --accent-soft:#1D2836;
+    --pass:#5CB585; --pass-bg:#1C2F26; --warn:#D3A94F; --warn-bg:#322910;
+    --fail:#D4715F; --fail-bg:#38201B; }
+  :root[data-theme="light"] { --paper:#F6F7F8; --card:#FFFFFF; --ink:#1B222B;
+    --muted:#5A6675; --line:#D8DEE5; --accent:#2E5E8E; --accent-soft:#E8EFF6;
+    --pass:#25714B; --pass-bg:#E6F1EB; --warn:#8F6A1C; --warn-bg:#F6EDD6;
+    --fail:#A63B2C; --fail-bg:#F6E2DE; }
+  * { box-sizing: border-box; }
+  body { background:var(--paper); color:var(--ink); font-family:var(--sans);
+    line-height:1.55; margin:0; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:960px; margin:0 auto; padding:40px 24px 72px; }
+  .eyebrow { font-family:var(--mono); font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0 0 10px; }
+  h1 { font-size:clamp(22px,4vw,32px); line-height:1.15; margin:0 0 10px;
+    font-weight:600; text-wrap:balance; }
+  h2 { font-size:18px; font-weight:600; margin:0 0 4px; }
+  .lede { color:var(--muted); max-width:66ch; margin:0 0 18px; }
+  .section { margin-top:40px; }
+  .sub { color:var(--muted); font-size:13.5px; margin:0 0 14px; }
+  .mono { font-family:var(--mono); }
+  .runmeta { display:flex; flex-wrap:wrap; gap:10px; }
+  .stat { background:var(--card); border:1px solid var(--line);
+    border-radius:6px; padding:8px 14px; }
+  .stat b { display:block; font-family:var(--mono); font-size:16px;
+    font-weight:600; font-variant-numeric:tabular-nums; }
+  .stat span { font-size:11.5px; color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line);
+    border-radius:8px; padding:16px 18px; }
+  .anchors { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px; }
+  .anchor { background:var(--card); border:1px solid var(--line);
+    border-radius:7px; padding:11px 13px; }
+  .anchor .name { font-size:12.5px; color:var(--muted); margin:0; }
+  .anchor .val { font-family:var(--mono); font-size:17px; font-weight:600;
+    margin:2px 0 4px; font-variant-numeric:tabular-nums; }
+  .anchor .cite { font-family:var(--mono); font-size:10.5px; color:var(--muted);
+    margin:0; overflow-wrap:anywhere; }
+  figure.range { margin:0 0 12px; background:var(--card);
+    border:1px solid var(--line); border-radius:8px; padding:12px 16px 6px; }
+  figure.range svg { max-width:100%; height:auto; display:block; }
+  figure.range figcaption { font-size:12px; color:var(--muted); padding:4px 2px 8px; }
+  .tablewrap { overflow-x:auto; border:1px solid var(--line);
+    border-radius:8px; background:var(--card); }
+  table { border-collapse:collapse; width:100%; font-size:13.5px; min-width:540px; }
+  th,td { padding:6px 13px; text-align:right; font-variant-numeric:tabular-nums; }
+  th { font-family:var(--mono); font-size:10.5px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--muted); font-weight:600;
+    border-bottom:1px solid var(--line); }
+  td:first-child, th:first-child { text-align:left; }
+  td { border-bottom:1px solid var(--line); }
+  tr:last-child td { border-bottom:none; }
+  tr.subtotal td { font-weight:600; background:var(--accent-soft); }
+  td.num, td.mono { font-family:var(--mono); font-size:12.5px; }
+  td.delta { color:var(--muted); font-family:var(--mono); font-size:12px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:760px) { .grid2 { grid-template-columns:1fr; } }
+  .kv { display:flex; justify-content:space-between; gap:12px; padding:5px 0;
+    border-bottom:1px solid var(--line); font-size:13.5px; }
+  .kv:last-of-type { border-bottom:none; }
+  .kv b { font-family:var(--mono); font-weight:600; font-variant-numeric:tabular-nums; }
+  .note { border-left:3px solid var(--accent); }
+  .note p { margin:0; font-size:14px; }
+  details { margin-top:12px; }
+  summary { cursor:pointer; font-size:13px; color:var(--accent); font-weight:600; }
+  summary:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  details p, details pre { font-size:13px; color:var(--muted); white-space:pre-wrap; }
+  .failbox { border:1px solid var(--fail); background:var(--fail-bg);
+    border-radius:8px; padding:14px 18px; }
+  .failbox pre { font-family:var(--mono); font-size:11.5px; white-space:pre-wrap;
+    margin:8px 0 0; }
+  .status { display:inline-block; font-family:var(--mono); font-size:10px;
+    letter-spacing:.07em; border-radius:999px; padding:1px 8px; }
+  .status.ok { background:var(--pass-bg); color:var(--pass); }
+  .status.bad { background:var(--fail-bg); color:var(--fail); }
+  .trigger { border:1px solid var(--line); background:var(--card);
+    border-radius:7px; padding:10px 13px; margin-bottom:9px; }
+  .trigger .mk { margin:0; font-size:13.5px; }
+  .trigger .at { margin:3px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--muted); }
+  .trigger.buy { border-left:3px solid var(--pass); }
+  .trigger.sell { border-left:3px solid var(--fail); }
+  .commit { border:1px solid var(--line); background:var(--card);
+    border-radius:7px; padding:11px 14px; margin-bottom:10px; }
+  .commit .claim { margin:0; font-size:13.5px; font-weight:600; }
+  .commit .src { margin:3px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--muted); overflow-wrap:anywhere; }
+  .commit .flows { margin:5px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--accent); overflow-wrap:anywhere; }
+  a { color:var(--accent); }
+  .endnote { margin-top:44px; border-top:1px solid var(--line); padding-top:14px;
+    color:var(--muted); font-size:12.5px; max-width:76ch; overflow-wrap:anywhere; }
+</style>
+<div class="wrap">
+<header>
+<p class="eyebrow">RptdFinFcst · v5.6 corrected pre-print · sealed snap-1408710-20260817T165607768286Z</p>
+<h1>FN FQ4-2026 + FY2026 — claude-fable-5 <span class="status ok">CONTRACT PASSED</span></h1>
+<p class="lede">Fiscal 2026 Q4 and full year (quarter ended June 26, 2026), announced Aug 17 after the close; results unreleased at the
+cutoff 2026-08-17T14:30:00Z. Three statements, a two-year quarterly
+path, and a thesis with falsifiable triggers — every identity re-added at
+intake, the balance sheet rolled from the model's own cash flow.</p>
+<div class="runmeta">
+<div class="stat"><b>15</b><span>tool calls</span></div>
+<div class="stat"><b>0</b><span>contract retries</span></div>
+<div class="stat"><b>1</b><span>anchor retries</span></div>
+<div class="stat"><b>0</b><span>unverified anchors</span></div>
+<div class="stat"><b>298s</b><span>wall clock</span></div>
+<div class="stat"><b>278</b><span>filings in corpus</span></div>
+</div>
+</header>
+
+<section class="section">
+<h2>Anchors stated before projecting</h2>
+<p class="sub">Each cites its filing; every anchor value was verified against the cited source at intake.</p>
+
+<div class="anchors"><div class="anchor"><p class="name">FQ3&#x27;26 revenue, $ thousands (3M ended 3/27/26)</p>
+<p class="val">1,214,293</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000043</p></div><div class="anchor"><p class="name">FQ3&#x27;26 GAAP diluted EPS</p>
+<p class="val">3.45</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000010</p></div><div class="anchor"><p class="name">FQ3&#x27;26 non-GAAP net income, $ thousands</p>
+<p class="val">134,864</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000064</p></div><div class="anchor"><p class="name">Q4 FY26 revenue guidance low end, $ billions ($1.25B to $1.29B)</p>
+<p class="val">1.25</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000016</p></div><div class="anchor"><p class="name">Q4 FY26 revenue guidance high end, $ billions</p>
+<p class="val">1.29</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000016</p></div><div class="anchor"><p class="name">Q4 FY26 GAAP EPS guidance low end ($3.48 to $3.63)</p>
+<p class="val">3.48</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000017</p></div><div class="anchor"><p class="name">Q4 FY26 non-GAAP EPS guidance low end ($3.72 to $3.87)</p>
+<p class="val">3.72</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000018</p></div><div class="anchor"><p class="name">Q4 FY26 non-GAAP EPS guidance high end</p>
+<p class="val">3.87</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000018</p></div><div class="anchor"><p class="name">9M FY26 net cash provided by operating activities, $ thousands</p>
+<p class="val">201,758</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000047</p></div><div class="anchor"><p class="name">FQ3&#x27;26 net cash provided by operating activities, $ thousands</p>
+<p class="val">52,931</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000068</p></div><div class="anchor"><p class="name">FQ3&#x27;26 purchase of property, plant and equipment, $ thousands</p>
+<p class="val">63,760</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000068</p></div><div class="anchor"><p class="name">Cash, cash equivalents and restricted cash at 3/27/26, USD</p>
+<p class="val">357,256,000</p>
+<p class="cite">0001408710-26-000016 · 0001408710-26-000016:fn-20260327.htm:b0000140</p></div><div class="anchor"><p class="name">Total shareholders&#x27; equity at 3/27/26, $ thousands</p>
+<p class="val">2,304,711</p>
+<p class="cite">0001408710-26-000014 · 0001408710-26-000014:fn-2026504xex991q326.htm:b0000039</p></div></div>
+</section>
+
+<section class="section">
+<h2>Headline forecast</h2>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Revenue ($M): model p10 1,282, p50 1,320, p90 1,372.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Revenue ($M)</text>
+<line x1="215.1" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="215.1" y1="33" x2="215.1" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="365.7" cy="40" r="5" fill="var(--accent)"/>
+<text x="215.1" y="26" text-anchor="middle">1,282</text>
+<text x="365.7" y="26" text-anchor="middle" font-weight="600">p50 1,320</text>
+<text x="571.7" y="58" text-anchor="middle">1,372</text>
+<text x="628" y="44" opacity="0.75">model</text>
+<rect x="88.3" y="72" width="158.5" height="14" rx="3" fill="currentColor" opacity="0.14"/><line x1="167.6" y1="68" x2="167.6" y2="90" stroke="currentColor" stroke-width="1.5"/><text x="167.6" y="106" text-anchor="middle">guide mid 1,270</text><text x="88.3" y="106" text-anchor="middle">1,250</text><text x="246.8" y="106" text-anchor="middle">1,290</text><text x="628" y="83" opacity="0.75">company</text>
+</g></svg>
+<figcaption>Model p10–p50–p90 against the company's guided range.</figcaption>
+</figure>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Adjusted EPS (USD): model p10 3.74, p50 3.88, p90 4.10.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Adjusted EPS (USD)</text>
+<line x1="113.8" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="113.8" y1="33" x2="113.8" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="291.8" cy="40" r="5" fill="var(--accent)"/>
+<text x="113.8" y="26" text-anchor="middle">3.74</text>
+<text x="291.8" y="26" text-anchor="middle" font-weight="600">p50 3.88</text>
+<text x="571.7" y="58" text-anchor="middle">4.10</text>
+<text x="628" y="44" opacity="0.75">model</text>
+<rect x="88.3" y="72" width="190.8" height="14" rx="3" fill="currentColor" opacity="0.14"/><line x1="183.7" y1="68" x2="183.7" y2="90" stroke="currentColor" stroke-width="1.5"/><text x="183.7" y="106" text-anchor="middle">guide mid 3.79</text><text x="88.3" y="106" text-anchor="middle">3.72</text><text x="279.1" y="106" text-anchor="middle">3.87</text><text x="628" y="83" opacity="0.75">company</text>
+</g></svg>
+<figcaption>Model p10–p50–p90 against the company's guided range.</figcaption>
+</figure>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Free cash flow ($M): model p10 -35, p50 25, p90 90.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Free cash flow ($M)</text>
+<line x1="88.3" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="88.3" y1="33" x2="88.3" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="320.3" cy="40" r="5" fill="var(--accent)"/>
+<text x="88.3" y="26" text-anchor="middle">-35</text>
+<text x="320.3" y="26" text-anchor="middle" font-weight="600">p50 25</text>
+<text x="571.7" y="58" text-anchor="middle">90</text>
+<text x="628" y="44" opacity="0.75">model</text>
+
+</g></svg>
+<figcaption>Model p10–p50–p90.</figcaption>
+</figure>
+</section>
+
+
+<section class="section">
+<h2>The income statement walk</h2>
+<p class="sub">Prior quarter as filed · forecast · change. ✓ = identity enforced at intake.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Line ($M)</th><th>Prior as filed</th><th>Forecast</th><th>Δ</th></tr></thead>
+<tbody><tr><td>Revenues</td><td class="num">1,214</td><td class="num">1,320</td><td class="delta">+8.7%</td></tr><tr><td>Cost of revenues</td><td class="num">1,070</td><td class="num">1,162</td><td class="delta">+8.6%</td></tr><tr class="subtotal"><td>Gross profit ✓</td><td class="num">144</td><td class="num">158</td><td class="delta">+9.7%</td></tr><tr><td>Selling, general and administrative expenses</td><td class="num">24</td><td class="num">26</td><td class="delta">+5.0%</td></tr><tr><td>Restructuring and other related costs</td><td class="num">0</td><td class="num">0</td><td class="delta">+0.0%</td></tr><tr class="subtotal"><td>Operating income ✓</td><td class="num">120</td><td class="num">133</td><td class="delta">+10.7%</td></tr><tr><td>Interest and other income, net</td><td class="num">7</td><td class="num">8</td><td class="delta">+1.1%</td></tr><tr><td>Foreign exchange gain (loss), net</td><td class="num">7</td><td class="num">1</td><td class="delta">-85.7%</td></tr><tr><td>Other income (expense), net</td><td class="num">-0</td><td class="num">-0</td><td class="delta">-5.7%</td></tr><tr class="subtotal"><td>Income before income taxes ✓</td><td class="num">134</td><td class="num">141</td><td class="delta">+5.2%</td></tr><tr><td>Income tax expense</td><td class="num">9</td><td class="num">10</td><td class="delta">+9.6%</td></tr><tr class="subtotal"><td>Net income ✓</td><td class="num">125</td><td class="num">131</td><td class="delta">+4.9%</td></tr><tr><td>Weighted average diluted shares</td><td class="num">36</td><td class="num">36</td><td class="delta">+0.1%</td></tr><tr><td>Diluted EPS (GAAP) ✓</td><td class="num">3.45</td><td class="num">3.61</td><td class="delta">+4.6%</td></tr></tbody>
+</table></div>
+</section>
+<div class="card note" style="margin-top:12px"><p><b>Bridge:</b> net income
+131 + share_based_comp_cost_of_revenues 3 + share_based_comp_sga 6 + severance_legal_and_litigation 0 =
+non-GAAP net income <span class="mono">141</span>
+÷ 36M shares = <span class="mono">3.88</span> adjusted EPS.</p></div>
+
+
+<section class="section">
+<h2>The cash flow statement</h2>
+<p class="sub">As-reported sign conventions; free cash flow = CFO + capex; ✓ totals re-added at intake.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Line ($M)</th><th>Prior as filed</th><th>Forecast</th></tr></thead>
+<tbody><tr><td>Net income</td><td class="num">125</td><td class="num">131</td></tr><tr><td>Depreciation and amortization</td><td class="num">18</td><td class="num">19</td></tr><tr><td>Share-based compensation</td><td class="num">8</td><td class="num">9</td></tr><tr><td>Other operating adjustments incl. working capital, net (residual)</td><td class="num">-99</td><td class="num">-69</td></tr><tr class="subtotal"><td>Net cash provided by operating activities ✓</td><td class="num">53</td><td class="num">90</td></tr><tr><td>Purchases of property, plant and equipment</td><td class="num">-64</td><td class="num">-65</td></tr><tr><td>Other investing incl. investment purchases/maturities, net (residual)</td><td class="num">50</td><td class="num">10</td></tr><tr class="subtotal"><td>Net cash used in investing activities ✓</td><td class="num">-14</td><td class="num">-55</td></tr><tr><td>Repurchases of ordinary shares</td><td class="num">-0</td><td class="num">-0</td></tr><tr><td>Other financing incl. debt and taxes on RSUs, net (residual)</td><td class="num">-1</td><td class="num">-2</td></tr><tr class="subtotal"><td>Net cash used in financing activities ✓</td><td class="num">-1</td><td class="num">-2</td></tr><tr><td>Effect of FX on cash and restricted cash</td><td class="num">-2</td><td class="num">-0</td></tr><tr class="subtotal"><td>Net change in cash and restricted cash (derived total) ✓</td><td class="num">37</td><td class="num">32</td></tr></tbody>
+</table></div>
+</section>
+
+
+<section class="section">
+<h2>The projected balance sheet</h2>
+<p class="sub">End of quarter. Cash rolls from the model&#x27;s own cash flow; retained earnings roll from net income, dividends, and buybacks.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Line ($M)</th><th>Prior as filed</th><th>Forecast</th></tr></thead>
+<tbody><tr><td>Cash, cash equivalents and restricted cash</td><td class="num">357</td><td class="num">390</td></tr><tr><td>All other assets (residual)</td><td class="num">3,152</td><td class="num">3,294</td></tr><tr class="subtotal"><td>Total assets ✓</td><td class="num">3,509</td><td class="num">3,684</td></tr><tr><td>Total liabilities</td><td class="num">1,204</td><td class="num">1,245</td></tr><tr><td>Retained earnings</td><td class="num">2,427</td><td class="num">2,558</td></tr><tr><td>Common stock, paid-in capital and AOCI, net (residual)</td><td class="num">-122</td><td class="num">-120</td></tr><tr class="subtotal"><td>Total shareholders&#x27; equity ✓</td><td class="num">2,305</td><td class="num">2,439</td></tr></tbody>
+</table></div>
+</section>
+
+<section class="section">
+<h2>Expected next-period guidance</h2>
+<div class="card" style="max-width:420px">
+<div class="kv"><span>Revenue</span><b>1,350 – 1,390</b></div>
+<div class="kv"><span>Adjusted EPS</span><b>3.95 – 4.10</b></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Quarterly path — where no guide exists</h2>
+<p class="sub">Beyond the guided quarter the model is modeling, not retrieving.</p>
+<div class="tablewrap"><table><thead><tr><th>Quarter</th><th>Rev p50 ($M)</th><th>Rev band</th><th>Adj EPS p50</th><th>GM</th><th>OM</th><th>Capex</th><th>FCF</th></tr></thead><tbody><tr><td>fiscal 2027 Q1 (ending late September 2026)</td><td class="num">1,400</td><td class="num">1,330–1,480</td><td class="num">4.08</td><td class="num">12.0%</td><td class="num">10.1%</td><td class="num">-60</td><td class="num">50</td></tr><tr><td>fiscal 2027 Q2 (ending late December 2026)</td><td class="num">1,480</td><td class="num">1,390–1,585</td><td class="num">4.30</td><td class="num">12.0%</td><td class="num">10.1%</td><td class="num">-60</td><td class="num">60</td></tr><tr><td>fiscal 2027 Q3 (ending late March 2027)</td><td class="num">1,540</td><td class="num">1,420–1,665</td><td class="num">4.47</td><td class="num">12.0%</td><td class="num">10.2%</td><td class="num">-70</td><td class="num">60</td></tr><tr><td>fiscal 2027 Q4 (ending late June 2027)</td><td class="num">1,600</td><td class="num">1,450–1,755</td><td class="num">4.63</td><td class="num">12.0%</td><td class="num">10.2%</td><td class="num">-70</td><td class="num">70</td></tr></tbody></table></div>
+</section>
+
+<section class="section">
+<h2>Fiscal-year horizons — absolute forecasts, tracked as vintages</h2>
+<div class="tablewrap"><table><thead><tr><th>Fiscal year</th><th>Rev p50 ($M)</th><th>Rev band</th><th>Adj EPS p50</th><th>EPS band</th><th>Capex</th><th>FCF</th></tr></thead><tbody><tr><td>fiscal year 2026 (ended June 2026 — reported at this release)</td><td class="num">4,645</td><td class="num">4,607–4,697</td><td class="num">13.87</td><td class="num">13.73–14.09</td><td class="num">-226</td><td class="num">66</td></tr><tr><td>fiscal year 2027 (ending June 2027)</td><td class="num">6,020</td><td class="num">5,580–6,500</td><td class="num">17.40</td><td class="num">15.90–19.20</td><td class="num">-260</td><td class="num">240</td></tr><tr><td>fiscal year 2028 (ending June 2028)</td><td class="num">7,000</td><td class="num">6,250–7,800</td><td class="num">19.90</td><td class="num">17.30–22.80</td><td class="num">-280</td><td class="num">360</td></tr><tr><td>fiscal year 2029 (ending June 2029)</td><td class="num">7,800</td><td class="num">6,800–8,900</td><td class="num">22.00</td><td class="num">18.30–25.80</td><td class="num">-300</td><td class="num">460</td></tr></tbody></table></div>
+</section>
+
+
+<section class="section">
+<h2>Thesis — commitments and triggers, all fundamentals</h2>
+<p class="sub">Every commitment cites a source and names the forecast lines it
+flows into; every trigger is an observable reported fundamental with its check
+date. Triggers are re-served to the next run for review.</p>
+<div class="commit"><p class="claim">CEO: &#x27;several new customer agreements, particularly in the datacom market, to further strengthen our growth trajectory as we move into the fourth quarter and beyond&#x27; — datacom re-acceleration on top of telecom/DCI strength</p>
+<p class="src">0001408710-26-000014:fn-2026504xex991q326.htm:b0000005 · horizon FQ4&#x27;26 through FY27</p>
+<p class="flows">flows into: income_statement.revenue, quarterly_path.fq1_27.revenue, horizons.fy1.revenue</p></div><div class="commit"><p class="claim">Capacity expansion underway: 9M FY26 capex of $160.6M (vs $70.7M prior year) plus $65.3M of fixed-asset payables — Building 10 in Chonburi and US footprint build-out continue into FY27</p>
+<p class="src">0001408710-26-000014:fn-2026504xex991q326.htm:b0000047 · horizon FY26-FY28</p>
+<p class="flows">flows into: cash_flow.capex, horizons.fy1.capex, horizons.fy2.capex</p></div><div class="commit"><p class="claim">Inventory build of $297M in 9M FY26 ahead of program ramps — pre-positioned materials convert to revenue and then to cash as ramps mature, normalizing working capital</p>
+<p class="src">0001408710-26-000014:fn-2026504xex991q326.htm:b0000047 · horizon FQ4&#x27;26-FY27</p>
+<p class="flows">flows into: cash_flow.cfo, cash_flow.other_operating, horizons.fy1.cfo</p></div><div class="commit"><p class="claim">Non-GAAP definition excludes SBC, severance, legal/litigation and restructuring; guided bridge of $0.24/share for Q4</p>
+<p class="src">0001408710-26-000014:fn-2026504xex991q326.htm:b0000072 · horizon FQ4&#x27;26</p>
+<p class="flows">flows into: bridge.non_gaap_net_income, headline.eps_adjusted</p></div><div class="commit"><p class="claim">Debt-free balance sheet with $945.9M cash+investments and an ongoing share repurchase program (9M buybacks $5.2M) supporting opportunistic returns</p>
+<p class="src">0001408710-26-000014:fn-2026504xex991q326.htm:b0000039 · horizon FY27-FY29</p>
+<p class="flows">flows into: cash_flow.buybacks, horizons.fy1.cff, horizons.fy1.total_equity</p></div>
+<div class="grid2">
+<div><h2 style="font-size:15px; margin-bottom:10px">What would make it a buyer</h2>
+<div class="trigger buy"><p class="mk">Q4 revenue ≥ $1.32B with datacom revenue re-accelerating sequentially (above FQ3&#x27;s $260.4M), confirming the new 1.6T/datacom program ramps</p>
+<p class="at">checkable at: Q4 FY26 8-K earnings release and investor presentation product-category table (Aug 2026)</p></div><div class="trigger buy"><p class="mk">FY27 Q1 CFO ≥ $100M with inventory growth slowing below revenue growth (working-capital conversion beginning)</p>
+<p class="at">checkable at: Q1 FY27 8-K cash flow statement (Nov 2026)</p></div><div class="trigger buy"><p class="mk">Non-GAAP operating margin ≥ 11.0% on &gt;$1.4B quarterly revenue, evidence of scale leverage above the 10.5-10.7% band</p>
+<p class="at">checkable at: Q1/Q2 FY27 8-K non-GAAP reconciliation</p></div></div>
+<div><h2 style="font-size:15px; margin-bottom:10px">What would make it a seller</h2>
+<div class="trigger sell"><p class="mk">Q1 FY27 revenue guidance below $1.30B (sequential decline), signaling a pause in datacom/DCI ramps or an inventory-digestion phase at the lead AI customer</p>
+<p class="at">checkable at: Q4 FY26 8-K Business Outlook section (Aug 2026)</p></div><div class="trigger sell"><p class="mk">Non-GAAP gross margin below 11.6% for two consecutive quarters (ramp inefficiency plus Thai baht strength overwhelming pricing)</p>
+<p class="at">checkable at: Q1 and Q2 FY27 8-K non-GAAP reconciliations</p></div><div class="trigger sell"><p class="mk">Inventories rising above $1.1B while quarterly revenue growth falls below 5% sequentially, or FY27 FCF running below $50M/quarter after FQ2&#x27;27</p>
+<p class="at">checkable at: FY27 10-Qs balance sheet and cash flow statements</p></div></div>
+</div>
+<div class="card note" style="margin-top:12px"><p><b>What must be true:</b>
+The AI-driven optical cycle (1.6T datacom transceivers, DCI/telecom systems, HPC assemblies) must continue ramping through FY27 with Fabrinet retaining sole/lead manufacturing positions at its top customers (NVIDIA, Cisco, Lumentum, Ciena, Amazon programs); gross margin must hold near 12% despite ramp costs and baht exposure; and the $300M+ working-capital investment must convert to cash as programs mature rather than signal demand overshoot.</p></div>
+</section>
+
+<section class="section">
+<h2>Preview note, verbatim</h2>
+<div class="card note"><p>FN reports Q4 FY26 (June-quarter) after beating the high end of guidance in each of the last several quarters. Guidance is $1.25-1.29B revenue and $3.72-3.87 non-GAAP EPS; we model $1,320M and $3.88 — another modest beat driven by the 1.6T datacom ramp (CEO flagged &#x27;several new customer agreements, particularly in datacom&#x27;), continued DCI momentum ($196.9M in Q3, +38% q/q), and HPC scaling ($106.7M in Q3 from zero a year ago). Three things matter: (1) datacom trajectory — the segment has been flat-to-down ($260M in Q3) while telecom carried growth; evidence the new programs are converting is the single biggest driver of the FY27 outlook; (2) gross margin — GAAP GM slipped to 11.9% in Q3 on ramp costs; holding ~12% on 9% sequential growth would confirm scale leverage; (3) cash conversion — 9M FCF of just $41M on a $297M inventory build; a Q4 CFO print near $90M+ would show working capital cresting. The reaction will hinge less on the Q4 print than on Q1 FY27 guidance: we expect $1.35-1.39B revenue and $3.95-4.10 non-GAAP EPS. A guide implying continued mid-single-digit sequential growth with stable margins keeps the AI-optics thesis intact; a flat guide or margin walk-down would hit the stock hard given expectations embedded after a +39% y/y Q3.</p></div>
+<details><summary>Full model reasoning (verbatim)</summary>
+<p>Revenue: FN beat its guidance high end in FQ2 (printed $1,133M) and FQ3 ($1,214M, +39% y/y). Q4 guide is $1.25-1.29B; given ramping 1.6T datacom, DCI (+38% q/q in Q3), HPC, and the CEO&#x27;s explicit new-agreement commentary, I model $1,320M (+8.7% q/q), ~2% above the high end — consistent with the recent beat cadence but tempered because sequential adds moderated from +$155M (Q2) to +$81M (Q3). Margins: GAAP GM 12.0% (Q3 11.9%, Q2 12.2%); SG&amp;A $25.5M; GAAP op margin 10.1%, non-GAAP ~10.7% (matching Q3 and the guidance framework). Below the line: interest income $7.5M, FX +$1.0M (unpredictable; Q3 +$7.0M, long-run near zero), tax ~7% (9M rate 6.1%, Q4 typically slightly higher). GAAP NI $131.3M → $3.61 EPS on 36.35M shares. Bridge: SBC $9.1M plus ~$0.5M severance/legal → non-GAAP NI $140.9M → $3.88, just above the guided high of $3.87. Cash flow: working-capital drag eases from Q3&#x27;s extreme (-$98.6M other-operating) but AR grows with revenue; CFO $90M, capex $65M (elevated expansion run-rate), FCF $25M; ST-investment maturities net +$10M; minimal buybacks. Balance sheet rolls forward mechanically: cash $389.5M, retained earnings $2,558.1M, equity $2,438.6M, liabilities $1,245M (AP growth with volume). FY27: I model +30% growth to $6.02B — slower than FY26&#x27;s +36% but sustained by full-year contribution of new datacom programs, DCI, and HPC; margins held at ~12.0% GAAP GM / 10.2% GAAP OM with slight leverage; working capital normalizes, lifting CFO to ~$500M and FCF to ~$240M despite $260M capex. FY28/FY29 decelerate to +16%/+11% as the 1.6T cycle matures and comps steepen, with FCF conversion improving as capex plateaus. Key risks to my p50: customer inventory digestion in AI optics (downside), faster-than-expected 1.6T/HPC ramp or co-packaged-optics-related share gains (upside).</p></details>
+</section>
+
+<p class="endnote">Sealed as <span class="mono">snap-1408710-20260817T165607768286Z</span>
+over corpus manifest <span class="mono">4678dd1f…</span>
+(278 filings, five-year window). Replay:
+<span class="mono">python -m rff.filing.snapshot --replay snap-1408710-20260817T165607768286Z</span>.
+Prompt v5.6. Nothing here is investment advice.</p></div>

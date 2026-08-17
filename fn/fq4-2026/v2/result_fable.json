@@ -1,0 +1,612 @@
+{
+  "anchor_retries": 1,
+  "as_of": "2026-08-17T14:30:00Z",
+  "contract_retries": 0,
+  "held_at": "2026-08-17T16:51:09.717019Z",
+  "incomplete_retries": 0,
+  "model_id": "claude-fable-5",
+  "model_key": "fable",
+  "prompt_version": "v5.6",
+  "run_class": "genuine_forward",
+  "run_intent": {
+    "intent_id": "intent-20260817T165109707560Z-c2893ab60f4a"
+  },
+  "seconds": 298.060726,
+  "snapshot": {
+    "corpus_filings": 278,
+    "corpus_manifest_sha256": "4678dd1f87f960e00514ea64252bf8ba08bc3b73f452964d814980981fe660a3",
+    "snapshot_id": "snap-1408710-20260817T165607768286Z",
+    "tool_calls": 15
+  },
+  "status": "ok",
+  "ticker": "FN",
+  "tool_calls": 15,
+  "unverified_anchors": [],
+  "usage": {
+    "api_calls": 7,
+    "cache_read_tokens": 297040,
+    "cache_write_tokens": 74291,
+    "cost_usd": null,
+    "input_tokens": 14,
+    "output_tokens": 24488,
+    "requests": [
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 35923,
+        "cost_usd": null,
+        "input_tokens": 2,
+        "model_id": "claude-fable-5",
+        "output_tokens": 361,
+        "request_no": 1
+      },
+      {
+        "cache_read_tokens": 35923,
+        "cache_write_tokens": 3615,
+        "cost_usd": null,
+        "input_tokens": 2,
+        "model_id": "claude-fable-5",
+        "output_tokens": 179,
+        "request_no": 2
+      },
+      {
+        "cache_read_tokens": 39538,
+        "cache_write_tokens": 2936,
+        "cost_usd": null,
+        "input_tokens": 2,
+        "model_id": "claude-fable-5",
+        "output_tokens": 138,
+        "request_no": 3
+      },
+      {
+        "cache_read_tokens": 42474,
+        "cache_write_tokens": 7157,
+        "cost_usd": null,
+        "input_tokens": 2,
+        "model_id": "claude-fable-5",
+        "output_tokens": 246,
+        "request_no": 4
+      },
+      {
+        "cache_read_tokens": 49631,
+        "cache_write_tokens": 6716,
+        "cost_usd": null,
+        "input_tokens": 2,
+        "model_id": "claude-fable-5",
+        "output_tokens": 15808,
+        "request_no": 5
+      },
+      {
+        "cache_read_tokens": 56347,
+        "cache_write_tokens": 16780,
+        "cost_usd": null,
+        "input_tokens": 2,
+        "model_id": "claude-fable-5",
+        "output_tokens": 636,
+        "request_no": 6
+      },
+      {
+        "cache_read_tokens": 73127,
+        "cache_write_tokens": 1164,
+        "cost_usd": null,
+        "input_tokens": 2,
+        "model_id": "claude-fable-5",
+        "output_tokens": 7120,
+        "request_no": 7
+      }
+    ]
+  },
+  "validated": {
+    "anchors": [
+      {
+        "accession": "0001408710-26-000014",
+        "name": "FQ3'26 revenue, $ thousands (3M ended 3/27/26)",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000043",
+        "value": 1214293
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "FQ3'26 GAAP diluted EPS",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000010",
+        "value": 3.45
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "FQ3'26 non-GAAP net income, $ thousands",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000064",
+        "value": 134864
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 revenue guidance low end, $ billions ($1.25B to $1.29B)",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000016",
+        "value": 1.25
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 revenue guidance high end, $ billions",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000016",
+        "value": 1.29
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 GAAP EPS guidance low end ($3.48 to $3.63)",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000017",
+        "value": 3.48
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 non-GAAP EPS guidance low end ($3.72 to $3.87)",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000018",
+        "value": 3.72
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 non-GAAP EPS guidance high end",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000018",
+        "value": 3.87
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "9M FY26 net cash provided by operating activities, $ thousands",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000047",
+        "value": 201758
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "FQ3'26 net cash provided by operating activities, $ thousands",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000068",
+        "value": 52931
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "FQ3'26 purchase of property, plant and equipment, $ thousands",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000068",
+        "value": 63760
+      },
+      {
+        "accession": "0001408710-26-000016",
+        "name": "Cash, cash equivalents and restricted cash at 3/27/26, USD",
+        "reference": "0001408710-26-000016:fn-20260327.htm:b0000140",
+        "value": 357256000
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Total shareholders' equity at 3/27/26, $ thousands",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000039",
+        "value": 2304711
+      }
+    ],
+    "balance_sheet": {
+      "cash_and_restricted": 389.5,
+      "other_assets": 3294.1,
+      "other_equity": -119.5,
+      "retained_earnings": 2558.1,
+      "total_assets": 3683.6,
+      "total_equity": 2438.6,
+      "total_liabilities": 1245.0
+    },
+    "bridge": {
+      "adjustments": {
+        "severance_legal_and_litigation": 0.5,
+        "share_based_comp_cost_of_revenues": 2.9,
+        "share_based_comp_sga": 6.2
+      },
+      "non_gaap_net_income": 140.9
+    },
+    "cash_flow": {
+      "buybacks": -0.3,
+      "capex": -65.0,
+      "cff": -2.3,
+      "cfi": -55.0,
+      "cfo": 90.0,
+      "depreciation_amortization": 19.0,
+      "fx_effect": -0.5,
+      "net_change_cash": 32.2,
+      "net_income": 131.3,
+      "other_financing": -2.0,
+      "other_investing": 10.0,
+      "other_operating": -69.3,
+      "share_based_comp": 9.0
+    },
+    "guidance_forecast": {
+      "eps_adjusted": {
+        "high": 4.1,
+        "low": 3.95
+      },
+      "revenue": {
+        "high": 1390.0,
+        "low": 1350.0
+      }
+    },
+    "headline": {
+      "eps_adjusted": {
+        "p10": 3.74,
+        "p50": 3.88,
+        "p90": 4.1
+      },
+      "fcf": {
+        "p10": -35.0,
+        "p50": 25.0,
+        "p90": 90.0
+      },
+      "revenue": {
+        "p10": 1282.0,
+        "p50": 1320.0,
+        "p90": 1372.0
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "capex": -225.6,
+        "cff": -31.9,
+        "cfi": -174.8,
+        "cfo": 291.8,
+        "eps_adjusted": {
+          "p10": 13.73,
+          "p50": 13.87,
+          "p90": 14.09
+        },
+        "fcf": 66.2,
+        "gross_profit": 556.9,
+        "net_change_cash": 85.1,
+        "net_income": 465.1,
+        "operating_income": 461.5,
+        "revenue": {
+          "p10": 4607.0,
+          "p50": 4645.0,
+          "p90": 4697.0
+        },
+        "total_assets": 3683.6,
+        "total_equity": 2438.6,
+        "total_liabilities": 1245.0
+      },
+      "fy1": {
+        "capex": -260.0,
+        "cff": -90.0,
+        "cfi": -310.0,
+        "cfo": 500.0,
+        "eps_adjusted": {
+          "p10": 15.9,
+          "p50": 17.4,
+          "p90": 19.2
+        },
+        "fcf": 240.0,
+        "gross_profit": 722.5,
+        "net_change_cash": 100.0,
+        "net_income": 598.0,
+        "operating_income": 612.0,
+        "revenue": {
+          "p10": 5580.0,
+          "p50": 6020.0,
+          "p90": 6500.0
+        },
+        "total_assets": 4200.0,
+        "total_equity": 2850.0,
+        "total_liabilities": 1350.0
+      },
+      "fy2": {
+        "capex": -280.0,
+        "cff": -150.0,
+        "cfi": -340.0,
+        "cfo": 640.0,
+        "eps_adjusted": {
+          "p10": 17.3,
+          "p50": 19.9,
+          "p90": 22.8
+        },
+        "fcf": 360.0,
+        "gross_profit": 847.0,
+        "net_change_cash": 150.0,
+        "net_income": 693.0,
+        "operating_income": 717.0,
+        "revenue": {
+          "p10": 6250.0,
+          "p50": 7000.0,
+          "p90": 7800.0
+        },
+        "total_assets": 5050.0,
+        "total_equity": 3490.0,
+        "total_liabilities": 1560.0
+      },
+      "fy3": {
+        "capex": -300.0,
+        "cff": -200.0,
+        "cfi": -380.0,
+        "cfo": 760.0,
+        "eps_adjusted": {
+          "p10": 18.3,
+          "p50": 22.0,
+          "p90": 25.8
+        },
+        "fcf": 460.0,
+        "gross_profit": 943.0,
+        "net_change_cash": 180.0,
+        "net_income": 775.0,
+        "operating_income": 800.0,
+        "revenue": {
+          "p10": 6800.0,
+          "p50": 7800.0,
+          "p90": 8900.0
+        },
+        "total_assets": 5900.0,
+        "total_equity": 4165.0,
+        "total_liabilities": 1735.0
+      }
+    },
+    "income_statement": {
+      "cost_of_revenue": 1161.6,
+      "eps_diluted": 3.61,
+      "fx_gain": 1.0,
+      "gross_profit": 158.4,
+      "income_tax": 9.9,
+      "interest_other_income": 7.5,
+      "net_income": 131.3,
+      "operating_income": 132.9,
+      "other_income_net": -0.2,
+      "pretax_income": 141.2,
+      "restructuring": 0.0,
+      "revenue": 1320.0,
+      "sga": 25.5,
+      "shares_diluted": 36.35
+    },
+    "preview_note": "FN reports Q4 FY26 (June-quarter) after beating the high end of guidance in each of the last several quarters. Guidance is $1.25-1.29B revenue and $3.72-3.87 non-GAAP EPS; we model $1,320M and $3.88 \u2014 another modest beat driven by the 1.6T datacom ramp (CEO flagged 'several new customer agreements, particularly in datacom'), continued DCI momentum ($196.9M in Q3, +38% q/q), and HPC scaling ($106.7M in Q3 from zero a year ago). Three things matter: (1) datacom trajectory \u2014 the segment has been flat-to-down ($260M in Q3) while telecom carried growth; evidence the new programs are converting is the single biggest driver of the FY27 outlook; (2) gross margin \u2014 GAAP GM slipped to 11.9% in Q3 on ramp costs; holding ~12% on 9% sequential growth would confirm scale leverage; (3) cash conversion \u2014 9M FCF of just $41M on a $297M inventory build; a Q4 CFO print near $90M+ would show working capital cresting. The reaction will hinge less on the Q4 print than on Q1 FY27 guidance: we expect $1.35-1.39B revenue and $3.95-4.10 non-GAAP EPS. A guide implying continued mid-single-digit sequential growth with stable margins keeps the AI-optics thesis intact; a flat guide or margin walk-down would hit the stock hard given expectations embedded after a +39% y/y Q3.",
+    "quarterly_path": {
+      "fq1_27": {
+        "capex": -60.0,
+        "cff": -15.0,
+        "cfi": -70.0,
+        "cfo": 110.0,
+        "eps_adjusted": {
+          "p10": 3.8,
+          "p50": 4.08,
+          "p90": 4.45
+        },
+        "fcf": 50.0,
+        "gross_profit": 168.0,
+        "net_change_cash": 25.0,
+        "net_income": 139.0,
+        "operating_income": 141.5,
+        "revenue": {
+          "p10": 1330.0,
+          "p50": 1400.0,
+          "p90": 1480.0
+        },
+        "total_assets": 3800.0,
+        "total_equity": 2530.0,
+        "total_liabilities": 1270.0
+      },
+      "fq2_27": {
+        "capex": -60.0,
+        "cff": -30.0,
+        "cfi": -75.0,
+        "cfo": 120.0,
+        "eps_adjusted": {
+          "p10": 3.95,
+          "p50": 4.3,
+          "p90": 4.7
+        },
+        "fcf": 60.0,
+        "gross_profit": 177.5,
+        "net_change_cash": 15.0,
+        "net_income": 147.0,
+        "operating_income": 150.0,
+        "revenue": {
+          "p10": 1390.0,
+          "p50": 1480.0,
+          "p90": 1585.0
+        },
+        "total_assets": 3930.0,
+        "total_equity": 2630.0,
+        "total_liabilities": 1300.0
+      },
+      "fq3_27": {
+        "capex": -70.0,
+        "cff": -20.0,
+        "cfi": -80.0,
+        "cfo": 130.0,
+        "eps_adjusted": {
+          "p10": 4.05,
+          "p50": 4.47,
+          "p90": 4.9
+        },
+        "fcf": 60.0,
+        "gross_profit": 185.0,
+        "net_change_cash": 30.0,
+        "net_income": 153.0,
+        "operating_income": 157.0,
+        "revenue": {
+          "p10": 1420.0,
+          "p50": 1540.0,
+          "p90": 1665.0
+        },
+        "total_assets": 4060.0,
+        "total_equity": 2740.0,
+        "total_liabilities": 1320.0
+      },
+      "fq4_27": {
+        "capex": -70.0,
+        "cff": -25.0,
+        "cfi": -85.0,
+        "cfo": 140.0,
+        "eps_adjusted": {
+          "p10": 4.15,
+          "p50": 4.63,
+          "p90": 5.15
+        },
+        "fcf": 70.0,
+        "gross_profit": 192.0,
+        "net_change_cash": 30.0,
+        "net_income": 159.0,
+        "operating_income": 163.5,
+        "revenue": {
+          "p10": 1450.0,
+          "p50": 1600.0,
+          "p90": 1755.0
+        },
+        "total_assets": 4200.0,
+        "total_equity": 2850.0,
+        "total_liabilities": 1350.0
+      }
+    },
+    "reasoning": "Revenue: FN beat its guidance high end in FQ2 (printed $1,133M) and FQ3 ($1,214M, +39% y/y). Q4 guide is $1.25-1.29B; given ramping 1.6T datacom, DCI (+38% q/q in Q3), HPC, and the CEO's explicit new-agreement commentary, I model $1,320M (+8.7% q/q), ~2% above the high end \u2014 consistent with the recent beat cadence but tempered because sequential adds moderated from +$155M (Q2) to +$81M (Q3). Margins: GAAP GM 12.0% (Q3 11.9%, Q2 12.2%); SG&A $25.5M; GAAP op margin 10.1%, non-GAAP ~10.7% (matching Q3 and the guidance framework). Below the line: interest income $7.5M, FX +$1.0M (unpredictable; Q3 +$7.0M, long-run near zero), tax ~7% (9M rate 6.1%, Q4 typically slightly higher). GAAP NI $131.3M \u2192 $3.61 EPS on 36.35M shares. Bridge: SBC $9.1M plus ~$0.5M severance/legal \u2192 non-GAAP NI $140.9M \u2192 $3.88, just above the guided high of $3.87. Cash flow: working-capital drag eases from Q3's extreme (-$98.6M other-operating) but AR grows with revenue; CFO $90M, capex $65M (elevated expansion run-rate), FCF $25M; ST-investment maturities net +$10M; minimal buybacks. Balance sheet rolls forward mechanically: cash $389.5M, retained earnings $2,558.1M, equity $2,438.6M, liabilities $1,245M (AP growth with volume). FY27: I model +30% growth to $6.02B \u2014 slower than FY26's +36% but sustained by full-year contribution of new datacom programs, DCI, and HPC; margins held at ~12.0% GAAP GM / 10.2% GAAP OM with slight leverage; working capital normalizes, lifting CFO to ~$500M and FCF to ~$240M despite $260M capex. FY28/FY29 decelerate to +16%/+11% as the 1.6T cycle matures and comps steepen, with FCF conversion improving as capex plateaus. Key risks to my p50: customer inventory digestion in AI optics (downside), faster-than-expected 1.6T/HPC ramp or co-packaged-optics-related share gains (upside).",
+    "thesis": {
+      "buy_triggers": [
+        {
+          "checkable_at": "Q4 FY26 8-K earnings release and investor presentation product-category table (Aug 2026)",
+          "marker": "Q4 revenue \u2265 $1.32B with datacom revenue re-accelerating sequentially (above FQ3's $260.4M), confirming the new 1.6T/datacom program ramps"
+        },
+        {
+          "checkable_at": "Q1 FY27 8-K cash flow statement (Nov 2026)",
+          "marker": "FY27 Q1 CFO \u2265 $100M with inventory growth slowing below revenue growth (working-capital conversion beginning)"
+        },
+        {
+          "checkable_at": "Q1/Q2 FY27 8-K non-GAAP reconciliation",
+          "marker": "Non-GAAP operating margin \u2265 11.0% on >$1.4B quarterly revenue, evidence of scale leverage above the 10.5-10.7% band"
+        }
+      ],
+      "commitments": [
+        {
+          "claim": "CEO: 'several new customer agreements, particularly in the datacom market, to further strengthen our growth trajectory as we move into the fourth quarter and beyond' \u2014 datacom re-acceleration on top of telecom/DCI strength",
+          "flows_into": [
+            "income_statement.revenue",
+            "quarterly_path.fq1_27.revenue",
+            "horizons.fy1.revenue"
+          ],
+          "horizon": "FQ4'26 through FY27",
+          "source": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000005"
+        },
+        {
+          "claim": "Capacity expansion underway: 9M FY26 capex of $160.6M (vs $70.7M prior year) plus $65.3M of fixed-asset payables \u2014 Building 10 in Chonburi and US footprint build-out continue into FY27",
+          "flows_into": [
+            "cash_flow.capex",
+            "horizons.fy1.capex",
+            "horizons.fy2.capex"
+          ],
+          "horizon": "FY26-FY28",
+          "source": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000047"
+        },
+        {
+          "claim": "Inventory build of $297M in 9M FY26 ahead of program ramps \u2014 pre-positioned materials convert to revenue and then to cash as ramps mature, normalizing working capital",
+          "flows_into": [
+            "cash_flow.cfo",
+            "cash_flow.other_operating",
+            "horizons.fy1.cfo"
+          ],
+          "horizon": "FQ4'26-FY27",
+          "source": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000047"
+        },
+        {
+          "claim": "Non-GAAP definition excludes SBC, severance, legal/litigation and restructuring; guided bridge of $0.24/share for Q4",
+          "flows_into": [
+            "bridge.non_gaap_net_income",
+            "headline.eps_adjusted"
+          ],
+          "horizon": "FQ4'26",
+          "source": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000072"
+        },
+        {
+          "claim": "Debt-free balance sheet with $945.9M cash+investments and an ongoing share repurchase program (9M buybacks $5.2M) supporting opportunistic returns",
+          "flows_into": [
+            "cash_flow.buybacks",
+            "horizons.fy1.cff",
+            "horizons.fy1.total_equity"
+          ],
+          "horizon": "FY27-FY29",
+          "source": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000039"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "checkable_at": "Q4 FY26 8-K Business Outlook section (Aug 2026)",
+          "marker": "Q1 FY27 revenue guidance below $1.30B (sequential decline), signaling a pause in datacom/DCI ramps or an inventory-digestion phase at the lead AI customer"
+        },
+        {
+          "checkable_at": "Q1 and Q2 FY27 8-K non-GAAP reconciliations",
+          "marker": "Non-GAAP gross margin below 11.6% for two consecutive quarters (ramp inefficiency plus Thai baht strength overwhelming pricing)"
+        },
+        {
+          "checkable_at": "FY27 10-Qs balance sheet and cash flow statements",
+          "marker": "Inventories rising above $1.1B while quarterly revenue growth falls below 5% sequentially, or FY27 FCF running below $50M/quarter after FQ2'27"
+        }
+      ],
+      "what_must_be_true": "The AI-driven optical cycle (1.6T datacom transceivers, DCI/telecom systems, HPC assemblies) must continue ramping through FY27 with Fabrinet retaining sole/lead manufacturing positions at its top customers (NVIDIA, Cisco, Lumentum, Ciena, Amazon programs); gross margin must hold near 12% despite ramp costs and baht exposure; and the $300M+ working-capital investment must convert to cash as programs mature rather than signal demand overshoot."
+    }
+  },
+  "visual_inspections": [
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "e2518869fdf7ff377f260b8ed83853b73e41df4b066eabc0112ba638ad1ac10b",
+      "document": null,
+      "page_no": 7,
+      "source": "ir_page",
+      "source_sha256": "e2518869fdf7ff377f260b8ed83853b73e41df4b066eabc0112ba638ad1ac10b",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "a4ccb3df71e4c5f7947774111d03084dab301b2e7c8a12b99c4442cd48b83229",
+      "document": null,
+      "page_no": 8,
+      "source": "ir_page",
+      "source_sha256": "a4ccb3df71e4c5f7947774111d03084dab301b2e7c8a12b99c4442cd48b83229",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "39b496b8ec64f88a5ce4999cfecf9e2d636400b30f8c8801d7406c21b016d686",
+      "document": null,
+      "page_no": 9,
+      "source": "ir_page",
+      "source_sha256": "39b496b8ec64f88a5ce4999cfecf9e2d636400b30f8c8801d7406c21b016d686",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "4d6e956a8358cafbc5493948ed2f11ff2fc0210dc2f75999ff35bffae115baf9",
+      "document": null,
+      "page_no": 10,
+      "source": "ir_page",
+      "source_sha256": "4d6e956a8358cafbc5493948ed2f11ff2fc0210dc2f75999ff35bffae115baf9",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "a9e6277d05ee8328882c654e3bea9097ba1e0468282d272e57c3167f2d44009f",
+      "document": null,
+      "page_no": 11,
+      "source": "ir_page",
+      "source_sha256": "a9e6277d05ee8328882c654e3bea9097ba1e0468282d272e57c3167f2d44009f",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "bac57ddd23c39e7368845ff4d2d01f08c6cc98e2f63a1ccad142730237cbb8a2",
+      "document": null,
+      "page_no": 12,
+      "source": "ir_page",
+      "source_sha256": "bac57ddd23c39e7368845ff4d2d01f08c6cc98e2f63a1ccad142730237cbb8a2",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "e9d6e178ad9f1d77333f95ef4ae1b2aa9b5d17a3ef4f390585171a9437eeda47",
+      "document": null,
+      "page_no": 14,
+      "source": "ir_page",
+      "source_sha256": "e9d6e178ad9f1d77333f95ef4ae1b2aa9b5d17a3ef4f390585171a9437eeda47",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "f3ccaad60a18275edc65e3cb2276e097d3ed7e7e3c7aee3f69bb347afa60a278",
+      "document": null,
+      "page_no": 15,
+      "source": "ir_page",
+      "source_sha256": "f3ccaad60a18275edc65e3cb2276e097d3ed7e7e3c7aee3f69bb347afa60a278",
+      "transformation": null
+    }
+  ],
+  "visual_inspections_status": "inspected",
+  "visual_inventory_called": true,
+  "visual_inventory_documents": 279
+}

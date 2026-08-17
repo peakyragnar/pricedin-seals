@@ -1,0 +1,89 @@
+{
+  "aggregate_median": {
+    "eps_adjusted": {
+      "p10": 3.7,
+      "p50": 3.79,
+      "p90": 3.98
+    },
+    "fcf": {
+      "p10": 5.0,
+      "p50": 35.5325,
+      "p90": 75.0
+    },
+    "revenue": {
+      "p10": 1257.5,
+      "p50": 1280.0,
+      "p90": 1322.5
+    }
+  },
+  "as_of": "2026-08-17T14:30:00Z",
+  "cik": 1408710,
+  "classification": "genuine_forward",
+  "correction_reason": "Rebuilt after point-in-time ingestion, visual serving, and model-run contract fixes; v1 remains archived.",
+  "cycle": "FQ4-2026",
+  "files_sha256": {
+    "index.html": "fa21b9782a182f26ff04a9bc67f8a88b3efa55f3b8be39ac9c2444f84eb87346",
+    "model_fable.html": "fcdb84c1e18dd8038d825c879b5c1be3c362360bf6938d9c97cb5f1a27b3a4b9",
+    "model_gemini37.html": "e451e3d0147016d6a0a3d4b6ec986c55451a1016629e4d479cb2f2b1e4f2390e",
+    "model_gpt-sol.html": "2849683370d91723e1588d0b592e53ebe9e3e4b41bc0d58df09d3576222dfb41",
+    "model_grok46.html": "0ddcefb094d0d2b000e2e4523f1f87661f9c9a00e39d421e41dbc7274e5f1f61",
+    "model_kimi.html": "6ea793d0db6ff72a4e36a5fbda191aa32f2becebb8de547c946803f698f6d8d3",
+    "model_muse.html": "4d70d571d98c7665162e980d82fc36ba5a3b84de13c3e1f0a8a63f48648c8d7f",
+    "result_fable.json": "8e2e24ede87ecb9836b0344996b298c0e038a29038e8792ee3ea45b29b726b6f",
+    "result_gemini37.json": "406087ad24badcda12d25465219cc58dd7964b4b45c833cc52339fcfc594391e",
+    "result_gpt-sol.json": "2ed131d0b70499ba50203b78ab84e0b35110af5fec81932bfad0bb6d02d7c146",
+    "result_grok46.json": "3a98fd7f7767158c1fbb6f6bcd58223894bce6dd8654831c8c81d265182c79bb",
+    "result_kimi.json": "4c3105e22f4f96300119e864849cf9e64bd607c90c05412f3816a2d4364bfcfe",
+    "result_muse.json": "2e1fe3286092f1c5e68d4b038a910f9842ba36f2b113b99293305ee07075215f"
+  },
+  "models": {
+    "fable": {
+      "intent_id": "intent-20260817T165109707560Z-c2893ab60f4a",
+      "model_id": "claude-fable-5",
+      "result_file": "result_fable.json",
+      "snapshot_id": "snap-1408710-20260817T165607768286Z"
+    },
+    "gemini37": {
+      "intent_id": "intent-20260817T181514061227Z-5f546069e812",
+      "model_id": "gemini-3.7-flash",
+      "result_file": "result_gemini37.json",
+      "snapshot_id": "snap-1408710-20260817T181624864427Z"
+    },
+    "gpt-sol": {
+      "intent_id": "intent-20260817T165107116794Z-b6332b83b6d7",
+      "model_id": "gpt-5.6-sol",
+      "result_file": "result_gpt-sol.json",
+      "snapshot_id": "snap-1408710-20260817T165517722633Z"
+    },
+    "grok46": {
+      "intent_id": "intent-20260817T165111252540Z-39dbf82f710a",
+      "model_id": "grok-4.6",
+      "result_file": "result_grok46.json",
+      "snapshot_id": "snap-1408710-20260817T170841436298Z"
+    },
+    "kimi": {
+      "intent_id": "intent-20260817T182454435837Z-6da3bfac5da9",
+      "model_id": "moonshotai/kimi-k3",
+      "result_file": "result_kimi.json",
+      "snapshot_id": "snap-1408710-20260817T183438531109Z"
+    },
+    "muse": {
+      "intent_id": "intent-20260817T165108945159Z-e94deaab7c0f",
+      "model_id": "muse-spark-1.2",
+      "result_file": "result_muse.json",
+      "snapshot_id": "snap-1408710-20260817T170151141633Z"
+    }
+  },
+  "official_preflight": {
+    "checked_at": "2026-08-17T18:47:10Z",
+    "content_sha256": "f991291787f414419b3f2784fe9c379099294d020c947f61c41b72460fc85bab",
+    "finding": "UNPUBLISHED",
+    "id": "preflight-20260817T184711014442Z-5eed969ef1f8"
+  },
+  "prompt_version": "v5.6",
+  "publication_contract": "rff-publication-v1",
+  "published_at": "2026-08-17T18:45:50Z",
+  "supersedes_public_vintage": "v1",
+  "ticker": "FN",
+  "vintage": "v2"
+}

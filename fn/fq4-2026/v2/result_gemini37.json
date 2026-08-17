@@ -1,0 +1,557 @@
+{
+  "anchor_retries": 1,
+  "as_of": "2026-08-17T14:30:00Z",
+  "contract_retries": 0,
+  "held_at": "2026-08-17T18:15:14.077266Z",
+  "incomplete_retries": 0,
+  "model_id": "gemini-3.7-flash",
+  "model_key": "gemini37",
+  "prompt_version": "v5.6",
+  "run_class": "genuine_forward",
+  "run_intent": {
+    "intent_id": "intent-20260817T181514061227Z-5f546069e812"
+  },
+  "seconds": 70.8032,
+  "snapshot": {
+    "corpus_filings": 278,
+    "corpus_manifest_sha256": "4678dd1f87f960e00514ea64252bf8ba08bc3b73f452964d814980981fe660a3",
+    "snapshot_id": "snap-1408710-20260817T181624864427Z",
+    "tool_calls": 14
+  },
+  "status": "ok",
+  "ticker": "FN",
+  "tool_calls": 14,
+  "unverified_anchors": [],
+  "usage": {
+    "api_calls": 7,
+    "cache_read_tokens": 195941,
+    "cache_write_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 256816,
+    "output_tokens": 10423,
+    "requests": [
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 22719,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 47,
+        "request_no": 1
+      },
+      {
+        "cache_read_tokens": 20394,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 25786,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 74,
+        "request_no": 2
+      },
+      {
+        "cache_read_tokens": 24495,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 35430,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 75,
+        "request_no": 3
+      },
+      {
+        "cache_read_tokens": 32662,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 39808,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 43,
+        "request_no": 4
+      },
+      {
+        "cache_read_tokens": 36747,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 43540,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 5144,
+        "request_no": 5
+      },
+      {
+        "cache_read_tokens": 40823,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 43802,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 74,
+        "request_no": 6
+      },
+      {
+        "cache_read_tokens": 40820,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 45731,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 4966,
+        "request_no": 7
+      }
+    ]
+  },
+  "validated": {
+    "anchors": [
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q3 FY26 GAAP Net Income",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000009",
+        "value": 125.2
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q3 FY26 Diluted EPS",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000010",
+        "value": 3.45
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q3 FY26 Non-GAAP Net Income",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000012",
+        "value": 134.9
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q3 FY26 Non-GAAP Diluted EPS",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000013",
+        "value": 3.72
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 Revenue Guidance Low ($B)",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000016",
+        "value": 1.25
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 Revenue Guidance High ($B)",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000016",
+        "value": 1.29
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 GAAP EPS Guidance Low",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000017",
+        "value": 3.48
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 GAAP EPS Guidance High",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000017",
+        "value": 3.63
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 Non-GAAP EPS Guidance Low",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000018",
+        "value": 3.72
+      },
+      {
+        "accession": "0001408710-26-000014",
+        "name": "Q4 FY26 Non-GAAP EPS Guidance High",
+        "reference": "0001408710-26-000014:fn-2026504xex991q326.htm:b0000018",
+        "value": 3.87
+      }
+    ],
+    "balance_sheet": {
+      "cash_and_restricted": 375.3,
+      "other_assets": 3301.8,
+      "other_equity": -118.0,
+      "retained_earnings": 2545.1,
+      "total_assets": 3677.1,
+      "total_equity": 2427.1,
+      "total_liabilities": 1250.0
+    },
+    "bridge": {
+      "adjustments": {
+        "legal_and_litigation": 0.4,
+        "severance_and_others": 0.0,
+        "share_based_comp": 8.8
+      },
+      "non_gaap_net_income": 137.2
+    },
+    "cash_flow": {
+      "buybacks": -10.0,
+      "capex": -65.0,
+      "cff": -11.0,
+      "cfi": -45.0,
+      "cfo": 75.0,
+      "depreciation_amortization": 18.5,
+      "fx_effect": -1.0,
+      "net_change_cash": 18.0,
+      "net_income": 128.0,
+      "other_financing": -1.0,
+      "other_investing": 20.0,
+      "other_operating": -80.3,
+      "share_based_comp": 8.8
+    },
+    "guidance_forecast": {
+      "eps_adjusted": {
+        "high": 4.0,
+        "low": 3.85
+      },
+      "revenue": {
+        "high": 1340.0,
+        "low": 1300.0
+      }
+    },
+    "headline": {
+      "eps_adjusted": {
+        "p10": 3.72,
+        "p50": 3.774415,
+        "p90": 3.88
+      },
+      "fcf": {
+        "p10": -5.0,
+        "p50": 10.0,
+        "p90": 30.0
+      },
+      "revenue": {
+        "p10": 1260.0,
+        "p50": 1275.0,
+        "p90": 1295.0
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "capex": -225.6,
+        "cff": -40.6,
+        "cfi": -164.8,
+        "cfo": 276.8,
+        "eps_adjusted": {
+          "p10": 13.65,
+          "p50": 13.75,
+          "p90": 13.9
+        },
+        "fcf": 51.2,
+        "gross_profit": 550.9,
+        "net_change_cash": 70.3,
+        "net_income": 461.7,
+        "operating_income": 455.6,
+        "revenue": {
+          "p10": 4585.0,
+          "p50": 4600.3,
+          "p90": 4620.0
+        },
+        "total_assets": 3677.1,
+        "total_equity": 2427.1,
+        "total_liabilities": 1250.0
+      },
+      "fy1": {
+        "capex": -215.0,
+        "cff": -60.0,
+        "cfi": -135.0,
+        "cfo": 400.0,
+        "eps_adjusted": {
+          "p10": 16.1,
+          "p50": 16.69,
+          "p90": 17.4
+        },
+        "fcf": 185.0,
+        "gross_profit": 682.0,
+        "net_change_cash": 205.0,
+        "net_income": 568.5,
+        "operating_income": 569.5,
+        "revenue": {
+          "p10": 5440.0,
+          "p50": 5620.0,
+          "p90": 5810.0
+        },
+        "total_assets": 4240.0,
+        "total_equity": 2930.0,
+        "total_liabilities": 1310.0
+      },
+      "fy2": {
+        "capex": -230.0,
+        "cff": -80.0,
+        "cfi": -150.0,
+        "cfo": 480.0,
+        "eps_adjusted": {
+          "p10": 18.2,
+          "p50": 19.1,
+          "p90": 20.2
+        },
+        "fcf": 250.0,
+        "gross_profit": 780.0,
+        "net_change_cash": 250.0,
+        "net_income": 650.0,
+        "operating_income": 655.0,
+        "revenue": {
+          "p10": 6100.0,
+          "p50": 6400.0,
+          "p90": 6750.0
+        },
+        "total_assets": 4850.0,
+        "total_equity": 3450.0,
+        "total_liabilities": 1400.0
+      },
+      "fy3": {
+        "capex": -250.0,
+        "cff": -100.0,
+        "cfi": -170.0,
+        "cfo": 570.0,
+        "eps_adjusted": {
+          "p10": 20.5,
+          "p50": 21.85,
+          "p90": 23.4
+        },
+        "fcf": 320.0,
+        "gross_profit": 890.0,
+        "net_change_cash": 300.0,
+        "net_income": 745.0,
+        "operating_income": 750.0,
+        "revenue": {
+          "p10": 6800.0,
+          "p50": 7250.0,
+          "p90": 7750.0
+        },
+        "total_assets": 5550.0,
+        "total_equity": 4050.0,
+        "total_liabilities": 1500.0
+      }
+    },
+    "income_statement": {
+      "cost_of_revenue": 1122.5,
+      "eps_diluted": 3.52132,
+      "fx_gain": 3.0,
+      "gross_profit": 152.5,
+      "income_tax": 9.3,
+      "interest_other_income": 7.5,
+      "net_income": 128.0,
+      "operating_income": 127.0,
+      "other_income_net": -0.2,
+      "pretax_income": 137.3,
+      "restructuring": 0.0,
+      "revenue": 1275.0,
+      "sga": 25.5,
+      "shares_diluted": 36.35
+    },
+    "preview_note": "Fabrinet enters the Q4 FY26 print with strong momentum driven by rapid scaling in AI-driven optical transceivers (800G/1.6T) and high-performance computing interconnect assemblies. We project Q4 FY26 revenue of $1,275M (midpoint of $1,250M\u2013$1,290M guidance) and non-GAAP EPS of $3.77 (vs. $3.72\u2013$3.87 guidance range). Key focus areas for the print will be: (1) Datacom trajectory and progress on onboarding new customer programs; (2) Non-optical HPC segment ramp; and (3) Q1 FY27 guidance, which we expect to guide solidly higher to $1.30B\u2013$1.34B.",
+    "quarterly_path": {
+      "fq1_27": {
+        "capex": -60.0,
+        "cff": -15.0,
+        "cfi": -40.0,
+        "cfo": 85.0,
+        "eps_adjusted": {
+          "p10": 3.8,
+          "p50": 3.92,
+          "p90": 4.05
+        },
+        "fcf": 25.0,
+        "gross_profit": 159.0,
+        "net_change_cash": 30.0,
+        "net_income": 133.0,
+        "operating_income": 132.5,
+        "revenue": {
+          "p10": 1290.0,
+          "p50": 1320.0,
+          "p90": 1355.0
+        },
+        "total_assets": 3810.0,
+        "total_equity": 2540.0,
+        "total_liabilities": 1270.0
+      },
+      "fq2_27": {
+        "capex": -55.0,
+        "cff": -15.0,
+        "cfi": -35.0,
+        "cfo": 95.0,
+        "eps_adjusted": {
+          "p10": 3.95,
+          "p50": 4.1,
+          "p90": 4.25
+        },
+        "fcf": 40.0,
+        "gross_profit": 167.0,
+        "net_change_cash": 45.0,
+        "net_income": 139.5,
+        "operating_income": 139.5,
+        "revenue": {
+          "p10": 1340.0,
+          "p50": 1380.0,
+          "p90": 1425.0
+        },
+        "total_assets": 3950.0,
+        "total_equity": 2665.0,
+        "total_liabilities": 1285.0
+      },
+      "fq3_27": {
+        "capex": -50.0,
+        "cff": -15.0,
+        "cfi": -30.0,
+        "cfo": 105.0,
+        "eps_adjusted": {
+          "p10": 4.1,
+          "p50": 4.25,
+          "p90": 4.45
+        },
+        "fcf": 55.0,
+        "gross_profit": 174.0,
+        "net_change_cash": 60.0,
+        "net_income": 145.0,
+        "operating_income": 145.5,
+        "revenue": {
+          "p10": 1380.0,
+          "p50": 1430.0,
+          "p90": 1480.0
+        },
+        "total_assets": 4090.0,
+        "total_equity": 2795.0,
+        "total_liabilities": 1295.0
+      },
+      "fq4_27": {
+        "capex": -50.0,
+        "cff": -15.0,
+        "cfi": -30.0,
+        "cfo": 115.0,
+        "eps_adjusted": {
+          "p10": 4.25,
+          "p50": 4.42,
+          "p90": 4.65
+        },
+        "fcf": 65.0,
+        "gross_profit": 182.0,
+        "net_change_cash": 70.0,
+        "net_income": 151.0,
+        "operating_income": 152.0,
+        "revenue": {
+          "p10": 1430.0,
+          "p50": 1490.0,
+          "p90": 1550.0
+        },
+        "total_assets": 4240.0,
+        "total_equity": 2930.0,
+        "total_liabilities": 1310.0
+      }
+    },
+    "reasoning": "Fabrinet's position as the mission-critical manufacturing partner for advanced optical transceivers and high-speed interconnects positions it well to capture secular AI datacenter growth. While working capital build and Building 9 capex created temporary FCF headwinds in early FY26, operating leverage and steady ~12% gross margins continue to translate top-line strength into consistent double-digit EPS expansion.",
+    "thesis": {
+      "buy_triggers": [
+        {
+          "checkable_at": "Q1 FY27 Form 10-Q / 8-K",
+          "marker": "Datacom revenue quarterly growth exceeding 15% sequential alongside non-GAAP gross margins expanding above 12.3%"
+        },
+        {
+          "checkable_at": "Q2 FY27 Form 10-Q",
+          "marker": "Free cash flow generation exceeding $60M per quarter as working capital investments normalize"
+        }
+      ],
+      "commitments": [
+        {
+          "claim": "Building 9 expansion in Chonburi, Thailand to support next-generation optical and high-performance computing manufacturing programs",
+          "flows_into": [
+            "cash_flow.capex",
+            "horizons.fy0.capex",
+            "horizons.fy1.capex"
+          ],
+          "horizon": "FY2026-FY2027",
+          "source": "Q3 FY26 10-Q Item 2 MD&A / Investor Presentation"
+        },
+        {
+          "claim": "Ramp of high-speed datacom 800G and 1.6T transceiver packaging programs and high-performance computing interconnect customer agreements",
+          "flows_into": [
+            "income_statement.revenue",
+            "quarterly_path.fq1_27.revenue",
+            "horizons.fy1.revenue"
+          ],
+          "horizon": "FY2026-FY2027",
+          "source": "Q3 FY26 Earnings Release Commentary"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "checkable_at": "Q1 FY27 Form 10-Q / 8-K",
+          "marker": "Non-GAAP operating margin contracting below 10.0% due to unabsorbed fixed costs or unfavorable customer mix shifts"
+        },
+        {
+          "checkable_at": "Q2 FY27 Form 10-Q",
+          "marker": "Quarterly sequential revenue decline in optical communications reflecting loss of key AI/datacenter transceiver manufacturing share"
+        }
+      ],
+      "what_must_be_true": "Fabrinet must maintain its dominant competitive moat in complex high-precision optical packaging for leading hyperscaler and AI networking OEMs, successfully transitioning from 800G to 1.6T programs while ramping new HPC accounts and preserving ~12% gross margin and ~10.5%+ non-GAAP operating margin."
+    }
+  },
+  "visual_inspections": [
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "e2518869fdf7ff377f260b8ed83853b73e41df4b066eabc0112ba638ad1ac10b",
+      "document": null,
+      "page_no": 7,
+      "source": "ir_page",
+      "source_sha256": "e2518869fdf7ff377f260b8ed83853b73e41df4b066eabc0112ba638ad1ac10b",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "a4ccb3df71e4c5f7947774111d03084dab301b2e7c8a12b99c4442cd48b83229",
+      "document": null,
+      "page_no": 8,
+      "source": "ir_page",
+      "source_sha256": "a4ccb3df71e4c5f7947774111d03084dab301b2e7c8a12b99c4442cd48b83229",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "39b496b8ec64f88a5ce4999cfecf9e2d636400b30f8c8801d7406c21b016d686",
+      "document": null,
+      "page_no": 9,
+      "source": "ir_page",
+      "source_sha256": "39b496b8ec64f88a5ce4999cfecf9e2d636400b30f8c8801d7406c21b016d686",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "4d6e956a8358cafbc5493948ed2f11ff2fc0210dc2f75999ff35bffae115baf9",
+      "document": null,
+      "page_no": 10,
+      "source": "ir_page",
+      "source_sha256": "4d6e956a8358cafbc5493948ed2f11ff2fc0210dc2f75999ff35bffae115baf9",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "a9e6277d05ee8328882c654e3bea9097ba1e0468282d272e57c3167f2d44009f",
+      "document": null,
+      "page_no": 11,
+      "source": "ir_page",
+      "source_sha256": "a9e6277d05ee8328882c654e3bea9097ba1e0468282d272e57c3167f2d44009f",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "bac57ddd23c39e7368845ff4d2d01f08c6cc98e2f63a1ccad142730237cbb8a2",
+      "document": null,
+      "page_no": 12,
+      "source": "ir_page",
+      "source_sha256": "bac57ddd23c39e7368845ff4d2d01f08c6cc98e2f63a1ccad142730237cbb8a2",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "e9d6e178ad9f1d77333f95ef4ae1b2aa9b5d17a3ef4f390585171a9437eeda47",
+      "document": null,
+      "page_no": 14,
+      "source": "ir_page",
+      "source_sha256": "e9d6e178ad9f1d77333f95ef4ae1b2aa9b5d17a3ef4f390585171a9437eeda47",
+      "transformation": null
+    },
+    {
+      "accession": "8dd8f0d1f1adf6640d47780ae8374e8b2dad6a8c31a7c3e1fa30bc660940c011",
+      "delivery_sha256": "f3ccaad60a18275edc65e3cb2276e097d3ed7e7e3c7aee3f69bb347afa60a278",
+      "document": null,
+      "page_no": 15,
+      "source": "ir_page",
+      "source_sha256": "f3ccaad60a18275edc65e3cb2276e097d3ed7e7e3c7aee3f69bb347afa60a278",
+      "transformation": null
+    }
+  ],
+  "visual_inspections_status": "inspected",
+  "visual_inventory_called": true,
+  "visual_inventory_documents": 279
+}
