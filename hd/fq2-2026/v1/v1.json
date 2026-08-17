@@ -1,0 +1,100 @@
+{
+  "aggregate_median": {
+    "eps_adjusted": {
+      "p10": 4.4350000000000005,
+      "p50": 4.605,
+      "p90": 4.775
+    },
+    "fcf": {
+      "p10": 3125.0,
+      "p50": 3895.5,
+      "p90": 4775.0
+    },
+    "revenue": {
+      "p10": 45750.0,
+      "p50": 46900.0,
+      "p90": 48000.0
+    }
+  },
+  "as_of": "2026-08-17T12:00:00Z",
+  "cik": 354950,
+  "classification": "genuine_forward",
+  "cycle": "FQ2-2026",
+  "excluded_attempts": [
+    {
+      "intent_id": "intent-20260817T192909845886Z-4b44a2f415b4",
+      "reason": "provider_http_520",
+      "snapshot_id": "snap-354950-20260817T193842402360Z"
+    }
+  ],
+  "files_sha256": {
+    "index.html": "dd58e76aa5e22c17f7e121638456a2431d40e979d9f8b764f6b5546c3f08c623",
+    "model_fable.html": "34d371539cafd9ad2901fa026f3ee5416e50c33b8ca0891bc0a02f8d5c35c8f0",
+    "model_gemini37.html": "1f12622d9efefdf72f8b1f94ac2cc7a58bed6ece22d49c7516bb0f765218091b",
+    "model_gpt-sol.html": "1efbf3d3bad97872ee942147b42987ffab18cc5c881d75084e7253d98356c82a",
+    "model_grok46.html": "5a15eed39253096602880b84ef5e4735c7296ced2a68bc6608ee15c54eac6799",
+    "model_kimi.html": "f9eb9b7214d03424903f2bde4cb0d7b10643d342be59de64bb42e5e14c08c047",
+    "model_muse.html": "ae30703663ed1907335f3a5236d565b1f567abb991ec96ba8e7049006497a4b2",
+    "result_fable.json": "715f7909eb715926fce3d0bf34ae67987dca4091a7a91f9de6eb02f9a20f5659",
+    "result_gemini37.json": "b1d04f6f7cb3957b8939f6fb3a7e813eaac935157690553ef93f4e486988445c",
+    "result_gpt-sol.json": "831e7e8700fd66810f198eaa9ba3cf1f90774985e4ffb9c97a6df92841ab1190",
+    "result_grok46.json": "d16f0d78f3a70ba003763f0982c4255730dd20e8747183c46cd29531dc7f02bc",
+    "result_kimi.json": "5b0b4deb760319ebd1f2731796ed3473ff5e735d933f84aa7267445e31d63a02",
+    "result_muse.json": "83bb19bc89e79494dea301539b4b39b989747974d5f83de7a40cfa03b64a7e38"
+  },
+  "models": {
+    "fable": {
+      "intent_id": "intent-20260817T192913058177Z-a969ec5b87dd",
+      "model_id": "claude-fable-5",
+      "result_file": "result_fable.json",
+      "snapshot_id": "snap-354950-20260817T193553116220Z"
+    },
+    "gemini37": {
+      "intent_id": "intent-20260817T192913928558Z-1cf31a463b4b",
+      "model_id": "gemini-3.7-flash",
+      "result_file": "result_gemini37.json",
+      "snapshot_id": "snap-354950-20260817T193105819138Z"
+    },
+    "gpt-sol": {
+      "intent_id": "intent-20260817T192908573377Z-45f81c747633",
+      "model_id": "gpt-5.6-sol",
+      "result_file": "result_gpt-sol.json",
+      "snapshot_id": "snap-354950-20260817T193257369495Z"
+    },
+    "grok46": {
+      "intent_id": "intent-20260817T194231500405Z-d71f4553cd31",
+      "model_id": "grok-4.6",
+      "result_file": "result_grok46.json",
+      "snapshot_id": "snap-354950-20260817T194811441991Z"
+    },
+    "kimi": {
+      "intent_id": "intent-20260817T192910728274Z-481eb6a9fec0",
+      "model_id": "moonshotai/kimi-k3",
+      "result_file": "result_kimi.json",
+      "snapshot_id": "snap-354950-20260817T194212845131Z"
+    },
+    "muse": {
+      "intent_id": "intent-20260817T192912048131Z-ae3b9bd77200",
+      "model_id": "muse-spark-1.2",
+      "result_file": "result_muse.json",
+      "snapshot_id": "snap-354950-20260817T193131763568Z"
+    }
+  },
+  "official_preflight": {
+    "capture_mode": "production",
+    "checked_at": "2026-08-17T20:13:05Z",
+    "content_sha256": "d0971a07f3083a2095ac8d953ac6da898c48e7bb62673c0a61f4e671601f140e",
+    "finding": "UNPUBLISHED",
+    "id": "preflight-20260817T201305768244Z-ca9966ba84db",
+    "surfaces": [
+      "Home Depot investor relations",
+      "SEC submissions"
+    ]
+  },
+  "prompt_sha256": "37d16f84063bf1e61ba9a2001533fe3010af6957b47654ffda48b618cd5d6916",
+  "prompt_version": "v5.6",
+  "publication_contract": "rff-publication-v1",
+  "published_at": "2026-08-17T20:13:05Z",
+  "ticker": "HD",
+  "vintage": "v1"
+}

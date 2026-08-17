@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HD Q2 fiscal 2026 — muse-spark-1.2</title>
+<style>
+  :root { --paper:#F6F7F8; --card:#FFFFFF; --ink:#1B222B; --muted:#5A6675;
+    --line:#D8DEE5; --accent:#2E5E8E; --accent-soft:#E8EFF6;
+    --pass:#25714B; --pass-bg:#E6F1EB; --warn:#8F6A1C; --warn-bg:#F6EDD6;
+    --fail:#A63B2C; --fail-bg:#F6E2DE;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --sans: "Avenir Next", "Helvetica Neue", "Segoe UI", system-ui, sans-serif; }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#12161B; --card:#1A2027; --ink:#E6E9ED; --muted:#96A1AD;
+      --line:#2C343E; --accent:#6E9FCE; --accent-soft:#1D2836;
+      --pass:#5CB585; --pass-bg:#1C2F26; --warn:#D3A94F; --warn-bg:#322910;
+      --fail:#D4715F; --fail-bg:#38201B; } }
+  :root[data-theme="dark"] { --paper:#12161B; --card:#1A2027; --ink:#E6E9ED;
+    --muted:#96A1AD; --line:#2C343E; --accent:#6E9FCE; --accent-soft:#1D2836;
+    --pass:#5CB585; --pass-bg:#1C2F26; --warn:#D3A94F; --warn-bg:#322910;
+    --fail:#D4715F; --fail-bg:#38201B; }
+  :root[data-theme="light"] { --paper:#F6F7F8; --card:#FFFFFF; --ink:#1B222B;
+    --muted:#5A6675; --line:#D8DEE5; --accent:#2E5E8E; --accent-soft:#E8EFF6;
+    --pass:#25714B; --pass-bg:#E6F1EB; --warn:#8F6A1C; --warn-bg:#F6EDD6;
+    --fail:#A63B2C; --fail-bg:#F6E2DE; }
+  * { box-sizing: border-box; }
+  body { background:var(--paper); color:var(--ink); font-family:var(--sans);
+    line-height:1.55; margin:0; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:960px; margin:0 auto; padding:40px 24px 72px; }
+  .eyebrow { font-family:var(--mono); font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0 0 10px; }
+  h1 { font-size:clamp(22px,4vw,32px); line-height:1.15; margin:0 0 10px;
+    font-weight:600; text-wrap:balance; }
+  h2 { font-size:18px; font-weight:600; margin:0 0 4px; }
+  .lede { color:var(--muted); max-width:66ch; margin:0 0 18px; }
+  .section { margin-top:40px; }
+  .sub { color:var(--muted); font-size:13.5px; margin:0 0 14px; }
+  .mono { font-family:var(--mono); }
+  .runmeta { display:flex; flex-wrap:wrap; gap:10px; }
+  .stat { background:var(--card); border:1px solid var(--line);
+    border-radius:6px; padding:8px 14px; }
+  .stat b { display:block; font-family:var(--mono); font-size:16px;
+    font-weight:600; font-variant-numeric:tabular-nums; }
+  .stat span { font-size:11.5px; color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line);
+    border-radius:8px; padding:16px 18px; }
+  .anchors { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px; }
+  .anchor { background:var(--card); border:1px solid var(--line);
+    border-radius:7px; padding:11px 13px; }
+  .anchor .name { font-size:12.5px; color:var(--muted); margin:0; }
+  .anchor .val { font-family:var(--mono); font-size:17px; font-weight:600;
+    margin:2px 0 4px; font-variant-numeric:tabular-nums; }
+  .anchor .cite { font-family:var(--mono); font-size:10.5px; color:var(--muted);
+    margin:0; overflow-wrap:anywhere; }
+  figure.range { margin:0 0 12px; background:var(--card);
+    border:1px solid var(--line); border-radius:8px; padding:12px 16px 6px; }
+  figure.range svg { max-width:100%; height:auto; display:block; }
+  figure.range figcaption { font-size:12px; color:var(--muted); padding:4px 2px 8px; }
+  .tablewrap { overflow-x:auto; border:1px solid var(--line);
+    border-radius:8px; background:var(--card); }
+  table { border-collapse:collapse; width:100%; font-size:13.5px; min-width:540px; }
+  th,td { padding:6px 13px; text-align:right; font-variant-numeric:tabular-nums; }
+  th { font-family:var(--mono); font-size:10.5px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--muted); font-weight:600;
+    border-bottom:1px solid var(--line); }
+  td:first-child, th:first-child { text-align:left; }
+  td { border-bottom:1px solid var(--line); }
+  tr:last-child td { border-bottom:none; }
+  tr.subtotal td { font-weight:600; background:var(--accent-soft); }
+  td.num, td.mono { font-family:var(--mono); font-size:12.5px; }
+  td.delta { color:var(--muted); font-family:var(--mono); font-size:12px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:760px) { .grid2 { grid-template-columns:1fr; } }
+  .kv { display:flex; justify-content:space-between; gap:12px; padding:5px 0;
+    border-bottom:1px solid var(--line); font-size:13.5px; }
+  .kv:last-of-type { border-bottom:none; }
+  .kv b { font-family:var(--mono); font-weight:600; font-variant-numeric:tabular-nums; }
+  .note { border-left:3px solid var(--accent); }
+  .note p { margin:0; font-size:14px; }
+  details { margin-top:12px; }
+  summary { cursor:pointer; font-size:13px; color:var(--accent); font-weight:600; }
+  summary:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  details p, details pre { font-size:13px; color:var(--muted); white-space:pre-wrap; }
+  .failbox { border:1px solid var(--fail); background:var(--fail-bg);
+    border-radius:8px; padding:14px 18px; }
+  .failbox pre { font-family:var(--mono); font-size:11.5px; white-space:pre-wrap;
+    margin:8px 0 0; }
+  .status { display:inline-block; font-family:var(--mono); font-size:10px;
+    letter-spacing:.07em; border-radius:999px; padding:1px 8px; }
+  .status.ok { background:var(--pass-bg); color:var(--pass); }
+  .status.bad { background:var(--fail-bg); color:var(--fail); }
+  .trigger { border:1px solid var(--line); background:var(--card);
+    border-radius:7px; padding:10px 13px; margin-bottom:9px; }
+  .trigger .mk { margin:0; font-size:13.5px; }
+  .trigger .at { margin:3px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--muted); }
+  .trigger.buy { border-left:3px solid var(--pass); }
+  .trigger.sell { border-left:3px solid var(--fail); }
+  .commit { border:1px solid var(--line); background:var(--card);
+    border-radius:7px; padding:11px 14px; margin-bottom:10px; }
+  .commit .claim { margin:0; font-size:13.5px; font-weight:600; }
+  .commit .src { margin:3px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--muted); overflow-wrap:anywhere; }
+  .commit .flows { margin:5px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--accent); overflow-wrap:anywhere; }
+  a { color:var(--accent); }
+  .endnote { margin-top:44px; border-top:1px solid var(--line); padding-top:14px;
+    color:var(--muted); font-size:12.5px; max-width:76ch; overflow-wrap:anywhere; }
+</style>
+</head>
+<body><div class="wrap">
+<header>
+<p class="eyebrow">RptdFinFcst · v5 forward slate · sealed snap-354950-20260817T193131763568Z</p>
+<h1>HD Q2 fiscal 2026 — muse-spark-1.2 <span class="status ok">CONTRACT PASSED</span></h1>
+<p class="lede">Fiscal 2026 Q2 (quarter ended August 2, 2026), reporting August 18 before the open; results unreleased at the
+cutoff 2026-08-17T12:00:00Z. Three statements, a two-year quarterly
+path, and a thesis with falsifiable triggers — every identity re-added at
+intake, the balance sheet rolled from the model's own cash flow.</p>
+<div class="runmeta">
+<div class="stat"><b>25</b><span>tool calls</span></div>
+<div class="stat"><b>0</b><span>contract retries</span></div>
+<div class="stat"><b>0</b><span>anchor retries</span></div>
+<div class="stat"><b>0</b><span>unverified anchors</span></div>
+<div class="stat"><b>140s</b><span>wall clock</span></div>
+<div class="stat"><b>278</b><span>filings in corpus</span></div>
+</div>
+</header>
+
+<section class="section">
+<h2>Anchors stated before projecting</h2>
+<p class="sub">Each cites its filing; every anchor value was verified against the cited source at intake.</p>
+
+<div class="anchors"><div class="anchor"><p class="name">Q1 FY26 Net sales</p>
+<p class="val">41,765</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000040</p></div><div class="anchor"><p class="name">Q1 FY26 Gross profit</p>
+<p class="val">13,781</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000040</p></div><div class="anchor"><p class="name">Q1 FY26 Net earnings</p>
+<p class="val">3,289</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000040</p></div><div class="anchor"><p class="name">Q1 FY26 Diluted EPS (GAAP)</p>
+<p class="val">3.3</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000006</p></div><div class="anchor"><p class="name">Q1 FY26 Net cash provided by operating activities</p>
+<p class="val">6,032</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000052</p></div><div class="anchor"><p class="name">Q1 FY26 Cash and cash equivalents</p>
+<p class="val">1,601</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000047</p></div><div class="anchor"><p class="name">FY26 Guidance Total sales growth low</p>
+<p class="val">2.5</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000011</p></div><div class="anchor"><p class="name">FY26 Guidance Gross margin</p>
+<p class="val">33.1</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000014</p></div><div class="anchor"><p class="name">FY26 Guidance Adjusted diluted EPS growth from 14.69</p>
+<p class="val">14.69</p>
+<p class="cite">0000354950-26-000101 · 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000022</p></div></div>
+</section>
+
+<section class="section">
+<h2>Headline forecast</h2>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Revenue ($M): model p10 45,400, p50 46,408, p90 47,400.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Revenue ($M)</text>
+<line x1="88.3" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="88.3" y1="33" x2="88.3" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="331.9" cy="40" r="5" fill="var(--accent)"/>
+<text x="88.3" y="26" text-anchor="middle">45,400</text>
+<text x="331.9" y="26" text-anchor="middle" font-weight="600">p50 46,408</text>
+<text x="571.7" y="58" text-anchor="middle">47,400</text>
+<text x="628" y="44" opacity="0.75">model</text>
+
+</g></svg>
+<figcaption>Model p10–p50–p90.</figcaption>
+</figure>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Adjusted EPS (USD): model p10 4.35, p50 4.55, p90 4.75.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Adjusted EPS (USD)</text>
+<line x1="88.3" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="88.3" y1="33" x2="88.3" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="330.0" cy="40" r="5" fill="var(--accent)"/>
+<text x="88.3" y="26" text-anchor="middle">4.35</text>
+<text x="330.0" y="26" text-anchor="middle" font-weight="600">p50 4.55</text>
+<text x="571.7" y="58" text-anchor="middle">4.75</text>
+<text x="628" y="44" opacity="0.75">model</text>
+
+</g></svg>
+<figcaption>Model p10–p50–p90.</figcaption>
+</figure>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Free cash flow ($M): model p10 4,800, p50 5,120, p90 5,450.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Free cash flow ($M)</text>
+<line x1="88.3" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="88.3" y1="33" x2="88.3" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="326.3" cy="40" r="5" fill="var(--accent)"/>
+<text x="88.3" y="26" text-anchor="middle">4,800</text>
+<text x="326.3" y="26" text-anchor="middle" font-weight="600">p50 5,120</text>
+<text x="571.7" y="58" text-anchor="middle">5,450</text>
+<text x="628" y="44" opacity="0.75">model</text>
+
+</g></svg>
+<figcaption>Model p10–p50–p90.</figcaption>
+</figure>
+</section>
+
+
+<section class="section">
+<h2>The income statement walk</h2>
+<p class="sub">Prior quarter as filed · forecast · change. ✓ = identity enforced at intake.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Line ($M)</th><th>Prior as filed</th><th>Forecast</th><th>Δ</th></tr></thead>
+<tbody><tr><td>Net sales</td><td class="num">41,765</td><td class="num">46,408</td><td class="delta">+11.1%</td></tr><tr><td>Cost of sales</td><td class="num">27,984</td><td class="num">30,995</td><td class="delta">+10.8%</td></tr><tr class="subtotal"><td>Gross profit ✓</td><td class="num">13,781</td><td class="num">15,413</td><td class="delta">+11.8%</td></tr><tr><td>Selling, general and administrative</td><td class="num">7,959</td><td class="num">8,160</td><td class="delta">+2.5%</td></tr><tr><td>Depreciation and amortization</td><td class="num">841</td><td class="num">860</td><td class="delta">+2.3%</td></tr><tr class="subtotal"><td>Total operating expenses ✓</td><td class="num">8,800</td><td class="num">9,020</td><td class="delta">+2.5%</td></tr><tr class="subtotal"><td>Operating income ✓</td><td class="num">4,981</td><td class="num">6,393</td><td class="delta">+28.3%</td></tr><tr><td>Interest income and other, net</td><td class="num">-7</td><td class="num">-12</td><td class="delta">+71.4%</td></tr><tr><td>Interest expense</td><td class="num">611</td><td class="num">585</td><td class="delta">-4.3%</td></tr><tr><td>Interest and other, net expense</td><td class="num">604</td><td class="num">573</td><td class="delta">-5.1%</td></tr><tr class="subtotal"><td>Earnings before provision for income taxes ✓</td><td class="num">4,377</td><td class="num">5,820</td><td class="delta">+33.0%</td></tr><tr><td>Provision for income taxes</td><td class="num">1,088</td><td class="num">1,414</td><td class="delta">+30.0%</td></tr><tr class="subtotal"><td>Net earnings ✓</td><td class="num">3,289</td><td class="num">4,406</td><td class="delta">+34.0%</td></tr><tr><td>Basic weighted average common shares</td><td class="num">994</td><td class="num">993</td><td class="delta">-0.1%</td></tr><tr><td>Basic earnings per share</td><td class="num">3</td><td class="num">4</td><td class="delta">+34.1%</td></tr><tr><td>Diluted weighted average common shares</td><td class="num">996</td><td class="num">994</td><td class="delta">-0.2%</td></tr><tr><td>Diluted earnings per share (GAAP) ✓</td><td class="num">3.30</td><td class="num">4.43</td><td class="delta">+34.2%</td></tr></tbody>
+</table></div>
+</section>
+<div class="card note" style="margin-top:12px"><p><b>Bridge:</b> net income
+4,406 + acquired_intangible_amortization 150 + tax_effect_intangible -36 =
+non-GAAP net income <span class="mono">4,520</span>
+÷ 994M shares = <span class="mono">4.55</span> adjusted EPS.</p></div>
+
+
+<section class="section">
+<h2>The cash flow statement</h2>
+<p class="sub">As-reported sign conventions; free cash flow = CFO + capex; ✓ totals re-added at intake.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Line ($M)</th><th>Prior as filed</th><th>Forecast</th></tr></thead>
+<tbody><tr><td>Net earnings</td><td class="num">3,289</td><td class="num">4,406</td></tr><tr><td>Depreciation and amortization, excluding amortization of intangible assets</td><td class="num">910</td><td class="num">925</td></tr><tr><td>Intangible asset amortization</td><td class="num">171</td><td class="num">150</td></tr><tr><td>Stock-based compensation expense</td><td class="num">178</td><td class="num">120</td></tr><tr><td>Working-capital and other operating adjustments, net (residual)</td><td class="num">1,484</td><td class="num">499</td></tr><tr class="subtotal"><td>Net cash provided by operating activities ✓</td><td class="num">6,032</td><td class="num">6,100</td></tr><tr><td>Capital expenditures</td><td class="num">-844</td><td class="num">-980</td></tr><tr><td>Payments for businesses acquired, net</td><td class="num">-286</td><td class="num">-100</td></tr><tr><td>Other investing activities</td><td class="num">21</td><td class="num">15</td></tr><tr class="subtotal"><td>Net cash used in investing activities ✓</td><td class="num">-1,109</td><td class="num">-1,065</td></tr><tr><td>Repayments of short-term debt, net</td><td class="num">-961</td><td class="num">-400</td></tr><tr><td>Proceeds from long-term debt, net of discounts</td><td class="num">69</td><td class="num">30</td></tr><tr><td>Repayments of long-term debt</td><td class="num">-1,425</td><td class="num">-1,200</td></tr><tr><td>Proceeds from sales of common stock</td><td class="num">33</td><td class="num">20</td></tr><tr><td>Repurchases of common stock</td><td class="num">0</td><td class="num">-350</td></tr><tr><td>Cash dividends</td><td class="num">-2,320</td><td class="num">-2,330</td></tr><tr><td>Other financing activities</td><td class="num">-109</td><td class="num">-110</td></tr><tr class="subtotal"><td>Net cash used in financing activities ✓</td><td class="num">-4,713</td><td class="num">-4,340</td></tr><tr class="subtotal"><td>Change in cash and cash equivalents before exchange-rate effects ✓</td><td class="num">210</td><td class="num">695</td></tr><tr><td>Effect of exchange rate changes on cash and cash equivalents</td><td class="num">2</td><td class="num">5</td></tr><tr class="subtotal"><td>Net change in cash and cash equivalents including exchange-rate effects ✓</td><td class="num">212</td><td class="num">700</td></tr></tbody>
+</table></div>
+</section>
+
+
+<section class="section">
+<h2>The projected balance sheet</h2>
+<p class="sub">End of quarter. Cash rolls from the model&#x27;s own cash flow; retained earnings roll from net income, dividends, and buybacks.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Line ($M)</th><th>Prior as filed</th><th>Forecast</th></tr></thead>
+<tbody><tr><td>Cash and cash equivalents</td><td class="num">1,601</td><td class="num">2,301</td></tr><tr><td>Receivables, net</td><td class="num">6,624</td><td class="num">6,100</td></tr><tr><td>Merchandise inventories</td><td class="num">27,280</td><td class="num">26,023</td></tr><tr><td>Other current assets</td><td class="num">1,667</td><td class="num">1,700</td></tr><tr class="subtotal"><td>Total current assets ✓</td><td class="num">37,172</td><td class="num">36,124</td></tr><tr><td>Net property and equipment</td><td class="num">27,930</td><td class="num">27,985</td></tr><tr><td>Operating lease right-of-use assets</td><td class="num">9,275</td><td class="num">9,300</td></tr><tr><td>Goodwill</td><td class="num">22,479</td><td class="num">22,579</td></tr><tr><td>Intangible assets, net</td><td class="num">10,244</td><td class="num">10,094</td></tr><tr><td>Other assets</td><td class="num">804</td><td class="num">810</td></tr><tr class="subtotal"><td>Total assets ✓</td><td class="num">107,904</td><td class="num">106,892</td></tr><tr><td>Short-term debt</td><td class="num">3,503</td><td class="num">3,103</td></tr><tr><td>Accounts payable</td><td class="num">14,373</td><td class="num">13,000</td></tr><tr><td>Accrued salaries and related expenses</td><td class="num">2,237</td><td class="num">2,450</td></tr><tr><td>Sales taxes payable</td><td class="num">800</td><td class="num">750</td></tr><tr><td>Deferred revenue</td><td class="num">2,682</td><td class="num">2,700</td></tr><tr><td>Income taxes payable</td><td class="num">851</td><td class="num">600</td></tr><tr><td>Current installments of long-term debt</td><td class="num">5,178</td><td class="num">5,200</td></tr><tr><td>Current operating lease liabilities</td><td class="num">1,484</td><td class="num">1,500</td></tr><tr><td>Other accrued expenses</td><td class="num">4,472</td><td class="num">4,500</td></tr><tr class="subtotal"><td>Total current liabilities ✓</td><td class="num">35,580</td><td class="num">33,803</td></tr><tr><td>Long-term debt, excluding current installments</td><td class="num">44,828</td><td class="num">43,606</td></tr><tr><td>Long-term operating lease liabilities</td><td class="num">8,164</td><td class="num">8,180</td></tr><tr><td>Deferred income taxes</td><td class="num">2,898</td><td class="num">2,958</td></tr><tr><td>Other long-term liabilities</td><td class="num">2,560</td><td class="num">2,600</td></tr><tr class="subtotal"><td>Total liabilities ✓</td><td class="num">94,030</td><td class="num">91,147</td></tr><tr><td>Common stock</td><td class="num">90</td><td class="num">90</td></tr><tr><td>Paid-in capital</td><td class="num">14,907</td><td class="num">15,047</td></tr><tr><td>Retained earnings</td><td class="num">95,506</td><td class="num">97,582</td></tr><tr><td>Accumulated other comprehensive loss</td><td class="num">-658</td><td class="num">-653</td></tr><tr><td>Treasury stock, at cost</td><td class="num">-95,971</td><td class="num">-96,321</td></tr><tr class="subtotal"><td>Total stockholders&#x27; equity ✓</td><td class="num">13,874</td><td class="num">15,745</td></tr></tbody>
+</table></div>
+</section>
+
+<section class="section">
+<h2>Expected next-period guidance</h2>
+<div class="card" style="max-width:420px">
+<div class="kv"><span>Revenue</span><b>168,800 – 172,100</b></div>
+<div class="kv"><span>Adjusted EPS</span><b>14.69 – 15.28</b></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Quarterly path — where no guide exists</h2>
+<p class="sub">Beyond the guided quarter the model is modeling, not retrieving.</p>
+<div class="tablewrap"><table><thead><tr><th>Quarter</th><th>Rev p50 ($M)</th><th>Rev band</th><th>Adj EPS p50</th><th>GM</th><th>OM</th><th>Capex</th><th>FCF</th></tr></thead><tbody><tr><td>fiscal 2026 Q3 (ending late October or early November 2026)</td><td class="num">42,500</td><td class="num">41,600–43,400</td><td class="num">3.94</td><td class="num">33.2%</td><td class="num">12.7%</td><td class="num">-900</td><td class="num">4,100</td></tr><tr><td>fiscal 2026 Q4 (ending late January or early February 2027)</td><td class="num">39,500</td><td class="num">38,600–40,400</td><td class="num">3.08</td><td class="num">33.2%</td><td class="num">11.1%</td><td class="num">-1,000</td><td class="num">3,800</td></tr><tr><td>fiscal 2027 Q1 (ending early May 2027)</td><td class="num">43,500</td><td class="num">42,600–44,400</td><td class="num">3.60</td><td class="num">33.2%</td><td class="num">12.0%</td><td class="num">-950</td><td class="num">5,250</td></tr><tr><td>fiscal 2027 Q2 (ending early August 2027)</td><td class="num">48,000</td><td class="num">47,000–49,000</td><td class="num">4.79</td><td class="num">33.2%</td><td class="num">14.0%</td><td class="num">-1,000</td><td class="num">5,500</td></tr></tbody></table></div>
+</section>
+
+<section class="section">
+<h2>Fiscal-year horizons — absolute forecasts, tracked as vintages</h2>
+<div class="tablewrap"><table><thead><tr><th>Fiscal year</th><th>Rev p50 ($M)</th><th>Rev band</th><th>Adj EPS p50</th><th>EPS band</th><th>Capex</th><th>FCF</th></tr></thead><tbody><tr><td>fiscal year 2026 (ending January 2027)</td><td class="num">170,173</td><td class="num">168,500–171,800</td><td class="num">15.00</td><td class="num">14.70–15.30</td><td class="num">-3,724</td><td class="num">18,208</td></tr><tr><td>fiscal year 2027 (ending January 2028)</td><td class="num">175,500</td><td class="num">172,000–179,000</td><td class="num">15.85</td><td class="num">15.30–16.40</td><td class="num">-4,300</td><td class="num">19,200</td></tr><tr><td>fiscal year 2028 (ending January 2029)</td><td class="num">181,000</td><td class="num">176,000–186,000</td><td class="num">16.60</td><td class="num">16.00–17.20</td><td class="num">-4,500</td><td class="num">20,500</td></tr><tr><td>fiscal year 2029 (ending January 2030)</td><td class="num">187,000</td><td class="num">181,000–193,000</td><td class="num">17.40</td><td class="num">16.80–18.00</td><td class="num">-4,700</td><td class="num">21,800</td></tr></tbody></table></div>
+</section>
+
+
+<section class="section">
+<h2>Thesis — commitments and triggers, all fundamentals</h2>
+<p class="sub">Every commitment cites a source and names the forecast lines it
+flows into; every trigger is an observable reported fundamental with its check
+date. Triggers are re-served to the next run for review.</p>
+<div class="commit"><p class="claim">Gross margin of approximately 33.1% for FY26</p>
+<p class="src">0000354950-26-000101:hd_exhibit991x05032026.htm:b0000014 · horizon fy0</p>
+<p class="flows">flows into: income_statement.gross_profit, horizons.fy0.gross_profit</p></div><div class="commit"><p class="claim">Operating margin approximately 12.4% to 12.6% GAAP, 12.8% to 13.0% adjusted for FY26</p>
+<p class="src">0000354950-26-000101:hd_exhibit991x05032026.htm:b0000015 · horizon fy0</p>
+<p class="flows">flows into: income_statement.operating_income, horizons.fy0.operating_income</p></div><div class="commit"><p class="claim">Effective tax rate approximately 24.3% for FY26</p>
+<p class="src">0000354950-26-000101:hd_exhibit991x05032026.htm:b0000017 · horizon fy0</p>
+<p class="flows">flows into: income_statement.income_tax, horizons.fy0.net_income</p></div><div class="commit"><p class="claim">Net interest expense approximately $2.3 billion for FY26</p>
+<p class="src">0000354950-26-000101:hd_exhibit991x05032026.htm:b0000018 · horizon fy0</p>
+<p class="flows">flows into: income_statement.interest_expense, income_statement.interest_other_net_expense</p></div><div class="commit"><p class="claim">Capital expenditures approximately 2.5% of total sales for FY26</p>
+<p class="src">0000354950-26-000101:hd_exhibit991x05032026.htm:b0000023 · horizon fy0</p>
+<p class="flows">flows into: cash_flow.capex, horizons.fy0.capex, horizons.fy0.fcf</p></div><div class="commit"><p class="claim">Approximately 15 new stores in FY26</p>
+<p class="src">0000354950-26-000101:hd_exhibit991x05032026.htm:b0000013 · horizon fy0</p>
+<p class="flows">flows into: balance_sheet.net_property_equipment, balance_sheet.operating_lease_assets</p></div><div class="commit"><p class="claim">Adjusted diluted EPS excludes ~$0.50 after-tax acquired intangible amortization for FY26</p>
+<p class="src">0000354950-26-000101:hd_exhibit991x05032026.htm:b0000068 · horizon fy0</p>
+<p class="flows">flows into: bridge.non_gaap_net_income, headline.eps_adjusted</p></div>
+<div class="grid2">
+<div><h2 style="font-size:15px; margin-bottom:10px">What would make it a buyer</h2>
+<div class="trigger buy"><p class="mk">Q2 total comparable sales &gt;2.0% and revenue &gt;47.0B (beat vs 4.8% Q1 total growth) with gross margin &gt;=33.2% in 10-Q for quarter ended Aug 2 2026</p>
+<p class="at">checkable at: FY26 Q2 10-Q (August 2026) filing</p></div><div class="trigger buy"><p class="mk">Q2 FCF (cfo+capex) &gt;5.5B and net_change_cash positive &gt;500M despite tariff headwinds in Q2 cash flow statement</p>
+<p class="at">checkable at: FY26 Q2 10-Q cash flow statement</p></div><div class="trigger buy"><p class="mk">FY26 operating margin recovers to &gt;=13.5% in Q3 and adjusted EPS guides to high end ~15.28 in Q2 press release update</p>
+<p class="at">checkable at: FY26 Q2 8-K Exhibit 99.1 guidance update</p></div></div>
+<div><h2 style="font-size:15px; margin-bottom:10px">What would make it a seller</h2>
+<div class="trigger sell"><p class="mk">Q2 gross profit margin &lt;33.0% (&lt;15.3B on 46.4B sales) or cost_of_sales deleverage &gt;6% YoY in Q2 income statement</p>
+<p class="at">checkable at: FY26 Q2 10-Q income statement</p></div><div class="trigger sell"><p class="mk">Q2 comparable sales &lt;=0% or total sales growth &lt;2% YoY (revenue &lt;=46.1B) signaling housing demand stall in Q2 10-Q MD&amp;A</p>
+<p class="at">checkable at: FY26 Q2 10-Q MD&amp;A comparable sales disclosure</p></div><div class="trigger sell"><p class="mk">Q2 CFO &lt;5.2B or working-capital other_operating negative (&lt;0) and inventory &gt;27B despite sales slowdown in Q2 balance sheet/cash flow</p>
+<p class="at">checkable at: FY26 Q2 10-Q balance sheet and cash flow</p></div></div>
+</div>
+<div class="card note" style="margin-top:12px"><p><b>What must be true:</b>
+Q2 seasonal lift to ~46.4B (2.4% YoY, ~1% comps) must hold despite housing affordability and tariff uncertainty flagged in May - demand similar to H2 2024/H1 2025 but not worsening. Gross margin must stabilize near 33.2% (tariff mitigation via supply chain diversification) not collapse below 33%. SG&amp;A leverage must improve sequentially from Q1 19.1% to ~17.6% as SRS/GMS integration anniversaries. That yields operating margin ~13.8% vs 11.9% in Q1, scaling to full-year ~12.5% guided. FY capex at 2.5% of sales must fund ~15 new stores without breaking FCF &gt;5B in Q2 and &gt;18B for year. If comps slip negative or tariffs push cost_of_sales &gt;31B, thesis breaks.</p></div>
+</section>
+
+<section class="section">
+<h2>Preview note, verbatim</h2>
+<div class="card note"><p>Setup: HD beat Q1 sales (+4.8% to $41.8B) but missed on margin - operating income -3% to $4.98B, operating margin 11.9% vs 12.9% LY, EPS $3.30/$3.43 adjusted. Guidance reaffirmed for FY26 at 2.5-4.5% sales, flat to +2% comps, 33.1% gross, 12.4-12.6% operating (12.8-13.0% adj). The bar is low after 18 months of housing drag. What matters for Q2: 1) Does spring/summer seasonal demand hold? Q2 is 55% of H1 - we model 46.4B (+2.4% YoY, comps ~1%) vs Q2 LY 45.3B. 2) Margin defense against tariffs: Q1 gross 33.0% already 10bp below guide; Q2 needs 33.2% to stay on track. 3) SRS/GMS anniversary - SG&amp;A was +8.7% YoY in Q2 LY; lapping should ease opex growth to ~5% and let operating margin recover to ~13.8% from 14.5% LY. FCF seasonal pop to ~5.1B will be watched. Beat on comps + gross recapture = relief rally; miss on either confirms consumer is pulling back on big-ticket.</p></div>
+<details><summary>Full model reasoning (verbatim)</summary>
+<p>Anchored Q1 actuals from filed 8-K/10-Q (sales 41,765 gross 13,781 op inc 4,981 net 3,289 EPS 3.30 adj 3.43, CFO 6,032, cash 1,601, balance sheet 107,904). FY26 guide reaffirmed May 19: sales +2.5-4.5%, comps flat to +2%, gross ~33.1%, op margin 12.4-12.6% (adj 12.8-13.0%), tax 24.3%, interest 2.3B, capex 2.5%, 15 stores. Macro: housing turnover still depressed, rates high, consumer uncertainty elevated (Decker commentary), but HD noted demand stable vs 2025 and share gains; SRS/GMS boost now lapped. Q2 LY baseline 45,277 sales, 1.0% comps, 33.4% gross, 14.5% op margin. Tariffs cited as forward risk in 2026 filings - expect 10-20bp gross pressure but offset by ticket (+2.2% in Q1) and mix. Model sequential sales lift 11% Q1-&gt;Q2 vs 13.6% LY reflecting softer transactions (-1.3% comps Q1). SG&amp;A assumed 8,160 (+4.9% YoY vs +8.7% LY) showing leverage improvement; D&amp;A 860 stable. Interest ~573, tax 24.3% =&gt; net 4,406 GAAP 4.43; add 150 intangible less 36 tax =&gt; adj 4.55 down ~3% YoY mirroring Q1 trend but better than guide&#x27;s flat implies H2 recovery. CFO 6.1B seasonal, capex 0.98B (2.1% sales low vs guide but Q1 also low), FCF 5.12B. Balance sheet rolled: cash +700 to 2,301, inventory down 1.26B seasonally, payables down, equity build via retained less dividends/buybacks 350M. Future quarters trajectory to FY 170.2B revenue (3.3% YoY) and adj EPS 15.00 within guide, with slow 3% CAGR thereafter housing normalization, margins rebuilding to ~13-14% op by FY28.</p></details>
+</section>
+
+<p class="endnote">Sealed as <span class="mono">snap-354950-20260817T193131763568Z</span>
+over corpus manifest <span class="mono">4678dd1f…</span>
+(278 filings, five-year window). Replay:
+<span class="mono">python -m rff.filing.snapshot --replay snap-354950-20260817T193131763568Z</span>.
+Prompt v5.6. Nothing here is investment advice.</p></div></body>
+</html>

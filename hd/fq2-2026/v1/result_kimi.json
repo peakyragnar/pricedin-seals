@@ -1,0 +1,609 @@
+{
+  "anchor_retries": 1,
+  "as_of": "2026-08-17T12:00:00Z",
+  "contract_retries": 2,
+  "held_at": "2026-08-17T19:29:10.737572Z",
+  "incomplete_retries": 0,
+  "model_id": "moonshotai/kimi-k3",
+  "model_key": "kimi",
+  "prompt_version": "v5.6",
+  "run_class": "genuine_forward",
+  "run_intent": {
+    "intent_id": "intent-20260817T192910728274Z-481eb6a9fec0"
+  },
+  "seconds": 782.107559,
+  "snapshot": {
+    "corpus_filings": 278,
+    "corpus_manifest_sha256": "4678dd1f87f960e00514ea64252bf8ba08bc3b73f452964d814980981fe660a3",
+    "snapshot_id": "snap-354950-20260817T194212845131Z",
+    "tool_calls": 27
+  },
+  "status": "ok",
+  "ticker": "HD",
+  "tool_calls": 27,
+  "unverified_anchors": [],
+  "usage": {
+    "api_calls": 11,
+    "cache_read_tokens": 446172,
+    "cache_write_tokens": 0,
+    "cost_usd": 1.6953396,
+    "input_tokens": 554963,
+    "output_tokens": 82341,
+    "requests": [
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.052203,
+        "input_tokens": 10666,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 1347,
+        "request_no": 1
+      },
+      {
+        "cache_read_tokens": 10652,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0268866,
+        "input_tokens": 17209,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 268,
+        "request_no": 2
+      },
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.078504,
+        "input_tokens": 25513,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 131,
+        "request_no": 3
+      },
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.167928,
+        "input_tokens": 52696,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 656,
+        "request_no": 4
+      },
+      {
+        "cache_read_tokens": 52672,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0922416,
+        "input_tokens": 57687,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 4093,
+        "request_no": 5
+      },
+      {
+        "cache_read_tokens": 57664,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0617202,
+        "input_tokens": 63576,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 1779,
+        "request_no": 6
+      },
+      {
+        "cache_read_tokens": 63552,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.1266636,
+        "input_tokens": 65353,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 6813,
+        "request_no": 7
+      },
+      {
+        "cache_read_tokens": 65344,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0395262,
+        "input_tokens": 65405,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 1316,
+        "request_no": 8
+      },
+      {
+        "cache_read_tokens": 65408,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.4455534,
+        "input_tokens": 65535,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 28370,
+        "request_no": 9
+      },
+      {
+        "cache_read_tokens": 65408,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.3519444,
+        "input_tokens": 65597,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 22117,
+        "request_no": 10
+      },
+      {
+        "cache_read_tokens": 65472,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.2521686,
+        "input_tokens": 65726,
+        "model_id": "moonshotai/kimi-k3",
+        "output_tokens": 15451,
+        "request_no": 11
+      }
+    ]
+  },
+  "validated": {
+    "anchors": [
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 FY2026 net sales (USD millions)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000040",
+        "value": 41765
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 FY2026 net earnings (USD millions)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000040",
+        "value": 3289
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 FY2026 GAAP diluted EPS (USD)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000040",
+        "value": 3.3
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 FY2026 adjusted diluted EPS, non-GAAP (USD)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000065",
+        "value": 3.43
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 FY2026 comparable sales growth (%)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000005",
+        "value": 0.6
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "FY2026 guidance: total sales growth approximately 2.5% to 4.5% (low end, %)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000011",
+        "value": 2.5
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "FY2026 guidance: adjusted diluted EPS growth flat to +4% off FY2025 base of $14.69 (USD)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000022",
+        "value": 14.69
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "FY2026 guidance: capex approximately 2.5% of total sales (%)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000023",
+        "value": 2.5
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 FY2026 net cash provided by operating activities (USD millions)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000052",
+        "value": 6032
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 FY2026 acquired intangible asset amortization (USD millions)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000058",
+        "value": 171
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Cash and cash equivalents at May 3, 2026 (USD millions)",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000047",
+        "value": 1601
+      },
+      {
+        "accession": "0001628280-26-038247",
+        "name": "FY2026 planned capital expenditures (~$4 billion, USD millions)",
+        "reference": "0001628280-26-038247:hd-20260503.htm:b0000289",
+        "value": 4000
+      }
+    ],
+    "balance_sheet": {
+      "accounts_payable": 13500.0,
+      "accrued_salaries": 2400.0,
+      "accumulated_other_comprehensive_loss": -654.0,
+      "cash": 3301.0,
+      "common_stock": 90.0,
+      "current_long_term_debt": 5110.0,
+      "current_operating_lease_liabilities": 1505.0,
+      "deferred_income_taxes": 2900.0,
+      "deferred_revenue": 2780.0,
+      "goodwill": 22520.0,
+      "income_taxes_payable": 250.0,
+      "intangible_assets": 10080.0,
+      "inventory": 25300.0,
+      "long_term_debt": 44835.0,
+      "long_term_operating_lease_liabilities": 8230.0,
+      "net_property_equipment": 28110.0,
+      "operating_lease_assets": 9350.0,
+      "other_accrued_expenses": 4300.0,
+      "other_assets": 810.0,
+      "other_current_assets": 1500.0,
+      "other_long_term_liabilities": 2570.0,
+      "paid_in_capital": 14940.0,
+      "receivables": 6350.0,
+      "retained_earnings": 97683.0,
+      "sales_taxes_payable": 850.0,
+      "short_term_debt": 2003.0,
+      "total_assets": 107321.0,
+      "total_current_assets": 36451.0,
+      "total_current_liabilities": 32698.0,
+      "total_equity": 16088.0,
+      "total_liabilities": 91233.0,
+      "treasury_stock": -95971.0
+    },
+    "bridge": {
+      "adjustments": {
+        "acquired_intangible_asset_amortization": 170.0,
+        "income_tax_impact_of_non_gaap_adjustment": -45.0
+      },
+      "non_gaap_net_income": 4625.0
+    },
+    "cash_flow": {
+      "business_acquisitions": -75.0,
+      "buybacks": 0.0,
+      "capex": -1050.0,
+      "cff": -958.0,
+      "cfi": -1100.0,
+      "cfo": 3750.0,
+      "change_cash_before_fx": 1692.0,
+      "common_stock_proceeds": 30.0,
+      "depreciation_amortization": 920.0,
+      "dividends": -2323.0,
+      "fx_effect": 8.0,
+      "intangible_amortization": 170.0,
+      "long_term_debt_proceeds": 10.0,
+      "long_term_debt_repayments": -65.0,
+      "net_change_cash": 1700.0,
+      "net_income": 4500.0,
+      "other_financing": -110.0,
+      "other_investing": 25.0,
+      "other_operating": -2025.0,
+      "share_based_comp": 185.0,
+      "short_term_debt_repayments": 1500.0
+    },
+    "guidance_forecast": {
+      "eps_adjusted": {
+        "high": 15.28,
+        "low": 14.69
+      },
+      "revenue": {
+        "high": 172100.0,
+        "low": 168800.0
+      }
+    },
+    "headline": {
+      "eps_adjusted": {
+        "p10": 4.45,
+        "p50": 4.64,
+        "p90": 4.8
+      },
+      "fcf": {
+        "p10": 2300.0,
+        "p50": 2700.0,
+        "p90": 3200.0
+      },
+      "revenue": {
+        "p10": 45200.0,
+        "p50": 46700.0,
+        "p90": 48100.0
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "capex": -4200.0,
+        "cff": -11711.0,
+        "cfi": -4459.0,
+        "cfo": 17882.0,
+        "eps_adjusted": {
+          "p10": 13.8,
+          "p50": 14.25,
+          "p90": 14.7
+        },
+        "fcf": 13682.0,
+        "gross_profit": 55873.0,
+        "net_change_cash": 1712.0,
+        "net_income": 13701.0,
+        "operating_income": 20429.0,
+        "revenue": {
+          "p10": 166800.0,
+          "p50": 169265.0,
+          "p90": 171600.0
+        },
+        "total_assets": 106100.0,
+        "total_equity": 17100.0,
+        "total_liabilities": 89000.0
+      },
+      "fy1": {
+        "capex": -4400.0,
+        "cff": -12500.0,
+        "cfi": -4650.0,
+        "cfo": 18500.0,
+        "eps_adjusted": {
+          "p10": 14.6,
+          "p50": 15.55,
+          "p90": 16.5
+        },
+        "fcf": 14100.0,
+        "gross_profit": 57868.0,
+        "net_change_cash": 1350.0,
+        "net_income": 14900.0,
+        "operating_income": 21960.0,
+        "revenue": {
+          "p10": 169500.0,
+          "p50": 174300.0,
+          "p90": 179000.0
+        },
+        "total_assets": 107500.0,
+        "total_equity": 20000.0,
+        "total_liabilities": 87500.0
+      },
+      "fy2": {
+        "capex": -4600.0,
+        "cff": -13100.0,
+        "cfi": -4850.0,
+        "cfo": 19800.0,
+        "eps_adjusted": {
+          "p10": 15.8,
+          "p50": 16.9,
+          "p90": 18.0
+        },
+        "fcf": 15200.0,
+        "gross_profit": 60330.0,
+        "net_change_cash": 1850.0,
+        "net_income": 16215.0,
+        "operating_income": 23698.0,
+        "revenue": {
+          "p10": 175500.0,
+          "p50": 180900.0,
+          "p90": 186500.0
+        },
+        "total_assets": 109500.0,
+        "total_equity": 23500.0,
+        "total_liabilities": 86000.0
+      },
+      "fy3": {
+        "capex": -4800.0,
+        "cff": -13800.0,
+        "cfi": -5050.0,
+        "cfo": 21000.0,
+        "eps_adjusted": {
+          "p10": 17.1,
+          "p50": 18.38,
+          "p90": 19.6
+        },
+        "fcf": 16200.0,
+        "gross_profit": 62919.0,
+        "net_change_cash": 2150.0,
+        "net_income": 17535.0,
+        "operating_income": 25394.0,
+        "revenue": {
+          "p10": 181500.0,
+          "p50": 188100.0,
+          "p90": 195000.0
+        },
+        "total_assets": 112000.0,
+        "total_equity": 27500.0,
+        "total_liabilities": 84500.0
+      }
+    },
+    "income_statement": {
+      "cost_of_sales": 31300.0,
+      "depreciation_amortization": 865.0,
+      "eps_basic": 4.52,
+      "eps_diluted": 4.51,
+      "gross_profit": 15400.0,
+      "income_tax": 1353.0,
+      "interest_expense": 610.0,
+      "interest_income_other_net": -15.0,
+      "interest_other_net_expense": 595.0,
+      "net_income": 4500.0,
+      "operating_income": 6448.0,
+      "pretax_income": 5853.0,
+      "revenue": 46700.0,
+      "selling_general_admin": 8087.0,
+      "shares_basic": 995.0,
+      "shares_diluted": 997.0,
+      "total_operating_expenses": 8952.0
+    },
+    "preview_note": "HD reports Q2 FY26 (quarter ended Aug 2) against its toughest compare and peak spring selling season. The setup: Q1 printed comps of +0.6% (US +0.4%) with adjusted EPS down 3.7% to $3.43, and management reaffirmed FY26 guidance of +2.5-4.5% total sales and flat-to-+4% adjusted EPS. Three factors decide the print. First, comp trajectory: Q2 laps last year's +1.0% total comp with GMS now in the base for the full quarter; FX adds ~50-60bp and tariff-related ticket inflation helps, but housing turnover remains the ceiling on big-ticket demand. Second, margin: GMS dilution and SRS integration drove the 100bp Q1 operating-margin decline; watch whether gross margin holds ~33% and whether SG&A leverage improves on the larger sales base. Third, guidance: with one soft quarter in the books, any trim to the comp or EPS range resets the year. We model revenue of $46.7B (+3.2%), adjusted EPS of $4.64 (down ~1% YoY), and free cash flow of ~$2.7B as seasonal working capital reverses. The reaction hinges on comps and the guide: a hold with comps >= +1.5% is fine; a cut is not.",
+    "quarterly_path": {
+      "fq1_27": {
+        "capex": -1075.0,
+        "cff": -3000.0,
+        "cfi": -1125.0,
+        "cfo": 5900.0,
+        "eps_adjusted": {
+          "p10": 3.18,
+          "p50": 3.42,
+          "p90": 3.66
+        },
+        "fcf": 4825.0,
+        "gross_profit": 13869.0,
+        "net_change_cash": 1775.0,
+        "net_income": 3274.0,
+        "operating_income": 4910.0,
+        "revenue": {
+          "p10": 41100.0,
+          "p50": 41900.0,
+          "p90": 42700.0
+        },
+        "total_assets": 108000.0,
+        "total_equity": 18000.0,
+        "total_liabilities": 90000.0
+      },
+      "fq2_27": {
+        "capex": -1150.0,
+        "cff": -2200.0,
+        "cfi": -1200.0,
+        "cfo": 4100.0,
+        "eps_adjusted": {
+          "p10": 4.12,
+          "p50": 4.45,
+          "p90": 4.76
+        },
+        "fcf": 2950.0,
+        "gross_profit": 15185.0,
+        "net_change_cash": 700.0,
+        "net_income": 4303.0,
+        "operating_income": 6270.0,
+        "revenue": {
+          "p10": 44600.0,
+          "p50": 45600.0,
+          "p90": 46600.0
+        },
+        "total_assets": 108500.0,
+        "total_equity": 18700.0,
+        "total_liabilities": 89800.0
+      },
+      "fq3_26": {
+        "capex": -1075.0,
+        "cff": -2665.0,
+        "cfi": -1125.0,
+        "cfo": 3500.0,
+        "eps_adjusted": {
+          "p10": 3.35,
+          "p50": 3.62,
+          "p90": 3.88
+        },
+        "fcf": 2425.0,
+        "gross_profit": 14200.0,
+        "net_change_cash": -290.0,
+        "net_income": 3486.0,
+        "operating_income": 5200.0,
+        "revenue": {
+          "p10": 42000.0,
+          "p50": 42900.0,
+          "p90": 43800.0
+        },
+        "total_assets": 107000.0,
+        "total_equity": 16500.0,
+        "total_liabilities": 90500.0
+      },
+      "fq4_26": {
+        "capex": -1075.0,
+        "cff": -3375.0,
+        "cfi": -1125.0,
+        "cfo": 4600.0,
+        "eps_adjusted": {
+          "p10": 2.32,
+          "p50": 2.56,
+          "p90": 2.82
+        },
+        "fcf": 3525.0,
+        "gross_profit": 12492.0,
+        "net_change_cash": 100.0,
+        "net_income": 2426.0,
+        "operating_income": 3800.0,
+        "revenue": {
+          "p10": 37000.0,
+          "p50": 37900.0,
+          "p90": 38800.0
+        },
+        "total_assets": 106000.0,
+        "total_equity": 16700.0,
+        "total_liabilities": 89300.0
+      }
+    },
+    "reasoning": "Anchors are taken from the Q1 FY2026 8-K/10-Q: sales $41,765M, net earnings $3,289M, GAAP diluted EPS $3.30, adjusted EPS $3.43, CFO $6,032M, cash $1,601M, and reaffirmed FY26 guidance (sales +2.5-4.5%, comps flat to +2%, gross margin ~33.1%, operating margin 12.4-12.6% GAAP / 12.8-13.0% adjusted, tax ~24.3%, net interest ~$2.3B, capex ~2.5% of sales, ~15 new stores). For Q2 FY26 I start from the year-ago quarter (sales $45,277M, gross profit $15,125M, op income $6,555M, net income $4,551M, adjusted EPS $4.68 implied by reported $4.55 GAAP plus $0.13 amortization) and apply: GMS annualization already in the base, +3.2% total sales growth (comps ~+1.2%, FX ~+50bp, ~15 new stores), gross margin of 33.0% (down ~40bp YoY on GMS mix, consistent with Q1's 80bp decline moderating as distribution annualizes), SG&A deleverage of ~10bp, and D&A up with the larger asset base. That yields GAAP operating income of $6,448M (-1.6% YoY), net income of $4,500M at a 23.1% tax rate, GAAP diluted EPS of $4.51 and adjusted EPS of $4.64 (adding back $170M pre-tax / $125M after-tax acquired intangible amortization), modestly below guidance-implied growth and below last year's $4.68 adjusted. Cash flow reflects the normal Q2 seasonal working-capital reversal (inventory down ~$1B, payables down ~$1.9B from the Q1 peak), capex of $1,050M tracking the ~$4B FY plan, dividends of $2,323M ($2.33 x ~997M shares), no buybacks per the stated pause, and commercial paper rebuilt by ~$1.5B after Q1 debt maturities, lifting cash to ~$3.3B. The balance sheet rolls forward cleanly with retained earnings +$2,177M and equity rising to ~$16.1B. Out-quarters fade SRS acquisition tailwinds (GMS annualizes September 2026), hold comps near +1-2%, and recover operating margin toward 13%+ by FY2028-29 as synergies ramp; FY2026 EPS lands below the flat-to-+4% guide at ~$14.25 adjusted, which I treat as the reason guidance risk is to the downside at this print. I expect guidance to be reaffirmed at this release (revenue $168.8-172.1B, adjusted EPS $14.69-15.28) with trimming risk pushed to Q3. Corrections in this version: eps_adjusted p50 set to 4.64 (= non-GAAP net income $4,625M / 997M diluted shares), the sales-growth guidance anchor now cites the 2.5% figure that appears in the referenced block, and all thesis flows_into entries reference forecast lines present in this reply.",
+    "thesis": {
+      "buy_triggers": [
+        {
+          "checkable_at": "Q3 FY2026 earnings 8-K (November 2026)",
+          "marker": "Total comparable sales at or above +2.0% with comparable customer transactions inflecting positive (vs -1.3% in Q1 FY26)"
+        },
+        {
+          "checkable_at": "Q3 FY2026 Form 10-Q (November 2026)",
+          "marker": "Gross margin back at or above 33.2% for the quarter as GMS mix dilution is lapped and tariff costs are passed through"
+        },
+        {
+          "checkable_at": "Q4 FY2026 earnings 8-K (February 2027)",
+          "marker": "H2 FY2026 adjusted operating margin run-rate at or above 13.0%, evidencing SRS/GMS synergy capture"
+        },
+        {
+          "checkable_at": "FY2026 Form 10-K (March 2027)",
+          "marker": "Trailing-twelve-month operating cash flow at or above $18B with capex held near 2.5% of sales, funding dividend growth and debt paydown"
+        }
+      ],
+      "commitments": [
+        {
+          "claim": "Invest approximately $4 billion in capex in fiscal 2026, ~2.5% of net sales, across new stores, existing stores, interconnected experience and Pro initiatives (10-Q MD&A and Q1 FY26 release)",
+          "flows_into": [
+            "cash_flow.capex",
+            "horizons.fy0.capex"
+          ],
+          "horizon": "fy0",
+          "source": "0001628280-26-038247:hd-20260503.htm:b0000289"
+        },
+        {
+          "claim": "Pay and grow the dividend (raised 1.3% to $2.33/share quarterly in February 2026); dividends are the second priority of capital allocation after investing in the business",
+          "flows_into": [
+            "cash_flow.dividends",
+            "horizons.fy0.cff"
+          ],
+          "horizon": "fy0",
+          "source": "0001628280-26-038247:hd-20260503.htm:b0000290"
+        },
+        {
+          "claim": "Share repurchases paused since March 2024 with no plans to resume in fiscal 2026 while reducing outstanding debt; $11.7B authorization remains",
+          "flows_into": [
+            "cash_flow.buybacks",
+            "cash_flow.long_term_debt_repayments",
+            "cash_flow.short_term_debt_repayments"
+          ],
+          "horizon": "fy0",
+          "source": "0001628280-26-038247:hd-20260503.htm:b0000285"
+        },
+        {
+          "claim": "Adjusted diluted EPS excludes acquired intangible asset amortization (~$0.50 after-tax for FY2026; $171M pre-tax in Q1), from SRS and GMS deals",
+          "flows_into": [
+            "bridge.non_gaap_net_income",
+            "income_statement.depreciation_amortization"
+          ],
+          "horizon": "fy0",
+          "source": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000068"
+        },
+        {
+          "claim": "Approximately 15 new stores in fiscal 2026, extending the ~2,361-store footprint, plus over 1,280 SRS locations driving distribution growth",
+          "flows_into": [
+            "horizons.fy0.revenue",
+            "quarterly_path.fq3_26.revenue"
+          ],
+          "horizon": "fy1",
+          "source": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000013"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "checkable_at": "Q2 FY2026 earnings 8-K (August 2026)",
+          "marker": "Total comparable sales turn negative in the quarter, breaking the stabilization thesis embedded in the flat-to-+2% comp guide"
+        },
+        {
+          "checkable_at": "Q2 FY2026 earnings 8-K (August 2026)",
+          "marker": "FY2026 guidance cut: total sales growth low end below 2.5% or adjusted diluted EPS growth below 0% (below $14.69)"
+        },
+        {
+          "checkable_at": "Q2 FY2026 Form 10-Q (August/September 2026)",
+          "marker": "SG&A deleverage persists: SG&A above 19.5% of net sales with comps below +1%, signaling structural cost pressure from SRS/GMS"
+        },
+        {
+          "checkable_at": "Q2 FY2026 Form 10-Q (August/September 2026)",
+          "marker": "Inventory growth exceeds sales growth by more than 300bp (inventory turnover below 4.0x), signaling demand miss and margin risk"
+        },
+        {
+          "checkable_at": "Q4 FY2026 earnings 8-K (February 2027)",
+          "marker": "Buyback pause extended into fiscal 2027 alongside stalled debt reduction (long-term debt plus current installments above ~$50B)"
+        }
+      ],
+      "what_must_be_true": "Housing turnover remains depressed but repair-and-remodel demand stays resilient, keeping comps modestly positive; SRS and GMS integration sustains mid-single-digit distribution revenue growth and ramps synergies so operating margin stabilizes near 12% GAAP by H2 FY2026; tariff pass-throughs lift ticket without crushing transactions; no consumer recession; interest expense stays near $2.3-2.4B annually as maturing notes are refinanced at similar coupons; capex holds near 2.5% of sales and the buyback pause continues, directing free cash flow to dividends and deleveraging."
+    }
+  }
+}

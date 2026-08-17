@@ -1,0 +1,600 @@
+{
+  "anchor_retries": 1,
+  "as_of": "2026-08-17T12:00:00Z",
+  "contract_retries": 1,
+  "held_at": "2026-08-17T19:29:13.938992Z",
+  "incomplete_retries": 0,
+  "model_id": "gemini-3.7-flash",
+  "model_key": "gemini37",
+  "prompt_version": "v5.6",
+  "run_class": "genuine_forward",
+  "run_intent": {
+    "intent_id": "intent-20260817T192913928558Z-1cf31a463b4b"
+  },
+  "seconds": 111.880146,
+  "snapshot": {
+    "corpus_filings": 278,
+    "corpus_manifest_sha256": "4678dd1f87f960e00514ea64252bf8ba08bc3b73f452964d814980981fe660a3",
+    "snapshot_id": "snap-354950-20260817T193105819138Z",
+    "tool_calls": 14
+  },
+  "status": "ok",
+  "ticker": "HD",
+  "tool_calls": 14,
+  "unverified_anchors": [],
+  "usage": {
+    "api_calls": 15,
+    "cache_read_tokens": 497909,
+    "cache_write_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 595907,
+    "output_tokens": 17276,
+    "requests": [
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 7584,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 28,
+        "request_no": 1
+      },
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 10544,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 73,
+        "request_no": 2
+      },
+      {
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 21848,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 59,
+        "request_no": 3
+      },
+      {
+        "cache_read_tokens": 20387,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 25019,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 46,
+        "request_no": 4
+      },
+      {
+        "cache_read_tokens": 24468,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 28275,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 73,
+        "request_no": 5
+      },
+      {
+        "cache_read_tokens": 24482,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 35035,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 48,
+        "request_no": 6
+      },
+      {
+        "cache_read_tokens": 32645,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 38219,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 47,
+        "request_no": 7
+      },
+      {
+        "cache_read_tokens": 36727,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 41453,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 67,
+        "request_no": 8
+      },
+      {
+        "cache_read_tokens": 40814,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 45809,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 67,
+        "request_no": 9
+      },
+      {
+        "cache_read_tokens": 44901,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 50464,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 56,
+        "request_no": 10
+      },
+      {
+        "cache_read_tokens": 48986,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 54563,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 48,
+        "request_no": 11
+      },
+      {
+        "cache_read_tokens": 53069,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 57604,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 68,
+        "request_no": 12
+      },
+      {
+        "cache_read_tokens": 57148,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 59737,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 5856,
+        "request_no": 13
+      },
+      {
+        "cache_read_tokens": 57140,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 59806,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 5269,
+        "request_no": 14
+      },
+      {
+        "cache_read_tokens": 57142,
+        "cache_write_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 59947,
+        "model_id": "gemini-3.7-flash",
+        "output_tokens": 5471,
+        "request_no": 15
+      }
+    ]
+  },
+  "validated": {
+    "anchors": [
+      {
+        "accession": "0001628280-26-038247",
+        "name": "Q1 Fiscal 2026 Net Sales",
+        "reference": "0001628280-26-038247:hd-20260503.htm:b0000065",
+        "value": 41765
+      },
+      {
+        "accession": "0001628280-26-038247",
+        "name": "Q1 Fiscal 2026 Gross Profit",
+        "reference": "0001628280-26-038247:hd-20260503.htm:b0000065",
+        "value": 13781
+      },
+      {
+        "accession": "0001628280-26-038247",
+        "name": "Q1 Fiscal 2026 Operating Income",
+        "reference": "0001628280-26-038247:hd-20260503.htm:b0000065",
+        "value": 4981
+      },
+      {
+        "accession": "0001628280-26-038247",
+        "name": "Q1 Fiscal 2026 Net Earnings",
+        "reference": "0001628280-26-038247:hd-20260503.htm:b0000065",
+        "value": 3289
+      },
+      {
+        "accession": "0001628280-26-038247",
+        "name": "Q1 Fiscal 2026 Diluted EPS",
+        "reference": "0001628280-26-038247:hd-20260503.htm:b0000065",
+        "value": 3.3
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Q1 Fiscal 2026 Adjusted Diluted EPS",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000007",
+        "value": 3.43
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Fiscal 2026 Guidance Gross Margin Target",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000014",
+        "value": 33.1
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Fiscal 2026 Guidance Effective Tax Rate",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000017",
+        "value": 24.3
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Fiscal 2026 Guidance Net Interest Expense",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000018",
+        "value": 2.3
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Fiscal 2026 Guidance New Stores",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000013",
+        "value": 15
+      },
+      {
+        "accession": "0000354950-26-000101",
+        "name": "Fiscal 2026 Guidance CapEx Percent of Sales",
+        "reference": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000023",
+        "value": 2.5
+      }
+    ],
+    "balance_sheet": {
+      "accounts_payable": 13800.0,
+      "accrued_salaries": 2300.0,
+      "accumulated_other_comprehensive_loss": -658.0,
+      "cash": 1131.0,
+      "common_stock": 90.0,
+      "current_long_term_debt": 5178.0,
+      "current_operating_lease_liabilities": 1484.0,
+      "deferred_income_taxes": 2900.0,
+      "deferred_revenue": 2650.0,
+      "goodwill": 22600.0,
+      "income_taxes_payable": 800.0,
+      "intangible_assets": 10200.0,
+      "inventory": 26800.0,
+      "long_term_debt": 44628.0,
+      "long_term_operating_lease_liabilities": 8150.0,
+      "net_property_equipment": 28000.0,
+      "operating_lease_assets": 9300.0,
+      "other_accrued_expenses": 4400.0,
+      "other_assets": 883.0,
+      "other_current_assets": 1700.0,
+      "other_long_term_liabilities": 1900.0,
+      "paid_in_capital": 14972.0,
+      "receivables": 6500.0,
+      "retained_earnings": 97738.0,
+      "sales_taxes_payable": 750.0,
+      "short_term_debt": 2003.0,
+      "total_assets": 107114.0,
+      "total_current_assets": 36131.0,
+      "total_current_liabilities": 33365.0,
+      "total_equity": 16171.0,
+      "total_liabilities": 90943.0,
+      "treasury_stock": -95971.0
+    },
+    "bridge": {
+      "adjustments": {
+        "acquired_intangible_amortization": 171.0,
+        "tax_effect_of_adjustments": -42.0
+      },
+      "non_gaap_net_income": 4681.0
+    },
+    "cash_flow": {
+      "business_acquisitions": -50.0,
+      "buybacks": 0.0,
+      "capex": -950.0,
+      "cff": -4090.0,
+      "cfi": -980.0,
+      "cfo": 4600.0,
+      "change_cash_before_fx": -470.0,
+      "common_stock_proceeds": 30.0,
+      "depreciation_amortization": 915.0,
+      "dividends": -2320.0,
+      "fx_effect": 0.0,
+      "intangible_amortization": 171.0,
+      "long_term_debt_proceeds": 50.0,
+      "long_term_debt_repayments": -250.0,
+      "net_change_cash": -470.0,
+      "net_income": 4552.0,
+      "other_financing": -100.0,
+      "other_investing": 20.0,
+      "other_operating": -1213.0,
+      "share_based_comp": 175.0,
+      "short_term_debt_repayments": -1500.0
+    },
+    "guidance_forecast": {
+      "eps_adjusted": {
+        "high": 15.28,
+        "low": 14.69
+      },
+      "revenue": {
+        "high": 172100.0,
+        "low": 168800.0
+      }
+    },
+    "headline": {
+      "eps_adjusted": {
+        "p10": 4.6,
+        "p50": 4.7,
+        "p90": 4.8
+      },
+      "fcf": {
+        "p10": 3300.0,
+        "p50": 3650.0,
+        "p90": 4000.0
+      },
+      "revenue": {
+        "p10": 45700.0,
+        "p50": 46400.0,
+        "p90": 47100.0
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "capex": -3744.0,
+        "cff": -16103.0,
+        "cfi": -4100.0,
+        "cfo": 20532.0,
+        "eps_adjusted": {
+          "p10": 14.8,
+          "p50": 15.03,
+          "p90": 15.25
+        },
+        "fcf": 16788.0,
+        "gross_profit": 56355.0,
+        "net_change_cash": 329.0,
+        "net_income": 14446.0,
+        "operating_income": 21465.0,
+        "revenue": {
+          "p10": 167500.0,
+          "p50": 169465.0,
+          "p90": 171500.0
+        },
+        "total_assets": 106200.0,
+        "total_equity": 18137.0,
+        "total_liabilities": 88063.0
+      },
+      "fy1": {
+        "capex": -4200.0,
+        "cff": -16800.0,
+        "cfi": -4500.0,
+        "cfo": 21800.0,
+        "eps_adjusted": {
+          "p10": 15.6,
+          "p50": 16.0,
+          "p90": 16.4
+        },
+        "fcf": 17600.0,
+        "gross_profit": 58851.0,
+        "net_change_cash": 500.0,
+        "net_income": 15680.0,
+        "operating_income": 23082.0,
+        "revenue": {
+          "p10": 173000.0,
+          "p50": 176200.0,
+          "p90": 179500.0
+        },
+        "total_assets": 111000.0,
+        "total_equity": 23500.0,
+        "total_liabilities": 87500.0
+      },
+      "fy2": {
+        "capex": -4500.0,
+        "cff": -18000.0,
+        "cfi": -4800.0,
+        "cfo": 23400.0,
+        "eps_adjusted": {
+          "p10": 16.7,
+          "p50": 17.25,
+          "p90": 17.8
+        },
+        "fcf": 18900.0,
+        "gross_profit": 61793.0,
+        "net_change_cash": 600.0,
+        "net_income": 17120.0,
+        "operating_income": 24908.0,
+        "revenue": {
+          "p10": 180000.0,
+          "p50": 184500.0,
+          "p90": 189000.0
+        },
+        "total_assets": 116000.0,
+        "total_equity": 29000.0,
+        "total_liabilities": 87000.0
+      },
+      "fy3": {
+        "capex": -4800.0,
+        "cff": -19200.0,
+        "cfi": -5100.0,
+        "cfo": 25000.0,
+        "eps_adjusted": {
+          "p10": 17.9,
+          "p50": 18.6,
+          "p90": 19.3
+        },
+        "fcf": 20200.0,
+        "gross_profit": 64848.0,
+        "net_change_cash": 700.0,
+        "net_income": 18520.0,
+        "operating_income": 26634.0,
+        "revenue": {
+          "p10": 187000.0,
+          "p50": 193000.0,
+          "p90": 199000.0
+        },
+        "total_assets": 121500.0,
+        "total_equity": 35000.0,
+        "total_liabilities": 86500.0
+      }
+    },
+    "income_statement": {
+      "cost_of_sales": 30902.0,
+      "depreciation_amortization": 850.0,
+      "eps_basic": 4.58,
+      "eps_diluted": 4.57,
+      "gross_profit": 15498.0,
+      "income_tax": 1461.0,
+      "interest_expense": 595.0,
+      "interest_income_other_net": -20.0,
+      "interest_other_net_expense": 575.0,
+      "net_income": 4552.0,
+      "operating_income": 6588.0,
+      "pretax_income": 6013.0,
+      "revenue": 46400.0,
+      "selling_general_admin": 8060.0,
+      "shares_basic": 994.0,
+      "shares_diluted": 996.0,
+      "total_operating_expenses": 8910.0
+    },
+    "preview_note": "Home Depot enters Q2 fiscal 2026 facing a balanced macro backdrop characterized by persistent housing turnover headwinds offset by solid spring seasonal execution and incremental accretion from SRS Distribution. Investors will closely watch comparable store sales trends, Pro customer backlog stability, and gross margin discipline against tariff and freight volatility. We anticipate a solid print landing near the midpoint of full-year guidance ranges.",
+    "quarterly_path": {
+      "fq1_27": {
+        "capex": -950.0,
+        "cff": -4800.0,
+        "cfi": -980.0,
+        "cfo": 6300.0,
+        "eps_adjusted": {
+          "p10": 3.5,
+          "p50": 3.62,
+          "p90": 3.74
+        },
+        "fcf": 5350.0,
+        "gross_profit": 14322.0,
+        "net_change_cash": 520.0,
+        "net_income": 3522.0,
+        "operating_income": 5295.0,
+        "revenue": {
+          "p10": 42500.0,
+          "p50": 43400.0,
+          "p90": 44300.0
+        },
+        "total_assets": 109500.0,
+        "total_equity": 19339.0,
+        "total_liabilities": 90161.0
+      },
+      "fq2_27": {
+        "capex": -1000.0,
+        "cff": -4200.0,
+        "cfi": -1030.0,
+        "cfo": 4900.0,
+        "eps_adjusted": {
+          "p10": 4.8,
+          "p50": 4.95,
+          "p90": 5.1
+        },
+        "fcf": 3900.0,
+        "gross_profit": 16147.0,
+        "net_change_cash": -330.0,
+        "net_income": 4829.0,
+        "operating_income": 6941.0,
+        "revenue": {
+          "p10": 47200.0,
+          "p50": 48200.0,
+          "p90": 49200.0
+        },
+        "total_assets": 108800.0,
+        "total_equity": 21780.0,
+        "total_liabilities": 87020.0
+      },
+      "fq3_26": {
+        "capex": -950.0,
+        "cff": -3800.0,
+        "cfi": -980.0,
+        "cfo": 5100.0,
+        "eps_adjusted": {
+          "p10": 3.75,
+          "p50": 3.85,
+          "p90": 3.95
+        },
+        "fcf": 4150.0,
+        "gross_profit": 14028.0,
+        "net_change_cash": 320.0,
+        "net_income": 3698.0,
+        "operating_income": 5376.0,
+        "revenue": {
+          "p10": 41200.0,
+          "p50": 42000.0,
+          "p90": 42800.0
+        },
+        "total_assets": 106800.0,
+        "total_equity": 17550.0,
+        "total_liabilities": 89250.0
+      },
+      "fq4_26": {
+        "capex": -1000.0,
+        "cff": -3500.0,
+        "cfi": -1030.0,
+        "cfo": 4800.0,
+        "eps_adjusted": {
+          "p10": 2.95,
+          "p50": 3.05,
+          "p90": 3.15
+        },
+        "fcf": 3800.0,
+        "gross_profit": 13048.0,
+        "net_change_cash": 270.0,
+        "net_income": 2907.0,
+        "operating_income": 4520.0,
+        "revenue": {
+          "p10": 38500.0,
+          "p50": 39300.0,
+          "p90": 40100.0
+        },
+        "total_assets": 106200.0,
+        "total_equity": 18137.0,
+        "total_liabilities": 88063.0
+      }
+    },
+    "reasoning": "Q2 is seasonally Home Depot's highest revenue and earnings quarter. We forecast net sales of $46.40 billion (+2.5% YoY) with gross margin stabilizing at 33.4%, delivering GAAP diluted EPS of $4.57 and adjusted diluted EPS of $4.70. Working capital normalizes following spring inventory build, generating robust operating cash flow and free cash flow.",
+    "thesis": {
+      "buy_triggers": [
+        {
+          "checkable_at": "Q3 FY2026 Form 10-Q",
+          "marker": "U.S. comparable store sales acceleration exceeding 2.0% YoY"
+        },
+        {
+          "checkable_at": "Q3 FY2026 Form 10-Q",
+          "marker": "SRS and professional pro segment organic revenue growth exceeding 6.0% YoY"
+        }
+      ],
+      "commitments": [
+        {
+          "claim": "Capital expenditures target of approximately 2.5% of total net sales",
+          "flows_into": [
+            "cash_flow.capex",
+            "horizons.fy0.capex"
+          ],
+          "horizon": "FY2026",
+          "source": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000023"
+        },
+        {
+          "claim": "Gross margin target of approximately 33.1% for full year fiscal 2026",
+          "flows_into": [
+            "income_statement.gross_profit",
+            "horizons.fy0.gross_profit"
+          ],
+          "horizon": "FY2026",
+          "source": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000014"
+        },
+        {
+          "claim": "Adjusted diluted EPS growth of approximately flat to 4.0% over FY2025 base ($14.69)",
+          "flows_into": [
+            "bridge.non_gaap_net_income",
+            "horizons.fy0.eps_adjusted"
+          ],
+          "horizon": "FY2026",
+          "source": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000022"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "checkable_at": "Q2 FY2026 Form 10-Q",
+          "marker": "Gross margin contraction below 32.8% driven by promotional pressure or supply chain headwinds"
+        },
+        {
+          "checkable_at": "FY2026 Form 10-K",
+          "marker": "Operating cash flow conversion failing to exceed $18,000M on a trailing 12-month basis"
+        }
+      ],
+      "what_must_be_true": "Home Depot must maintain resilient ticket sizes and stable DIY/Pro demand despite elevated mortgage rates, while seamlessly extracting synergies from SRS and GMS distribution integrations without gross margin erosion."
+    }
+  }
+}

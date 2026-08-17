@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home Depot Q2 FY2026 forecast — pricedin.markets</title>
+<style>
+  :root { --paper:#F6F7F8; --card:#FFFFFF; --ink:#1B222B; --muted:#5A6675;
+    --line:#D8DEE5; --accent:#2E5E8E; --accent-soft:#E8EFF6;
+    --pass:#25714B; --pass-bg:#E6F1EB; --warn:#8F6A1C; --warn-bg:#F6EDD6;
+    --fail:#A63B2C; --fail-bg:#F6E2DE;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --sans: "Avenir Next", "Helvetica Neue", "Segoe UI", system-ui, sans-serif; }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#12161B; --card:#1A2027; --ink:#E6E9ED; --muted:#96A1AD;
+      --line:#2C343E; --accent:#6E9FCE; --accent-soft:#1D2836;
+      --pass:#5CB585; --pass-bg:#1C2F26; --warn:#D3A94F; --warn-bg:#322910;
+      --fail:#D4715F; --fail-bg:#38201B; } }
+  :root[data-theme="dark"] { --paper:#12161B; --card:#1A2027; --ink:#E6E9ED;
+    --muted:#96A1AD; --line:#2C343E; --accent:#6E9FCE; --accent-soft:#1D2836;
+    --pass:#5CB585; --pass-bg:#1C2F26; --warn:#D3A94F; --warn-bg:#322910;
+    --fail:#D4715F; --fail-bg:#38201B; }
+  :root[data-theme="light"] { --paper:#F6F7F8; --card:#FFFFFF; --ink:#1B222B;
+    --muted:#5A6675; --line:#D8DEE5; --accent:#2E5E8E; --accent-soft:#E8EFF6;
+    --pass:#25714B; --pass-bg:#E6F1EB; --warn:#8F6A1C; --warn-bg:#F6EDD6;
+    --fail:#A63B2C; --fail-bg:#F6E2DE; }
+  * { box-sizing: border-box; }
+  body { background:var(--paper); color:var(--ink); font-family:var(--sans);
+    line-height:1.55; margin:0; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:960px; margin:0 auto; padding:40px 24px 72px; }
+  .eyebrow { font-family:var(--mono); font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0 0 10px; }
+  h1 { font-size:clamp(22px,4vw,32px); line-height:1.15; margin:0 0 10px;
+    font-weight:600; text-wrap:balance; }
+  h2 { font-size:18px; font-weight:600; margin:0 0 4px; }
+  .lede { color:var(--muted); max-width:66ch; margin:0 0 18px; }
+  .section { margin-top:40px; }
+  .sub { color:var(--muted); font-size:13.5px; margin:0 0 14px; }
+  .mono { font-family:var(--mono); }
+  .runmeta { display:flex; flex-wrap:wrap; gap:10px; }
+  .stat { background:var(--card); border:1px solid var(--line);
+    border-radius:6px; padding:8px 14px; }
+  .stat b { display:block; font-family:var(--mono); font-size:16px;
+    font-weight:600; font-variant-numeric:tabular-nums; }
+  .stat span { font-size:11.5px; color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line);
+    border-radius:8px; padding:16px 18px; }
+  .anchors { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px; }
+  .anchor { background:var(--card); border:1px solid var(--line);
+    border-radius:7px; padding:11px 13px; }
+  .anchor .name { font-size:12.5px; color:var(--muted); margin:0; }
+  .anchor .val { font-family:var(--mono); font-size:17px; font-weight:600;
+    margin:2px 0 4px; font-variant-numeric:tabular-nums; }
+  .anchor .cite { font-family:var(--mono); font-size:10.5px; color:var(--muted);
+    margin:0; overflow-wrap:anywhere; }
+  figure.range { margin:0 0 12px; background:var(--card);
+    border:1px solid var(--line); border-radius:8px; padding:12px 16px 6px; }
+  figure.range svg { max-width:100%; height:auto; display:block; }
+  figure.range figcaption { font-size:12px; color:var(--muted); padding:4px 2px 8px; }
+  .tablewrap { overflow-x:auto; border:1px solid var(--line);
+    border-radius:8px; background:var(--card); }
+  table { border-collapse:collapse; width:100%; font-size:13.5px; min-width:540px; }
+  th,td { padding:6px 13px; text-align:right; font-variant-numeric:tabular-nums; }
+  th { font-family:var(--mono); font-size:10.5px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--muted); font-weight:600;
+    border-bottom:1px solid var(--line); }
+  td:first-child, th:first-child { text-align:left; }
+  td { border-bottom:1px solid var(--line); }
+  tr:last-child td { border-bottom:none; }
+  tr.subtotal td { font-weight:600; background:var(--accent-soft); }
+  td.num, td.mono { font-family:var(--mono); font-size:12.5px; }
+  td.delta { color:var(--muted); font-family:var(--mono); font-size:12px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:760px) { .grid2 { grid-template-columns:1fr; } }
+  .kv { display:flex; justify-content:space-between; gap:12px; padding:5px 0;
+    border-bottom:1px solid var(--line); font-size:13.5px; }
+  .kv:last-of-type { border-bottom:none; }
+  .kv b { font-family:var(--mono); font-weight:600; font-variant-numeric:tabular-nums; }
+  .note { border-left:3px solid var(--accent); }
+  .note p { margin:0; font-size:14px; }
+  details { margin-top:12px; }
+  summary { cursor:pointer; font-size:13px; color:var(--accent); font-weight:600; }
+  summary:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  details p, details pre { font-size:13px; color:var(--muted); white-space:pre-wrap; }
+  .failbox { border:1px solid var(--fail); background:var(--fail-bg);
+    border-radius:8px; padding:14px 18px; }
+  .failbox pre { font-family:var(--mono); font-size:11.5px; white-space:pre-wrap;
+    margin:8px 0 0; }
+  .status { display:inline-block; font-family:var(--mono); font-size:10px;
+    letter-spacing:.07em; border-radius:999px; padding:1px 8px; }
+  .status.ok { background:var(--pass-bg); color:var(--pass); }
+  .status.bad { background:var(--fail-bg); color:var(--fail); }
+  .trigger { border:1px solid var(--line); background:var(--card);
+    border-radius:7px; padding:10px 13px; margin-bottom:9px; }
+  .trigger .mk { margin:0; font-size:13.5px; }
+  .trigger .at { margin:3px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--muted); }
+  .trigger.buy { border-left:3px solid var(--pass); }
+  .trigger.sell { border-left:3px solid var(--fail); }
+  .commit { border:1px solid var(--line); background:var(--card);
+    border-radius:7px; padding:11px 14px; margin-bottom:10px; }
+  .commit .claim { margin:0; font-size:13.5px; font-weight:600; }
+  .commit .src { margin:3px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--muted); overflow-wrap:anywhere; }
+  .commit .flows { margin:5px 0 0; font-family:var(--mono); font-size:11px;
+    color:var(--accent); overflow-wrap:anywhere; }
+  a { color:var(--accent); }
+  .endnote { margin-top:44px; border-top:1px solid var(--line); padding-top:14px;
+    color:var(--muted); font-size:12.5px; max-width:76ch; overflow-wrap:anywhere; }
+</style>
+</head>
+<body><div class="wrap">
+<header>
+<p class="eyebrow">Pricedin · public pre-print · HD Q2 fiscal 2026 · vintage v1</p>
+<h1>Home Depot Q2 FY2026 — six-model forecast</h1>
+<p class="lede">Published 2026-08-17T20:13:05Z before Home Depot's Q2 release.
+The official issuer calendar and SEC publication surface were still unpublished at
+the final check 2026-08-17T20:13:05Z. No Wall Street consensus was supplied to the models.</p>
+<div class="runmeta">
+<div class="stat"><b>6 / 6</b><span>contract-valid models</span></div>
+<div class="stat"><b>$46.90B</b><span>median revenue</span></div>
+<div class="stat"><b>$4.61</b><span>median adjusted EPS</span></div>
+<div class="stat"><b>$3.90B</b><span>median free cash flow</span></div>
+</div>
+</header>
+
+<section class="section">
+<h2>Aggregate forecast</h2>
+<p class="sub">The displayed range is the median model p10 to median model p90;
+the point estimate is the median of the six model p50s.</p>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Revenue ($M): model p10 45,750, p50 46,900, p90 48,000.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Revenue ($M)</text>
+<line x1="88.3" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="88.3" y1="33" x2="88.3" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="335.4" cy="40" r="5" fill="var(--accent)"/>
+<text x="88.3" y="26" text-anchor="middle">45,750</text>
+<text x="335.4" y="26" text-anchor="middle" font-weight="600">p50 46,900</text>
+<text x="571.7" y="58" text-anchor="middle">48,000</text>
+<text x="628" y="44" opacity="0.75">model</text>
+
+</g></svg>
+<figcaption>Model p10–p50–p90.</figcaption>
+</figure>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Adjusted EPS (USD): model p10 4.44, p50 4.61, p90 4.78.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Adjusted EPS (USD)</text>
+<line x1="88.3" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="88.3" y1="33" x2="88.3" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="330.0" cy="40" r="5" fill="var(--accent)"/>
+<text x="88.3" y="26" text-anchor="middle">4.44</text>
+<text x="330.0" y="26" text-anchor="middle" font-weight="600">p50 4.61</text>
+<text x="571.7" y="58" text-anchor="middle">4.78</text>
+<text x="628" y="44" opacity="0.75">model</text>
+
+</g></svg>
+<figcaption>Model p10–p50–p90.</figcaption>
+</figure>
+
+<figure class="range">
+<svg viewBox="0 0 680 118" role="img" aria-label="Free cash flow ($M): model p10 3,125, p50 3,896, p90 4,775.">
+<g font-family="ui-monospace, Menlo, monospace" font-size="11" fill="currentColor">
+<text x="12" y="18" font-size="12" font-weight="600" font-family="inherit">Free cash flow ($M)</text>
+<line x1="88.3" y1="40" x2="571.7" y2="40" stroke="var(--accent)" stroke-width="2"/>
+<line x1="88.3" y1="33" x2="88.3" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<line x1="571.7" y1="33" x2="571.7" y2="47" stroke="var(--accent)" stroke-width="2"/>
+<circle cx="314.0" cy="40" r="5" fill="var(--accent)"/>
+<text x="88.3" y="26" text-anchor="middle">3,125</text>
+<text x="314.0" y="26" text-anchor="middle" font-weight="600">p50 3,896</text>
+<text x="571.7" y="58" text-anchor="middle">4,775</text>
+<text x="628" y="44" opacity="0.75">model</text>
+
+</g></svg>
+<figcaption>Model p10–p50–p90.</figcaption>
+</figure>
+</section>
+
+<section class="section">
+<h2>Model slate</h2>
+<p class="sub">Click a model for its complete three-statement forecast, quarterly
+path, fiscal-year horizons, evidence anchors, thesis and falsifiable triggers.</p>
+<div class="tablewrap"><table><thead><tr><th>Model</th><th>Revenue p50 ($M)</th>
+<th>Revenue band</th><th>Adj EPS p50</th><th>EPS band</th><th>FCF p50 ($M)</th>
+</tr></thead><tbody><tr><td><a href="model_fable.html">Claude Fable 5</a></td><td class="num">47,300</td><td class="num">46,700–47,900</td><td class="num">4.57</td><td class="num">4.42–4.70</td><td class="num">4,936</td></tr><tr><td><a href="model_gpt-sol.html">GPT-5.6 Sol</a></td><td class="num">47,450</td><td class="num">46,800–48,100</td><td class="num">4.82</td><td class="num">4.62–5.02</td><td class="num">3,650</td></tr><tr><td><a href="model_gemini37.html">Gemini 3.7 Flash</a></td><td class="num">46,400</td><td class="num">45,700–47,100</td><td class="num">4.70</td><td class="num">4.60–4.80</td><td class="num">3,650</td></tr><tr><td><a href="model_grok46.html">Grok 4.6</a></td><td class="num">47,100</td><td class="num">45,800–48,400</td><td class="num">4.49</td><td class="num">4.15–4.75</td><td class="num">4,141</td></tr><tr><td><a href="model_kimi.html">Kimi K3</a></td><td class="num">46,700</td><td class="num">45,200–48,100</td><td class="num">4.64</td><td class="num">4.45–4.80</td><td class="num">2,700</td></tr><tr><td><a href="model_muse.html">Muse Spark 1.2</a></td><td class="num">46,408</td><td class="num">45,400–47,400</td><td class="num">4.55</td><td class="num">4.35–4.75</td><td class="num">5,120</td></tr></tbody></table></div>
+</section>
+
+<section class="section">
+<h2>Margins, GAAP EPS and expected FY2026 guidance</h2>
+<p class="sub">All six models forecast reaffirmation of the current annual sales and
+adjusted-EPS ranges. Home Depot did not issue a quarterly Q2 guide, so no quarterly
+company guide is drawn against the headline forecast.</p>
+<div class="tablewrap"><table><thead><tr><th>Model</th><th>Gross margin</th>
+<th>Operating margin</th><th>GAAP EPS</th><th>FY sales guide ($M)</th>
+<th>FY adj EPS guide</th></tr></thead><tbody><tr><td>Claude Fable 5</td><td class="num">32.8%</td><td class="num">13.6%</td><td class="num">4.44</td><td class="num">168,800–172,100</td><td class="num">14.69–15.28</td></tr><tr><td>GPT-5.6 Sol</td><td class="num">33.0%</td><td class="num">14.2%</td><td class="num">4.68</td><td class="num">168,800–172,100</td><td class="num">14.69–15.28</td></tr><tr><td>Gemini 3.7 Flash</td><td class="num">33.4%</td><td class="num">14.2%</td><td class="num">4.57</td><td class="num">168,800–172,100</td><td class="num">14.69–15.28</td></tr><tr><td>Grok 4.6</td><td class="num">32.8%</td><td class="num">13.5%</td><td class="num">4.36</td><td class="num">168,800–172,100</td><td class="num">14.69–15.28</td></tr><tr><td>Kimi K3</td><td class="num">33.0%</td><td class="num">13.8%</td><td class="num">4.51</td><td class="num">168,800–172,100</td><td class="num">14.69–15.28</td></tr><tr><td>Muse Spark 1.2</td><td class="num">33.2%</td><td class="num">13.8%</td><td class="num">4.43</td><td class="num">168,800–172,100</td><td class="num">14.69–15.28</td></tr></tbody></table></div>
+</section>
+
+<section class="section">
+<h2>Model notes</h2>
+<p class="sub">These are the models' sealed preview notes. They are forecasts, not facts.</p>
+<details><summary>Claude Fable 5 — preview note</summary><p>HD reports fiscal Q2 2026 (ended Aug 2) with guidance reaffirmed at Q1 and management signaling demand &#x27;relatively similar to fiscal 2025.&#x27; We model sales of $47.3B (+4.5% YoY), carried by the final full quarter of inorganic GMS contribution (~$1.6-1.7B) plus ~+1% comps, before growth decelerates to ~2% in H2 as GMS laps in September. Three things matter. First, comps composition: Q1 showed transactions -1.3% offset by ticket +2.2% (tariff-linked pricing); watch whether big-ticket (&gt;$1,000) stabilizes as mortgage rates ease. Second, gross margin: we model 32.85% vs 33.41% LY, reflecting GMS mix and tariff absorption—the FY 33.1% guide requires no slippage here. Third, the deleveraging cadence: buybacks remain paused; we expect ~$2.6B of combined debt paydown on ~$6.0B CFO, keeping FY27 repurchase resumption on track. We forecast GAAP EPS of $4.44 and adjusted EPS of $4.57 (-2.4% YoY), slightly better sequential trajectory than Q1&#x27;s -3.7% adjusted decline. FY26 guidance (sales +2.5-4.5%, adjusted EPS flat to +4% from $14.69) should be reaffirmed; a guidance narrowing toward the midpoint would be taken well. The reaction hinges on U.S. comps sign and gross margin: positive U.S. comps with GM ≥33.0% likely re-rates the pro-ecosystem thesis; negative comps or GM below 32.6% reopens the FY26 EPS-cut debate. Balance sheet watch: inventory (~$26.2B expected, down seasonally) and short-term debt reduction below $2.5B.</p></details><details><summary>GPT-5.6 Sol — preview note</summary><p>Home Depot enters Q2 with a favorable seasonal setup but a mixed quality-of-growth debate. I forecast $47.45 billion of sales, up roughly 4.8%, supported by GMS annualization, new locations, positive ticket, and modestly positive core demand. The key issue is margin: acquired distribution revenue carries a lower gross margin, while tariffs, labor and continued Pro investments limit flow-through. I therefore model a 33.0% gross margin and 14.2% GAAP operating margin, producing $4.68 of GAAP diluted EPS and $4.82 adjusted.
+
+Three items should determine the reaction. First is comparable sales and whether transactions stabilize as smaller projects offset weak housing turnover and financing-sensitive remodels. Second is gross-margin execution against the 33.1% full-year framework, especially evidence that pricing, sourcing and shrink benefits are absorbing tariff pressure. Third is guidance: I expect the company to retain its existing sales and adjusted-EPS ranges rather than raise them materially.
+
+A print near my revenue estimate but below $4.70 of adjusted EPS would indicate poor acquisition mix or cost control. Conversely, at least 2% comparable-sales growth, gross margin above 33.2%, and adjusted EPS near $5 would demonstrate improving underlying demand and operating leverage.</p></details><details><summary>Gemini 3.7 Flash — preview note</summary><p>Home Depot enters Q2 fiscal 2026 facing a balanced macro backdrop characterized by persistent housing turnover headwinds offset by solid spring seasonal execution and incremental accretion from SRS Distribution. Investors will closely watch comparable store sales trends, Pro customer backlog stability, and gross margin discipline against tariff and freight volatility. We anticipate a solid print landing near the midpoint of full-year guidance ranges.</p></details><details><summary>Grok 4.6 — preview note</summary><p>Home Depot reports Q2 FY26 (quarter ended August 2) against a $45.3B / $4.68 adj-EPS year-ago print that did not include GMS. The Q1 infographic already framed a demand tape that is “in line”: $41.8B sales, +0.6% comps, $3.30 GAAP / $3.43 adj EPS, with management reaffirming 2.5–4.5% sales and flat-to-4% adj EPS. Three things decide the print and the reaction. First, comps: Q1 was ticket (+2.2%) over negative transactions (−1.3%); Q2 is the outdoor/project peak, so a second quarter of negative traffic or a weather miss would undermine the 2H bridge. Second, mix: Q1 GM was 33.0% (−75 bp), almost all GMS; a full GMS quarter in Q2 should keep GM near 32.8–33.0% versus 33.4% last year — any 32.5% handle is a miss versus the 33.1% year guide. Third, the outlook: we expect a reaffirm, not a raise. We model $47.1B sales (+4.0% reported, ~+0.8% comps plus GMS), 32.85% GM, $6.34B EBIT, $4.49 adj EPS and $4.1B FCF, with CP paydown and the $2.33 dividend absorbing cash and buybacks still paused. Comps ≥1% and GM no worse than ~32.8% with a reaffirm is constructive; a guide cut or negative comps plus sub-32.5% GM is the downside catalyst.</p></details><details><summary>Kimi K3 — preview note</summary><p>HD reports Q2 FY26 (quarter ended Aug 2) against its toughest compare and peak spring selling season. The setup: Q1 printed comps of +0.6% (US +0.4%) with adjusted EPS down 3.7% to $3.43, and management reaffirmed FY26 guidance of +2.5-4.5% total sales and flat-to-+4% adjusted EPS. Three factors decide the print. First, comp trajectory: Q2 laps last year&#x27;s +1.0% total comp with GMS now in the base for the full quarter; FX adds ~50-60bp and tariff-related ticket inflation helps, but housing turnover remains the ceiling on big-ticket demand. Second, margin: GMS dilution and SRS integration drove the 100bp Q1 operating-margin decline; watch whether gross margin holds ~33% and whether SG&amp;A leverage improves on the larger sales base. Third, guidance: with one soft quarter in the books, any trim to the comp or EPS range resets the year. We model revenue of $46.7B (+3.2%), adjusted EPS of $4.64 (down ~1% YoY), and free cash flow of ~$2.7B as seasonal working capital reverses. The reaction hinges on comps and the guide: a hold with comps &gt;= +1.5% is fine; a cut is not.</p></details><details><summary>Muse Spark 1.2 — preview note</summary><p>Setup: HD beat Q1 sales (+4.8% to $41.8B) but missed on margin - operating income -3% to $4.98B, operating margin 11.9% vs 12.9% LY, EPS $3.30/$3.43 adjusted. Guidance reaffirmed for FY26 at 2.5-4.5% sales, flat to +2% comps, 33.1% gross, 12.4-12.6% operating (12.8-13.0% adj). The bar is low after 18 months of housing drag. What matters for Q2: 1) Does spring/summer seasonal demand hold? Q2 is 55% of H1 - we model 46.4B (+2.4% YoY, comps ~1%) vs Q2 LY 45.3B. 2) Margin defense against tariffs: Q1 gross 33.0% already 10bp below guide; Q2 needs 33.2% to stay on track. 3) SRS/GMS anniversary - SG&amp;A was +8.7% YoY in Q2 LY; lapping should ease opex growth to ~5% and let operating margin recover to ~13.8% from 14.5% LY. FCF seasonal pop to ~5.1B will be watched. Beat on comps + gross recapture = relief rally; miss on either confirms consumer is pulling back on big-ticket.</p></details>
+</section>
+
+<section class="section"><div class="card note"><p><b>Lineage:</b> each selected run
+is classified genuine-forward, uses the same prompt SHA and point-in-time corpus,
+passes the v5.6 accounting contract, has verified filing anchors, and records native
+visual delivery. Grok's first provider-520 attempt remains sealed; the displayed Grok
+forecast is its fresh successful pre-print retry.</p></div></section>
+
+<p class="endnote">Machine-readable public seal: <a href="v1.json">v1.json</a>.
+Forecasts are uncertain and this is not investment advice.</p>
+</div></body>
+</html>
