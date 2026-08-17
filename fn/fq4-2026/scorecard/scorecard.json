@@ -1,0 +1,78 @@
+{
+  "schema": "rff_post_earnings_scorecard_v1",
+  "ticker": "FN",
+  "cycle": "FQ4-2026",
+  "analysis_as_of": "2026-08-17T20:42:02Z",
+  "published_at": "2026-08-17T20:52:14Z",
+  "analysis_stage": "post_release_pre_call",
+  "sign_convention": "aggregate surprise is reported minus forecast; per-model error is forecast minus reported",
+  "transcript_status": "not_yet_available_call_scheduled_2026-08-17T21:00:00Z",
+  "preprint": {
+    "vintage": "v2",
+    "classification": "genuine_forward",
+    "published_at": "2026-08-17T18:45:50Z",
+    "manifest_sha256": "073b93d9962e5d8849a4f0f4532ef36665c671dcb4baa794fc2a023715b99edc",
+    "git_seal_commit": "20c345994a4e94eb9b6bfb6d119c91cdc31b80fe"
+  },
+  "source": {
+    "kind": "8-K EX-99.1",
+    "accession": "0001408710-26-000026",
+    "accepted_at": "2026-08-17T16:22:03Z",
+    "document": "fn-2026811xex991q426.htm",
+    "content_sha256": "6dd1a18a01e20fe47b533a71f81cc08a91c3a4f8f0367989505def8dd09d7c25",
+    "fetched_at": "2026-08-17T20:36:30.314789Z",
+    "sec_url": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000026/fn-2026811xex991q426.htm"
+  },
+  "investor_deck": {
+    "sha256": "47d54add1cda3be1df181978f35d4a195300a1a5f7251bad8f8aed53dfcac68d",
+    "first_observed_at": "2026-08-17T20:36:36Z",
+    "pages": 15,
+    "source_url": "https://investor.fabrinet.com/static-files/3946ab0d-d45b-48f2-881e-46a16fb0ae9a"
+  },
+  "reported": {
+    "revenue_m": 1315.788,
+    "gaap_eps": 3.83,
+    "adjusted_eps": 4.10,
+    "gaap_gross_margin_pct": 12.011889,
+    "gaap_operating_margin_pct": 10.202935,
+    "cfo_m": 54.967,
+    "capex_m": 91.869,
+    "fcf_m": -36.902
+  },
+  "aggregate_preprint": {
+    "revenue_m": { "p10": 1257.5, "p50": 1280.0, "p90": 1322.5, "reported_minus_p50": 35.788, "inside_band": true },
+    "adjusted_eps": { "p10": 3.70, "p50": 3.79, "p90": 3.98, "reported_minus_p50": 0.31, "inside_band": false },
+    "gaap_eps": { "p50": 3.545, "reported_minus_p50": 0.285 },
+    "gaap_gross_margin_pct": { "p50": 11.980392, "reported_minus_p50": 0.031497 },
+    "gaap_operating_margin_pct": { "p50": 10.030260, "reported_minus_p50": 0.172675 },
+    "capex_m": { "p50": 65.0, "reported_minus_p50": 26.869 },
+    "fcf_m": { "p10": 5.0, "p50": 35.5325, "p90": 75.0, "reported_minus_p50": -72.4345, "inside_band": false }
+  },
+  "guidance": {
+    "period": "FQ1-2027",
+    "reported_revenue_m": { "low": 1375.0, "high": 1425.0 },
+    "preprint_revenue_m": { "low": 1305.0, "high": 1350.0 },
+    "reported_adjusted_eps": { "low": 4.10, "high": 4.25 },
+    "preprint_adjusted_eps": { "low": 3.885, "high": 4.035 },
+    "reported_gaap_eps": { "low": 3.39, "high": 3.54 },
+    "diluted_shares_m": 36.3,
+    "verdict": "both reported ranges were above the six-model aggregate forecast ranges"
+  },
+  "models": [
+    { "key": "fable", "model_id": "claude-fable-5", "revenue_m": 1320.0, "revenue_error_m": 4.212, "adjusted_eps": 3.88, "adjusted_eps_error": -0.22, "fcf_m": 25.0, "fcf_error_m": 61.902 },
+    { "key": "gemini37", "model_id": "gemini-3.7-flash", "revenue_m": 1275.0, "revenue_error_m": -40.788, "adjusted_eps": 3.774415, "adjusted_eps_error": -0.325585, "fcf_m": 10.0, "fcf_error_m": 46.902 },
+    { "key": "gpt-sol", "model_id": "gpt-5.6-sol", "revenue_m": 1305.0, "revenue_error_m": -10.788, "adjusted_eps": 3.955923, "adjusted_eps_error": -0.144077, "fcf_m": 102.0, "fcf_error_m": 138.902 },
+    { "key": "grok46", "model_id": "grok-4.6", "revenue_m": 1280.0, "revenue_error_m": -35.788, "adjusted_eps": 3.80, "adjusted_eps_error": -0.30, "fcf_m": 31.065, "fcf_error_m": 67.967 },
+    { "key": "kimi", "model_id": "moonshotai/kimi-k3", "revenue_m": 1275.0, "revenue_error_m": -40.788, "adjusted_eps": 3.76, "adjusted_eps_error": -0.34, "fcf_m": 40.0, "fcf_error_m": 76.902 },
+    { "key": "muse", "model_id": "muse-spark-1.2", "revenue_m": 1280.0, "revenue_error_m": -35.788, "adjusted_eps": 3.78, "adjusted_eps_error": -0.32, "fcf_m": 40.0, "fcf_error_m": 76.902 }
+  ],
+  "release_checks": {
+    "extraction_xbrl_visual_failures": 0,
+    "sec_master_index_lag": {
+      "status": "open",
+      "check": "CHK-CAP-02",
+      "reason": "The official filing was captured from EDGAR before the SEC quarterly master index mirror listed the accession.",
+      "violations": 1
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "pricedin_public_seal_v1",
+  "ticker": "FN",
+  "cycle": "FQ4-2026",
+  "surface": "post_release_scorecard",
+  "analysis_stage": "post_release_pre_call",
+  "published_at": "2026-08-17T20:52:14Z",
+  "source_repository_commit": "f3ea3d1d71a63cdb99edb0332a8748e3777ad89f",
+  "supplied_preprint_manifest_sha256": "073b93d9962e5d8849a4f0f4532ef36665c671dcb4baa794fc2a023715b99edc",
+  "files_sha256": {
+    "actuals.json": "9ff41a8cc3e1612b7f8ee707d8723ad79f98f25675166bbd656f02432cb61576",
+    "index.html": "56a89c0c7c2ebfc7e30088586eb65c779f7258fac993c140a9fd8f18d63f9e2c",
+    "scorecard.json": "f1e619665a322bb2dc155360bec14a7a5095c8fc4a03cc1b5138acbd32cdfe07"
+  }
+}

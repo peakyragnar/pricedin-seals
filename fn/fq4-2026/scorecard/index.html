@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Fabrinet FQ4 2026 post-earnings analysis: reported results, the sealed six-model forecast scorecard, guidance, cash conversion, and source ledger.">
+  <link rel="canonical" href="https://pricedin.markets/fn/fq4-2026/scorecard/">
+  <title>Fabrinet FQ4 2026 earnings scorecard — pricedin.markets</title>
+  <style>
+    :root{--page:#f1f1ee;--surface:#fbfbf8;--surface2:#e9e9e4;--ink:#101010;
+      --secondary:#45443f;--muted:#77756f;--line:rgba(16,16,16,.34);
+      --blue:#1d40d8;--bluebg:#e2e8fa;--green:#2f5c0d;--greenbg:#e2eeda;
+      --red:#a52727;--redbg:#f6e2e0;--amber:#754707;--amberbg:#f5ecd8;
+      --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+      --sans:Archivo,"Helvetica Neue",Arial,sans-serif}
+    *{box-sizing:border-box} body{margin:0;background:var(--page);color:var(--ink);
+      font-family:var(--sans);font-size:16px;line-height:1.48;-webkit-font-smoothing:antialiased}
+    a{color:var(--blue)} .page{max-width:940px;margin:auto;padding:0 22px 64px}
+    .mast{display:flex;justify-content:space-between;align-items:center;gap:18px;
+      padding:22px 0 18px;border-bottom:1px solid var(--ink);flex-wrap:wrap}
+    .brand{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);
+      padding:6px 10px;text-decoration:none;color:var(--ink);font-family:var(--mono);
+      text-transform:uppercase;font-size:14px;letter-spacing:.04em}.tld{font-size:12px;
+      color:var(--muted);text-transform:none;margin-left:-5px}.nav{display:flex;gap:20px;
+      font:12px var(--mono);text-transform:uppercase}.nav a{text-decoration:none;color:var(--secondary)}
+    .crumb{margin:18px 0 8px;font:11px var(--mono);text-transform:uppercase;letter-spacing:.07em}
+    .crumb a{text-decoration:none;color:var(--secondary)}
+    .hero{padding:22px 0 20px;border-bottom:1px solid var(--line)}
+    .eyebrow,.section-label{font:11px var(--mono);letter-spacing:.1em;text-transform:uppercase;
+      color:var(--blue)}h1{font-size:clamp(30px,6vw,58px);line-height:1.02;letter-spacing:-.035em;
+      margin:8px 0 10px;font-weight:610}.dek{font-size:clamp(17px,2.5vw,22px);line-height:1.35;
+      max-width:780px;margin:0;color:var(--secondary)}.stamp{font:11px var(--mono);color:var(--muted);
+      margin-top:15px}.stage{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{font:10px var(--mono);
+      text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border:1px solid var(--line)}
+    .pill.live{background:var(--greenbg);color:var(--green)}.pill.pending{background:var(--amberbg);color:var(--amber)}
+    .verdict{display:grid;grid-template-columns:1.35fr .65fr;gap:1px;background:var(--ink);
+      border:1px solid var(--ink);margin:24px 0}.verdict>div{background:var(--surface);padding:20px}
+    .verdict h2{font-size:26px;line-height:1.15;margin:5px 0 8px}.verdict p{margin:0;color:var(--secondary)}
+    .grade{display:flex;align-items:center;justify-content:center;min-height:140px;text-align:center}
+    .grade strong{font:600 45px/1 var(--mono);color:var(--green)}.grade span{display:block;
+      font:10px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:8px}
+    section{margin-top:34px}.section-label{margin:0 0 5px}.section-title{font-size:23px;
+      margin:0 0 7px}.section-note{max-width:760px;color:var(--secondary);margin:0 0 15px}
+    .tablewrap{overflow-x:auto;border:1px solid var(--ink);background:var(--surface)}table{width:100%;
+      border-collapse:collapse;font-variant-numeric:tabular-nums}th{font:10px var(--mono);text-transform:uppercase;
+      letter-spacing:.05em;color:var(--muted);padding:8px 11px;border-bottom:1px solid var(--ink);
+      text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}td{padding:10px 11px;
+      border-top:1px solid var(--line);text-align:right;white-space:nowrap;font:13px var(--mono)}
+    tr:first-child td{border-top:0}td.label{font:14px var(--sans)}.up{color:var(--green);font-weight:600}
+    .down{color:var(--red);font-weight:600}.warn{color:var(--amber);font-weight:600}.muted{color:var(--muted)}
+    .signal{display:inline-block;padding:2px 6px;font:9px var(--mono);text-transform:uppercase;
+      letter-spacing:.04em}.signal.in{background:var(--greenbg);color:var(--green)}
+    .signal.out{background:var(--redbg);color:var(--red)}.signal.flat{background:var(--surface2);color:var(--secondary)}
+    .ranges{display:grid;gap:12px}.range-row{display:grid;grid-template-columns:150px 1fr 116px;
+      gap:13px;align-items:center}.range-name{font-size:13px}.track{height:13px;position:relative;background:var(--surface2);
+      border:1px solid var(--line)}.band{position:absolute;top:2px;height:7px;background:#aebbe9}.mid{position:absolute;
+      width:2px;height:17px;top:-3px;background:var(--secondary)}.actual{position:absolute;width:9px;height:9px;
+      top:1px;border-radius:50%;background:var(--blue);margin-left:-4px;box-shadow:0 0 0 2px var(--surface)}
+    .range-value{text-align:right;font:11px var(--mono);color:var(--secondary)}.legend{font:10px var(--mono);
+      color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}.legend i{display:inline-block;
+      vertical-align:-1px;margin-right:5px}.legend .b{width:18px;height:7px;background:#aebbe9}.legend .m{width:2px;height:10px;background:var(--secondary)}
+    .legend .a{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--surface);
+      border:1px solid var(--line);padding:16px}.card h3{font-size:15px;margin:0 0 7px}.card p{font-size:14px;
+      color:var(--secondary);margin:0}.big{font:600 25px var(--mono);color:var(--ink);margin:5px 0}.big small{font-size:11px;
+      color:var(--muted);font-weight:400}.source{font:10px var(--mono);color:var(--muted);margin-top:9px}
+    .source a{color:var(--muted)}.bridge{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+      background:var(--line);border:1px solid var(--line)}.bridge>div{background:var(--surface);padding:14px}
+    .bridge span{display:block;font:10px var(--mono);text-transform:uppercase;color:var(--muted)}
+    .bridge strong{font:600 21px var(--mono)}.callout{border-left:4px solid var(--amber);background:var(--amberbg);
+      padding:13px 15px;color:var(--secondary);font-size:14px}.callout strong{color:var(--ink)}
+    .takeaways{counter-reset:item;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+    .takeaway{background:var(--surface);padding:16px 18px;display:grid;grid-template-columns:34px 1fr;gap:10px}
+    .takeaway:before{counter-increment:item;content:"0" counter(item);font:11px var(--mono);color:var(--blue)}
+    .takeaway h3{font-size:15px;margin:0 0 4px}.takeaway p{margin:0;color:var(--secondary);font-size:14px}
+    .watch{display:grid;grid-template-columns:1fr 1fr;gap:12px}.watch>div{border-top:3px solid var(--ink);
+      background:var(--surface);padding:14px}.watch h3{margin:0 0 6px;font-size:14px}.watch ul{margin:0;padding-left:18px;
+      color:var(--secondary);font-size:14px}.watch li{margin:5px 0}.ledger td{font-size:11px}.foot{margin-top:40px;
+      border-top:1px solid var(--ink);padding-top:14px;color:var(--muted);font-size:11px}.foot p{max-width:800px}
+    @media(max-width:700px){.verdict{grid-template-columns:1fr}.grade{min-height:auto}.cards,.watch{grid-template-columns:1fr}
+      .range-row{grid-template-columns:105px 1fr}.range-value{grid-column:2}.bridge{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main class="page">
+  <header class="mast">
+    <a class="brand" href="/" aria-label="pricedin.markets home">
+      <svg width="26" height="12" viewBox="0 0 30 14" aria-hidden="true"><rect x="0" y="4" width="30" height="6" fill="#e2e8fa"/><rect x="15" y="1" width="2" height="12" fill="#101010"/><rect x="20.5" y="4.5" width="5" height="5" fill="#1d40d8"/></svg>
+      pricedin<span class="tld">.markets</span>
+    </a>
+    <nav class="nav"><a href="/track-record/">Track record</a><a href="/how-it-works/">How it works</a></nav>
+  </header>
+
+  <div class="crumb"><a href="/fn/fq4-2026/v2/">← sealed pre-print v2</a></div>
+  <div class="hero">
+    <div class="eyebrow">FN · fiscal Q4 2026 · post-release scorecard</div>
+    <h1>The growth beat was real.<br>The cash beat was not.</h1>
+    <p class="dek">Fabrinet printed $1.316B of revenue and $4.10 of adjusted EPS, above our six-model medians. Its new-quarter guide cleared our forecast range. But free cash flow was negative as capex and working capital absorbed the operating gain.</p>
+    <div class="stage"><span class="pill live">official 8-K captured</span><span class="pill live">six-model pre-print graded</span><span class="pill pending">earnings call / transcript pending</span></div>
+    <div class="stamp">analysis cutoff 2026-08-17 20:42:02Z · release accepted 16:22:03Z · no market-price or Wall Street consensus input</div>
+  </div>
+
+  <div class="verdict">
+    <div>
+      <div class="section-label">Investor read</div>
+      <h2>Operationally stronger; cash conversion is the argument now.</h2>
+      <p>Data-center revenue accelerated 68% year over year while GAAP operating margin expanded. Management's FQ1 2027 revenue and adjusted-EPS ranges both landed above the aggregate ranges sealed before the release. The offset is a $36.9M quarterly free-cash outflow and fiscal-year free cash flow of only $4.2M.</p>
+    </div>
+    <div class="grade"><div><strong>1 / 3</strong><span>headline bands held</span></div></div>
+  </div>
+
+  <section>
+    <p class="section-label">01 · Surprise scorecard</p>
+    <h2 class="section-title">Reported minus our sealed number</h2>
+    <p class="section-note">Positive means the company reported above our forecast. The six-model median was fixed at 18:45:50Z, before the release appeared in our issuer and SEC checks.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Metric</th><th>Reported</th><th>Our number</th><th>Surprise</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td class="label">Revenue ($M)</td><td>1,315.8</td><td>1,280.0</td><td class="up">+35.8 · +2.8%</td><td><span class="signal in">inside 1,257.5–1,322.5</span></td></tr>
+        <tr><td class="label">Adjusted EPS</td><td>4.10</td><td>3.79</td><td class="up">+0.31 · +8.2%</td><td><span class="signal out">above 3.70–3.98</span></td></tr>
+        <tr><td class="label">GAAP EPS</td><td>3.83</td><td>3.55</td><td class="up">+0.29 · +8.0%</td><td><span class="signal flat">no aggregate band</span></td></tr>
+        <tr><td class="label">GAAP gross margin</td><td>12.01%</td><td>11.98%</td><td class="up">+0.03 pt</td><td><span class="signal flat">in line</span></td></tr>
+        <tr><td class="label">GAAP operating margin</td><td>10.20%</td><td>10.03%</td><td class="up">+0.17 pt</td><td><span class="signal flat">modestly above</span></td></tr>
+        <tr><td class="label">Capex ($M)</td><td>91.9</td><td>65.0</td><td class="warn">+26.9 · +41.3%</td><td><span class="signal flat">more spend</span></td></tr>
+        <tr><td class="label">Free cash flow ($M)</td><td>−36.9</td><td>35.5</td><td class="down">−72.4</td><td><span class="signal out">below 5.0–75.0</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="source">Sources: <a href="https://www.sec.gov/Archives/edgar/data/1408710/000140871026000026/fn-2026811xex991q426.htm">8-K Ex. 99.1</a>, blocks b0000053, b0000065, b0000067, b0000072 and b0000076 · <a href="../v2/v2.json">sealed pre-print manifest</a></p>
+  </section>
+
+  <section>
+    <p class="section-label">02 · Calibration</p>
+    <h2 class="section-title">Where actuals landed in the aggregate ranges</h2>
+    <div class="card ranges">
+      <div class="range-row"><div class="range-name">Revenue</div><div class="track"><i class="band" style="left:17.5%;width:65%"></i><i class="mid" style="left:40%"></i><i class="actual" style="left:75.8%"></i></div><div class="range-value">1,315.8 · inside</div></div>
+      <div class="range-row"><div class="range-name">Adjusted EPS</div><div class="track"><i class="band" style="left:10%;width:56%"></i><i class="mid" style="left:28%"></i><i class="actual" style="left:90%"></i></div><div class="range-value">4.10 · above</div></div>
+      <div class="range-row"><div class="range-name">Free cash flow</div><div class="track"><i class="band" style="left:39.3%;width:50%"></i><i class="mid" style="left:61.1%"></i><i class="actual" style="left:9.4%"></i></div><div class="range-value">−36.9 · below</div></div>
+      <div class="legend"><span><i class="b"></i>aggregate p10–p90</span><span><i class="m"></i>aggregate median</span><span><i class="a"></i>reported</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">03 · Forward signal</p>
+    <h2 class="section-title">The new guide was the clearest upside surprise</h2>
+    <div class="cards">
+      <div class="card"><h3>FQ1 2027 revenue</h3><div class="big">$1.375B–$1.425B</div><p>Our pre-release aggregate expected $1.305B–$1.350B. The reported midpoint is $72.5M, or 5.5%, above our midpoint and implies roughly 43% year-over-year growth.</p><div class="source">8-K · b0000025</div></div>
+      <div class="card"><h3>FQ1 2027 adjusted EPS</h3><div class="big">$4.10–$4.25</div><p>Our aggregate expected $3.885–$4.035. Even the company's low end sits $0.065 above our high end. GAAP EPS guidance is $3.39–$3.54.</p><div class="source">8-K · b0000026, b0000028, b0000080</div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">04 · Model scoreboard</p>
+    <h2 class="section-title">Fable was closest on revenue; GPT‑5.6 Sol on adjusted EPS</h2>
+    <p class="section-note">Error below is forecast minus reported. Every model forecast positive free cash flow; none captured the quarter's cash outflow.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Model</th><th>Revenue</th><th>Error $M</th><th>Adj. EPS</th><th>Error</th><th>FCF $M</th><th>Error $M</th></tr></thead>
+      <tbody>
+        <tr><td class="label">Claude Fable 5</td><td>1,320</td><td>+4.2</td><td>3.88</td><td>−0.22</td><td>25.0</td><td>+61.9</td></tr>
+        <tr><td class="label">Gemini 3.7 Flash</td><td>1,275</td><td>−40.8</td><td>3.77</td><td>−0.33</td><td>10.0</td><td>+46.9</td></tr>
+        <tr><td class="label">GPT‑5.6 Sol</td><td>1,305</td><td>−10.8</td><td>3.96</td><td>−0.14</td><td>102.0</td><td>+138.9</td></tr>
+        <tr><td class="label">Grok 4.6</td><td>1,280</td><td>−35.8</td><td>3.80</td><td>−0.30</td><td>31.1</td><td>+68.0</td></tr>
+        <tr><td class="label">Kimi K3</td><td>1,275</td><td>−40.8</td><td>3.76</td><td>−0.34</td><td>40.0</td><td>+76.9</td></tr>
+        <tr><td class="label">Muse Spark 1.2</td><td>1,280</td><td>−35.8</td><td>3.78</td><td>−0.32</td><td>40.0</td><td>+76.9</td></tr>
+      </tbody>
+    </table></div>
+    <p class="source"><a href="../v2/">Open all six sealed model forecasts</a> · <a href="scorecard.json">machine-readable scorecard</a></p>
+  </section>
+
+  <section>
+    <p class="section-label">05 · Operating read-through</p>
+    <h2 class="section-title">AI infrastructure is broadening the top line</h2>
+    <div class="bridge">
+      <div><span>Data center</span><strong>$669.3M</strong><p class="muted">+68% y/y · +13% q/q · 51% of revenue</p></div>
+      <div><span>Communications infrastructure</span><strong>$412.9M</strong><p class="muted">+40% y/y · +1% q/q · 31% of revenue</p></div>
+      <div><span>Auto, industrial &amp; other</span><strong>$233.6M</strong><p class="muted">+8% y/y · +9% q/q · 18% of revenue</p></div>
+    </div>
+    <p class="source"><a href="https://investor.fabrinet.com/static-files/3946ab0d-d45b-48f2-881e-46a16fb0ae9a">FQ4 investor presentation</a>, pages 7 and 12 · first observed 20:36:36Z</p>
+  </section>
+
+  <section>
+    <p class="section-label">06 · Earnings quality</p>
+    <h2 class="section-title">A small GAAP/non-GAAP gap hides two very large offsets</h2>
+    <div class="bridge">
+      <div><span>GAAP diluted EPS</span><strong>$3.83</strong><p class="muted">includes a non-marketable equity revaluation gain</p></div>
+      <div><span>Net adjustments</span><strong>+$0.27</strong><p class="muted">$56.7M gain removed; $57.4M Pillar Two tax provision added back</p></div>
+      <div><span>Non-GAAP diluted EPS</span><strong>$4.10</strong><p class="muted">on 36.36M diluted shares</p></div>
+    </div>
+    <div class="callout" style="margin-top:12px"><strong>Quality flag:</strong> the net adjustment looks modest only because a large non-operating gain and a large tax provision nearly cancel. Operating profit and margin therefore provide the cleaner read on core execution this quarter.</div>
+    <p class="source">8-K Ex. 99.1 · b0000053 and b0000072 · investor presentation page 15</p>
+  </section>
+
+  <section>
+    <p class="section-label">07 · What changed</p>
+    <h2 class="section-title">Thesis update</h2>
+    <div class="takeaways">
+      <div class="takeaway"><div><h3>Growth confidence rises.</h3><p>Q4 revenue accelerated 45% year over year and the Q1 midpoint points to another roughly 43%. Multiple data-center, DCI, telecom and HPC ramps are converting into shipments.</p></div></div>
+      <div class="takeaway"><div><h3>Margin durability passed this print.</h3><p>GAAP gross margin held at 12.0% and GAAP operating margin rose to 10.2% from 9.8% a year ago despite the mix shift and rapid ramp.</p></div></div>
+      <div class="takeaway"><div><h3>Cash conversion remains unproven.</h3><p>Quarterly CFO was essentially flat year over year at $55.0M while revenue grew 45%. Capex rose 82%, producing negative free cash flow. For the full year, $256.7M of CFO less $252.5M of capex left only $4.2M.</p></div></div>
+      <div class="takeaway"><div><h3>The balance sheet is funding the ramp.</h3><p>Inventory rose 76% year over year to $1.02B and receivables rose 34% to $1.02B. That can be capacity-led investment, but the next proof point is conversion into cash—not merely another revenue beat.</p></div></div>
+    </div>
+    <p class="source">8-K · b0000049, b0000053, b0000065, b0000067 and b0000076</p>
+  </section>
+
+  <section>
+    <p class="section-label">08 · Next checks</p>
+    <h2 class="section-title">What would strengthen or break the read</h2>
+    <div class="watch">
+      <div><h3 class="up">Strengthens</h3><ul><li>Q1 revenue at or above $1.40B midpoint with data-center growth still leading.</li><li>GAAP gross margin at or above 12% while new capacity ramps.</li><li>Inventory growth decelerates below revenue growth and quarterly free cash flow turns positive.</li></ul></div>
+      <div><h3 class="down">Weakens</h3><ul><li>Guide or reported revenue slips below $1.375B.</li><li>Gross margin falls below 11.5% as mix and ramp costs bite.</li><li>Another quarter of negative free cash flow or inventory again outgrows revenue materially.</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">09 · Evidence status</p>
+    <h2 class="section-title">Release complete; call context not yet available</h2>
+    <div class="callout"><strong>Transcript not provided / source not yet available.</strong> Fabrinet scheduled its results call for 5:00 p.m. ET, after this page's 20:42:02Z cutoff. The release says a replay should appear about two hours after the call. Any post-call change will publish as a separately timestamped update; it will not rewrite this release-only scorecard.</div>
+    <div class="tablewrap" style="margin-top:12px"><table class="ledger">
+      <thead><tr><th>Evidence</th><th>Time held / available</th><th>Digest or status</th></tr></thead>
+      <tbody>
+        <tr><td class="label"><a href="https://www.sec.gov/Archives/edgar/data/1408710/000140871026000026/fn-2026811xex991q426.htm">8-K Ex. 99.1</a></td><td>accepted 16:22:03Z · fetched 20:36:30Z</td><td>6dd1a18a…d09d7c25</td></tr>
+        <tr><td class="label"><a href="https://investor.fabrinet.com/static-files/3946ab0d-d45b-48f2-881e-46a16fb0ae9a">FQ4 investor deck</a></td><td>first observed 20:36:36Z</td><td>47d54add…fcac68d</td></tr>
+        <tr><td class="label"><a href="../v2/v2.json">genuine-forward pre-print v2</a></td><td>published 18:45:50Z</td><td>073b93d9…5b99edc</td></tr>
+        <tr><td class="label">SEC quarterly master index</td><td>checked during 20:36Z ingest</td><td class="warn">publication mirror still lagging one accession</td></tr>
+      </tbody>
+    </table></div>
+    <p class="source">All extraction, XBRL, statement-table, point-in-time and visual checks passed. CHK-CAP-02 alone remains open because the SEC quarterly master-index mirror had not yet listed the newly accepted accession; this does not alter the official 8-K bytes or reported values.</p>
+  </section>
+
+  <footer class="foot">
+    <p><strong>Method.</strong> This page grades the corrected six-model pre-print v2 exactly as published. Surprise = reported − forecast; model table error = forecast − reported. Dollar statement values are USD millions. No Wall Street consensus or post-release market price was supplied to the forecast or this scorecard.</p>
+    <p>Primary sources only: Fabrinet's SEC-filed earnings release and first-party investor presentation. This is research, not investment advice. <a href="scorecard.json">Download the scorecard JSON</a>.</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "schema": "track_record_actuals_v1",
+  "ticker": "FN",
+  "cycle": "FQ4-2026",
+  "print": {
+    "date": "2026-08-17",
+    "accepted_at": "2026-08-17T16:22:03Z",
+    "session": "after-close",
+    "source": {
+      "kind": "8-K",
+      "accession": "0001408710-26-000026",
+      "document": "fn-2026811xex991q426.htm",
+      "exhibit": "EX-99.1"
+    }
+  },
+  "period_label": "Three Months Ended June 26, 2026",
+  "capture_note": "Mechanically transcribed 2026-08-17 from corpus-held parsed bytes of the EX-99.1 exhibit. The source document was accepted at 2026-08-17T16:22:03Z and fetched at 2026-08-17T20:36:30.314789Z; each non-null grading input cites its exact parsed block.",
+  "statement_inputs": {
+    "revenue": 1315.788,
+    "net_income": 139.260,
+    "eps_diluted": 3.83,
+    "cost_of_sales": 1157.737,
+    "operating_income": 134.249,
+    "interest_expense": 0.084,
+    "income_tax": 60.458,
+    "depreciation_amortization": null,
+    "impairments": null,
+    "capex": 91.869,
+    "cfo": 54.967,
+    "eps_adjusted": 4.10
+  },
+  "guidance_issued": {
+    "period": "FQ1-2027",
+    "where": "First fiscal quarter ending September 25, 2026 guidance",
+    "revenue": { "low": 1375, "high": 1425 },
+    "eps_adjusted": { "low": 4.10, "high": 4.25 },
+    "note": "GAAP diluted EPS was guided to $3.39-$3.54 on approximately 36.3 million diluted shares."
+  },
+  "provenance": [
+    { "figure": "revenue", "value": 1315.788, "statement": "Condensed Consolidated Statements of Operations", "line": "Revenues", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000053" },
+    { "figure": "cost_of_sales", "value": 1157.737, "statement": "Condensed Consolidated Statements of Operations", "line": "Cost of revenues (as-filed outflow (1,157.737), recorded as positive cost)", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000053" },
+    { "figure": "operating_income", "value": 134.249, "statement": "Condensed Consolidated Statements of Operations", "line": "Operating income", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000053" },
+    { "figure": "interest_expense", "value": 0.084, "statement": "Condensed Consolidated Statements of Operations", "line": "Interest expense (as-filed outflow (0.084), recorded as positive expense)", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000053" },
+    { "figure": "income_tax", "value": 60.458, "statement": "Condensed Consolidated Statements of Operations", "line": "Income tax expense (as-filed outflow (60.458), recorded as positive expense)", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000053" },
+    { "figure": "net_income", "value": 139.260, "statement": "Condensed Consolidated Statements of Operations", "line": "Net income", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000053" },
+    { "figure": "eps_diluted", "value": 3.83, "statement": "Condensed Consolidated Statements of Operations", "line": "Net income per share: diluted", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000053" },
+    { "figure": "capex", "value": 91.869, "statement": "Non-GAAP Free Cash Flow", "line": "Purchase of property, plant and equipment (as-filed outflow (91.869), recorded as positive spend)", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000076" },
+    { "figure": "cfo", "value": 54.967, "statement": "Non-GAAP Free Cash Flow", "line": "Net cash provided by operating activities", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000076" },
+    { "figure": "eps_adjusted", "value": 4.10, "statement": "GAAP to Non-GAAP Net Income and EPS Reconciliation", "line": "Non-GAAP net income per diluted share", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000072" },
+    { "figure": "depreciation_amortization", "value": null, "statement": "Condensed Consolidated Statements of Cash Flows", "line": "Only a fiscal-year depreciation and amortization line was reported; no quarter value was supplied, so EBITDA is not computed" },
+    { "figure": "impairments", "value": null, "statement": "Condensed Consolidated Statements of Operations", "line": "No separate quarterly impairment line" },
+    { "figure": "guidance_issued", "value": null, "statement": "Business Outlook", "line": "FQ1 2027 revenue $1.375B-$1.425B; GAAP diluted EPS $3.39-$3.54; non-GAAP diluted EPS $4.10-$4.25", "block_id": "0001408710-26-000026:fn-2026811xex991q426.htm:b0000025" }
+  ],
+  "verification": {
+    "owner_verified": false,
+    "note": "The source and calculations passed mechanical extraction and provenance review. Owner spot-verification has not yet been recorded."
+  }
+}
