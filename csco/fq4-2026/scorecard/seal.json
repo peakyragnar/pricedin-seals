@@ -1,0 +1,14 @@
+{
+  "schema": "pricedin_public_seal_v1",
+  "ticker": "CSCO",
+  "cycle": "FQ4-2026",
+  "surface": "post_release_scorecard",
+  "analysis_stage": "post_release",
+  "published_at": "2026-08-18T06:45:00Z",
+  "source_repository_commit": "961b53d5f1513f22f03e8824b7422bea3d17f7be",
+  "files_sha256": {
+    "actuals.json": "307ff15907691c0384bfa678f38e0b1ddc99a813742f972067fef6940a42c74e",
+    "index.html": "987e13f3952726e63bb9d605cba6a4f3d394ec502aa156f29b8d021767c3658e",
+    "scorecard.json": "202eb9769e49f9ecdaf853befb97de429ba3ab7fd91340b7e946917db7f14878"
+  }
+}

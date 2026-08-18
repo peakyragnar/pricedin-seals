@@ -1,0 +1,58 @@
+{
+  "schema": "track_record_actuals_v1",
+  "ticker": "CSCO",
+  "cycle": "FQ4-2026",
+  "print": {
+    "date": "2026-08-12",
+    "accepted_at": "2026-08-12T20:07:06Z",
+    "session": "after-close",
+    "source": {
+      "kind": "8-K",
+      "accession": "0000858877-26-000106",
+      "document": "exhibit991pressrelease-q4f.htm",
+      "exhibit": "EX-99.1"
+    }
+  },
+  "period_label": "Three Months Ended July 25, 2026",
+  "capture_note": "Transcribed 2026-08-17 from corpus-held parsed bytes of the EX-99.1 exhibit (accession captured 2026-08-12; provenance cites parsed block ids in the corpus).",
+  "statement_inputs": {
+    "revenue": 17252,
+    "net_income": 3859,
+    "eps_diluted": 0.97,
+    "cost_of_sales": 6189,
+    "operating_income": 4264,
+    "interest_expense": 373,
+    "income_tax": 1074,
+    "depreciation_amortization": 638,
+    "impairments": null,
+    "capex": 390,
+    "cfo": 5386,
+    "eps_adjusted": 1.22
+  },
+  "guidance_issued": {
+    "period": "FQ1-2027",
+    "where": "Q1 FY 2027 Guidance section",
+    "revenue": { "low": 18000, "high": 18200 },
+    "eps_adjusted": { "low": 1.32, "high": 1.34 },
+    "note": "GAAP EPS guided 1.08-1.10 in the same section; FY 2027 guided separately (revenue 72.2-73.4B, non-GAAP EPS 5.05-5.11)."
+  },
+  "provenance": [
+    { "figure": "revenue", "value": 17252, "statement": "Condensed Consolidated Statements of Operations", "line": "Total revenue", "block_id": "b0000099" },
+    { "figure": "cost_of_sales", "value": 6189, "statement": "Condensed Consolidated Statements of Operations", "line": "Total cost of sales", "block_id": "b0000099" },
+    { "figure": "operating_income", "value": 4264, "statement": "Condensed Consolidated Statements of Operations", "line": "Operating income", "block_id": "b0000099" },
+    { "figure": "interest_expense", "value": 373, "statement": "Condensed Consolidated Statements of Operations", "line": "Interest expense (as-filed (373), recorded as positive expense)", "block_id": "b0000099" },
+    { "figure": "income_tax", "value": 1074, "statement": "Condensed Consolidated Statements of Operations", "line": "Provision for income taxes", "block_id": "b0000099" },
+    { "figure": "net_income", "value": 3859, "statement": "Condensed Consolidated Statements of Operations", "line": "Net income", "block_id": "b0000099" },
+    { "figure": "eps_diluted", "value": 0.97, "statement": "Condensed Consolidated Statements of Operations", "line": "Net income per share: Diluted", "block_id": "b0000099" },
+    { "figure": "depreciation_amortization", "value": 638, "statement": "Condensed Consolidated Statements of Cash Flows", "line": "Depreciation, amortization, and other", "block_id": "b0000129" },
+    { "figure": "capex", "value": 390, "statement": "Condensed Consolidated Statements of Cash Flows", "line": "Acquisition of property and equipment (as-filed outflow (390), recorded as positive spend)", "block_id": "b0000129" },
+    { "figure": "cfo", "value": 5386, "statement": "Condensed Consolidated Statements of Cash Flows", "line": "Net cash provided by operating activities", "block_id": "b0000129" },
+    { "figure": "eps_adjusted", "value": 1.22, "statement": "Reconciliations of GAAP to Non-GAAP Measures", "line": "Non-GAAP EPS (non-GAAP net income 4,868 in b0000150)", "block_id": "b0000156" },
+    { "figure": "impairments", "value": null, "statement": "Condensed Consolidated Statements of Operations", "line": "No separately presented impairment line (restructuring and other charges is not an impairment line; doctrine: no line, no add-back)", "block_id": "b0000099" },
+    { "figure": "guidance_issued", "value": null, "statement": "Q1 FY 2027 Guidance", "line": "Revenue $18.0-18.2B; GAAP EPS $1.08-$1.10; Non-GAAP EPS $1.32-$1.34", "block_id": "b0000028" }
+  ],
+  "verification": {
+    "owner_verified": true,
+    "note": "Owner verified all fourteen figures against the EX-99.1 exhibit on 2026-08-17 ('all confirmed for csco'): statements of operations (7), cash flows (3), non-GAAP EPS reconciliation (1), Q1 FY2027 guidance (revenue and non-GAAP EPS ranges). Cross-checks internal to the release: GM 64.1% prose matches (17,252-6,189)/17,252 = 64.13%; OM 24.7% prose matches 4,264/17,252 = 24.72%."
+  }
+}

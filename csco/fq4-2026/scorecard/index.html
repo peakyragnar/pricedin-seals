@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cisco FQ4 2026 post-earnings analysis: reported results, the sealed six-model forecast scorecard, guidance, cash conversion, and source ledger.">
+  <link rel="canonical" href="https://pricedin.markets/csco/fq4-2026/scorecard/">
+  <title>Cisco FQ4 2026 earnings scorecard — pricedin.markets</title>
+  <style>
+    :root{--page:#f1f1ee;--surface:#fbfbf8;--surface2:#e9e9e4;--ink:#101010;
+      --secondary:#45443f;--muted:#77756f;--line:rgba(16,16,16,.34);
+      --blue:#1d40d8;--bluebg:#e2e8fa;--green:#2f5c0d;--greenbg:#e2eeda;
+      --red:#a52727;--redbg:#f6e2e0;--amber:#754707;--amberbg:#f5ecd8;
+      --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+      --sans:Archivo,"Helvetica Neue",Arial,sans-serif}
+    *{box-sizing:border-box} body{margin:0;background:var(--page);color:var(--ink);
+      font-family:var(--sans);font-size:16px;line-height:1.48;-webkit-font-smoothing:antialiased}
+    a{color:var(--blue)} .page{max-width:940px;margin:auto;padding:0 22px 64px}
+    .mast{display:flex;justify-content:space-between;align-items:center;gap:18px;
+      padding:22px 0 18px;border-bottom:1px solid var(--ink);flex-wrap:wrap}
+    .brand{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);
+      padding:6px 10px;text-decoration:none;color:var(--ink);font-family:var(--mono);
+      text-transform:uppercase;font-size:14px;letter-spacing:.04em}.tld{font-size:12px;
+      color:var(--secondary);text-transform:none;margin-left:-5px}.nav{display:flex;gap:20px;
+      font:12px var(--mono);text-transform:uppercase}.nav a{text-decoration:none;color:var(--secondary)}
+    .crumb{margin:18px 0 8px;font:11px var(--mono);text-transform:uppercase;letter-spacing:.07em}
+    .crumb a{text-decoration:none;color:var(--secondary)}
+    .hero{padding:22px 0 20px;border-bottom:1px solid var(--line)}
+    .eyebrow,.section-label{font:11px var(--mono);letter-spacing:.1em;text-transform:uppercase;
+      color:var(--blue)}h1{font-size:clamp(30px,6vw,58px);line-height:1.02;letter-spacing:-.035em;
+      margin:8px 0 10px;font-weight:610}.dek{font-size:clamp(17px,2.5vw,22px);line-height:1.35;
+      max-width:780px;margin:0;color:var(--secondary)}.stamp{font:11px var(--mono);color:var(--muted);
+      margin-top:15px}.stage{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{font:10px var(--mono);
+      text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border:1px solid var(--line)}
+    .pill.live{background:var(--greenbg);color:var(--green)}.pill.pending{background:var(--amberbg);color:var(--amber)}
+    .verdict{display:grid;grid-template-columns:1.35fr .65fr;gap:1px;background:var(--ink);
+      border:1px solid var(--ink);margin:24px 0}.verdict>div{background:var(--surface);padding:20px}
+    .verdict h2{font-size:26px;line-height:1.15;margin:5px 0 8px}.verdict p{margin:0;color:var(--secondary)}
+    .grade{display:flex;align-items:center;justify-content:center;min-height:140px;text-align:center}
+    .grade strong{font:600 45px/1 var(--mono);color:var(--green)}.grade span{display:block;
+      font:10px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:8px}
+    section{margin-top:34px}.section-label{margin:0 0 5px}.section-title{font-size:23px;
+      margin:0 0 7px}.section-note{max-width:760px;color:var(--secondary);margin:0 0 15px}
+    .tablewrap{overflow-x:auto;border:1px solid var(--ink);background:var(--surface)}table{width:100%;
+      border-collapse:collapse;font-variant-numeric:tabular-nums}th{font:10px var(--mono);text-transform:uppercase;
+      letter-spacing:.05em;color:var(--muted);padding:8px 11px;border-bottom:1px solid var(--ink);
+      text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}td{padding:10px 11px;
+      border-top:1px solid var(--line);text-align:right;white-space:nowrap;font:13px var(--mono)}
+    tr:first-child td{border-top:0}td.label{font:14px var(--sans)}.up{color:var(--green);font-weight:600}
+    .down{color:var(--red);font-weight:600}.warn{color:var(--amber);font-weight:600}.muted{color:var(--muted)}
+    .signal{display:inline-block;padding:2px 6px;font:9px var(--mono);text-transform:uppercase;
+      letter-spacing:.04em}.signal.in{background:var(--greenbg);color:var(--green)}
+    .signal.out{background:var(--redbg);color:var(--red)}.signal.flat{background:var(--surface2);color:var(--secondary)}
+    .ranges{display:grid;gap:12px}.range-row{display:grid;grid-template-columns:150px 1fr 116px;
+      gap:13px;align-items:center}.range-name{font-size:13px}.track{height:13px;position:relative;background:var(--surface2);
+      border:1px solid var(--line)}.band{position:absolute;top:2px;height:7px;background:#aebbe9}.mid{position:absolute;
+      width:2px;height:17px;top:-3px;background:var(--secondary)}.actual{position:absolute;width:9px;height:9px;
+      top:1px;border-radius:50%;background:var(--blue);margin-left:-4px;box-shadow:0 0 0 2px var(--surface)}
+    .range-value{text-align:right;font:11px var(--mono);color:var(--secondary)}.legend{font:10px var(--mono);
+      color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}.legend i{display:inline-block;
+      vertical-align:-1px;margin-right:5px}.legend .b{width:18px;height:7px;background:#aebbe9}.legend .m{width:2px;height:10px;background:var(--secondary)}
+    .legend .a{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--surface);
+      border:1px solid var(--line);padding:16px}.card h3{font-size:15px;margin:0 0 7px}.card p{font-size:14px;
+      color:var(--secondary);margin:0}.big{font:600 25px var(--mono);color:var(--ink);margin:5px 0}.big small{font-size:11px;
+      color:var(--muted);font-weight:400}.source{font:10px var(--mono);color:var(--muted);margin-top:9px}
+    .source a{color:var(--muted)}.bridge{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+      background:var(--line);border:1px solid var(--line)}.bridge>div{background:var(--surface);padding:14px}
+    .bridge span{display:block;font:10px var(--mono);text-transform:uppercase;color:var(--muted)}
+    .bridge strong{font:600 21px var(--mono)}.callout{border-left:4px solid var(--amber);background:var(--amberbg);
+      padding:13px 15px;color:var(--secondary);font-size:14px}.callout strong{color:var(--ink)}
+    .takeaways{counter-reset:item;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+    .takeaway{background:var(--surface);padding:16px 18px;display:grid;grid-template-columns:34px 1fr;gap:10px}
+    .takeaway:before{counter-increment:item;content:"0" counter(item);font:11px var(--mono);color:var(--blue)}
+    .takeaway h3{font-size:15px;margin:0 0 4px}.takeaway p{margin:0;color:var(--secondary);font-size:14px}
+    .watch{display:grid;grid-template-columns:1fr 1fr;gap:12px}.watch>div{border-top:3px solid var(--ink);
+      background:var(--surface);padding:14px}.watch h3{margin:0 0 6px;font-size:14px}.watch ul{margin:0;padding-left:18px;
+      color:var(--secondary);font-size:14px}.watch li{margin:5px 0}.ledger td{font-size:11px}.foot{margin-top:40px;
+      border-top:1px solid var(--ink);padding-top:14px;color:var(--muted);font-size:11px}.foot p{max-width:800px}
+    @media(max-width:700px){.verdict{grid-template-columns:1fr}.grade{min-height:auto}.cards,.watch{grid-template-columns:1fr}
+      .range-row{grid-template-columns:105px 1fr}.range-value{grid-column:2}.bridge{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main class="page">
+  <header class="mast">
+    <a class="brand" href="/" aria-label="pricedin.markets home">
+      <svg width="26" height="12" viewBox="0 0 30 14" aria-hidden="true"><rect x="0" y="4" width="30" height="6" fill="#e2e8fa"/><rect x="15" y="1" width="2" height="12" fill="#101010"/><rect x="20.5" y="4.5" width="5" height="5" fill="#1d40d8"/></svg>
+      pricedin<span class="tld">.markets</span>
+    </a>
+    <nav class="nav"><a href="/track-record/">Track record</a><a href="/how-it-works/">How it works</a></nav>
+  </header>
+
+  <div class="crumb"><a href="/track-record/events/CSCO-FQ4-2026/">← graded track-record event</a></div>
+  <div class="hero">
+    <div class="eyebrow">CSCO · fiscal Q4 2026 · post-release scorecard</div>
+    <h1>The print cleared the band.<br>The guide cleared the slate.</h1>
+    <p class="dek">Cisco printed $17,252M of revenue and $1.22 of adjusted EPS, both above our six-model medians and inside the sealed 80% ranges. Free cash flow of $4,996M printed above its band. The new-quarter guide of $18.0–$18.2B and $1.32–$1.34 sat entirely above the sealed guide expectation.</p>
+    <div class="stage"><span class="pill live">official 8-K captured</span><span class="pill live">six-model pre-print graded</span><span class="pill pending">release-only vintage · call Q&amp;A not used</span></div>
+    <div class="stamp">analysis cutoff 2026-08-18 06:45:00Z · release accepted 2026-08-12 20:07:06Z · forecasts sealed 2026-08-12 00:00:00Z · no market-price or Wall Street consensus input</div>
+  </div>
+
+  <div class="verdict">
+    <div>
+      <div class="section-label">Investor read</div>
+      <h2>A beat on the quarter; a larger beat on the next one.</h2>
+      <p>Revenue of $17,252M landed $322M, or 1.9%, above the $16,930M median and $352M above the $16.8B midpoint of Cisco’s own in-force guide. Adjusted EPS of $1.22 sat on the top edge of the aggregate band. The Q1 FY2027 ranges cleared the entire sealed guide forecast.</p>
+    </div>
+    <div class="grade"><div><strong>2 / 3</strong><span>headline bands held</span></div></div>
+  </div>
+
+  <section>
+    <p class="section-label">01 · Surprise scorecard</p>
+    <h2 class="section-title">Reported minus our sealed number</h2>
+    <p class="section-note">Positive means the company reported above our forecast. The six-model median was sealed at 2026-08-12 00:00:00Z, before the 8-K was accepted at 20:07:06Z.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Metric</th><th>Reported</th><th>Our number</th><th>Surprise</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td class="label">Revenue ($M)</td><td>17,252</td><td>16,930</td><td class="up">+322 · +1.9%</td><td><span class="signal in">inside 16,660–17,270</span></td></tr>
+        <tr><td class="label">Adjusted EPS</td><td>1.22</td><td>1.18</td><td class="up">+0.04 · +3.4%</td><td><span class="signal in">inside 1.15–1.22 · top edge</span></td></tr>
+        <tr><td class="label">GAAP EPS</td><td>0.97</td><td>0.85</td><td class="up">+0.13 · +14.8%</td><td><span class="signal flat">no aggregate band</span></td></tr>
+        <tr><td class="label">GAAP gross margin</td><td>64.13%</td><td>63.81%</td><td class="up">+0.31 pt</td><td><span class="signal flat">modestly above</span></td></tr>
+        <tr><td class="label">GAAP operating margin</td><td>24.72%</td><td>23.90%</td><td class="up">+0.81 pt</td><td><span class="signal flat">above</span></td></tr>
+        <tr><td class="label">Capex ($M)</td><td>390</td><td>465</td><td class="muted">−75 · −16.1%</td><td><span class="signal flat">less spend</span></td></tr>
+        <tr><td class="label">Free cash flow ($M)</td><td>4,996</td><td>4,026</td><td class="up">+970</td><td><span class="signal out">above 3,200–4,750</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="source">Sources: <a href="https://www.sec.gov/Archives/edgar/data/858877/000085887726000106/exhibit991pressrelease-q4f.htm">8-K Ex. 99.1</a>, blocks b0000099, b0000129, b0000150 and b0000156 · <a href="/track-record/events/CSCO-FQ4-2026/">graded v5 event</a> · owner-verified 2026-08-17</p>
+  </section>
+
+  <section>
+    <p class="section-label">02 · Calibration</p>
+    <h2 class="section-title">Where actuals landed in the aggregate ranges</h2>
+    <div class="card ranges">
+      <div class="range-row"><div class="range-name">Revenue</div><div class="track"><i class="band" style="left:17.8%;width:67.8%"></i><i class="mid" style="left:47.8%"></i><i class="actual" style="left:83.6%"></i></div><div class="range-value">17,252 · inside</div></div>
+      <div class="range-row"><div class="range-name">Adjusted EPS</div><div class="track"><i class="band" style="left:19.2%;width:57.7%"></i><i class="mid" style="left:46.2%"></i><i class="actual" style="left:76.9%"></i></div><div class="range-value">1.22 · inside</div></div>
+      <div class="range-row"><div class="range-name">Free cash flow</div><div class="track"><i class="band" style="left:16%;width:62%"></i><i class="mid" style="left:49%"></i><i class="actual" style="left:87.8%"></i></div><div class="range-value">4,996 · above</div></div>
+      <div class="legend"><span><i class="b"></i>aggregate p10–p90</span><span><i class="m"></i>aggregate median</span><span><i class="a"></i>reported</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">03 · Forward signal</p>
+    <h2 class="section-title">The new guide was larger than the print surprise</h2>
+    <div class="cards">
+      <div class="card"><h3>FQ1 2027 revenue</h3><div class="big">$18.0B–$18.2B</div><p>Our pre-release aggregate expected $16.3B–$16.6B. The reported midpoint is $1.65B, or 10.0%, above our midpoint. Sequential growth implied by the new midpoint versus the just-printed $17,252M is about 4.9%.</p><div class="source">8-K · b0000028</div></div>
+      <div class="card"><h3>FQ1 2027 adjusted EPS</h3><div class="big">$1.32–$1.34</div><p>Our aggregate expected $1.10–$1.13. The company’s low end sits $0.195 above our high end. GAAP EPS guidance is $1.08–$1.10.</p><div class="source">8-K · b0000028</div></div>
+    </div>
+    <div class="cards" style="margin-top:12px">
+      <div class="card"><h3>Resolved Q4 guide</h3><div class="big">$16.7B–$16.9B</div><p>The in-force Q4 revenue guide, from the May 8-K, had a $16.8B midpoint. Reported $17,252M is $452M, or 2.7%, above that midpoint. Non-GAAP EPS guided $1.16–$1.18; reported $1.22.</p><div class="source">prior 8-K 0000858877-26-000075 · this print b0000099 / b0000156</div></div>
+      <div class="card"><h3>FY 2027 frame</h3><div class="big">$72.2B–$73.4B</div><p>Full-year non-GAAP EPS guided $5.05–$5.11. This page does not invent a sealed full-year median for FY2027; the graded v5 contract’s next-quarter guide block is the comparison used above.</p><div class="source">8-K · Q1 / FY 2027 guidance section</div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">04 · Model scoreboard</p>
+    <h2 class="section-title">Qwen was closest on revenue; Kimi on adjusted EPS; GPT‑5.6 Sol on cash</h2>
+    <p class="section-note">Error below is forecast minus reported. Every valid model was low on revenue and adjusted EPS. Only GPT‑5.6 Sol was near free cash flow; the other five were low by $876M to $1,311M.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Model</th><th>Revenue</th><th>Error $M</th><th>Adj. EPS</th><th>Error</th><th>FCF $M</th><th>Error $M</th></tr></thead>
+      <tbody>
+        <tr><td class="label">Claude Fable 5</td><td>17,000</td><td>−252</td><td>1.18</td><td>−0.04</td><td>4,120</td><td>−876</td></tr>
+        <tr><td class="label">GPT‑5.6 Luna</td><td>16,850</td><td>−402</td><td>1.18</td><td>−0.04</td><td>3,975</td><td>−1,021</td></tr>
+        <tr><td class="label">GPT‑5.6 Sol</td><td>16,860</td><td>−392</td><td>1.18</td><td>−0.04</td><td>5,000</td><td>+4</td></tr>
+        <tr><td class="label">Kimi K3</td><td>16,800</td><td>−452</td><td>1.19</td><td>−0.03</td><td>3,750</td><td>−1,246</td></tr>
+        <tr><td class="label">Qwen 3.8 Max</td><td>17,100</td><td>−152</td><td>1.18</td><td>−0.04</td><td>4,077</td><td>−919</td></tr>
+        <tr><td class="label">Grok 4.5</td><td>17,020</td><td>−232</td><td>1.175</td><td>−0.045</td><td>3,685</td><td>−1,311</td></tr>
+      </tbody>
+    </table></div>
+    <p class="source"><a href="/track-record/events/CSCO-FQ4-2026/">Open the graded event</a> · <a href="scorecard.json">machine-readable scorecard</a> · four sealed models produced no contract-valid forecast and are omitted here</p>
+  </section>
+
+  <section>
+    <p class="section-label">05 · Earnings quality</p>
+    <h2 class="section-title">GAAP and non-GAAP both beat; cash beat harder than the P&amp;L</h2>
+    <div class="bridge">
+      <div><span>GAAP diluted EPS</span><strong>$0.97</strong><p class="muted">$0.13 above the $0.85 median</p></div>
+      <div><span>Non-GAAP diluted EPS</span><strong>$1.22</strong><p class="muted">on the top edge of 1.15–1.22</p></div>
+      <div><span>Free cash flow</span><strong>$4,996M</strong><p class="muted">CFO $5,386M less capex $390M</p></div>
+    </div>
+    <p class="source">8-K Ex. 99.1 · b0000099, b0000129 and b0000156 · FCF = CFO − capex, same function used on the forecast grid</p>
+  </section>
+
+  <section>
+    <p class="section-label">06 · What changed</p>
+    <h2 class="section-title">Thesis update</h2>
+    <div class="takeaways">
+      <div class="takeaway"><div><h3>The print was a clean beat versus both bars.</h3><p>Revenue and adjusted EPS cleared the sealed medians and stayed inside the 80% ranges. They also cleared Cisco’s own May guide of $16.7–$16.9B and $1.16–$1.18.</p></div></div>
+      <div class="takeaway"><div><h3>The next-quarter guide is the larger surprise.</h3><p>Q1 FY2027 revenue of $18.0–$18.2B and adjusted EPS of $1.32–$1.34 sit entirely above the sealed $16.3–$16.6B / $1.10–$1.13 expectation. That is a bigger miss for the slate than the quarter just printed.</p></div></div>
+      <div class="takeaway"><div><h3>Cash conversion ran the other way from the recent pattern.</h3><p>Free cash flow of $4,996M printed $970M above the median and above the $4,750 top of the band. Five of six models were low. GPT‑5.6 Sol’s $5,000M was the only near print.</p></div></div>
+      <div class="takeaway"><div><h3>This vintage does not re-underwrite the out-years.</h3><p>FY2027 guided $72.2–$73.4B and $5.05–$5.11. A post-release re-slate would be a separate timestamped vintage. This page grades the already-sealed v5 pre-print only.</p></div></div>
+    </div>
+    <p class="source">8-K · b0000028, b0000099, b0000129 and b0000156 · prior guide 0000858877-26-000075</p>
+  </section>
+
+  <section>
+    <p class="section-label">07 · Next checks</p>
+    <h2 class="section-title">What would strengthen or break the read</h2>
+    <div class="watch">
+      <div><h3 class="up">Strengthens</h3><ul><li>Q1 revenue at or above the $18.1B midpoint with adjusted EPS at or above $1.33.</li><li>Another quarter of free cash flow near or above $5.0B after $390M of capex.</li><li>A later 10-K that confirms the 8-K figures without restatement.</li></ul></div>
+      <div><h3 class="down">Weakens</h3><ul><li>Q1 revenue below the $18.0B guide floor, or adjusted EPS below $1.32.</li><li>Free cash flow falling back toward the $4,026M pre-print median while revenue holds.</li><li>A 10-K or 8-K/A that revises the Q4 figures used on this page.</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">08 · Evidence status</p>
+    <h2 class="section-title">Release graded; call Q&amp;A is not an input</h2>
+    <div class="callout"><strong>Release-only vintage.</strong> This page grades the 8-K EX-99.1 against the v5 slate sealed at 2026-08-12 00:00:00Z. The models saw SEC filings only (evidence surface filings-v1). Call Q&amp;A is not used here. Any post-call or re-slate update must publish as a separately timestamped vintage; it will not rewrite this scorecard.</div>
+    <div class="tablewrap" style="margin-top:12px"><table class="ledger">
+      <thead><tr><th>Evidence</th><th>Time held / available</th><th>Digest or status</th></tr></thead>
+      <tbody>
+        <tr><td class="label"><a href="https://www.sec.gov/Archives/edgar/data/858877/000085887726000106/exhibit991pressrelease-q4f.htm">8-K Ex. 99.1</a></td><td>accepted 2026-08-12 20:07:06Z</td><td>0000858877-26-000106 · exhibit991pressrelease-q4f.htm</td></tr>
+        <tr><td class="label"><a href="/track-record/events/CSCO-FQ4-2026/">v5 pre-print, six valid models</a></td><td>sealed 2026-08-12 00:00:00Z</td><td>combiner median-v1 · 6 of 10 contract-valid</td></tr>
+        <tr><td class="label">Owner verification</td><td>2026-08-17</td><td>all fourteen actuals figures confirmed against EX-99.1</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <footer class="foot">
+    <p><strong>Method.</strong> This page grades the sealed six-model v5 pre-print exactly as recorded in the track-record event. Surprise = reported − forecast; model table error = forecast − reported. Dollar statement values are USD millions. No Wall Street consensus or post-release market price was supplied to the forecast or this scorecard.</p>
+    <p>Primary source: Cisco’s SEC-filed earnings release. This is research, not investment advice. <a href="scorecard.json">Download the scorecard JSON</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
