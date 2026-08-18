@@ -1,0 +1,15 @@
+{
+  "schema": "pricedin_public_seal_v1",
+  "ticker": "HD",
+  "cycle": "FQ2-2026",
+  "surface": "post_release_scorecard",
+  "analysis_stage": "post_release_pre_call",
+  "published_at": "2026-08-18T10:25:00Z",
+  "source_repository_commit": "4a2eeff9b5adf2bc897a2af6fbe0a9b166909c59",
+  "supplied_preprint_manifest_sha256": "884c2553309fd79fe75434b5ed69249639645be3dc943f953b5dfc528ac12993",
+  "files_sha256": {
+    "actuals.json": "1e267a079ec1addca4397f9b17aed2b5c8e4b1f13e574f45b1fffaec7629f413",
+    "index.html": "9463f67d660f86c0328d0f3fa2f8f0b2d53bae37da40c922773388e690952c56",
+    "scorecard.json": "62fa775996145dc1ec6488aac95c1c86fc86eedbae0e6196d3a47b5a1c268fb1"
+  }
+}

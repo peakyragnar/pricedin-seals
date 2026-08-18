@@ -1,0 +1,57 @@
+{
+  "schema": "track_record_actuals_v1",
+  "ticker": "HD",
+  "cycle": "FQ2-2026",
+  "print": {
+    "date": "2026-08-18",
+    "accepted_at": "2026-08-18T06:10:33Z",
+    "session": "before-open",
+    "source": {
+      "kind": "8-K",
+      "accession": "0000354950-26-000145",
+      "document": "hd_exhibit991x08022026.htm",
+      "exhibit": "EX-99.1"
+    }
+  },
+  "period_label": "Three Months Ended August 2, 2026",
+  "capture_note": "Mechanically transcribed 2026-08-18 from the official EX-99.1 bytes fetched from EDGAR (accepted 2026-08-18T06:10:33Z, fetched 2026-08-18T10:18:19Z) and parsed with rff.filing.content.extract_html_content. Income-statement and non-GAAP figures are the as-filed Q2 columns. Quarterly CFO and capex are the six-month totals in this exhibit minus the three-month totals in the already-filed Q1 EX-99.1 (accession 0000354950-26-000101); both source blocks are cited. Live-corpus ingest completed on the existing writer laptop before owner spot-verification.",
+  "statement_inputs": {
+    "revenue": 47861,
+    "net_income": 4766,
+    "eps_diluted": 4.79,
+    "cost_of_sales": 31746,
+    "operating_income": 6839,
+    "interest_expense": 583,
+    "income_tax": 1549,
+    "depreciation_amortization": null,
+    "impairments": null,
+    "capex": 880,
+    "cfo": 5390,
+    "eps_adjusted": 4.92
+  },
+  "guidance_issued": {
+    "period": "FY-2026",
+    "where": "Fiscal 2026 Guidance section (reaffirmed)",
+    "eps_adjusted": { "low": 14.69, "high": 15.28 },
+    "note": "Total sales growth approximately 2.5% to 4.5%; comparable sales approximately flat to 2.0%; gross margin approximately 33.1%; GAAP operating margin approximately 12.4% to 12.6%; adjusted operating margin approximately 12.8% to 13.0%; diluted EPS and adjusted diluted EPS each flat to +4.0% from $14.23 and $14.69; capex approximately 2.5% of total sales. No quarterly guide was issued."
+  },
+  "provenance": [
+    { "figure": "revenue", "value": 47861, "statement": "Consolidated Statements of Earnings", "line": "Net sales", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000041" },
+    { "figure": "cost_of_sales", "value": 31746, "statement": "Consolidated Statements of Earnings", "line": "Cost of sales", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000041" },
+    { "figure": "operating_income", "value": 6839, "statement": "Consolidated Statements of Earnings", "line": "Operating income", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000041" },
+    { "figure": "interest_expense", "value": 583, "statement": "Consolidated Statements of Earnings", "line": "Interest expense (as-filed 583, recorded as positive expense)", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000041" },
+    { "figure": "income_tax", "value": 1549, "statement": "Consolidated Statements of Earnings", "line": "Provision for income taxes", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000041" },
+    { "figure": "net_income", "value": 4766, "statement": "Consolidated Statements of Earnings", "line": "Net earnings", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000041" },
+    { "figure": "eps_diluted", "value": 4.79, "statement": "Consolidated Statements of Earnings", "line": "Diluted earnings per share", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000041" },
+    { "figure": "capex", "value": 880, "statement": "Consolidated Statements of Cash Flows (Q2 = YTD minus Q1)", "line": "Capital expenditures: YTD outflow (1,724) in this exhibit minus Q1 outflow (844) in 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000052, recorded as positive spend 880", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000053" },
+    { "figure": "cfo", "value": 5390, "statement": "Consolidated Statements of Cash Flows (Q2 = YTD minus Q1)", "line": "Net cash provided by operating activities: YTD 11,422 in this exhibit minus Q1 6,032 in 0000354950-26-000101:hd_exhibit991x05032026.htm:b0000052", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000053" },
+    { "figure": "eps_adjusted", "value": 4.92, "statement": "Reconciliation of Adjusted Diluted Earnings Per Share", "line": "Adjusted diluted earnings per share (Non-GAAP)", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000066" },
+    { "figure": "depreciation_amortization", "value": null, "statement": "Consolidated Statements of Cash Flows", "line": "Only six-month depreciation and amortization lines were presented in the just-filed 8-K; no standalone quarterly cash-flow D&A line, so EBITDA is not computed" },
+    { "figure": "impairments", "value": null, "statement": "Consolidated Statements of Earnings", "line": "No separately presented quarterly impairment line" },
+    { "figure": "guidance_issued", "value": null, "statement": "Fiscal 2026 Guidance", "line": "Reaffirmed: total sales growth approximately 2.5% to 4.5%; adjusted diluted EPS flat to +4.0% from $14.69; no quarterly guide", "block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000012" }
+  ],
+  "verification": {
+    "owner_verified": true,
+    "note": "The source and calculations passed mechanical extraction and provenance review against the fetched EX-99.1 bytes. On 2026-08-18 the owner spot-verified Q2 sales of $47,861M and adjusted diluted EPS of $4.92 in the official Q2 EX-99.1, plus quarterly free cash flow of $4,510M derived from official Q2 YTD and Q1 EX-99.1 cash-flow rows."
+  }
+}

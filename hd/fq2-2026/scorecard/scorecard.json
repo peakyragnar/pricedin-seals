@@ -1,0 +1,89 @@
+{
+  "schema": "rff_post_earnings_scorecard_v1",
+  "ticker": "HD",
+  "cycle": "FQ2-2026",
+  "analysis_as_of": "2026-08-18T10:21:27Z",
+  "published_at": "2026-08-18T10:25:00Z",
+  "analysis_stage": "post_release_pre_call",
+  "sign_convention": "aggregate surprise is reported minus forecast; per-model error is forecast minus reported",
+  "transcript_status": "not_yet_available_call_scheduled_2026-08-18T13:00:00Z",
+  "preprint": {
+    "vintage": "v1",
+    "classification": "genuine_forward",
+    "published_at": "2026-08-17T20:13:05Z",
+    "manifest_sha256": "884c2553309fd79fe75434b5ed69249639645be3dc943f953b5dfc528ac12993",
+    "git_seal_commit": "9d06363320c2b102ab08654c44b1e8e54ab23df2",
+    "combiner_version": "median-v1",
+    "models_contract_valid": 6,
+    "models_sealed": 6
+  },
+  "source": {
+    "kind": "8-K EX-99.1",
+    "accession": "0000354950-26-000145",
+    "accepted_at": "2026-08-18T06:10:33Z",
+    "document": "hd_exhibit991x08022026.htm",
+    "content_sha256": "b0d505e6a60b2155a64644c2be5a00b3e8a7d9d4623def349ba2ed1b6cb6a0c9",
+    "fetched_at": "2026-08-18T10:18:19Z",
+    "period_label": "Three Months Ended August 2, 2026",
+    "owner_verified": true,
+    "sec_url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000145/hd_exhibit991x08022026.htm"
+  },
+  "cash_derivation": {
+    "method": "q2_equals_ytd_minus_q1",
+    "ytd_cfo_m": 11422.0,
+    "q1_cfo_m": 6032.0,
+    "q2_cfo_m": 5390.0,
+    "ytd_capex_m": 1724.0,
+    "q1_capex_m": 844.0,
+    "q2_capex_m": 880.0,
+    "q1_source": {
+      "accession": "0000354950-26-000101",
+      "document": "hd_exhibit991x05032026.htm",
+      "block_id": "0000354950-26-000101:hd_exhibit991x05032026.htm:b0000052"
+    },
+    "ytd_block_id": "0000354950-26-000145:hd_exhibit991x08022026.htm:b0000053"
+  },
+  "reported": {
+    "revenue_m": 47861.0,
+    "gaap_eps": 4.79,
+    "adjusted_eps": 4.92,
+    "gaap_gross_margin_pct": 33.670421,
+    "gaap_operating_margin_pct": 14.289296,
+    "cfo_m": 5390.0,
+    "capex_m": 880.0,
+    "fcf_m": 4510.0,
+    "comparable_sales_pct": 1.7,
+    "comparable_sales_us_pct": 1.3
+  },
+  "aggregate_preprint": {
+    "revenue_m": { "p10": 45750.0, "p50": 46900.0, "p90": 48000.0, "reported_minus_p50": 961.0, "inside_band": true },
+    "adjusted_eps": { "p10": 4.435, "p50": 4.605, "p90": 4.775, "reported_minus_p50": 0.315, "inside_band": false },
+    "gaap_eps": { "p50": 4.475, "reported_minus_p50": 0.315 },
+    "gaap_gross_margin_pct": { "p50": 32.989803, "reported_minus_p50": 0.680618 },
+    "gaap_operating_margin_pct": { "p50": 13.791461, "reported_minus_p50": 0.497835 },
+    "capex_m": { "p50": 1050.0, "reported_minus_p50": -170.0 },
+    "fcf_m": { "p10": 3125.0, "p50": 3895.5, "p90": 4775.0, "reported_minus_p50": 614.5, "inside_band": true }
+  },
+  "guidance": {
+    "period": "FY-2026",
+    "status": "reaffirmed",
+    "reported_sales_growth_pct": { "low": 2.5, "high": 4.5 },
+    "reported_adjusted_eps": { "low": 14.69, "high": 15.28 },
+    "preprint_revenue_m": { "low": 168800.0, "high": 172100.0 },
+    "preprint_adjusted_eps": { "low": 14.69, "high": 15.28 },
+    "verdict": "fiscal 2026 guide was reaffirmed; the in-force sales-growth and adjusted-EPS ranges are the same frame the six-model aggregate already expected; no quarterly guide was issued"
+  },
+  "models": [
+    { "key": "fable", "model_id": "claude-fable-5", "label": "Claude Fable 5", "revenue_m": 47300.0, "revenue_error_m": -561.0, "adjusted_eps": 4.57, "adjusted_eps_error": -0.35, "fcf_m": 4936.0, "fcf_error_m": 426.0 },
+    { "key": "gemini37", "model_id": "gemini-3.7-flash", "label": "Gemini 3.7 Flash", "revenue_m": 46400.0, "revenue_error_m": -1461.0, "adjusted_eps": 4.70, "adjusted_eps_error": -0.22, "fcf_m": 3650.0, "fcf_error_m": -860.0 },
+    { "key": "gpt-sol", "model_id": "gpt-5.6-sol", "label": "GPT-5.6 Sol", "revenue_m": 47450.0, "revenue_error_m": -411.0, "adjusted_eps": 4.82, "adjusted_eps_error": -0.10, "fcf_m": 3650.0, "fcf_error_m": -860.0 },
+    { "key": "grok46", "model_id": "grok-4.6", "label": "Grok 4.6", "revenue_m": 47100.0, "revenue_error_m": -761.0, "adjusted_eps": 4.49, "adjusted_eps_error": -0.43, "fcf_m": 4141.0, "fcf_error_m": -369.0 },
+    { "key": "kimi", "model_id": "moonshotai/kimi-k3", "label": "Kimi K3", "revenue_m": 46700.0, "revenue_error_m": -1161.0, "adjusted_eps": 4.64, "adjusted_eps_error": -0.28, "fcf_m": 2700.0, "fcf_error_m": -1810.0 },
+    { "key": "muse", "model_id": "muse-spark-1.2", "label": "Muse Spark 1.2", "revenue_m": 46408.0, "revenue_error_m": -1453.0, "adjusted_eps": 4.55, "adjusted_eps_error": -0.37, "fcf_m": 5120.0, "fcf_error_m": 610.0 }
+  ],
+  "release_checks": {
+    "extraction_method": "rff.filing.content.extract_html_content on fetched EDGAR bytes",
+    "live_corpus_ingest": "not_performed_this_copy_is_not_the_live_machine",
+    "sec_master_index": "not_checked_live_corpus_absent"
+  }
+}
