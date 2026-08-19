@@ -1,0 +1,24 @@
+{
+  "classification": "experimental",
+  "cycle": "FQ3-2026",
+  "files_sha256": {
+    "../../../index.html": "4ae6e7853b8ffb76476fbbbfcc34535a6eba4bf8c253d25b69eb85540b3dc9b7",
+    "index.html": "abcc40faec4ac545a6fbeb5d134b9975b0c3009b3d5a886def868d0415bfaf30",
+    "model/index.html": "2913cccc43c4d6c58c940d2079f9fdd623de528465def6065a9b9eb1226a6147",
+    "outlook.json": "d6d91469f780db38d83ec8b39d86df3068f6562f01d8058abcae8967704ffde1",
+    "result_fable.json": "b6a593b862f069deb60910c6363c158c2c356ca1ec64b42da801478171931b09",
+    "result_gemini37.json": "a6d6698c538de9d42ac4fce98099195d368554afbcad47c8578a77a61b1fa103",
+    "result_gpt-sol.json": "aa0bc1bcf4045eaca4d89d42bc5e9ee3a0abbac6d11e0680cf6845e8863e40f9",
+    "result_grok46.json": "a888b2335d3d897ed569d5c65e7e3b545ca9618760378fa74941dff3856a807f",
+    "result_kimi.json": "4988d4d4d5808e8eaf49088dd2f503ee5d0971e09489858e8e6b609133b81831",
+    "result_muse.json": "a9da33276aba52ffef4746e75405031ab0eeac59e1ae586577a777e12b8d22ee",
+    "v1/index.html": "ea340a0a5a8290dafedd81fd8df30f3085656b21b9c44ef8f7f40b273bae0e44",
+    "v1/model/index.html": "5046bc30ef246b3338ebd012a0dbc9e83478dd77768e3f6ff0eb4c803791df1d"
+  },
+  "published_at": "2026-08-19T14:22:31Z",
+  "release": "20260819T142231Z",
+  "schema": "pricedin_public_seal_v1",
+  "source_repository_commit": "d012f9503294fa886c6f52e305d1b41191197384",
+  "surface": "post_print_six_model_outlook",
+  "ticker": "AMAT"
+}

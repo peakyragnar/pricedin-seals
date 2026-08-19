@@ -1,0 +1,113 @@
+{
+  "aggregate_median": {
+    "fiscal_years": {
+      "2026": {
+        "eps_adjusted": 12.76,
+        "fcf": 5905.0,
+        "revenue": 34287.0,
+        "share_pct": 21.98,
+        "wfe": 115200.0
+      },
+      "2027": {
+        "eps_adjusted": 17.625,
+        "fcf": 10417.5,
+        "revenue": 44850.0,
+        "share_pct": 22.064999999999998,
+        "wfe": 140600.0
+      },
+      "2028": {
+        "eps_adjusted": 20.15,
+        "fcf": 12850.0,
+        "revenue": 49750.0,
+        "share_pct": 22.240000000000002,
+        "wfe": 160000.0
+      },
+      "2029": {
+        "eps_adjusted": 22.6,
+        "fcf": 14650.0,
+        "revenue": 53687.5,
+        "share_pct": 22.805,
+        "wfe": 175400.0
+      }
+    },
+    "next_quarter": {
+      "eps_adjusted": {
+        "p10": 3.82,
+        "p50": 4.02,
+        "p90": 4.234999999999999
+      },
+      "fcf": {
+        "p50": 2325.0
+      },
+      "revenue": {
+        "p10": 9775.0,
+        "p50": 10250.0,
+        "p90": 10725.0
+      }
+    }
+  },
+  "as_of": "2026-08-20T00:00:00Z",
+  "classification": "experimental",
+  "combiner_version": "median-v1",
+  "cycle": "FQ3-2026",
+  "files_sha256": {
+    "../../../amat/index.html": "4ae6e7853b8ffb76476fbbbfcc34535a6eba4bf8c253d25b69eb85540b3dc9b7",
+    "index.html": "abcc40faec4ac545a6fbeb5d134b9975b0c3009b3d5a886def868d0415bfaf30",
+    "model/index.html": "2913cccc43c4d6c58c940d2079f9fdd623de528465def6065a9b9eb1226a6147",
+    "result_fable.json": "b6a593b862f069deb60910c6363c158c2c356ca1ec64b42da801478171931b09",
+    "result_gemini37.json": "a6d6698c538de9d42ac4fce98099195d368554afbcad47c8578a77a61b1fa103",
+    "result_gpt-sol.json": "aa0bc1bcf4045eaca4d89d42bc5e9ee3a0abbac6d11e0680cf6845e8863e40f9",
+    "result_grok46.json": "a888b2335d3d897ed569d5c65e7e3b545ca9618760378fa74941dff3856a807f",
+    "result_kimi.json": "4988d4d4d5808e8eaf49088dd2f503ee5d0971e09489858e8e6b609133b81831",
+    "result_muse.json": "a9da33276aba52ffef4746e75405031ab0eeac59e1ae586577a777e12b8d22ee"
+  },
+  "models": {
+    "fable": {
+      "intent_id": "intent-20260819T080554974078Z-dd3b077a92be",
+      "model_id": "claude-fable-5",
+      "prompt_version": "v5.8",
+      "result_file": "result_fable.json",
+      "snapshot_id": "snap-6951-20260819T081232297310Z"
+    },
+    "gemini37": {
+      "intent_id": "intent-20260819T124609530500Z-0e11feb86b13",
+      "model_id": "gemini-3.7-flash",
+      "prompt_version": "v5.9",
+      "result_file": "result_gemini37.json",
+      "snapshot_id": "snap-6951-20260819T124738355050Z"
+    },
+    "gpt-sol": {
+      "intent_id": "intent-20260819T090616560430Z-dec0c6277474",
+      "model_id": "gpt-5.6-sol",
+      "prompt_version": "v5.8",
+      "result_file": "result_gpt-sol.json",
+      "snapshot_id": "snap-6951-20260819T091101533707Z"
+    },
+    "grok46": {
+      "intent_id": "intent-20260819T122559355053Z-9d3c08f95c2f",
+      "model_id": "grok-4.6",
+      "prompt_version": "v5.9",
+      "result_file": "result_grok46.json",
+      "snapshot_id": "snap-6951-20260819T124609490272Z"
+    },
+    "kimi": {
+      "intent_id": "intent-20260819T091132272701Z-8863dd6af00e",
+      "model_id": "moonshotai/kimi-k3",
+      "prompt_version": "v5.8",
+      "result_file": "result_kimi.json",
+      "snapshot_id": "snap-6951-20260819T092514354011Z"
+    },
+    "muse": {
+      "intent_id": "intent-20260819T084407187998Z-9c35a3351e6c",
+      "model_id": "muse-spark-1.2",
+      "prompt_version": "v5.8",
+      "result_file": "result_muse.json",
+      "snapshot_id": "snap-6951-20260819T090421019200Z"
+    }
+  },
+  "n_models": 6,
+  "prior_vintage": "amat/fq3-2026/outlook/v1",
+  "replaces": "single-model fable postcall-v3",
+  "schema": "pricedin_slate_outlook_v1",
+  "ticker": "AMAT"
+}

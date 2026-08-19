@@ -1,0 +1,852 @@
+{
+  "model_key": "grok46",
+  "as_of": "2026-08-20T00:00:00Z",
+  "ticker": "AMAT",
+  "validated": {
+    "anchors": [
+      {
+        "name": "q3_fy26_revenue",
+        "value": 9115,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000083"
+      },
+      {
+        "name": "q3_fy26_net_income",
+        "value": 2538,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000083"
+      },
+      {
+        "name": "q3_fy26_cfo",
+        "value": 3037,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000095"
+      },
+      {
+        "name": "q3_fy26_total_assets",
+        "value": 43522,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000089"
+      },
+      {
+        "name": "q4_fy26_revenue_guide_mid",
+        "value": 10250,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000056"
+      },
+      {
+        "name": "q3_fy26_nongaap_ni",
+        "value": 2795,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000106"
+      },
+      {
+        "name": "q3_fy26_semiconductor_systems",
+        "value": 7040,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000060"
+      },
+      {
+        "name": "q3_fy26_fcf",
+        "value": 2330,
+        "accession": "0001628280-26-056699",
+        "reference": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000130"
+      },
+      {
+        "name": "fy25_revenue",
+        "value": 28368,
+        "accession": "0001628280-25-056742",
+        "reference": "0001628280-25-056742:amat-20251026.htm:b0000643"
+      },
+      {
+        "name": "q2_fy26_retained_earnings",
+        "value": 59274,
+        "accession": "0001628280-26-037227",
+        "reference": "0001628280-26-037227:amat-20260426.htm:b0000058"
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 9000.0,
+        "p50": 9115.0,
+        "p90": 9250.0
+      },
+      "eps_adjusted": {
+        "p10": 3.4,
+        "p50": 3.49375,
+        "p90": 3.6
+      },
+      "fcf": {
+        "p10": 2100.0,
+        "p50": 2330.0,
+        "p90": 2500.0
+      }
+    },
+    "income_statement": {
+      "revenue": 9115.0,
+      "cost_of_sales": 4529.0,
+      "gross_profit": 4586.0,
+      "rnd": 1100.0,
+      "marketing_selling": 249.0,
+      "general_admin": 162.0,
+      "operating_income": 3075.0,
+      "interest_expense": 68.0,
+      "other_income_net": -100.0,
+      "pretax_income": 2907.0,
+      "income_tax": 369.0,
+      "net_income": 2538.0,
+      "shares_diluted": 800.0,
+      "eps_diluted": 3.1725
+    },
+    "bridge": {
+      "adjustments": {
+        "acquisition_amortization": 16.0,
+        "acquisition_integration_and_deal_costs": 5.0,
+        "realized_investment_gain": -7.0,
+        "unrealized_investment_loss": 220.0,
+        "sbc_tax_timing": 10.0,
+        "intra_entity_intangible_tax": 33.0,
+        "prior_year_tax_items": -46.0,
+        "tax_effect_of_nongaap_adjustments": 26.0
+      },
+      "non_gaap_net_income": 2795.0
+    },
+    "cash_flow": {
+      "net_income": 2538.0,
+      "depreciation_amortization": 151.0,
+      "share_based_comp": 169.0,
+      "other_operating": 179.0,
+      "cfo": 3037.0,
+      "capex": -707.0,
+      "other_investing": -706.0,
+      "cfi": -1413.0,
+      "buybacks": -440.0,
+      "dividends": -420.0,
+      "other_financing": -29.0,
+      "cff": -889.0,
+      "fx_effect": 0.0,
+      "net_change_cash": 735.0
+    },
+    "balance_sheet": {
+      "cash_and_restricted": 7094.0,
+      "other_assets": 36428.0,
+      "total_assets": 43522.0,
+      "total_liabilities": 17896.0,
+      "retained_earnings": 60952.0,
+      "other_equity": -35326.0,
+      "total_equity": 25626.0
+    },
+    "quarterly_path": {
+      "fq4_26": {
+        "revenue": {
+          "p10": 9750.0,
+          "p50": 10250.0,
+          "p90": 10750.0
+        },
+        "eps_adjusted": {
+          "p10": 3.82,
+          "p50": 4.02,
+          "p90": 4.22
+        },
+        "gross_profit": 5156.0,
+        "operating_income": 3566.0,
+        "net_income": 3117.0,
+        "cfo": 3200.0,
+        "capex": -650.0,
+        "fcf": 2550.0,
+        "cfi": -1050.0,
+        "cff": -1300.0,
+        "net_change_cash": 850.0,
+        "total_assets": 45600.0,
+        "total_liabilities": 17800.0,
+        "total_equity": 27800.0
+      },
+      "fq1_27": {
+        "revenue": {
+          "p10": 10400.0,
+          "p50": 11000.0,
+          "p90": 11700.0
+        },
+        "eps_adjusted": {
+          "p10": 3.95,
+          "p50": 4.3,
+          "p90": 4.65
+        },
+        "gross_profit": 5566.0,
+        "operating_income": 3820.0,
+        "net_income": 3340.0,
+        "cfo": 3000.0,
+        "capex": -620.0,
+        "fcf": 2380.0,
+        "cfi": -950.0,
+        "cff": -1450.0,
+        "net_change_cash": 600.0,
+        "total_assets": 47000.0,
+        "total_liabilities": 18000.0,
+        "total_equity": 29000.0
+      },
+      "fq2_27": {
+        "revenue": {
+          "p10": 9400.0,
+          "p50": 10000.0,
+          "p90": 10700.0
+        },
+        "eps_adjusted": {
+          "p10": 3.55,
+          "p50": 3.9,
+          "p90": 4.25
+        },
+        "gross_profit": 5070.0,
+        "operating_income": 3480.0,
+        "net_income": 3040.0,
+        "cfo": 3350.0,
+        "capex": -580.0,
+        "fcf": 2770.0,
+        "cfi": -880.0,
+        "cff": -1380.0,
+        "net_change_cash": 1090.0,
+        "total_assets": 48600.0,
+        "total_liabilities": 18150.0,
+        "total_equity": 30450.0
+      },
+      "fq3_27": {
+        "revenue": {
+          "p10": 9600.0,
+          "p50": 10200.0,
+          "p90": 10900.0
+        },
+        "eps_adjusted": {
+          "p10": 3.7,
+          "p50": 4.05,
+          "p90": 4.4
+        },
+        "gross_profit": 5182.0,
+        "operating_income": 3580.0,
+        "net_income": 3130.0,
+        "cfo": 3420.0,
+        "capex": -560.0,
+        "fcf": 2860.0,
+        "cfi": -820.0,
+        "cff": -1420.0,
+        "net_change_cash": 1180.0,
+        "total_assets": 50300.0,
+        "total_liabilities": 18300.0,
+        "total_equity": 32000.0
+      },
+      "fq4_27": {
+        "revenue": {
+          "p10": 9400.0,
+          "p50": 10000.0,
+          "p90": 10700.0
+        },
+        "eps_adjusted": {
+          "p10": 3.6,
+          "p50": 3.95,
+          "p90": 4.3
+        },
+        "gross_profit": 5100.0,
+        "operating_income": 3520.0,
+        "net_income": 3080.0,
+        "cfo": 3500.0,
+        "capex": -550.0,
+        "fcf": 2950.0,
+        "cfi": -800.0,
+        "cff": -1500.0,
+        "net_change_cash": 1200.0,
+        "total_assets": 52000.0,
+        "total_liabilities": 18500.0,
+        "total_equity": 33500.0
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 9750.0,
+        "high": 10750.0
+      },
+      "eps_adjusted": {
+        "low": 3.82,
+        "high": 4.22
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 33787.0,
+          "p50": 34287.0,
+          "p90": 34787.0
+        },
+        "eps_adjusted": {
+          "p10": 12.2,
+          "p50": 12.77,
+          "p90": 13.3
+        },
+        "gross_profit": 17124.0,
+        "operating_income": 10995.0,
+        "net_income": 10487.0,
+        "cfo": 8768.0,
+        "capex": -2638.0,
+        "fcf": 6130.0,
+        "cfi": -4202.0,
+        "cff": -3934.0,
+        "net_change_cash": 632.0,
+        "total_assets": 45600.0,
+        "total_liabilities": 17800.0,
+        "total_equity": 27800.0,
+        "drivers": {
+          "segments_musd": {
+            "semiconductor_systems": 26048.0,
+            "applied_global_services": 6845.0,
+            "display_and_other": 1394.0
+          },
+          "market_musd": 118400.0,
+          "market_share_pct": 22.0,
+          "market_basis": {
+            "kind": "own_estimate",
+            "note": "FY26 WFE set so 22% share reproduces Semiconductor Systems $26,048M (YTD $18,146M plus the $7.9B Q4 outlook). 22% is AMAT\u2019s long-run materials-engineering share of WFE; the dollar WFE total is not a company-filed figure."
+          },
+          "growth_driver": "Cloud and HBM customers paying for GAA foundry-logic tools, DRAM cleanroom expansions, and advanced-packaging systems (Nokota plating, Opta CMP, packaging eBeam) after unlocking extra tool-delivery slots."
+        }
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 37000.0,
+          "p50": 41200.0,
+          "p90": 45500.0
+        },
+        "eps_adjusted": {
+          "p10": 14.5,
+          "p50": 16.8,
+          "p90": 19.0
+        },
+        "gross_profit": 20918.0,
+        "operating_income": 14400.0,
+        "net_income": 12590.0,
+        "cfo": 13270.0,
+        "capex": -2310.0,
+        "fcf": 10960.0,
+        "cfi": -3450.0,
+        "cff": -5750.0,
+        "net_change_cash": 4070.0,
+        "total_assets": 52000.0,
+        "total_liabilities": 18500.0,
+        "total_equity": 33500.0,
+        "drivers": {
+          "segments_musd": {
+            "semiconductor_systems": 31416.0,
+            "applied_global_services": 8184.0,
+            "display_and_other": 1600.0
+          },
+          "market_musd": 142800.0,
+          "market_share_pct": 22.0,
+          "market_basis": {
+            "kind": "own_estimate",
+            "note": "FY27 WFE is my roll-forward of the FY26 construct at continued AI-fab intensity; 22% share held so Semiconductor Systems equals 0.22 \u00d7 WFE. Not filed."
+          },
+          "growth_driver": "Eight-quarter customer forecasts and the >10 new fabs announced in FQ3 paying for DRAM capacity, continued GAA ramps, HBM/3D-stacking packaging, and a 14-week Q1; AGS subscriptions and PDC/eBeam attach scale with the installed base."
+        }
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 40000.0,
+          "p50": 45800.0,
+          "p90": 52000.0
+        },
+        "eps_adjusted": {
+          "p10": 16.0,
+          "p50": 19.5,
+          "p90": 23.0
+        },
+        "gross_profit": 23400.0,
+        "operating_income": 16400.0,
+        "net_income": 14300.0,
+        "cfo": 15100.0,
+        "capex": -2200.0,
+        "fcf": 12900.0,
+        "cfi": -3200.0,
+        "cff": -7500.0,
+        "net_change_cash": 4400.0,
+        "total_assets": 58000.0,
+        "total_liabilities": 19200.0,
+        "total_equity": 38800.0,
+        "drivers": {
+          "segments_musd": {
+            "semiconductor_systems": 35200.0,
+            "applied_global_services": 9000.0,
+            "display_and_other": 1600.0
+          },
+          "market_musd": 160000.0,
+          "market_share_pct": 22.0,
+          "market_basis": {
+            "kind": "own_estimate",
+            "note": "FY28 WFE assumes the 2026-27 fab announcements convert to tool-in; share held at 22% so Semiconductor Systems is exactly 0.22 \u00d7 WFE. Not filed."
+          },
+          "growth_driver": "Filled output from the doubled 2028 manufacturing footprint and output-innovation tools (higher wafers per cleanroom foot) shipping into the new leading-edge and HBM fabs committed in 2026-27."
+        }
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 42000.0,
+          "p50": 49200.0,
+          "p90": 57000.0
+        },
+        "eps_adjusted": {
+          "p10": 17.5,
+          "p50": 21.8,
+          "p90": 26.0
+        },
+        "gross_profit": 25400.0,
+        "operating_income": 18000.0,
+        "net_income": 15700.0,
+        "cfo": 16600.0,
+        "capex": -2100.0,
+        "fcf": 14500.0,
+        "cfi": -3000.0,
+        "cff": -8500.0,
+        "net_change_cash": 5100.0,
+        "total_assets": 64000.0,
+        "total_liabilities": 20000.0,
+        "total_equity": 44000.0,
+        "drivers": {
+          "segments_musd": {
+            "semiconductor_systems": 38016.0,
+            "applied_global_services": 9584.0,
+            "display_and_other": 1600.0
+          },
+          "market_musd": 172800.0,
+          "market_share_pct": 22.0,
+          "market_basis": {
+            "kind": "own_estimate",
+            "note": "FY29 WFE is a moderating AI-cycle continuation; 22% share held so Semiconductor Systems equals 0.22 \u00d7 WFE. Not filed."
+          },
+          "growth_driver": "Installed-base AGS subscriptions at a mid-teens CAGR plus higher eBeam/PDC intensity on 3D GAA and HBM devices, with panel-level packaging beginning to contribute incremental systems dollars."
+        }
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "Return 80-100% of free cash flow to shareholders via buybacks and dividends ($12.8B remaining authorization).",
+          "source": "0001628280-26-056699:exhibit991q32026earningsre.htm:b0000018 and prepared remarks page 7",
+          "horizon": "fy0-fy3",
+          "flows_into": [
+            "cash_flow.buybacks",
+            "cash_flow.dividends",
+            "horizons.fy0.cff",
+            "horizons.fy1.cff",
+            "horizons.fy2.cff"
+          ]
+        },
+        {
+          "claim": "Hire and train to double quarterly system output from current levels by 2028, after nearly doubling manufacturing space and opening the $500M Singapore Tampines campus.",
+          "source": "Q3 FY26 prepared remarks pages 5-7; 8-K exhibit 99.1 corporate initiatives",
+          "horizon": "fy2",
+          "flows_into": [
+            "cash_flow.capex",
+            "horizons.fy0.capex",
+            "horizons.fy1.capex",
+            "horizons.fy2.capex"
+          ]
+        },
+        {
+          "claim": "EPIC Center begins operations in fall 2026 (first R&D tool moving in the week of the call); 11 announced engagements.",
+          "source": "IR deck page 10; prepared remarks page 4",
+          "horizon": "fy0-fy1",
+          "flows_into": [
+            "income_statement.rnd",
+            "horizons.fy0.capex",
+            "quarterly_path.fq4_26.capex"
+          ]
+        },
+        {
+          "claim": "AGS to grow more than 20% in calendar 2026 and a mid-teens long-term CAGR; packaging revenues to grow more than 70% in CY26; PDC to grow more than 50% in CY26.",
+          "source": "Q3 FY26 prepared remarks pages 3 and 6; IR deck pages 8-9",
+          "horizon": "fy0-fy1",
+          "flows_into": [
+            "income_statement.revenue",
+            "horizons.fy0.revenue",
+            "horizons.fy1.revenue",
+            "quarterly_path.fq4_26.revenue"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "Semiconductor Systems quarterly revenue at or above $7.9B with DRAM mix at least equal to the FQ3 26% print",
+          "checkable_at": "FY2026 Q4 8-K / earnings release (November 2026)"
+        },
+        {
+          "marker": "Full-year AGS revenue at or above $6.8B (implies >20% growth on the recast base)",
+          "checkable_at": "FY2026 Form 10-K segment note"
+        },
+        {
+          "marker": "FY2027 revenue at or above $40B and non-GAAP diluted EPS at or above $16",
+          "checkable_at": "FY2027 Form 10-K and Q4 FY27 8-K"
+        },
+        {
+          "marker": "Company-level GAAP gross margin at or above 50.5% for a full fiscal year",
+          "checkable_at": "FY2027 Form 10-K income statement"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Two consecutive quarters of Semiconductor Systems revenue down more than 8% sequentially",
+          "checkable_at": "Successive 10-Q / 8-K segment tables starting FY2027 Q1"
+        },
+        {
+          "marker": "AGS year-over-year growth below 8% for a full fiscal year",
+          "checkable_at": "FY2027 or FY2028 Form 10-K segment note"
+        },
+        {
+          "marker": "Full-year free cash flow below 50% of GAAP net income",
+          "checkable_at": "FY2027 Form 10-K cash flow statement"
+        },
+        {
+          "marker": "China share of Semiconductor Systems plus AGS revenue falling below 15% with no offsetting rest-of-world SS growth",
+          "checkable_at": "FY2027 Q-K additional information / 10-Q geography table"
+        }
+      ],
+      "what_must_be_true": "Cloud service providers must keep funding AI clusters at a rate that keeps leading-edge logic and HBM fabs at full utilization; TSMC, Samsung, SK hynix and Micron must continue to take AMAT deposition, epi, CMP, plating and eBeam steps on GAA and HBM; export licenses and China 28 nm demand must not gap the 26% China mix; and Singapore plus US manufacturing must actually convert the 2028 output-doubling plan into shipped systems."
+    },
+    "preview_note": "AMAT reports fiscal Q3 into the strongest AI WFE tape of the cycle. Q2 was $7.91B of revenue; the setup is a step-function in tool deliveries after customers unlocked cleanroom constraints, plus AGS still running above a 20% growth rate. Three things decide the print and the reaction: (1) whether Semiconductor Systems clears $7B on GAA plus a 50%+ YoY DRAM/HBM print; (2) whether company-level non-GAAP gross margin holds the 50% handle for a 13th consecutive YoY expansion; and (3) the Q4 guide \u2014 management has been raising CY26 Semi Systems and is signaling a $10B-plus quarter as DRAM cleanrooms open. A beat-and-raise with another year of grow-faster-than-WFE language and 2027 conviction should be taken well; a guide that only matches the Q3 run-rate, or any pullback in China/licensing commentary, would fade the multiple. Watch FCF conversion: Q2 CFO was only $845M on $2.8B of NI after working capital. A rebuild in cash conversion plus the October EPIC Center unveil frames the 2027 setup.",
+    "reasoning": "The August 13 8-K already prints fiscal Q3 (ended July 26, 2026). Every Q3 line is taken from that exhibit: revenue $9,115, COS $4,529, opex $1,100/$249/$162, OI $3,075, interest $68, other income \u2212$100 (unrealized investment loss), tax $369, NI $2,538, 800M diluted shares, GAAP EPS $3.1725; CFO $3,037, D&A $151, SBC $169, residual other operating $179, capex \u2212$707, other investing \u2212$706, buybacks \u2212$440, dividends \u2212$420, other financing \u2212$29, \u0394cash +$735. Restricted-cash end is $7,094; RE rolls 59,274+2,538\u2212420\u2212440=60,952; assets/liabilities/equity match the published $43,522/$17,896/$25,626. Non-GAAP NI $2,795 is the filed recon, so adjusted EPS is 2,795/800=3.49375 ($3.50 as reported). Q4 is taken at the issued midpoint ($10,250 / $4.02) because the DRAM/GAA 2H commentary already sits inside that guide; FY26 is then YTD $24,037 plus that Q4. FY27\u201329 compound off the 8-quarter visibility, 14-week Q1, AGS mid-teens CAGR and the 2028 output-doubling plan, with WFE share held at 22% so segment dollars exactly equal market \u00d7 share. FCF conversion rebuilds after the Q2 WC hole; capital return stays 60\u201380% of FCF rather than a mechanical 100% because Q3 itself returned only 37%."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-6951-20260819T124609490272Z",
+    "corpus_manifest_sha256": "24ff6f04dbbd426d6c0e184e7f81fbb484bd24dbbd897ddf6080affcb08df574",
+    "corpus_filings": 506,
+    "tool_calls": 42,
+    "held_at": "2026-08-19T12:25:59.369424Z",
+    "visual_projection_version": "sec-pdf:rff-visuals-2;ir-pdf:rff-ir-visuals-2",
+    "visual_delivery_version": "rff-visual-delivery-2",
+    "run_intent_id": "intent-20260819T122559355053Z-9d3c08f95c2f",
+    "run_class": "experimental_late"
+  },
+  "tool_calls": 29,
+  "contract_retries": 2,
+  "incomplete_retries": 0,
+  "anchor_retries": 0,
+  "unverified_anchors": [],
+  "model_id": "grok-4.6",
+  "prompt_version": "v5.9",
+  "usage": {
+    "api_calls": 12,
+    "input_tokens": 1395390,
+    "output_tokens": 17450,
+    "cache_read_tokens": 1000960,
+    "cache_write_tokens": 0,
+    "cost_usd": null,
+    "requests": [
+      {
+        "request_no": 1,
+        "model_id": "grok-4.6",
+        "input_tokens": 52453,
+        "output_tokens": 56,
+        "cache_read_tokens": 128,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 2,
+        "model_id": "grok-4.6",
+        "input_tokens": 81885,
+        "output_tokens": 151,
+        "cache_read_tokens": 52352,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 3,
+        "model_id": "grok-4.6",
+        "input_tokens": 89734,
+        "output_tokens": 102,
+        "cache_read_tokens": 128,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 4,
+        "model_id": "grok-4.6",
+        "input_tokens": 99769,
+        "output_tokens": 80,
+        "cache_read_tokens": 89728,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 5,
+        "model_id": "grok-4.6",
+        "input_tokens": 114427,
+        "output_tokens": 291,
+        "cache_read_tokens": 81792,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 6,
+        "model_id": "grok-4.6",
+        "input_tokens": 120901,
+        "output_tokens": 225,
+        "cache_read_tokens": 99712,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 7,
+        "model_id": "grok-4.6",
+        "input_tokens": 130658,
+        "output_tokens": 203,
+        "cache_read_tokens": 128,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 8,
+        "model_id": "grok-4.6",
+        "input_tokens": 137654,
+        "output_tokens": 207,
+        "cache_read_tokens": 120832,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 9,
+        "model_id": "grok-4.6",
+        "input_tokens": 141723,
+        "output_tokens": 204,
+        "cache_read_tokens": 130560,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 10,
+        "model_id": "grok-4.6",
+        "input_tokens": 142001,
+        "output_tokens": 6214,
+        "cache_read_tokens": 141696,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 11,
+        "model_id": "grok-4.6",
+        "input_tokens": 142057,
+        "output_tokens": 5183,
+        "cache_read_tokens": 141952,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 12,
+        "model_id": "grok-4.6",
+        "input_tokens": 142128,
+        "output_tokens": 4534,
+        "cache_read_tokens": 141952,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      }
+    ]
+  },
+  "visual_inventory_called": true,
+  "visual_inventory_documents": 1899,
+  "visual_inspections_status": "inspected",
+  "visual_inspections": [
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 1,
+      "source_sha256": "8742b044abab21e65a3406556aad766ec6a81cdc6574cdcc185fd3d04a9c281f",
+      "delivery_sha256": "8742b044abab21e65a3406556aad766ec6a81cdc6574cdcc185fd3d04a9c281f",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 2,
+      "source_sha256": "98e1a6a44c3caa4e028a63da82181499256280a191070fc802924198b03af458",
+      "delivery_sha256": "98e1a6a44c3caa4e028a63da82181499256280a191070fc802924198b03af458",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 3,
+      "source_sha256": "11a9e0a20fb5cadee8a7c7d1646c42d561bd18f4e5318adfe8b0e823797f8e6d",
+      "delivery_sha256": "11a9e0a20fb5cadee8a7c7d1646c42d561bd18f4e5318adfe8b0e823797f8e6d",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 4,
+      "source_sha256": "548eb1b90f82eb59796e490430ebe4a6f5f276e57cf77a60195fe1cc93faaf14",
+      "delivery_sha256": "548eb1b90f82eb59796e490430ebe4a6f5f276e57cf77a60195fe1cc93faaf14",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 5,
+      "source_sha256": "fcad81273ebd4046aa5ed020e0d2ef88ccb56dcb63f6abb7a3c7b99fba6292fa",
+      "delivery_sha256": "fcad81273ebd4046aa5ed020e0d2ef88ccb56dcb63f6abb7a3c7b99fba6292fa",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 6,
+      "source_sha256": "0fc6cac6f0986358923f97a5d746b9ea9ab7274955dbf4c1535da60bcba62cba",
+      "delivery_sha256": "0fc6cac6f0986358923f97a5d746b9ea9ab7274955dbf4c1535da60bcba62cba",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 7,
+      "source_sha256": "9ff0957d5c4fbdb618f37b7e260dcf05182a684492903cf53e494f333e8fa09a",
+      "delivery_sha256": "9ff0957d5c4fbdb618f37b7e260dcf05182a684492903cf53e494f333e8fa09a",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 8,
+      "source_sha256": "5d1d41a264f27598509a7a2c9ecc720600640c64eddcf163bda628153b311563",
+      "delivery_sha256": "5d1d41a264f27598509a7a2c9ecc720600640c64eddcf163bda628153b311563",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 9,
+      "source_sha256": "a67fc477b8d3d6c9ea90500daabc92247e4f6b833c3c92f9230ce2add70c1971",
+      "delivery_sha256": "a67fc477b8d3d6c9ea90500daabc92247e4f6b833c3c92f9230ce2add70c1971",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "6182f9582c7def32bee2a0f77f2675ccdc757e4f152e1c35c63794da72afc244",
+      "document": null,
+      "page_no": 1,
+      "source_sha256": "99198e32ec95b0e32b890b3a6bfcd7baaee52764e5e3a4fca6bb1cfe496952e7",
+      "delivery_sha256": "99198e32ec95b0e32b890b3a6bfcd7baaee52764e5e3a4fca6bb1cfe496952e7",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "6182f9582c7def32bee2a0f77f2675ccdc757e4f152e1c35c63794da72afc244",
+      "document": null,
+      "page_no": 2,
+      "source_sha256": "da331be43c0aa294108bb18d059994e60faf29797daf07d30e3d07e947e1828e",
+      "delivery_sha256": "da331be43c0aa294108bb18d059994e60faf29797daf07d30e3d07e947e1828e",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "6182f9582c7def32bee2a0f77f2675ccdc757e4f152e1c35c63794da72afc244",
+      "document": null,
+      "page_no": 3,
+      "source_sha256": "5708c3fcb0c644b0aaa85d41ac3a464488687d56ea568fb4ae37432a66b2cde3",
+      "delivery_sha256": "5708c3fcb0c644b0aaa85d41ac3a464488687d56ea568fb4ae37432a66b2cde3",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "6182f9582c7def32bee2a0f77f2675ccdc757e4f152e1c35c63794da72afc244",
+      "document": null,
+      "page_no": 4,
+      "source_sha256": "6ddeb5c36bb6995b4185102c3ec3397b9f3b5f42dfed200f2bfe91e9cd5bc835",
+      "delivery_sha256": "6ddeb5c36bb6995b4185102c3ec3397b9f3b5f42dfed200f2bfe91e9cd5bc835",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "6182f9582c7def32bee2a0f77f2675ccdc757e4f152e1c35c63794da72afc244",
+      "document": null,
+      "page_no": 5,
+      "source_sha256": "406f5b133ac056c0d2f9bf4dba479e147382e6a25c140455acd818d031975e2f",
+      "delivery_sha256": "406f5b133ac056c0d2f9bf4dba479e147382e6a25c140455acd818d031975e2f",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "6182f9582c7def32bee2a0f77f2675ccdc757e4f152e1c35c63794da72afc244",
+      "document": null,
+      "page_no": 6,
+      "source_sha256": "4be002bd105d4d74a212f4439981c03ce2163f86a2f7575b85f6474bed12eb71",
+      "delivery_sha256": "4be002bd105d4d74a212f4439981c03ce2163f86a2f7575b85f6474bed12eb71",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "6182f9582c7def32bee2a0f77f2675ccdc757e4f152e1c35c63794da72afc244",
+      "document": null,
+      "page_no": 7,
+      "source_sha256": "3fdd791c06a8ded5192c594d3406f9a0dfddc69b0d337f5de9a4ec14a4839b5a",
+      "delivery_sha256": "3fdd791c06a8ded5192c594d3406f9a0dfddc69b0d337f5de9a4ec14a4839b5a",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 10,
+      "source_sha256": "7db5ff8a4340fa1445cf261e36f1c34649b238c3fa63906589dd49c2b0968a52",
+      "delivery_sha256": "7db5ff8a4340fa1445cf261e36f1c34649b238c3fa63906589dd49c2b0968a52",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 15,
+      "source_sha256": "fea843174116e559a842439ea3633a4f0e657b3dd0e7787961243e2f6e937f70",
+      "delivery_sha256": "fea843174116e559a842439ea3633a4f0e657b3dd0e7787961243e2f6e937f70",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 16,
+      "source_sha256": "c70629ae48e1c0ec2d95e128ff040c2bb5813a1572654d3dcbf224d08b958ec7",
+      "delivery_sha256": "c70629ae48e1c0ec2d95e128ff040c2bb5813a1572654d3dcbf224d08b958ec7",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 18,
+      "source_sha256": "60c7ea7c1ceebeb57ba5ee7d53d68baddf15558c37b7491466106d2e1e4357e1",
+      "delivery_sha256": "60c7ea7c1ceebeb57ba5ee7d53d68baddf15558c37b7491466106d2e1e4357e1",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "1135a40ef88d773cb3df37793a19233da5741c6ee5f06ff60bda83954dbfa9fe",
+      "document": null,
+      "page_no": 11,
+      "source_sha256": "d27e75929105460071a3eb66394910a43fd2831145805f9e874bef27160e9254",
+      "delivery_sha256": "d27e75929105460071a3eb66394910a43fd2831145805f9e874bef27160e9254",
+      "transformation": null
+    }
+  ],
+  "run_intent": {
+    "intent_id": "intent-20260819T122559355053Z-9d3c08f95c2f",
+    "created_at": "2026-08-19T12:25:59.355053Z",
+    "run_class": "experimental_late",
+    "prompt_sha256": "04ba0be91773c96fc0cb67eab613b28174206411082d57ed39336149c90a69c6"
+  },
+  "run_class": "experimental_late",
+  "status": "ok",
+  "seconds": 1210.2
+}
