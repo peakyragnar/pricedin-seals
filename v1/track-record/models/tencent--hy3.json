@@ -1,0 +1,113 @@
+{
+  "active": false,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.2,
+          "p50": 3.45,
+          "p90": 3.7,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": -50.0,
+          "p50": 115.0,
+          "p90": 250.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8800.0,
+          "p50": 8950.0,
+          "p90": 9450.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ3-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.05,
+        "capex": -57.0,
+        "ebitda": 859.0,
+        "fcf": -2215.0,
+        "gaap_eps": 0.92,
+        "gross_margin": -0.200939,
+        "operating_margin": 0.063282,
+        "revenue": -165.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -1.428571,
+        "capex": -8.062235,
+        "ebitda": 27.479207,
+        "fcf": -95.064378,
+        "gaap_eps": 29.022082,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -1.810203
+      },
+      "event": "../events/AMAT-FQ3-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.65,
+          "forecast_low": 3.25,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.57
+        },
+        "revenue": {
+          "forecast_high": 9800.0,
+          "forecast_low": 8800.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -950.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": -22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": -0.005325,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 2,
+        "seconds": 1001.2,
+        "tool_calls": 9,
+        "usage": {
+          "api_calls": 6,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.05877075599999999,
+          "input_tokens": 113197,
+          "output_tokens": 97841
+        }
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "Hunyuan 3",
+  "model_id": "tencent/hy3",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 1.428571,
+      "revenue": 1.810203
+    },
+    "bands_held": 2,
+    "bands_total": 3,
+    "events_contract_valid": 1,
+    "events_graded": 1
+  },
+  "vendor": "Tencent"
+}

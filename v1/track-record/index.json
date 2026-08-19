@@ -1,0 +1,123 @@
+{
+  "band_promise": "the 80% range should contain the reported figure in roughly 8 of 10 prints; counts below are the live tally",
+  "coverage": {
+    "adjusted_eps": {
+      "held": 2,
+      "total": 2
+    },
+    "fcf": {
+      "held": 0,
+      "total": 2
+    },
+    "revenue": {
+      "held": 2,
+      "total": 2
+    }
+  },
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "high": 1.22,
+          "inside": true,
+          "low": 1.145,
+          "n_models": 6,
+          "reported": 1.22
+        },
+        "fcf": {
+          "high": 4750.0,
+          "inside": false,
+          "low": 3200.0,
+          "n_models": 6,
+          "reported": 4996
+        },
+        "revenue": {
+          "high": 17270.0,
+          "inside": true,
+          "low": 16660.0,
+          "n_models": 6,
+          "reported": 17252
+        }
+      },
+      "combiner_version": "median-v1",
+      "cycle": "FQ4-2026",
+      "event": "events/CSCO-FQ4-2026.json",
+      "evidence_surface": "filings-v1",
+      "headline": {
+        "adjusted_eps": {
+          "error": -0.04,
+          "n_models": 6,
+          "pct_error": -3.278689,
+          "published": 1.18,
+          "reported": 1.22
+        },
+        "revenue": {
+          "error": -322.0,
+          "n_models": 6,
+          "pct_error": -1.86645,
+          "published": 16930.0,
+          "reported": 17252
+        }
+      },
+      "models_contract_valid": 6,
+      "models_sealed": 10,
+      "owner_verified": true,
+      "print_date": "2026-08-12",
+      "slate_version": "v5",
+      "ticker": "CSCO"
+    },
+    {
+      "bands": {
+        "adjusted_eps": {
+          "high": 3.665,
+          "inside": true,
+          "low": 3.18,
+          "n_models": 8,
+          "reported": 3.5
+        },
+        "fcf": {
+          "high": 2275.0,
+          "inside": false,
+          "low": 900.0,
+          "n_models": 8,
+          "reported": 2330
+        },
+        "revenue": {
+          "high": 9475.0,
+          "inside": true,
+          "low": 8550.0,
+          "n_models": 8,
+          "reported": 9115
+        }
+      },
+      "combiner_version": "median-v1",
+      "cycle": "FQ3-2026",
+      "event": "events/AMAT-FQ3-2026.json",
+      "evidence_surface": "filings-v1",
+      "headline": {
+        "adjusted_eps": {
+          "error": -0.0902,
+          "n_models": 8,
+          "pct_error": -2.577143,
+          "published": 3.4098,
+          "reported": 3.5
+        },
+        "revenue": {
+          "error": -80.0,
+          "n_models": 8,
+          "pct_error": -0.877674,
+          "published": 9035.0,
+          "reported": 9115
+        }
+      },
+      "models_contract_valid": 8,
+      "models_sealed": 9,
+      "owner_verified": true,
+      "print_date": "2026-08-13",
+      "slate_version": "v5",
+      "ticker": "AMAT"
+    }
+  ],
+  "schema": "track_record_index_v1",
+  "sign_note": "error = published \u2212 reported; positive = we were high"
+}

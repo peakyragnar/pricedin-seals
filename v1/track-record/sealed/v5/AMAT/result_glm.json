@@ -1,0 +1,9 @@
+{
+  "model_key": "glm",
+  "as_of": "2026-08-13T00:00:00Z",
+  "ticker": "AMAT",
+  "status": "failed",
+  "error": "InvalidForecast: no complete JSON object found in the reply (it may have been cut off) \u2014 return the full object in one piece",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/michaelcunningham/RptdFinFcst/docs/reports/slate_forward_v5.py\", line 396, in main\n    result = run_forward_v5(\n        con,\n    ...<14 lines>...\n        ),\n    )\n  File \"/Users/michaelcunningham/RptdFinFcst/src/rff/analyst/toolloop.py\", line 696, in run_forward_v5\n    validated = contract_v5.validate_forward_response(\n        final_text, statement_template, cashflow_template,\n        balance_template, quarters, horizons, prior_triggers,\n    )\n  File \"/Users/michaelcunningham/RptdFinFcst/src/rff/analyst/contract_v5.py\", line 420, in validate_forward_response\n    data = _extract_json(raw)\n  File \"/Users/michaelcunningham/RptdFinFcst/src/rff/analyst/contract_v5.py\", line 293, in _extract_json\n    raise InvalidForecast(\n    ...<2 lines>...\n    )\nrff.analyst.contract_v5.InvalidForecast: no complete JSON object found in the reply (it may have been cut off) \u2014 return the full object in one piece\n",
+  "seconds": 617.1
+}

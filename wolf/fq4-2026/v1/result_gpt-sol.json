@@ -1,0 +1,20 @@
+{
+  "model_key": "gpt-sol",
+  "as_of": "2026-08-19T14:27:40Z",
+  "ticker": "WOLF",
+  "status": "failed",
+  "error_type": "ProviderHTTPError",
+  "error": "provider HTTP 429",
+  "snapshot": {
+    "snapshot_id": "snap-895419-20260819T144137847214Z",
+    "corpus_manifest_sha256": "5965bd1231a752f0b29264b46f7279e3ca80a00249c985f0f90c6e9157f32021",
+    "corpus_filings": 573,
+    "tool_calls": 6,
+    "held_at": "2026-08-19T14:41:15.649587Z",
+    "visual_projection_version": "sec-pdf:rff-visuals-2;ir-pdf:rff-ir-visuals-2",
+    "visual_delivery_version": "rff-visual-delivery-2",
+    "run_intent_id": "intent-20260819T144115622199Z-c458329c8d04",
+    "run_class": "genuine_forward"
+  },
+  "seconds": 23.3
+}

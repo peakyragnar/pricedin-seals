@@ -1,0 +1,105 @@
+{
+  "active": false,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": false,
+          "p10": 1.14,
+          "p50": 1.175,
+          "p90": 1.21,
+          "reported": 1.22
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 3100.0,
+          "p50": 3685.0,
+          "p90": 4300.0,
+          "reported": 4996
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 16720.0,
+          "p50": 17020.0,
+          "p90": 17340.0,
+          "reported": 17252
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ4-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.045,
+        "capex": 60.0,
+        "ebitda": -1004.0,
+        "fcf": -1311.0,
+        "gaap_eps": -0.14,
+        "gross_margin": -0.324488,
+        "operating_margin": -1.043825,
+        "revenue": -232.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -3.688525,
+        "capex": 15.384615,
+        "ebitda": -16.890983,
+        "fcf": -26.240993,
+        "gaap_eps": -14.43299,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -1.344772
+      },
+      "event": "../events/CSCO-FQ4-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 1.11,
+          "forecast_low": 1.08,
+          "issued_inside_forecast": false,
+          "issued_mid": 1.33,
+          "mid_error": -0.235
+        },
+        "revenue": {
+          "forecast_high": 16050.0,
+          "forecast_low": 15850.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 18100.0,
+          "mid_error": -2150.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": 15.0,
+        "ebitda": -2.5,
+        "fcf": -51.0,
+        "gaap_eps": -0.005,
+        "gross_margin": -0.011576,
+        "operating_margin": -0.060748,
+        "revenue": 70.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 1,
+        "seconds": 309.1,
+        "tool_calls": 12
+      },
+      "print_date": "2026-08-12",
+      "ticker": "CSCO"
+    }
+  ],
+  "label": "Grok 4.5",
+  "model_id": "x-ai/grok-4.5",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 3.688525,
+      "revenue": 1.344772
+    },
+    "bands_held": 1,
+    "bands_total": 3,
+    "events_contract_valid": 1,
+    "events_graded": 1
+  },
+  "vendor": "xAI"
+}

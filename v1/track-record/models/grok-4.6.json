@@ -1,0 +1,113 @@
+{
+  "active": true,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.12,
+          "p50": 3.4,
+          "p90": 3.65,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 850.0,
+          "p50": 1595.0,
+          "p90": 2300.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8450.0,
+          "p50": 9020.0,
+          "p90": 9550.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ3-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.1,
+        "capex": -127.0,
+        "ebitda": 227.0,
+        "fcf": -735.0,
+        "gaap_eps": 0.22,
+        "gross_margin": -0.201806,
+        "operating_margin": -0.254448,
+        "revenue": -95.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -2.857143,
+        "capex": -17.963225,
+        "ebitda": 7.261676,
+        "fcf": -31.545064,
+        "gaap_eps": 6.940063,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -1.042238
+      },
+      "event": "../events/AMAT-FQ3-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.65,
+          "forecast_low": 3.25,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.57
+        },
+        "revenue": {
+          "forecast_high": 9650.0,
+          "forecast_low": 8650.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -1100.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0098,
+        "capex": 0.0,
+        "ebitda": 3.5,
+        "fcf": -22.5,
+        "gaap_eps": 0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": 0.006914,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 0,
+        "seconds": 691.9,
+        "tool_calls": 21,
+        "usage": {
+          "api_calls": 11,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.0,
+          "input_tokens": 651733,
+          "output_tokens": 13471
+        }
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "Grok 4.6",
+  "model_id": "grok-4.6",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 2.857143,
+      "revenue": 1.042238
+    },
+    "bands_held": 2,
+    "bands_total": 3,
+    "events_contract_valid": 1,
+    "events_graded": 1
+  },
+  "vendor": "xAI"
+}

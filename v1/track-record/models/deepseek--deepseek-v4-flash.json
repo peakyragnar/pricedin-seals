@@ -1,0 +1,31 @@
+{
+  "active": false,
+  "events": [
+    {
+      "contract_valid": false,
+      "cycle": "FQ4-2026",
+      "event": "../events/CSCO-FQ4-2026.json",
+      "failure": "InvalidForecast: headline.eps_adjusted.p50 (1.18) must equal non_gaap_net_income / diluted shares (1.2013)",
+      "ops": {
+        "seconds": 1820.3
+      },
+      "print_date": "2026-08-12",
+      "ticker": "CSCO"
+    }
+  ],
+  "label": "DeepSeek V4 Flash",
+  "model_id": "deepseek/deepseek-v4-flash",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": null,
+      "revenue": null
+    },
+    "bands_held": 0,
+    "bands_total": 0,
+    "events_contract_valid": 0,
+    "events_graded": 1
+  },
+  "vendor": "DeepSeek"
+}

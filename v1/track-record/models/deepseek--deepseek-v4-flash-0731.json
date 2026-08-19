@@ -1,0 +1,113 @@
+{
+  "active": false,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.15,
+          "p50": 3.36,
+          "p90": 3.58,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 620.0,
+          "p50": 890.0,
+          "p90": 1190.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8400.0,
+          "p50": 8950.0,
+          "p90": 9500.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ3-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.14,
+        "capex": 43.0,
+        "ebitda": 391.0,
+        "fcf": -1440.0,
+        "gaap_eps": 0.54,
+        "gross_margin": -0.62552,
+        "operating_margin": -0.193702,
+        "revenue": -165.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -4.0,
+        "capex": 6.082037,
+        "ebitda": 12.507997,
+        "fcf": -61.802575,
+        "gaap_eps": 17.0347,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -1.810203
+      },
+      "event": "../events/AMAT-FQ3-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.7,
+          "forecast_low": 3.4,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.47
+        },
+        "revenue": {
+          "forecast_high": 9800.0,
+          "forecast_low": 9000.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -850.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": -22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": 0.006914,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 1,
+        "seconds": 608.5,
+        "tool_calls": 22,
+        "usage": {
+          "api_calls": 21,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.08936751,
+          "input_tokens": 883063,
+          "output_tokens": 85871
+        }
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "DeepSeek V4 Flash 07-31",
+  "model_id": "deepseek/deepseek-v4-flash-0731",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 4.0,
+      "revenue": 1.810203
+    },
+    "bands_held": 2,
+    "bands_total": 3,
+    "events_contract_valid": 1,
+    "events_graded": 1
+  },
+  "vendor": "DeepSeek"
+}

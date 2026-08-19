@@ -1,0 +1,204 @@
+{
+  "active": true,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 1.15,
+          "p50": 1.19,
+          "p90": 1.22,
+          "reported": 1.22
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 3100.0,
+          "p50": 3750.0,
+          "p90": 4600.0,
+          "reported": 4996
+        },
+        "revenue": {
+          "inside": false,
+          "p10": 16600.0,
+          "p50": 16800.0,
+          "p90": 17050.0,
+          "reported": 17252
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ4-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.03,
+        "capex": 160.0,
+        "ebitda": -1389.0,
+        "fcf": -1246.0,
+        "gaap_eps": -0.07,
+        "gross_margin": -1.625898,
+        "operating_margin": -1.948118,
+        "revenue": -452.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -2.459016,
+        "capex": 41.025641,
+        "ebitda": -23.368102,
+        "fcf": -24.939952,
+        "gaap_eps": -7.216495,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -2.619986
+      },
+      "event": "../events/CSCO-FQ4-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 1.14,
+          "forecast_low": 1.1,
+          "issued_inside_forecast": false,
+          "issued_mid": 1.33,
+          "mid_error": -0.21
+        },
+        "revenue": {
+          "forecast_high": 16800.0,
+          "forecast_low": 16400.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 18100.0,
+          "mid_error": -1500.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": -15.0,
+        "ebitda": -2.5,
+        "fcf": -51.0,
+        "gaap_eps": 0.005,
+        "gross_margin": -0.011576,
+        "operating_margin": -0.060748,
+        "revenue": -70.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 1,
+        "seconds": 1506.3,
+        "tool_calls": 17,
+        "usage": {
+          "api_calls": 14,
+          "cost_usd": 1.6132566000000002,
+          "input_tokens": 1069050,
+          "output_tokens": 47423
+        }
+      },
+      "print_date": "2026-08-12",
+      "ticker": "CSCO"
+    },
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.28,
+          "p50": 3.52,
+          "p90": 3.76,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 1200.0,
+          "p50": 1700.0,
+          "p90": 2300.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8750.0,
+          "p50": 9100.0,
+          "p90": 9450.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ3-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.02,
+        "capex": -7.0,
+        "ebitda": 251.0,
+        "fcf": -630.0,
+        "gaap_eps": 0.29,
+        "gross_margin": 0.45656,
+        "operating_margin": 0.627036,
+        "revenue": -15.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.571429,
+        "capex": -0.990099,
+        "ebitda": 8.029431,
+        "fcf": -27.038627,
+        "gaap_eps": 9.148265,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -0.164564
+      },
+      "event": "../events/AMAT-FQ3-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 4.0,
+          "forecast_low": 3.6,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.22
+        },
+        "revenue": {
+          "forecast_high": 10200.0,
+          "forecast_low": 9200.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -550.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": 22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": 0.027007,
+        "operating_margin": -0.005325,
+        "revenue": 15.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 2,
+        "seconds": 1216.4,
+        "tool_calls": 6,
+        "usage": {
+          "api_calls": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.8448,
+          "input_tokens": 161380,
+          "output_tokens": 42476
+        }
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "Kimi K3",
+  "model_id": "moonshotai/kimi-k3",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 1.515223,
+      "revenue": 1.392275
+    },
+    "bands_held": 3,
+    "bands_total": 6,
+    "events_contract_valid": 2,
+    "events_graded": 2
+  },
+  "vendor": "Moonshot AI"
+}

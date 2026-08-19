@@ -1,0 +1,9 @@
+{
+  "model_key": "deepseek",
+  "as_of": "2026-08-12T00:00:00Z",
+  "ticker": "CSCO",
+  "status": "failed",
+  "error": "InvalidForecast: headline.eps_adjusted.p50 (1.18) must equal non_gaap_net_income / diluted shares (1.2013)",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/michaelcunningham/RptdFinFcst/docs/reports/slate_forward_v5.py\", line 338, in main\n    result = run_forward_v5(\n        con,\n    ...<13 lines>...\n        ),\n    )\n  File \"/Users/michaelcunningham/RptdFinFcst/src/rff/analyst/toolloop.py\", line 651, in run_forward_v5\n    validated = contract_v5.validate_forward_response(\n        final_text, statement_template, cashflow_template,\n        balance_template, quarters, horizons, prior_triggers,\n    )\n  File \"/Users/michaelcunningham/RptdFinFcst/src/rff/analyst/contract_v5.py\", line 462, in validate_forward_response\n    raise InvalidForecast(\n    ...<3 lines>...\n    )\nrff.analyst.contract_v5.InvalidForecast: headline.eps_adjusted.p50 (1.18) must equal non_gaap_net_income / diluted shares (1.2013)\n",
+  "seconds": 1820.3
+}

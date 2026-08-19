@@ -1,0 +1,198 @@
+{
+  "active": true,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 1.15,
+          "p50": 1.18,
+          "p90": 1.22,
+          "reported": 1.22
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 3300.0,
+          "p50": 4120.0,
+          "p90": 4900.0,
+          "reported": 4996
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 16750.0,
+          "p50": 17000.0,
+          "p90": 17400.0,
+          "reported": 17252
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ4-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.04,
+        "capex": 90.0,
+        "ebitda": -949.0,
+        "fcf": -876.0,
+        "gaap_eps": -0.13,
+        "gross_margin": -0.361192,
+        "operating_margin": -0.568916,
+        "revenue": -252.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -3.278689,
+        "capex": 23.076923,
+        "ebitda": -15.96568,
+        "fcf": -17.534027,
+        "gaap_eps": -13.402062,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -1.4607
+      },
+      "event": "../events/CSCO-FQ4-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 1.22,
+          "forecast_low": 1.2,
+          "issued_inside_forecast": false,
+          "issued_mid": 1.33,
+          "mid_error": -0.12
+        },
+        "revenue": {
+          "forecast_high": 17200.0,
+          "forecast_low": 17000.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 18100.0,
+          "mid_error": -1000.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": -15.0,
+        "ebitda": 2.5,
+        "fcf": 51.0,
+        "gaap_eps": -0.005,
+        "gross_margin": -0.011576,
+        "operating_margin": 0.060748,
+        "revenue": 70.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 2,
+        "seconds": 421.1,
+        "tool_calls": 5
+      },
+      "print_date": "2026-08-12",
+      "ticker": "CSCO"
+    },
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.3,
+          "p50": 3.5,
+          "p90": 3.73,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": true,
+          "p10": 700.0,
+          "p50": 1640.0,
+          "p90": 2450.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8850.0,
+          "p50": 9150.0,
+          "p90": 9430.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ3-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": 53.0,
+        "ebitda": 362.0,
+        "fcf": -690.0,
+        "gaap_eps": 0.39,
+        "gross_margin": -0.367316,
+        "operating_margin": 0.013033,
+        "revenue": 35.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": 7.496464,
+        "ebitda": 11.580294,
+        "fcf": -29.613734,
+        "gaap_eps": 12.302839,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": 0.383982
+      },
+      "event": "../events/AMAT-FQ3-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.95,
+          "forecast_low": 3.55,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.27
+        },
+        "revenue": {
+          "forecast_high": 10200.0,
+          "forecast_low": 9200.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -550.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": 22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": -0.005325,
+        "revenue": 15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 0,
+        "seconds": 333.0,
+        "tool_calls": 11,
+        "usage": {
+          "api_calls": 8,
+          "cache_read_tokens": 194619,
+          "cache_write_tokens": 55640,
+          "cost_usd": 0.0,
+          "input_tokens": 16,
+          "output_tokens": 24700
+        }
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "Claude Fable 5",
+  "model_id": "claude-fable-5",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 1.639344,
+      "revenue": 0.922341
+    },
+    "bands_held": 5,
+    "bands_total": 6,
+    "events_contract_valid": 2,
+    "events_graded": 2
+  },
+  "vendor": "Anthropic"
+}

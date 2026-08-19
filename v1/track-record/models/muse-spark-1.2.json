@@ -1,0 +1,113 @@
+{
+  "active": true,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.05,
+          "p50": 3.36,
+          "p90": 3.68,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 950.0,
+          "p50": 1500.0,
+          "p90": 2050.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8350.0,
+          "p50": 8920.0,
+          "p90": 9450.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ3-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.14,
+        "capex": -87.0,
+        "ebitda": 95.0,
+        "fcf": -830.0,
+        "gaap_eps": 0.11,
+        "gross_margin": -0.088456,
+        "operating_margin": 0.042426,
+        "revenue": -195.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -4.0,
+        "capex": -12.305516,
+        "ebitda": 3.039028,
+        "fcf": -35.622318,
+        "gaap_eps": 3.470032,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -2.139331
+      },
+      "event": "../events/AMAT-FQ3-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.56,
+          "forecast_low": 3.16,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.66
+        },
+        "revenue": {
+          "forecast_high": 9450.0,
+          "forecast_low": 8450.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -1300.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0098,
+        "capex": 0.0,
+        "ebitda": 3.5,
+        "fcf": -22.5,
+        "gaap_eps": 0.015,
+        "gross_margin": 0.027007,
+        "operating_margin": -0.005325,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 0,
+        "seconds": 91.5,
+        "tool_calls": 6,
+        "usage": {
+          "api_calls": 7,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.0,
+          "input_tokens": 309439,
+          "output_tokens": 15456
+        }
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "Muse Spark 1.2",
+  "model_id": "muse-spark-1.2",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 4.0,
+      "revenue": 2.139331
+    },
+    "bands_held": 2,
+    "bands_total": 3,
+    "events_contract_valid": 1,
+    "events_graded": 1
+  },
+  "vendor": "Meta"
+}

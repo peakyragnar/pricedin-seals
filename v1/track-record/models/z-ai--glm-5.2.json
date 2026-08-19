@@ -1,0 +1,42 @@
+{
+  "active": false,
+  "events": [
+    {
+      "contract_valid": false,
+      "cycle": "FQ4-2026",
+      "event": "../events/CSCO-FQ4-2026.json",
+      "failure": "InvalidForecast: no complete JSON object found in the reply (it may have been cut off) \u2014 return the full object in one piece",
+      "ops": {
+        "seconds": 577.8
+      },
+      "print_date": "2026-08-12",
+      "ticker": "CSCO"
+    },
+    {
+      "contract_valid": false,
+      "cycle": "FQ3-2026",
+      "event": "../events/AMAT-FQ3-2026.json",
+      "failure": "InvalidForecast: no complete JSON object found in the reply (it may have been cut off) \u2014 return the full object in one piece",
+      "ops": {
+        "seconds": 617.1
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "GLM 5.2",
+  "model_id": "z-ai/glm-5.2",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": null,
+      "revenue": null
+    },
+    "bands_held": 0,
+    "bands_total": 0,
+    "events_contract_valid": 0,
+    "events_graded": 2
+  },
+  "vendor": "Z.ai"
+}

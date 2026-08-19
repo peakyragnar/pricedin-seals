@@ -1,0 +1,630 @@
+{
+  "model_key": "kimi",
+  "as_of": "2026-08-19T14:27:40Z",
+  "ticker": "WOLF",
+  "validated": {
+    "anchors": [
+      {
+        "name": "Q3 FY26 revenue, net",
+        "value": 150.2,
+        "accession": "0000895419-26-000024",
+        "reference": "0000895419-26-000024:ex991q3-26.htm:b0000043"
+      },
+      {
+        "name": "Q4 FY26 guidance low end revenue ($140M-$160M range)",
+        "value": 140,
+        "accession": "0000895419-26-000024",
+        "reference": "0000895419-26-000024:ex991q3-26.htm:b0000022"
+      },
+      {
+        "name": "Q3 FY26 ending cash and cash equivalents",
+        "value": 695.1,
+        "accession": "0000895419-26-000024",
+        "reference": "0000895419-26-000024:ex991q3-26.htm:b0000058"
+      },
+      {
+        "name": "Q3 FY26 long-term debt balance at March 29, 2026",
+        "value": 922.2,
+        "accession": "0000895419-26-000024",
+        "reference": "0000895419-26-000024:ex991q3-26.htm:b0000053"
+      },
+      {
+        "name": "Q3 FY26 refinancing total debt reduction ($97M)",
+        "value": 97,
+        "accession": "0000895419-26-000024",
+        "reference": "0000895419-26-000024:ex991q3-26.htm:b0000016"
+      },
+      {
+        "name": "Q3 FY26 refinancing annual interest expense reduction ($62M)",
+        "value": 62,
+        "accession": "0000895419-26-000030",
+        "reference": "0000895419-26-000030:wolf-20260329.htm:b0000563"
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 136.0,
+        "p50": 152.0,
+        "p90": 164.0
+      },
+      "eps_adjusted": {
+        "p10": -3.55,
+        "p50": -2.94,
+        "p90": -2.4
+      },
+      "fcf": {
+        "p10": -140.0,
+        "p50": -109.0,
+        "p90": -82.0
+      }
+    },
+    "income_statement": {
+      "revenue": 152.0,
+      "cost_of_revenue": 188.0,
+      "gross_profit": -36.0,
+      "research_development": 27.5,
+      "sga": 37.5,
+      "factory_startup": 0.0,
+      "gain_on_disposal": 0.0,
+      "restructuring": 8.0,
+      "total_operating_expenses": 73.0,
+      "operating_income": -109.0,
+      "interest_expense": 44.0,
+      "nonoperating_expense": -10.0,
+      "pretax_income": -143.0,
+      "income_tax": 0.0,
+      "net_income": -143.0,
+      "shares_diluted": 40.5,
+      "eps_diluted": -3.53
+    },
+    "bridge": {
+      "adjustments": {
+        "stock_based_compensation": 10.0,
+        "restructuring_and_facility_closure_costs": 4.0,
+        "project_transformation_and_transaction_costs": 5.0,
+        "amortization_of_premiums_discount_and_debt_issuance_costs": 5.0
+      },
+      "non_gaap_net_income": -119.0
+    },
+    "cash_flow": {
+      "net_income": -143.0,
+      "depreciation_amortization": 31.0,
+      "stock_based_comp": 10.0,
+      "other_operating": 23.0,
+      "cfo": -79.0,
+      "capex": -30.0,
+      "other_investing": 35.0,
+      "cfi": 5.0,
+      "other_financing": -3.0,
+      "cff": -3.0,
+      "fx_effect": 0.0,
+      "net_change_cash": -77.0
+    },
+    "balance_sheet": {
+      "cash_and_equivalents": 618.1,
+      "other_assets": 2421.2,
+      "total_assets": 3039.3,
+      "total_liabilities": 2150.6,
+      "accumulated_deficit": -413.5,
+      "other_equity": 1302.2,
+      "total_equity": 888.7
+    },
+    "quarterly_path": {
+      "fq1_27": {
+        "revenue": {
+          "p10": 145.0,
+          "p50": 165.0,
+          "p90": 185.0
+        },
+        "eps_adjusted": {
+          "p10": -3.4,
+          "p50": -2.78,
+          "p90": -2.2
+        },
+        "gross_profit": -30.0,
+        "operating_income": -104.0,
+        "net_income": -138.0,
+        "cfo": -70.0,
+        "capex": -28.0,
+        "fcf": -98.0,
+        "cfi": -3.0,
+        "cff": -3.0,
+        "net_change_cash": -76.0,
+        "total_assets": 2942.1,
+        "total_liabilities": 2181.4,
+        "total_equity": 760.7
+      },
+      "fq2_27": {
+        "revenue": {
+          "p10": 150.0,
+          "p50": 180.0,
+          "p90": 205.0
+        },
+        "eps_adjusted": {
+          "p10": -3.2,
+          "p50": -2.59,
+          "p90": -2.0
+        },
+        "gross_profit": -22.0,
+        "operating_income": -96.0,
+        "net_income": -130.0,
+        "cfo": -62.0,
+        "capex": -28.0,
+        "fcf": -90.0,
+        "cfi": -3.0,
+        "cff": -3.0,
+        "net_change_cash": -68.0,
+        "total_assets": 2849.1,
+        "total_liabilities": 2208.4,
+        "total_equity": 640.7
+      },
+      "fq3_27": {
+        "revenue": {
+          "p10": 162.0,
+          "p50": 195.0,
+          "p90": 224.0
+        },
+        "eps_adjusted": {
+          "p10": -3.0,
+          "p50": -2.37,
+          "p90": -1.75
+        },
+        "gross_profit": -12.0,
+        "operating_income": -87.0,
+        "net_income": -121.0,
+        "cfo": -52.0,
+        "capex": -30.0,
+        "fcf": -82.0,
+        "cfi": -5.0,
+        "cff": -3.0,
+        "net_change_cash": -60.0,
+        "total_assets": 2764.1,
+        "total_liabilities": 2234.4,
+        "total_equity": 529.7
+      },
+      "fq4_27": {
+        "revenue": {
+          "p10": 175.0,
+          "p50": 212.0,
+          "p90": 245.0
+        },
+        "eps_adjusted": {
+          "p10": -2.75,
+          "p50": -2.12,
+          "p90": -1.5
+        },
+        "gross_profit": -2.0,
+        "operating_income": -77.0,
+        "net_income": -111.0,
+        "cfo": -42.0,
+        "capex": -30.0,
+        "fcf": -72.0,
+        "cfi": -5.0,
+        "cff": -3.0,
+        "net_change_cash": -50.0,
+        "total_assets": 2689.1,
+        "total_liabilities": 2260.4,
+        "total_equity": 428.7
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 150.0,
+        "high": 170.0
+      },
+      "eps_adjusted": {
+        "low": -3.05,
+        "high": -2.45
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 650.0,
+          "p50": 667.5,
+          "p90": 685.0
+        },
+        "eps_adjusted": {
+          "p10": -14.5,
+          "p50": -12.0,
+          "p90": -9.5
+        },
+        "gross_profit": -231.4,
+        "operating_income": -543.1,
+        "net_income": 6.7,
+        "cfo": -227.8,
+        "capex": -201.8,
+        "fcf": -429.6,
+        "cfi": 717.9,
+        "cff": -339.8,
+        "net_change_cash": 150.3,
+        "total_assets": 3039.3,
+        "total_liabilities": 2150.6,
+        "total_equity": 888.7
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 620.0,
+          "p50": 752.0,
+          "p90": 875.0
+        },
+        "eps_adjusted": {
+          "p10": -11.5,
+          "p50": -9.85,
+          "p90": -8.2
+        },
+        "gross_profit": -66.0,
+        "operating_income": -364.0,
+        "net_income": -500.0,
+        "cfo": -226.0,
+        "capex": -116.0,
+        "fcf": -342.0,
+        "cfi": -16.0,
+        "cff": -12.0,
+        "net_change_cash": -254.0,
+        "total_assets": 2689.1,
+        "total_liabilities": 2260.4,
+        "total_equity": 428.7
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 780.0,
+          "p50": 1050.0,
+          "p90": 1300.0
+        },
+        "eps_adjusted": {
+          "p10": -7.0,
+          "p50": -5.12,
+          "p90": -3.5
+        },
+        "gross_profit": 80.0,
+        "operating_income": -200.0,
+        "net_income": -320.0,
+        "cfo": -100.0,
+        "capex": -160.0,
+        "fcf": -260.0,
+        "cfi": -120.0,
+        "cff": -10.0,
+        "net_change_cash": -230.0,
+        "total_assets": 2464.1,
+        "total_liabilities": 2315.4,
+        "total_equity": 148.7
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 950.0,
+          "p50": 1400.0,
+          "p90": 1800.0
+        },
+        "eps_adjusted": {
+          "p10": -3.5,
+          "p50": -1.67,
+          "p90": 0.2
+        },
+        "gross_profit": 210.0,
+        "operating_income": -40.0,
+        "net_income": -180.0,
+        "cfo": 20.0,
+        "capex": -200.0,
+        "fcf": -180.0,
+        "cfi": -160.0,
+        "cff": 190.0,
+        "net_change_cash": 50.0,
+        "total_assets": 2534.1,
+        "total_liabilities": 2325.4,
+        "total_equity": 208.7
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "Post-Q3 FY26 strategic refinancing: ~65% expected reduction in cash interest to ~$145M annualized, ~$580M US GAAP liability reduction, debt maturities pushed ~5 years out ($630M 2030, $1.2B 2031)",
+          "source": "Q3 FY26 earnings presentation p.9 (IR-OBSERVED) and 8-K EX-99.1 b0000016",
+          "horizon": "Q4 FY26 through FY2029",
+          "flows_into": [
+            "income_statement.interest_expense",
+            "cash_flow.cfo",
+            "horizons.fy1.net_income",
+            "horizons.fy2.net_income"
+          ]
+        },
+        {
+          "claim": "Increasing earnings potential without significant additional CapEx; Durham focused on materials; gross capital investment expected to continue to decrease significantly during fiscal 2026 with ability to modulate capex up or down",
+          "source": "Q3 FY26 earnings presentation p.6 (IR-OBSERVED); 10-Q b0000576",
+          "horizon": "Q4 FY26 through FY2028",
+          "flows_into": [
+            "cash_flow.capex",
+            "horizons.fy1.capex",
+            "horizons.fy2.capex",
+            "horizons.fy1.fcf"
+          ]
+        },
+        {
+          "claim": "AI data center revenue grew ~30% QoQ; 10kV MOSFET and TOLT portfolio purpose-built for AI and AI-adjacent infrastructure; positioning for growth as end-market demand accelerates",
+          "source": "Q3 FY26 earnings presentation p.7 (IR-OBSERVED); 8-K EX-99.1 b0000006",
+          "horizon": "FY2027-FY2029",
+          "flows_into": [
+            "income_statement.revenue",
+            "quarterly_path.fq1_27.revenue",
+            "horizons.fy1.revenue",
+            "horizons.fy2.revenue",
+            "horizons.fy3.revenue"
+          ]
+        },
+        {
+          "claim": "Significant underutilization costs expected to continue until market demand meets or exceeds production capacity (Siler City and Durham materials)",
+          "source": "10-Q 0000895419-26-000030 b0000498 and b0000528",
+          "horizon": "Q4 FY26 through FY2027",
+          "flows_into": [
+            "income_statement.cost_of_revenue",
+            "income_statement.gross_profit",
+            "horizons.fy1.gross_profit"
+          ]
+        },
+        {
+          "claim": "Continuing to qualify customers on 200mm supporting transition away from 150mm; ~90% of Power revenue already from Mohawk Valley Fab after 150mm Durham Fab shutdown",
+          "source": "Q3 FY26 earnings presentation p.7 (IR-OBSERVED); 10-Q b0000495",
+          "horizon": "FY2027-FY2028",
+          "flows_into": [
+            "income_statement.cost_of_revenue",
+            "quarterly_path.fq2_27.gross_profit",
+            "horizons.fy1.gross_profit"
+          ]
+        },
+        {
+          "claim": "Actively pursuing federal funding (CHIPS Act, US Investment Accelerator) and receiving Advanced Manufacturing Investment Credit refundable tax credits and NY State grants ($733M received in 9M FY26; $33M NY ESD subsidy in Q3)",
+          "source": "10-Q 0000895419-26-000030 b0000560, b0000576; Q3 FY26 presentation p.10",
+          "horizon": "Q4 FY26 through FY2028",
+          "flows_into": [
+            "cash_flow.other_investing",
+            "horizons.fy1.cfi",
+            "horizons.fy2.cfi"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "GAAP gross profit turns positive (gross margin > 0%) in any reported quarter, evidencing underutilization absorption at Mohawk Valley and Siler City",
+          "checkable_at": "Q2 FY27 10-Q (quarter ending late December 2026, filed ~February 2027)"
+        },
+        {
+          "marker": "Quarterly revenue at or above $200M with AI data center revenue disclosed growing double digits QoQ",
+          "checkable_at": "Q4 FY27 earnings 8-K / FY27 10-K (August 2027)"
+        },
+        {
+          "marker": "Operating cash flow (CFO) at or above breakeven for a quarter",
+          "checkable_at": "Q4 FY27 10-K (August 2027)"
+        },
+        {
+          "marker": "Non-GAAP gross margin within 5 points of breakeven (better than -5%)",
+          "checkable_at": "Q3 FY27 8-K earnings release (quarter ending late March 2027, ~May 2027)"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Q4 FY26 reported revenue below the $140M guidance low end",
+          "checkable_at": "This release: Q4 FY26 earnings 8-K (August 2026) and FY26 10-K"
+        },
+        {
+          "marker": "Cash, cash equivalents and short-term investments falling below ~$950M at fiscal year-end 2026 (implying quarterly burn above ~$215M)",
+          "checkable_at": "FY26 10-K (September 2026)"
+        },
+        {
+          "marker": "GAAP gross margin still worse than -30% in Q1 FY27, i.e. underutilization costs not improving after the 150mm shutdown anniversary",
+          "checkable_at": "Q1 FY27 10-Q (quarter ending late September 2026, filed ~November 2026)"
+        },
+        {
+          "marker": "Receipts from incentive reimbursements / investment tax credits (investing activities) drying up with no replacement federal award, pushing net cash burn above $150M/quarter",
+          "checkable_at": "Q1 FY27 and Q2 FY27 10-Q filings (November 2026, February 2027)"
+        }
+      ],
+      "what_must_be_true": "Wolfspeed must convert its post-Chapter 11 balance-sheet reset (~$145M annualized cash interest, maturities in 2030/2031) into time for the 200mm ramp: Mohawk Valley device loadings and Siler City materials utilization must rise on AI datacenter, industrial/energy and eventually 800V auto demand so that underutilization costs shrink, gross margin crosses breakeven during FY2027, and operating cash burn narrows toward breakeven before the roughly $1.1B liquidity buffer (plus incentive refunds) is exhausted. If revenue stays near ~$150M/quarter with gross margins deeply negative, the cash runway forces another dilutive raise by FY2028."
+    },
+    "preview_note": "WOLF reports Q4 FY26 (June quarter) against guidance of $140-160M revenue, negative non-GAAP gross margin and flat opex. Three things decide the print and the reaction. First, revenue mix: AI datacenter grew ~30% QoQ in Q3 off a small base; another leg up plus 200mm power-device qualifications at Mohawk Valley should offset still-soft auto and volatile materials orders, landing revenue near $152M. Second, the margin trajectory: underutilization at Siler City and Durham keeps GAAP gross margin near -24%, but investors want evidence of sequential improvement toward the company's path to breakeven. Third, cash burn: with the refinancing cutting annualized cash interest ~65% to ~$145M and net capex minimal (~$5M in Q3 after subsidies), the swing factor is the timing of AMIC/ITC refunds and NY grants in investing flows. Watch FY27 guidance: a revenue range above ~$150-170M with a commitment to improving gross margin and a credible update on the long-term model (promised by 1H FY27) is the bull case; a guide below $150M or a quarter-end cash-plus-STI print under ~$950M reopens the dilution debate.",
+    "reasoning": "Anchors: Q3 FY26 actuals (8-K EX-99.1, accession 0000895419-26-000024) — revenue $150.2M, gross loss -$40.0M, GAAP net loss -$119.9M, CFO -$83.8M, cash $695.1M / cash+STI $1,164.8M, total assets $3,147.3M, equity $1,021.7M; Q4 guidance revenue $140-160M, opex ~flat, gross margin negative. My Q4 FY26 estimate: revenue $152M (slightly above midpoint on AI datacenter momentum and 200mm ramp, offset by weak auto/materials), GAAP gross loss -$36M (modest sequential improvement on higher loading but persistent underutilization per 10-Q b0000498), opex $73M (~flat per guidance), interest expense $44M reflecting full-quarter benefit of the March refinancing ($62M annualized savings; ~$145M annualized cash interest post-refi plus PIK/discount amortization), net loss -$143M, non-GAAP net loss -$119M after adding back SBC, restructuring, transformation costs and debt-cost amortization per the company's own non-GAAP definitions. Cash flow: CFO -$79M (lower cash interest offsetting operating losses), gross capex -$30M (management: capex decreasing significantly, increasing earnings without significant additional CapEx), +$35M other investing (ITC/NY incentive reimbursements and ST-investment rotation), net change -$77M, ending cash $618.1M. FY27 path: revenue recovers ~$165→$212M quarterly as AI datacenter scales, 800V auto architectures adopt SiC and materials orders normalize; gross margin grinds from -18% to ~breakeven by Q4 FY27 as underutilization is absorbed; CFO burn narrows from -$70M to -$42M per quarter. FY0 figures combine Predecessor Q1 (incl. +$420.2M reorganization gain) and Successor periods plus my Q4 print; FY26 net income is approximately breakeven solely because of the fresh-start/reorganization gain. FY28 turns gross-margin positive (~8%) on ~$1.05B revenue; FY29 reaches ~$1.4B revenue and operating breakeven approach, with an equity/capital raise embedded in FY29 financing to fund re-investment. Key risks to the downside: EV demand softness, materials pricing, tariff/trade friction, and the timing of government incentive receipts."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-895419-20260819T143915223052Z",
+    "corpus_manifest_sha256": "5965bd1231a752f0b29264b46f7279e3ca80a00249c985f0f90c6e9157f32021",
+    "corpus_filings": 573,
+    "tool_calls": 20,
+    "held_at": "2026-08-19T14:31:26.627893Z",
+    "visual_projection_version": "sec-pdf:rff-visuals-2;ir-pdf:rff-ir-visuals-2",
+    "visual_delivery_version": "rff-visual-delivery-2",
+    "run_intent_id": "intent-20260819T143126612825Z-b440d68a0bc4",
+    "run_class": "genuine_forward"
+  },
+  "tool_calls": 14,
+  "contract_retries": 0,
+  "incomplete_retries": 1,
+  "anchor_retries": 1,
+  "unverified_anchors": [],
+  "model_id": "moonshotai/kimi-k3",
+  "prompt_version": "v5.9",
+  "usage": {
+    "api_calls": 12,
+    "input_tokens": 971238,
+    "output_tokens": 36438,
+    "cache_read_tokens": 707712,
+    "cache_write_tokens": 0,
+    "cost_usd": 1.5494615999999999,
+    "requests": [
+      {
+        "request_no": 1,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 21729,
+        "output_tokens": 8137,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.187242
+      },
+      {
+        "request_no": 2,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 49891,
+        "output_tokens": 260,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.153573
+      },
+      {
+        "request_no": 3,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 54053,
+        "output_tokens": 191,
+        "cache_read_tokens": 21696,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.1064448
+      },
+      {
+        "request_no": 4,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 56886,
+        "output_tokens": 388,
+        "cache_read_tokens": 54016,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0306348
+      },
+      {
+        "request_no": 5,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 70235,
+        "output_tokens": 122,
+        "cache_read_tokens": 56832,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0590886
+      },
+      {
+        "request_no": 6,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 85317,
+        "output_tokens": 196,
+        "cache_read_tokens": 70208,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0693294
+      },
+      {
+        "request_no": 7,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 92864,
+        "output_tokens": 244,
+        "cache_read_tokens": 85504,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0513912
+      },
+      {
+        "request_no": 8,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 96356,
+        "output_tokens": 117,
+        "cache_read_tokens": 92928,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.0399174
+      },
+      {
+        "request_no": 9,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 97895,
+        "output_tokens": 75,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.29481
+      },
+      {
+        "request_no": 10,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 115125,
+        "output_tokens": 471,
+        "cache_read_tokens": 96320,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.092376
+      },
+      {
+        "request_no": 11,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 115193,
+        "output_tokens": 11726,
+        "cache_read_tokens": 115072,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.2107746
+      },
+      {
+        "request_no": 12,
+        "model_id": "moonshotai/kimi-k3",
+        "input_tokens": 115694,
+        "output_tokens": 14511,
+        "cache_read_tokens": 115136,
+        "cache_write_tokens": 0,
+        "cost_usd": 0.2538798
+      }
+    ]
+  },
+  "visual_inventory_called": true,
+  "visual_inventory_documents": 525,
+  "visual_inspections_status": "inspected",
+  "visual_inspections": [
+    {
+      "source": "ir_page",
+      "accession": "01a35050e50f0fd90411bbb6e73ee38f5aa6054b0fe8f0d8a4f1b10a9d690466",
+      "document": null,
+      "page_no": 6,
+      "source_sha256": "39a0dad4e023a640abe3548555e6ae6591621eb0a98f95d303fc78c9a9b083e4",
+      "delivery_sha256": "39a0dad4e023a640abe3548555e6ae6591621eb0a98f95d303fc78c9a9b083e4",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "01a35050e50f0fd90411bbb6e73ee38f5aa6054b0fe8f0d8a4f1b10a9d690466",
+      "document": null,
+      "page_no": 7,
+      "source_sha256": "271c1d758e2eb3ddd5932e9e36699e3930cc4f0a12c2c6ee23536a47aab0027a",
+      "delivery_sha256": "271c1d758e2eb3ddd5932e9e36699e3930cc4f0a12c2c6ee23536a47aab0027a",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "01a35050e50f0fd90411bbb6e73ee38f5aa6054b0fe8f0d8a4f1b10a9d690466",
+      "document": null,
+      "page_no": 9,
+      "source_sha256": "f535da205fc6f68078470474e6c4afd7845c2bb704f636e9561bfc1bdf2ca418",
+      "delivery_sha256": "f535da205fc6f68078470474e6c4afd7845c2bb704f636e9561bfc1bdf2ca418",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "01a35050e50f0fd90411bbb6e73ee38f5aa6054b0fe8f0d8a4f1b10a9d690466",
+      "document": null,
+      "page_no": 10,
+      "source_sha256": "c563c34bb4b45c6937a6f43b7e88421cf3a6d48f33fbd83a7f711d74085c2300",
+      "delivery_sha256": "c563c34bb4b45c6937a6f43b7e88421cf3a6d48f33fbd83a7f711d74085c2300",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "01a35050e50f0fd90411bbb6e73ee38f5aa6054b0fe8f0d8a4f1b10a9d690466",
+      "document": null,
+      "page_no": 11,
+      "source_sha256": "ff74c49d08c432b69a665d07baa23c2c9a86d6166b33b89ea542ab993640a3a7",
+      "delivery_sha256": "ff74c49d08c432b69a665d07baa23c2c9a86d6166b33b89ea542ab993640a3a7",
+      "transformation": null
+    },
+    {
+      "source": "ir_page",
+      "accession": "01a35050e50f0fd90411bbb6e73ee38f5aa6054b0fe8f0d8a4f1b10a9d690466",
+      "document": null,
+      "page_no": 11,
+      "source_sha256": "ff74c49d08c432b69a665d07baa23c2c9a86d6166b33b89ea542ab993640a3a7",
+      "delivery_sha256": "ff74c49d08c432b69a665d07baa23c2c9a86d6166b33b89ea542ab993640a3a7",
+      "transformation": null
+    }
+  ],
+  "run_intent": {
+    "intent_id": "intent-20260819T143126612825Z-b440d68a0bc4",
+    "created_at": "2026-08-19T14:31:26.612825Z",
+    "run_class": "genuine_forward",
+    "prompt_sha256": "451a1c18c2422e233bbd05399ecef8d2edf6ea5ad343fbb88051b30ec7c365f1"
+  },
+  "run_class": "genuine_forward",
+  "status": "ok",
+  "seconds": 469.7
+}

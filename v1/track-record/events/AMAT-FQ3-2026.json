@@ -1,0 +1,1220 @@
+{
+  "actuals": {
+    "actuals_file": "docs/reports/track_record/actuals/AMAT-FQ3-2026.json",
+    "grid": {
+      "adjusted_ebitda": {
+        "reason": "company does not report an adjusted EBITDA",
+        "status": "absent"
+      },
+      "adjusted_eps": {
+        "status": "ok",
+        "value": 3.5
+      },
+      "capex": {
+        "status": "ok",
+        "value": 707
+      },
+      "ebitda": {
+        "components": {
+          "depreciation_amortization": 151.0,
+          "income_tax": 369.0,
+          "interest_expense": 68.0,
+          "net_income": 2538.0
+        },
+        "status": "ok",
+        "value": 3126.0
+      },
+      "fcf": {
+        "status": "ok",
+        "value": 2330
+      },
+      "gaap_eps": {
+        "status": "ok",
+        "value": 3.17
+      },
+      "gross_margin": {
+        "status": "ok",
+        "value": 50.312671
+      },
+      "operating_margin": {
+        "status": "ok",
+        "value": 33.735601
+      },
+      "revenue": {
+        "status": "ok",
+        "value": 9115
+      }
+    },
+    "owner_verified": true,
+    "source": {
+      "accession": "0001628280-26-056699",
+      "document": "exhibit991q32026earningsre.htm",
+      "exhibit": "EX-99.1",
+      "kind": "8-K"
+    }
+  },
+  "cycle": "FQ3-2026",
+  "models": {
+    "claude-fable-5": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.3,
+          "p50": 3.5,
+          "p90": 3.73,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": true,
+          "p10": 700.0,
+          "p50": 1640.0,
+          "p90": 2450.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8850.0,
+          "p50": 9150.0,
+          "p90": 9430.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": 53.0,
+        "ebitda": 362.0,
+        "fcf": -690.0,
+        "gaap_eps": 0.39,
+        "gross_margin": -0.367316,
+        "operating_margin": 0.013033,
+        "revenue": 35.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.5
+        },
+        "capex": {
+          "status": "ok",
+          "value": 760.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 150.0,
+            "income_tax": 418.0,
+            "interest_expense": 69.0,
+            "net_income": 2851.0
+          },
+          "status": "ok",
+          "value": 3488.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 1640.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 3.56
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 49.945355
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 33.748634
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 9150.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.95,
+          "forecast_low": 3.55,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.27
+        },
+        "revenue": {
+          "forecast_high": 10200.0,
+          "forecast_low": 9200.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -550.0
+        }
+      },
+      "label": "Claude Fable 5",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": 22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": -0.005325,
+        "revenue": 15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 0,
+        "seconds": 333.0,
+        "tool_calls": 11,
+        "usage": {
+          "api_calls": 8,
+          "cache_read_tokens": 194619,
+          "cache_write_tokens": 55640,
+          "cost_usd": 0.0,
+          "input_tokens": 16,
+          "output_tokens": 24700
+        }
+      },
+      "slate_key": "result_fable.json",
+      "vendor": "Anthropic"
+    },
+    "deepseek/deepseek-v4-flash-0731": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.15,
+          "p50": 3.36,
+          "p90": 3.58,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 620.0,
+          "p50": 890.0,
+          "p90": 1190.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8400.0,
+          "p50": 8950.0,
+          "p90": 9500.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.14,
+        "capex": 43.0,
+        "ebitda": 391.0,
+        "fcf": -1440.0,
+        "gaap_eps": 0.54,
+        "gross_margin": -0.62552,
+        "operating_margin": -0.193702,
+        "revenue": -165.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.36
+        },
+        "capex": {
+          "status": "ok",
+          "value": 750.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 155.0,
+            "income_tax": 360.0,
+            "interest_expense": 70.0,
+            "net_income": 2932.0
+          },
+          "status": "ok",
+          "value": 3517.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 890.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 3.71
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 49.687151
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 33.541899
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 8950.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.7,
+          "forecast_low": 3.4,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.47
+        },
+        "revenue": {
+          "forecast_high": 9800.0,
+          "forecast_low": 9000.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -850.0
+        }
+      },
+      "label": "DeepSeek V4 Flash 07-31",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": -22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": 0.006914,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 1,
+        "seconds": 608.5,
+        "tool_calls": 22,
+        "usage": {
+          "api_calls": 21,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.08936751,
+          "input_tokens": 883063,
+          "output_tokens": 85871
+        }
+      },
+      "slate_key": "result_deepseek0731.json",
+      "vendor": "DeepSeek"
+    },
+    "gemini-3.6-flash": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.18,
+          "p50": 3.4,
+          "p90": 3.62,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 1350.0,
+          "p50": 1800.0,
+          "p90": 2250.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8550.0,
+          "p50": 9050.0,
+          "p90": 9550.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.1,
+        "capex": -57.0,
+        "ebitda": 244.0,
+        "fcf": -530.0,
+        "gaap_eps": 0.26,
+        "gross_margin": -0.146925,
+        "operating_margin": -0.475932,
+        "revenue": -65.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.4
+        },
+        "capex": {
+          "status": "ok",
+          "value": 650.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 140.0,
+            "income_tax": 442.0,
+            "interest_expense": 68.0,
+            "net_income": 2720.0
+          },
+          "status": "ok",
+          "value": 3370.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 1800.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 3.43
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 50.165746
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 33.259669
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 9050.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.7,
+          "forecast_low": 3.3,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.52
+        },
+        "revenue": {
+          "forecast_high": 9700.0,
+          "forecast_low": 8700.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -1050.0
+        }
+      },
+      "label": "Gemini 3.6 Flash",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0098,
+        "capex": 0.0,
+        "ebitda": 3.5,
+        "fcf": 22.5,
+        "gaap_eps": 0.015,
+        "gross_margin": 0.027007,
+        "operating_margin": 0.006914,
+        "revenue": 15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 1,
+        "seconds": 173.1,
+        "tool_calls": 4,
+        "usage": {
+          "api_calls": 6,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.0,
+          "input_tokens": 102484,
+          "output_tokens": 10268
+        }
+      },
+      "slate_key": "result_gemini.json",
+      "vendor": "Google"
+    },
+    "gpt-5.6-sol": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.18,
+          "p50": 3.4196,
+          "p90": 3.62,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": true,
+          "p10": 1250.0,
+          "p50": 1900.0,
+          "p90": 2450.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8550.0,
+          "p50": 9050.0,
+          "p90": 9500.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0804,
+        "capex": -107.0,
+        "ebitda": 142.0,
+        "fcf": -430.0,
+        "gaap_eps": 0.1893,
+        "gross_margin": -0.113776,
+        "operating_margin": -0.000794,
+        "revenue": -65.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.4196
+        },
+        "capex": {
+          "status": "ok",
+          "value": 600.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 145.0,
+            "income_tax": 379.0,
+            "interest_expense": 70.0,
+            "net_income": 2674.0
+          },
+          "status": "ok",
+          "value": 3268.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 1900.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 3.3593
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 50.198895
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 33.734807
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 9050.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.75,
+          "forecast_low": 3.35,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.47
+        },
+        "revenue": {
+          "forecast_high": 9900.0,
+          "forecast_low": 8900.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -850.0
+        }
+      },
+      "label": "GPT-5.6 Sol",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": 3.5,
+        "fcf": 22.5,
+        "gaap_eps": 0.015,
+        "gross_margin": 0.027007,
+        "operating_margin": 0.006914,
+        "revenue": 15.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 0,
+        "seconds": 173.0,
+        "tool_calls": 17,
+        "usage": {
+          "api_calls": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.0,
+          "input_tokens": 157228,
+          "output_tokens": 11963
+        }
+      },
+      "slate_key": "result_gpt-sol.json",
+      "vendor": "OpenAI"
+    },
+    "grok-4.6": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.12,
+          "p50": 3.4,
+          "p90": 3.65,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 850.0,
+          "p50": 1595.0,
+          "p90": 2300.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8450.0,
+          "p50": 9020.0,
+          "p90": 9550.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.1,
+        "capex": -127.0,
+        "ebitda": 227.0,
+        "fcf": -735.0,
+        "gaap_eps": 0.22,
+        "gross_margin": -0.201806,
+        "operating_margin": -0.254448,
+        "revenue": -95.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.4
+        },
+        "capex": {
+          "status": "ok",
+          "value": 580.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 148.0,
+            "income_tax": 434.0,
+            "interest_expense": 69.0,
+            "net_income": 2702.0
+          },
+          "status": "ok",
+          "value": 3353.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 1595.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 3.39
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 50.110865
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 33.481153
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 9020.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.65,
+          "forecast_low": 3.25,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.57
+        },
+        "revenue": {
+          "forecast_high": 9650.0,
+          "forecast_low": 8650.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -1100.0
+        }
+      },
+      "label": "Grok 4.6",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0098,
+        "capex": 0.0,
+        "ebitda": 3.5,
+        "fcf": -22.5,
+        "gaap_eps": 0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": 0.006914,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 0,
+        "seconds": 691.9,
+        "tool_calls": 21,
+        "usage": {
+          "api_calls": 11,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.0,
+          "input_tokens": 651733,
+          "output_tokens": 13471
+        }
+      },
+      "slate_key": "result_grok46.json",
+      "vendor": "xAI"
+    },
+    "moonshotai/kimi-k3": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.28,
+          "p50": 3.52,
+          "p90": 3.76,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 1200.0,
+          "p50": 1700.0,
+          "p90": 2300.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8750.0,
+          "p50": 9100.0,
+          "p90": 9450.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.02,
+        "capex": -7.0,
+        "ebitda": 251.0,
+        "fcf": -630.0,
+        "gaap_eps": 0.29,
+        "gross_margin": 0.45656,
+        "operating_margin": 0.627036,
+        "revenue": -15.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.52
+        },
+        "capex": {
+          "status": "ok",
+          "value": 700.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 140.0,
+            "income_tax": 428.0,
+            "interest_expense": 69.0,
+            "net_income": 2740.0
+          },
+          "status": "ok",
+          "value": 3377.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 1700.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 3.46
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 50.769231
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 34.362637
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 9100.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 4.0,
+          "forecast_low": 3.6,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.22
+        },
+        "revenue": {
+          "forecast_high": 10200.0,
+          "forecast_low": 9200.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -550.0
+        }
+      },
+      "label": "Kimi K3",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": 22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": 0.027007,
+        "operating_margin": -0.005325,
+        "revenue": 15.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 2,
+        "seconds": 1216.4,
+        "tool_calls": 6,
+        "usage": {
+          "api_calls": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.8448,
+          "input_tokens": 161380,
+          "output_tokens": 42476
+        }
+      },
+      "slate_key": "result_kimi.json",
+      "vendor": "Moonshot AI"
+    },
+    "muse-spark-1.2": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.05,
+          "p50": 3.36,
+          "p90": 3.68,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 950.0,
+          "p50": 1500.0,
+          "p90": 2050.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8350.0,
+          "p50": 8920.0,
+          "p90": 9450.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.14,
+        "capex": -87.0,
+        "ebitda": 95.0,
+        "fcf": -830.0,
+        "gaap_eps": 0.11,
+        "gross_margin": -0.088456,
+        "operating_margin": 0.042426,
+        "revenue": -195.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.36
+        },
+        "capex": {
+          "status": "ok",
+          "value": 620.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 140.0,
+            "income_tax": 407.0,
+            "interest_expense": 70.0,
+            "net_income": 2604.0
+          },
+          "status": "ok",
+          "value": 3221.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 1500.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 3.28
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 50.224215
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 33.778027
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 8920.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.56,
+          "forecast_low": 3.16,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.66
+        },
+        "revenue": {
+          "forecast_high": 9450.0,
+          "forecast_low": 8450.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -1300.0
+        }
+      },
+      "label": "Muse Spark 1.2",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0098,
+        "capex": 0.0,
+        "ebitda": 3.5,
+        "fcf": -22.5,
+        "gaap_eps": 0.015,
+        "gross_margin": 0.027007,
+        "operating_margin": -0.005325,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 0,
+        "seconds": 91.5,
+        "tool_calls": 6,
+        "usage": {
+          "api_calls": 7,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.0,
+          "input_tokens": 309439,
+          "output_tokens": 15456
+        }
+      },
+      "slate_key": "result_muse.json",
+      "vendor": "Meta"
+    },
+    "tencent/hy3": {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.2,
+          "p50": 3.45,
+          "p90": 3.7,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": false,
+          "p10": -50.0,
+          "p50": 115.0,
+          "p90": 250.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8800.0,
+          "p50": 8950.0,
+          "p90": 9450.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.05,
+        "capex": -57.0,
+        "ebitda": 859.0,
+        "fcf": -2215.0,
+        "gaap_eps": 0.92,
+        "gross_margin": -0.200939,
+        "operating_margin": 0.063282,
+        "revenue": -165.0
+      },
+      "grid": {
+        "adjusted_ebitda": {
+          "reason": "company does not report an adjusted EBITDA",
+          "status": "absent"
+        },
+        "adjusted_eps": {
+          "status": "ok",
+          "value": 3.45
+        },
+        "capex": {
+          "status": "ok",
+          "value": 650.0
+        },
+        "ebitda": {
+          "components": {
+            "depreciation_amortization": 145.0,
+            "income_tax": 510.0,
+            "interest_expense": 70.0,
+            "net_income": 3260.0
+          },
+          "status": "ok",
+          "value": 3985.0
+        },
+        "fcf": {
+          "status": "ok",
+          "value": 115.0
+        },
+        "gaap_eps": {
+          "status": "ok",
+          "value": 4.09
+        },
+        "gross_margin": {
+          "status": "ok",
+          "value": 50.111732
+        },
+        "operating_margin": {
+          "status": "ok",
+          "value": 33.798883
+        },
+        "revenue": {
+          "status": "ok",
+          "value": 8950.0
+        }
+      },
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.65,
+          "forecast_low": 3.25,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.57
+        },
+        "revenue": {
+          "forecast_high": 9800.0,
+          "forecast_low": 8800.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -950.0
+        }
+      },
+      "label": "Hunyuan 3",
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": -3.5,
+        "fcf": -22.5,
+        "gaap_eps": -0.015,
+        "gross_margin": -0.027007,
+        "operating_margin": -0.005325,
+        "revenue": -15.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 2,
+        "seconds": 1001.2,
+        "tool_calls": 9,
+        "usage": {
+          "api_calls": 6,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.05877075599999999,
+          "input_tokens": 113197,
+          "output_tokens": 97841
+        }
+      },
+      "slate_key": "result_hy3.json",
+      "vendor": "Tencent"
+    },
+    "z-ai/glm-5.2": {
+      "contract_valid": false,
+      "failure": "InvalidForecast: no complete JSON object found in the reply (it may have been cut off) \u2014 return the full object in one piece",
+      "label": "GLM 5.2",
+      "ops": {
+        "seconds": 617.1
+      },
+      "slate_key": "result_glm.json",
+      "vendor": "Z.ai"
+    }
+  },
+  "period_label": "Three Months Ended July 26, 2026",
+  "print": {
+    "accepted_at": "2026-08-13T20:03:36Z",
+    "date": "2026-08-13",
+    "session": "after-close",
+    "source": {
+      "accession": "0001628280-26-056699",
+      "document": "exhibit991q32026earningsre.htm",
+      "exhibit": "EX-99.1",
+      "kind": "8-K"
+    }
+  },
+  "published": {
+    "bands": {
+      "adjusted_eps": {
+        "high": 3.665,
+        "inside": true,
+        "low": 3.18,
+        "n_models": 8,
+        "reported": 3.5
+      },
+      "fcf": {
+        "high": 2275.0,
+        "inside": false,
+        "low": 900.0,
+        "n_models": 8,
+        "reported": 2330
+      },
+      "revenue": {
+        "high": 9475.0,
+        "inside": true,
+        "low": 8550.0,
+        "n_models": 8,
+        "reported": 9115
+      }
+    },
+    "grid": {
+      "adjusted_ebitda": {
+        "n_models": 0,
+        "reason": "company does not report an adjusted EBITDA",
+        "status": "absent"
+      },
+      "adjusted_eps": {
+        "n_models": 8,
+        "status": "ok",
+        "value": 3.4098
+      },
+      "capex": {
+        "n_models": 8,
+        "status": "ok",
+        "value": 650.0
+      },
+      "ebitda": {
+        "components": {
+          "depreciation_amortization": 145.0,
+          "income_tax": 423.0,
+          "interest_expense": 69.5,
+          "net_income": 2730.0
+        },
+        "n_models": 8,
+        "residual": 6.0,
+        "status": "ok",
+        "value": 3373.5
+      },
+      "fcf": {
+        "n_models": 8,
+        "status": "ok",
+        "value": 1617.5
+      },
+      "gaap_eps": {
+        "n_models": 8,
+        "status": "ok",
+        "value": 3.445
+      },
+      "gross_margin": {
+        "n_models": 8,
+        "status": "ok",
+        "value": 50.138739
+      },
+      "operating_margin": {
+        "n_models": 8,
+        "status": "ok",
+        "value": 33.74172
+      },
+      "revenue": {
+        "n_models": 8,
+        "status": "ok",
+        "value": 9035.0
+      }
+    },
+    "grid_errors": {
+      "adjusted_ebitda": null,
+      "adjusted_eps": -0.0902,
+      "capex": -57.0,
+      "ebitda": 247.5,
+      "fcf": -712.5,
+      "gaap_eps": 0.275,
+      "gross_margin": -0.173932,
+      "operating_margin": 0.006119,
+      "revenue": -80.0
+    },
+    "guidance": {
+      "eps_adjusted": {
+        "forecast_high": 3.7,
+        "forecast_low": 3.325,
+        "issued_inside_forecast": false,
+        "issued_mid": 4.02,
+        "mid_error": -0.5075
+      },
+      "revenue": {
+        "forecast_high": 9800.0,
+        "forecast_low": 8850.0,
+        "issued_inside_forecast": false,
+        "issued_mid": 10250.0,
+        "mid_error": -925.0
+      }
+    },
+    "headline": {
+      "adjusted_eps": {
+        "error": -0.0902,
+        "n_models": 8,
+        "pct_error": -2.577143,
+        "published": 3.4098,
+        "reported": 3.5
+      },
+      "revenue": {
+        "error": -80.0,
+        "n_models": 8,
+        "pct_error": -0.877674,
+        "published": 9035.0,
+        "reported": 9115
+      }
+    },
+    "sign_note": "error = forecast \u2212 reported; positive = we were high"
+  },
+  "schema": "track_record_event_v1",
+  "slate": {
+    "combiner_version": "median-v1",
+    "evidence_surface": {
+      "classes": [
+        "SEC filings (10-K, 10-Q, 8-K, XBRL)"
+      ],
+      "id": "filings-v1",
+      "note": "IR presentations and management earnings commentary were not yet served to models. Cross-era error levels are not comparable; within-event model comparisons are."
+    },
+    "models_contract_valid": 8,
+    "models_sealed": 9,
+    "sealed_cutoff": "2026-08-13T00:00:00Z",
+    "version": "v5"
+  },
+  "ticker": "AMAT"
+}

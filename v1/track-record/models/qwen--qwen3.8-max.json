@@ -1,0 +1,111 @@
+{
+  "active": false,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 1.15,
+          "p50": 1.18,
+          "p90": 1.22,
+          "reported": 1.22
+        },
+        "fcf": {
+          "inside": false,
+          "p10": 3600.0,
+          "p50": 4077.0,
+          "p90": 4500.0,
+          "reported": 4996
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 16800.0,
+          "p50": 17100.0,
+          "p90": 17500.0,
+          "reported": 17252
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ4-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.04,
+        "capex": 10.0,
+        "ebitda": -896.0,
+        "fcf": -919.0,
+        "gaap_eps": -0.12,
+        "gross_margin": -0.301337,
+        "operating_margin": -0.751063,
+        "revenue": -152.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -3.278689,
+        "capex": 2.564103,
+        "ebitda": -15.074024,
+        "fcf": -18.394716,
+        "gaap_eps": -12.371134,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -0.881057
+      },
+      "event": "../events/CSCO-FQ4-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 1.11,
+          "forecast_low": 1.09,
+          "issued_inside_forecast": false,
+          "issued_mid": 1.33,
+          "mid_error": -0.23
+        },
+        "revenue": {
+          "forecast_high": 16400.0,
+          "forecast_low": 16200.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 18100.0,
+          "mid_error": -1800.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": 15.0,
+        "ebitda": 2.5,
+        "fcf": 51.0,
+        "gaap_eps": 0.005,
+        "gross_margin": 0.011575,
+        "operating_margin": 0.060748,
+        "revenue": 70.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 2,
+        "seconds": 2579.2,
+        "tool_calls": 15,
+        "usage": {
+          "api_calls": 14,
+          "cost_usd": 1.4719039999999999,
+          "input_tokens": 1212430,
+          "output_tokens": 145478
+        }
+      },
+      "print_date": "2026-08-12",
+      "ticker": "CSCO"
+    }
+  ],
+  "label": "Qwen 3.8 Max",
+  "model_id": "qwen/qwen3.8-max",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 3.278689,
+      "revenue": 0.881057
+    },
+    "bands_held": 2,
+    "bands_total": 3,
+    "events_contract_valid": 1,
+    "events_graded": 1
+  },
+  "vendor": "Alibaba"
+}

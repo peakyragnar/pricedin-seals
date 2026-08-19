@@ -1,0 +1,94 @@
+{
+  "aggregate_median": {
+    "eps_adjusted": {
+      "p10": -2.75,
+      "p50": -2.31,
+      "p90": -1.9
+    },
+    "fcf": {
+      "p10": -140.0,
+      "p50": -109.0,
+      "p90": -82.0
+    },
+    "revenue": {
+      "p10": 138.0,
+      "p50": 151.0,
+      "p90": 159.0
+    }
+  },
+  "as_of": "2026-08-19T14:27:40Z",
+  "cik": 895419,
+  "classification": "genuine_forward",
+  "cycle": "FQ4-2026",
+  "excluded_attempts": [
+    {
+      "intent_id": "intent-20260819T144115622199Z-c458329c8d04",
+      "reason": "provider_http_429",
+      "snapshot_id": "snap-895419-20260819T144137847214Z"
+    }
+  ],
+  "files_sha256": {
+    "index.html": "01f2fe4c2e2abe45c178c7a345aeb5b13ca6f7b77317eac2c87f3b7c1f873449",
+    "model_fable.html": "a4bc266b7d8b2d2004c37842df701c1004931beb681fd9fea42094b142ee5452",
+    "model_gemini37.html": "08489f71f727bd11ea8577cb28e47c2f3af5946d5111c9c0b80122e427f9a958",
+    "model_gpt-sol.html": "8e464e60805f105090e2a074817e0a77aff364f9863b2794edd9bcc595587282",
+    "model_grok46.html": "ddc5ddd14fb30e707b2610485c850d559172a14b0157d9b3ff201ac322bbb23e",
+    "model_kimi.html": "78e1b236f3204b74204016ffe0f4e61e781bd427f9d336664f59e572d7b8df32",
+    "model_muse.html": "063fb99d40ccc256707e183cf3dcf0c8233afcc61343129e5637a4657187a436",
+    "result_fable.json": "ab11ce6fc689e81b533f05cbe9158abdcceb8a357005573771343aa5dd245002",
+    "result_gemini37.json": "adafe8cb4bd8ef1ae05b93477b3cb560be989d3217a54de477c0dee3779f34d2",
+    "result_gpt-sol.json": "3a20c440ec83316833c12f8ab48b21c70c0077e410ca723e9cf3c2e766a828b8",
+    "result_grok46.json": "2ea44f0b2e8a1836455d8ef3215d1a2f530ff4618cdcf427f4e8115c9e954b74",
+    "result_kimi.json": "85a4cd41fd925eddf2ab6419babe54585ab87c7418149985b85d49d6dc14d0e5",
+    "result_muse.json": "5f7957b462fe6ca87812a553a7f3b20687add1dc73017b136f60749dd4b7b189"
+  },
+  "models": {
+    "fable": {
+      "intent_id": "intent-20260819T142817325546Z-b9034d14037a",
+      "model_id": "claude-fable-5",
+      "result_file": "result_fable.json",
+      "snapshot_id": "snap-895419-20260819T143357785116Z"
+    },
+    "gemini37": {
+      "intent_id": "intent-20260819T142843288972Z-37f8f70c1b35",
+      "model_id": "gemini-3.7-flash",
+      "result_file": "result_gemini37.json",
+      "snapshot_id": "snap-895419-20260819T143125541472Z"
+    },
+    "grok46": {
+      "intent_id": "intent-20260819T142816026754Z-d007146f98a2",
+      "model_id": "grok-4.6",
+      "result_file": "result_grok46.json",
+      "snapshot_id": "snap-895419-20260819T143829688047Z"
+    },
+    "kimi": {
+      "intent_id": "intent-20260819T143126612825Z-b440d68a0bc4",
+      "model_id": "moonshotai/kimi-k3",
+      "result_file": "result_kimi.json",
+      "snapshot_id": "snap-895419-20260819T143915223052Z"
+    },
+    "muse": {
+      "intent_id": "intent-20260819T142814452434Z-8f5c1ac1e5b1",
+      "model_id": "muse-spark-1.2",
+      "result_file": "result_muse.json",
+      "snapshot_id": "snap-895419-20260819T143815703075Z"
+    }
+  },
+  "official_preflight": {
+    "capture_mode": "production",
+    "checked_at": "2026-08-19T14:41:15Z",
+    "content_sha256": "efb89d616e3024ec777358490bc8f6f360043ac16bf3fcb14f9c883fad548448",
+    "finding": "UNPUBLISHED",
+    "id": "preflight-20260819T144115597765Z-ec2762861478",
+    "surfaces": [
+      "Wolfspeed official Q4 event feed",
+      "SEC company submissions for Wolfspeed"
+    ]
+  },
+  "prompt_sha256": "451a1c18c2422e233bbd05399ecef8d2edf6ea5ad343fbb88051b30ec7c365f1",
+  "prompt_version": "v5.6",
+  "publication_contract": "rff-publication-v1",
+  "published_at": "2026-08-19T14:42:47Z",
+  "ticker": "WOLF",
+  "vintage": "v1"
+}

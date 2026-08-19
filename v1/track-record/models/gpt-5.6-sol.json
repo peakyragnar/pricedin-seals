@@ -1,0 +1,198 @@
+{
+  "active": true,
+  "events": [
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": false,
+          "p10": 1.13,
+          "p50": 1.18,
+          "p90": 1.21,
+          "reported": 1.22
+        },
+        "fcf": {
+          "inside": true,
+          "p10": 3800.0,
+          "p50": 5000.0,
+          "p90": 6100.0,
+          "reported": 4996
+        },
+        "revenue": {
+          "inside": false,
+          "p10": 16600.0,
+          "p50": 16860.0,
+          "p90": 17050.0,
+          "reported": 17252
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ4-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.04,
+        "capex": 110.0,
+        "ebitda": -954.0,
+        "fcf": 4.0,
+        "gaap_eps": -0.13,
+        "gross_margin": -0.12827,
+        "operating_margin": -0.872559,
+        "revenue": -392.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -3.278689,
+        "capex": 28.205128,
+        "ebitda": -16.049798,
+        "fcf": 0.080064,
+        "gaap_eps": -13.402062,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -2.2722
+      },
+      "event": "../events/CSCO-FQ4-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 1.05,
+          "forecast_low": 1.03,
+          "issued_inside_forecast": false,
+          "issued_mid": 1.33,
+          "mid_error": -0.29
+        },
+        "revenue": {
+          "forecast_high": 15600.0,
+          "forecast_low": 15400.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 18100.0,
+          "mid_error": -2600.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0,
+        "capex": -15.0,
+        "ebitda": -2.5,
+        "fcf": 51.0,
+        "gaap_eps": -0.005,
+        "gross_margin": 0.011575,
+        "operating_margin": -0.060748,
+        "revenue": -70.0
+      },
+      "ops": {
+        "anchor_retries": 0,
+        "contract_retries": 2,
+        "seconds": 192.6,
+        "tool_calls": 12
+      },
+      "print_date": "2026-08-12",
+      "ticker": "CSCO"
+    },
+    {
+      "bands": {
+        "adjusted_eps": {
+          "inside": true,
+          "p10": 3.18,
+          "p50": 3.4196,
+          "p90": 3.62,
+          "reported": 3.5
+        },
+        "fcf": {
+          "inside": true,
+          "p10": 1250.0,
+          "p50": 1900.0,
+          "p90": 2450.0,
+          "reported": 2330
+        },
+        "revenue": {
+          "inside": true,
+          "p10": 8550.0,
+          "p50": 9050.0,
+          "p90": 9500.0,
+          "reported": 9115
+        }
+      },
+      "contract_valid": true,
+      "cycle": "FQ3-2026",
+      "errors": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -0.0804,
+        "capex": -107.0,
+        "ebitda": 142.0,
+        "fcf": -430.0,
+        "gaap_eps": 0.1893,
+        "gross_margin": -0.113776,
+        "operating_margin": -0.000794,
+        "revenue": -65.0
+      },
+      "errors_pct": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": -2.297143,
+        "capex": -15.134371,
+        "ebitda": 4.542546,
+        "fcf": -18.454936,
+        "gaap_eps": 5.971609,
+        "gross_margin": null,
+        "operating_margin": null,
+        "revenue": -0.71311
+      },
+      "event": "../events/AMAT-FQ3-2026.json",
+      "guidance": {
+        "eps_adjusted": {
+          "forecast_high": 3.75,
+          "forecast_low": 3.35,
+          "issued_inside_forecast": false,
+          "issued_mid": 4.02,
+          "mid_error": -0.47
+        },
+        "revenue": {
+          "forecast_high": 9900.0,
+          "forecast_low": 8900.0,
+          "issued_inside_forecast": false,
+          "issued_mid": 10250.0,
+          "mid_error": -850.0
+        }
+      },
+      "loo_delta_abs_error": {
+        "adjusted_ebitda": null,
+        "adjusted_eps": 0.0098,
+        "capex": 0.0,
+        "ebitda": 3.5,
+        "fcf": 22.5,
+        "gaap_eps": 0.015,
+        "gross_margin": 0.027007,
+        "operating_margin": 0.006914,
+        "revenue": 15.0
+      },
+      "ops": {
+        "anchor_retries": 1,
+        "contract_retries": 0,
+        "seconds": 173.0,
+        "tool_calls": 17,
+        "usage": {
+          "api_calls": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cost_usd": 0.0,
+          "input_tokens": 157228,
+          "output_tokens": 11963
+        }
+      },
+      "print_date": "2026-08-13",
+      "ticker": "AMAT"
+    }
+  ],
+  "label": "GPT-5.6 Sol",
+  "model_id": "gpt-5.6-sol",
+  "schema": "track_record_model_v1",
+  "sign_note": "error = forecast \u2212 reported; positive = the model was high",
+  "summary": {
+    "avg_abs_pct_error": {
+      "adjusted_eps": 2.787916,
+      "revenue": 1.492655
+    },
+    "bands_held": 4,
+    "bands_total": 6,
+    "events_contract_valid": 2,
+    "events_graded": 2
+  },
+  "vendor": "OpenAI"
+}

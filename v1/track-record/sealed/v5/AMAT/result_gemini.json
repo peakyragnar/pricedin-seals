@@ -1,0 +1,401 @@
+{
+  "model_key": "gemini",
+  "as_of": "2026-08-13T00:00:00Z",
+  "ticker": "AMAT",
+  "validated": {
+    "anchors": [
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q2 FY2026 Net Revenue",
+        "reference": "exhibit991q22026earningsre.htm:b0000077",
+        "value": 7910
+      },
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q2 FY2026 Gross Profit",
+        "reference": "exhibit991q22026earningsre.htm:b0000077",
+        "value": 3947
+      },
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q2 FY2026 Operating Income",
+        "reference": "exhibit991q22026earningsre.htm:b0000077",
+        "value": 2523
+      },
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q2 FY2026 Net Income",
+        "reference": "exhibit991q22026earningsre.htm:b0000077",
+        "value": 2806
+      },
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q2 FY2026 Diluted EPS (GAAP)",
+        "reference": "exhibit991q22026earningsre.htm:b0000077",
+        "value": 3.51
+      },
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q2 FY2026 Cash Provided by Operating Activities",
+        "reference": "exhibit991q22026earningsre.htm:b0000089",
+        "value": 845
+      },
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q3 FY2026 Guidance Total Revenue Midpoint",
+        "reference": "exhibit991q22026earningsre.htm:b0000050",
+        "value": 8950
+      },
+      {
+        "accession": "0001628280-26-035071",
+        "name": "Q3 FY2026 Guidance Non-GAAP Diluted EPS Midpoint",
+        "reference": "exhibit991q22026earningsre.htm:b0000050",
+        "value": 3.36
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 8550.0,
+        "p50": 9050.0,
+        "p90": 9550.0
+      },
+      "eps_adjusted": {
+        "p10": 3.18,
+        "p50": 3.4,
+        "p90": 3.62
+      },
+      "fcf": {
+        "p10": 1350.0,
+        "p50": 1800.0,
+        "p90": 2250.0
+      }
+    },
+    "income_statement": {
+      "revenue": 9050.0,
+      "cost_of_sales": 4510.0,
+      "gross_profit": 4540.0,
+      "rnd": 1110.0,
+      "marketing_selling": 245.0,
+      "general_admin": 175.0,
+      "operating_income": 3010.0,
+      "interest_expense": 68.0,
+      "other_income_net": 220.0,
+      "pretax_income": 3162.0,
+      "income_tax": 442.0,
+      "net_income": 2720.0,
+      "shares_diluted": 792.0,
+      "eps_diluted": 3.43
+    },
+    "bridge": {
+      "adjustments": {
+        "acquisition_amortization_and_deal_costs": 10.0,
+        "tax_effects_and_discrete_items": -37.0
+      },
+      "non_gaap_net_income": 2693.0
+    },
+    "cash_flow": {
+      "net_income": 2720.0,
+      "depreciation_amortization": 140.0,
+      "share_based_comp": 175.0,
+      "other_operating": -585.0,
+      "cfo": 2450.0,
+      "capex": -650.0,
+      "other_investing": -250.0,
+      "cfi": -900.0,
+      "buybacks": -500.0,
+      "dividends": -420.0,
+      "other_financing": -50.0,
+      "cff": -970.0,
+      "fx_effect": 0.0,
+      "net_change_cash": 580.0
+    },
+    "balance_sheet": {
+      "cash_and_restricted": 6939.0,
+      "other_assets": 35135.0,
+      "total_assets": 42074.0,
+      "total_liabilities": 16200.0,
+      "retained_earnings": 61074.0,
+      "other_equity": -35200.0,
+      "total_equity": 25874.0
+    },
+    "quarterly_path": {
+      "fq4_26": {
+        "revenue": {
+          "p10": 8600.0,
+          "p50": 9200.0,
+          "p90": 9800.0
+        },
+        "eps_adjusted": {
+          "p10": 3.25,
+          "p50": 3.5,
+          "p90": 3.75
+        },
+        "gross_profit": 4620.0,
+        "operating_income": 3080.0,
+        "net_income": 2750.0,
+        "cfo": 2550.0,
+        "capex": -680.0,
+        "fcf": 1870.0,
+        "cfi": -900.0,
+        "cff": -980.0,
+        "net_change_cash": 670.0
+      },
+      "fq1_27": {
+        "revenue": {
+          "p10": 8300.0,
+          "p50": 8900.0,
+          "p90": 9500.0
+        },
+        "eps_adjusted": {
+          "p10": 3.1,
+          "p50": 3.35,
+          "p90": 3.6
+        },
+        "gross_profit": 4450.0,
+        "operating_income": 2950.0,
+        "net_income": 2620.0,
+        "cfo": 2400.0,
+        "capex": -650.0,
+        "fcf": 1750.0,
+        "cfi": -850.0,
+        "cff": -950.0,
+        "net_change_cash": 600.0
+      },
+      "fq2_27": {
+        "revenue": {
+          "p10": 8700.0,
+          "p50": 9350.0,
+          "p90": 10000.0
+        },
+        "eps_adjusted": {
+          "p10": 3.3,
+          "p50": 3.6,
+          "p90": 3.9
+        },
+        "gross_profit": 4700.0,
+        "operating_income": 3150.0,
+        "net_income": 2800.0,
+        "cfo": 2600.0,
+        "capex": -700.0,
+        "fcf": 1900.0,
+        "cfi": -900.0,
+        "cff": -1000.0,
+        "net_change_cash": 700.0
+      },
+      "fq3_27": {
+        "revenue": {
+          "p10": 9000.0,
+          "p50": 9700.0,
+          "p90": 10400.0
+        },
+        "eps_adjusted": {
+          "p10": 3.5,
+          "p50": 3.8,
+          "p90": 4.1
+        },
+        "gross_profit": 4900.0,
+        "operating_income": 3300.0,
+        "net_income": 2950.0,
+        "cfo": 2750.0,
+        "capex": -720.0,
+        "fcf": 2030.0,
+        "cfi": -950.0,
+        "cff": -1020.0,
+        "net_change_cash": 780.0
+      },
+      "fq4_27": {
+        "revenue": {
+          "p10": 9300.0,
+          "p50": 10000.0,
+          "p90": 10700.0
+        },
+        "eps_adjusted": {
+          "p10": 3.65,
+          "p50": 3.95,
+          "p90": 4.25
+        },
+        "gross_profit": 5050.0,
+        "operating_income": 3420.0,
+        "net_income": 3050.0,
+        "cfo": 2850.0,
+        "capex": -750.0,
+        "fcf": 2100.0,
+        "cfi": -1000.0,
+        "cff": -1050.0,
+        "net_change_cash": 800.0
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 8700.0,
+        "high": 9700.0
+      },
+      "eps_adjusted": {
+        "low": 3.3,
+        "high": 3.7
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 32500.0,
+          "p50": 33172.0,
+          "p90": 33800.0
+        },
+        "eps_adjusted": {
+          "p10": 12.5,
+          "p50": 13.11,
+          "p90": 13.7
+        },
+        "gross_profit": 16557.0,
+        "operating_income": 10433.0,
+        "net_income": 10378.0,
+        "cfo": 8381.0,
+        "capex": -2611.0,
+        "fcf": 5770.0,
+        "total_assets": 43500.0,
+        "total_liabilities": 16000.0,
+        "total_equity": 27500.0
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 35000.0,
+          "p50": 37950.0,
+          "p90": 41000.0
+        },
+        "eps_adjusted": {
+          "p10": 13.5,
+          "p50": 14.7,
+          "p90": 16.0
+        },
+        "gross_profit": 19100.0,
+        "operating_income": 12820.0,
+        "net_income": 11420.0,
+        "cfo": 10600.0,
+        "capex": -2820.0,
+        "fcf": 7780.0,
+        "total_assets": 48000.0,
+        "total_liabilities": 16500.0,
+        "total_equity": 31500.0
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 38000.0,
+          "p50": 42000.0,
+          "p90": 46000.0
+        },
+        "eps_adjusted": {
+          "p10": 15.0,
+          "p50": 16.8,
+          "p90": 18.5
+        },
+        "gross_profit": 21200.0,
+        "operating_income": 14500.0,
+        "net_income": 12900.0,
+        "cfo": 12200.0,
+        "capex": -3000.0,
+        "fcf": 9200.0,
+        "total_assets": 53500.0,
+        "total_liabilities": 17000.0,
+        "total_equity": 36500.0
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 41000.0,
+          "p50": 46500.0,
+          "p90": 52000.0
+        },
+        "eps_adjusted": {
+          "p10": 16.5,
+          "p50": 19.0,
+          "p90": 21.5
+        },
+        "gross_profit": 23700.0,
+        "operating_income": 16400.0,
+        "net_income": 14600.0,
+        "cfo": 14000.0,
+        "capex": -3200.0,
+        "fcf": 10800.0,
+        "total_assets": 60000.0,
+        "total_liabilities": 17500.0,
+        "total_equity": 42500.0
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "Capital expenditures for the EPIC Center and expansion of innovation hub infrastructure",
+          "source": "0001628280-26-035071:exhibit991q22026earningsre.htm:b0000028",
+          "horizon": "FY2026-FY2027",
+          "flows_into": [
+            "cash_flow.capex",
+            "horizons.fy0.capex",
+            "horizons.fy1.capex"
+          ]
+        },
+        {
+          "claim": "15% increase in quarterly dividend per share to $0.53 and continued capital return strategy",
+          "source": "0001628280-26-035071:exhibit991q22026earningsre.htm:b0000044",
+          "horizon": "FY2026",
+          "flows_into": [
+            "cash_flow.dividends"
+          ]
+        },
+        {
+          "claim": "Expectation for semiconductor equipment business to grow >30% in calendar 2026",
+          "source": "0001628280-26-035071:exhibit991q22026earningsre.htm:b0000019",
+          "horizon": "Calendar 2026",
+          "flows_into": [
+            "quarterly_path.fq4_26.revenue",
+            "horizons.fy0.revenue"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "Semiconductor Systems non-GAAP gross margin >= 55.0%",
+          "checkable_at": "Form 10-K for FY2026 (ending October 2026)"
+        },
+        {
+          "marker": "Cash provided by operating activities >= $2,800M in Q4 FY2026",
+          "checkable_at": "Form 10-K for FY2026 (ending October 2026)"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Consolidated net revenue YoY growth falls below 5.0%",
+          "checkable_at": "Form 10-Q for Q1 FY2027"
+        },
+        {
+          "marker": "Non-GAAP gross margin falls below 48.0%",
+          "checkable_at": "Any Form 10-Q or 10-K filing in FY2027"
+        }
+      ],
+      "what_must_be_true": "WFE spending growth continues through calendar 2026/2027, driven by AI accelerators, GAA transistor node transitions, and HBM memory expansion, while AMAT maintains its lead in materials engineering and advanced packaging deposition systems."
+    },
+    "preview_note": "Applied Materials reports fiscal Q3 2026 results against elevated expectations fueled by robust AI infrastructure momentum, gate-all-around (GAA) logic transitions, and expanding high-bandwidth memory (HBM) capacity build-outs. Management\u2019s Q3 revenue guidance of $8.95B \u00b1 $500M and non-GAAP EPS of $3.36 \u00b1 $0.20 reflects accelerated wafer fab equipment (WFE) spending among key leading-edge foundry/logic and DRAM customers. We model Q3 revenue at $9,050M and non-GAAP EPS at $3.40, tracking slightly above midpoint given high delivery rates in advanced packaging and materials engineering systems. Key setup factors: (1) foundry/logic spending momentum as TSMC and Intel ramp 2nm and GAA nodes, driving adoption of AMAT\u2019s Trillium ALD and Precision selective PECVD systems; (2) DRAM/HBM expansion supporting materials engineering intensity; and (3) operational gross margin expansion to 50.2% on favorable product mix. The earnings reaction will hinge on Q4 guidance and management\u2019s update on calendar 2026 WFE growth expectations, where management previously signaled >30% growth in equipment revenue.",
+    "reasoning": "Our forecast for AMAT's Q3 FY2026 anchors on strong execution in advanced process nodes (2nm GAA logic, HBM3e/HBM4 DRAM) and expanding advanced packaging equipment demand. Revenue of $9,050M tracks slightly above guidance midpoint ($8,950M). Non-GAAP gross margin expands to 50.16% driven by favorable product mix in Semiconductor Systems. All income statement, cash flow, and balance sheet identities strictly reconcile. Roll-forwards for cash_and_restricted ($6,359M + $580M = $6,939M) and retained_earnings ($59,274M + $2,720M - $420M - $500M = $61,074M) hold precisely."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-6951-20260813T130437612636Z",
+    "corpus_manifest_sha256": "100ddbcb4c3ee889980b8b81dd8e467d7a8769435ea051746a317366f132e6ee",
+    "corpus_filings": 144,
+    "tool_calls": 4
+  },
+  "tool_calls": 4,
+  "contract_retries": 1,
+  "anchor_retries": 0,
+  "unverified_anchors": [],
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5.1",
+  "usage": {
+    "api_calls": 6,
+    "input_tokens": 102484,
+    "output_tokens": 10268,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "cost_usd": 0.0
+  },
+  "status": "ok",
+  "seconds": 173.1
+}

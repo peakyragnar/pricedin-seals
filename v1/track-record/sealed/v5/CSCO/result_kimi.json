@@ -1,0 +1,578 @@
+{
+  "model_key": "kimi",
+  "as_of": "2026-08-12T00:00:00Z",
+  "ticker": "CSCO",
+  "validated": {
+    "anchors": [
+      {
+        "name": "Q3 FY26 total revenue (USD millions)",
+        "value": 15841,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000084 \u2014 Consolidated Statements of Operations, 'Total revenue 15,841'"
+      },
+      {
+        "name": "Q3 FY26 GAAP net income (USD millions)",
+        "value": 3373,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000136 \u2014 GAAP to non-GAAP net income, 'GAAP net income $3,373'"
+      },
+      {
+        "name": "Q3 FY26 GAAP diluted EPS (USD)",
+        "value": 0.85,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000084 \u2014 'Diluted $0.85'"
+      },
+      {
+        "name": "Q3 FY26 non-GAAP net income (USD millions)",
+        "value": 4227,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000136 \u2014 'Non-GAAP net income $4,227'"
+      },
+      {
+        "name": "Q3 FY26 non-GAAP diluted EPS (USD)",
+        "value": 1.06,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000142 \u2014 'Non-GAAP EPS $1.06'"
+      },
+      {
+        "name": "Q3 FY26 diluted weighted-average shares (millions)",
+        "value": 3982,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000084 \u2014 'Diluted 3,982'"
+      },
+      {
+        "name": "Q3 FY26 net cash provided by operating activities (USD millions)",
+        "value": 3757,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000114 \u2014 'Net cash provided by operating activities 3,757'"
+      },
+      {
+        "name": "Q3 FY26 acquisition of property and equipment (USD millions)",
+        "value": 414,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000114 \u2014 'Acquisition of property and equipment (414)'"
+      },
+      {
+        "name": "Nine months FY26 total revenue (USD millions)",
+        "value": 46073,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000084 \u2014 nine months ended April 25, 2026 'Total revenue 46,073'"
+      },
+      {
+        "name": "Nine months FY26 net cash provided by operating activities (USD millions)",
+        "value": 8791,
+        "accession": "0000858877-26-000078",
+        "reference": "csco-20260425.htm:b0000080 \u2014 10-Q cash flow statement, 'Net cash provided by operating activities 8,791'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 revenue low end (USD billions)",
+        "value": 16.7,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000066 \u2014 'Q4 FY 2026 Revenue $16.7 billion - $16.9 billion'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 revenue high end (USD billions)",
+        "value": 16.9,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000066 \u2014 'Q4 FY 2026 Revenue $16.7 billion - $16.9 billion'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 non-GAAP gross margin low end (%)",
+        "value": 65.5,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000066 \u2014 'Non-GAAP gross margin 65.5% - 66.5%'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 non-GAAP operating margin low end (%)",
+        "value": 34,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000066 \u2014 'Non-GAAP operating margin 34% - 35%'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 non-GAAP EPS low end (USD)",
+        "value": 1.16,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000066 \u2014 'Non-GAAP EPS $1.16 - $1.18'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 non-GAAP EPS high end (USD)",
+        "value": 1.18,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000066 \u2014 'Non-GAAP EPS $1.16 - $1.18'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 GAAP EPS low end (USD)",
+        "value": 0.8,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000067 \u2014 'GAAP EPS will be $0.80 to $0.85 for the fourth quarter of fiscal 2026'"
+      },
+      {
+        "name": "Q4 FY26 guidance \u2014 GAAP EPS high end (USD)",
+        "value": 0.85,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000067 \u2014 'GAAP EPS will be $0.80 to $0.85'"
+      },
+      {
+        "name": "FY26 guidance \u2014 revenue low end (USD billions)",
+        "value": 62.8,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000069 \u2014 'FY 2026 Revenue $62.8 billion - $63.0 billion'"
+      },
+      {
+        "name": "FY26 guidance \u2014 revenue high end (USD billions)",
+        "value": 63,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000069 \u2014 'FY 2026 Revenue $62.8 billion - $63.0 billion'"
+      },
+      {
+        "name": "FY26 guidance \u2014 non-GAAP EPS low end (USD)",
+        "value": 4.27,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000069 \u2014 'Non-GAAP EPS $4.27 - $4.29'"
+      },
+      {
+        "name": "FY26 guidance \u2014 non-GAAP EPS high end (USD)",
+        "value": 4.29,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000069 \u2014 'Non-GAAP EPS $4.27 - $4.29'"
+      },
+      {
+        "name": "FY26 guidance \u2014 GAAP EPS low end (USD)",
+        "value": 3.16,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000070 \u2014 'GAAP EPS will be $3.16 to $3.21 for fiscal 2026'"
+      },
+      {
+        "name": "FY26 guidance \u2014 GAAP EPS high end (USD)",
+        "value": 3.21,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000070 \u2014 'GAAP EPS will be $3.16 to $3.21'"
+      },
+      {
+        "name": "Fiscal 2026 restructuring plan \u2014 pre-tax charge expected in Q4 FY26 (USD millions)",
+        "value": 450,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000173 \u2014 'expects to recognize approximately $450 million of these charges in the fourth quarter of fiscal 2026'"
+      },
+      {
+        "name": "Fiscal 2026 restructuring plan \u2014 total pre-tax charges, up to (USD billions); remainder in FY27",
+        "value": 1,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000173 \u2014 'pre-tax charges of up to $1 billion ... remaining amount expected to be recognized during fiscal 2027'"
+      },
+      {
+        "name": "Q4 FY26 guidance assumed GAAP effective tax rate (%)",
+        "value": 16,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000072 \u2014 'effective tax provision rate of approximately 16% for GAAP and approximately 19% for non-GAAP'"
+      },
+      {
+        "name": "Cash, cash equivalents and restricted cash at April 25, 2026 (USD millions)",
+        "value": 7083,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000114 \u2014 'end of period $7,083'"
+      },
+      {
+        "name": "Total assets at April 25, 2026 (USD millions)",
+        "value": 125546,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000107 \u2014 'TOTAL ASSETS $125,546'"
+      },
+      {
+        "name": "Total liabilities at April 25, 2026 (USD millions)",
+        "value": 76685,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000107 \u2014 'Total liabilities 76,685'"
+      },
+      {
+        "name": "Total equity at April 25, 2026 (USD millions)",
+        "value": 48861,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000107 \u2014 'Total equity 48,861'"
+      },
+      {
+        "name": "Retained earnings at April 25, 2026 (USD millions)",
+        "value": 704,
+        "accession": "0000858877-26-000078",
+        "reference": "csco-20260425.htm:b0000053 \u2014 Consolidated Balance Sheets, 'Retained earnings 704'"
+      },
+      {
+        "name": "Quarterly dividend declared May 13, 2026, paid July 22, 2026 (USD per share)",
+        "value": 0.42,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000041 \u2014 'quarterly dividend of $0.42 per common share to be paid on July 22, 2026'"
+      },
+      {
+        "name": "Remaining stock repurchase authorization at April 25, 2026 (USD billions)",
+        "value": 9.6,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000061 \u2014 'remaining authorized amount for stock repurchases under the program is $9.6 billion'"
+      },
+      {
+        "name": "AI infrastructure orders from hyperscalers, FY26 year-to-date (USD billions)",
+        "value": 5.3,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000012 \u2014 '$5.3 billion of orders taken year to date'"
+      },
+      {
+        "name": "Raised expected FY26 hyperscaler AI orders (USD billions)",
+        "value": 9,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000012 \u2014 'raising expected FY26 orders to $9 billion, up from $5 billion'"
+      },
+      {
+        "name": "Raised expected FY26 AI revenue (USD billions)",
+        "value": 4,
+        "accession": "0000858877-26-000075",
+        "reference": "exhibit991pressrelease-q3f.htm:b0000013 \u2014 'Raising expected FY26 revenue to $4 billion, up from $3 billion'"
+      },
+      {
+        "name": "Inventory purchase commitments at April 25, 2026 (USD millions)",
+        "value": 16033,
+        "accession": "0000858877-26-000078",
+        "reference": "csco-20260425.htm:b0000391 \u2014 'Total $16,033' vs $7,599 at July 26, 2025"
+      },
+      {
+        "name": "Remaining FY26 amortization of purchased intangibles (USD millions)",
+        "value": 447,
+        "accession": "0000858877-26-000078",
+        "reference": "csco-20260425.htm:b0000196 \u2014 'Fiscal Year 2026 (remaining three months) $447'"
+      },
+      {
+        "name": "Q4 FY25 total revenue (USD billions)",
+        "value": 14.7,
+        "accession": "0001193125-25-179820",
+        "reference": "d901470dex991.htm:b0000064 \u2014 'fourth quarter revenue of $14.7 billion'"
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 16600.0,
+        "p50": 16800.0,
+        "p90": 17050.0
+      },
+      "eps_adjusted": {
+        "p10": 1.15,
+        "p50": 1.19,
+        "p90": 1.22
+      },
+      "fcf": {
+        "p10": 3100.0,
+        "p50": 3750.0,
+        "p90": 4600.0
+      }
+    },
+    "income_statement": {
+      "revenue": 16800.0,
+      "cost_of_sales": 6300.0,
+      "gross_profit": 10500.0,
+      "rnd": 2400.0,
+      "sales_marketing": 2950.0,
+      "general_admin": 660.0,
+      "amortization": 215.0,
+      "restructuring": 450.0,
+      "operating_income": 3825.0,
+      "interest_income": 200.0,
+      "interest_expense": 380.0,
+      "other_income_net": -90.0,
+      "pretax_income": 3555.0,
+      "income_tax": -24.0,
+      "net_income": 3579.0,
+      "shares_diluted": 3960.0,
+      "eps_diluted": 0.9
+    },
+    "bridge": {
+      "adjustments": {
+        "share_based_compensation": 920.0,
+        "amortization_of_acquisition_related_intangibles": 440.0,
+        "acquisition_divestiture_related_costs": 75.0,
+        "significant_asset_impairments_and_restructurings": 450.0,
+        "gains_losses_on_investments": 0.0,
+        "income_tax_effect_of_adjustments": -771.0
+      },
+      "non_gaap_net_income": 4693.0
+    },
+    "cash_flow": {
+      "net_income": 3579.0,
+      "depreciation_amortization": 620.0,
+      "share_based_comp": 920.0,
+      "other_operating": -819.0,
+      "cfo": 4300.0,
+      "capex": -550.0,
+      "other_investing": 0.0,
+      "cfi": -550.0,
+      "buybacks": -1850.0,
+      "dividends": -1650.0,
+      "other_financing": -150.0,
+      "cff": -3650.0,
+      "fx_effect": -20.0,
+      "net_change_cash": 80.0
+    },
+    "balance_sheet": {
+      "cash_and_restricted": 7163.0,
+      "other_assets": 117280.0,
+      "total_assets": 124443.0,
+      "total_liabilities": 75430.0,
+      "retained_earnings": 783.0,
+      "other_equity": 48230.0,
+      "total_equity": 49013.0
+    },
+    "quarterly_path": {
+      "fq1": {
+        "revenue": {
+          "p10": 15800.0,
+          "p50": 16700.0,
+          "p90": 17400.0
+        },
+        "eps_adjusted": {
+          "p10": 1.05,
+          "p50": 1.12,
+          "p90": 1.19
+        },
+        "gross_margin_pct": 62.5,
+        "operating_margin_pct": 24.5,
+        "capex": 450.0,
+        "fcf": 3400.0
+      },
+      "fq2": {
+        "revenue": {
+          "p10": 16000.0,
+          "p50": 16900.0,
+          "p90": 17700.0
+        },
+        "eps_adjusted": {
+          "p10": 1.06,
+          "p50": 1.14,
+          "p90": 1.21
+        },
+        "gross_margin_pct": 62.8,
+        "operating_margin_pct": 25.2,
+        "capex": 450.0,
+        "fcf": 3600.0
+      },
+      "fq3": {
+        "revenue": {
+          "p10": 16300.0,
+          "p50": 17100.0,
+          "p90": 17900.0
+        },
+        "eps_adjusted": {
+          "p10": 1.09,
+          "p50": 1.17,
+          "p90": 1.24
+        },
+        "gross_margin_pct": 63.0,
+        "operating_margin_pct": 25.8,
+        "capex": 450.0,
+        "fcf": 4300.0
+      },
+      "fq4": {
+        "revenue": {
+          "p10": 16900.0,
+          "p50": 17800.0,
+          "p90": 18600.0
+        },
+        "eps_adjusted": {
+          "p10": 1.14,
+          "p50": 1.22,
+          "p90": 1.3
+        },
+        "gross_margin_pct": 63.2,
+        "operating_margin_pct": 26.2,
+        "capex": 500.0,
+        "fcf": 4700.0
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 16400.0,
+        "high": 16800.0
+      },
+      "eps_adjusted": {
+        "low": 1.1,
+        "high": 1.14
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 62650.0,
+          "p50": 62873.0,
+          "p90": 63100.0
+        },
+        "eps_adjusted": {
+          "p10": 4.25,
+          "p50": 4.29,
+          "p90": 4.33
+        },
+        "capex": 1570.0,
+        "fcf": 13321.0
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 65200.0,
+          "p50": 67900.0,
+          "p90": 71000.0
+        },
+        "eps_adjusted": {
+          "p10": 4.35,
+          "p50": 4.63,
+          "p90": 4.95
+        },
+        "capex": 1800.0,
+        "fcf": 16400.0
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 67600.0,
+          "p50": 72500.0,
+          "p90": 78000.0
+        },
+        "eps_adjusted": {
+          "p10": 4.6,
+          "p50": 5.05,
+          "p90": 5.6
+        }
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 69800.0,
+          "p50": 76800.0,
+          "p90": 84500.0
+        },
+        "eps_adjusted": {
+          "p10": 4.85,
+          "p50": 5.45,
+          "p90": 6.2
+        }
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "FY26 hyperscaler AI infrastructure orders raised to ~$9B (from $5B) with $5.3B taken through Q3, and FY26 AI revenue raised to ~$4B (from $3B)",
+          "source": "8-K 0000858877-26-000075, exhibit991pressrelease-q3f.htm:b0000012-b0000013",
+          "horizon": "FY26 into FY27-28",
+          "flows_into": [
+            "income_statement.revenue",
+            "headline.revenue",
+            "horizons.fy1.revenue",
+            "horizons.fy2.revenue",
+            "quarterly_path.fq1.revenue"
+          ]
+        },
+        {
+          "claim": "Fiscal 2026 Plan: up to $1B pre-tax restructuring charges \u2014 ~$450M in Q4 FY26, remainder during FY27, plan substantially complete by end of FY27 \u2014 to fund silicon, optics, security and AI investment",
+          "source": "8-K 0000858877-26-000075, exhibit991pressrelease-q3f.htm:b0000173; 10-Q 0000858877-26-000078, csco-20260425.htm:b0000198",
+          "horizon": "FY26-FY27",
+          "flows_into": [
+            "income_statement.restructuring",
+            "quarterly_path.fq1.operating_margin_pct",
+            "quarterly_path.fq2.operating_margin_pct",
+            "horizons.fy1.eps_adjusted"
+          ]
+        },
+        {
+          "claim": "Major multi-year, multi-billion-dollar campus networking refresh underway; campus orders +25% y/y and data center switching orders +40% y/y in Q3 FY26",
+          "source": "8-K 0000858877-26-000075, exhibit991pressrelease-q3f.htm:b0000014-b0000016",
+          "horizon": "FY27-FY29",
+          "flows_into": [
+            "quarterly_path.fq1.revenue",
+            "quarterly_path.fq2.revenue",
+            "horizons.fy1.revenue",
+            "horizons.fy2.revenue"
+          ]
+        },
+        {
+          "claim": "Quarterly dividend of $0.42 per share declared May 13, 2026 (paid July 22, 2026), continuing the pattern of annual dividend increases; ~$9.6B remains on the repurchase authorization with no termination date",
+          "source": "8-K 0000858877-26-000075, exhibit991pressrelease-q3f.htm:b0000041 and b0000061; 10-Q 0000858877-26-000078, csco-20260425.htm:b0000425",
+          "horizon": "ongoing",
+          "flows_into": [
+            "cash_flow.dividends",
+            "cash_flow.buybacks",
+            "balance_sheet.retained_earnings",
+            "horizons.fy1.fcf"
+          ]
+        },
+        {
+          "claim": "Supply chain secured for the AI ramp: inventory purchase commitments doubled to $16.0B at April 25, 2026 from $7.6B at July 26, 2025",
+          "source": "10-Q 0000858877-26-000078, csco-20260425.htm:b0000391",
+          "horizon": "FY27",
+          "flows_into": [
+            "quarterly_path.fq1.capex",
+            "horizons.fy1.capex",
+            "cash_flow.other_operating",
+            "horizons.fy1.revenue"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "Q4 FY26 print (Aug 2026 8-K): revenue \u2265 $16.9B (above guidance high end) with product orders still growing double digits ex-hyperscalers \u2014 confirms the campus refresh plus AI ramp is durable",
+          "checkable_at": "Q4 FY26 earnings 8-K/press release, August 2026"
+        },
+        {
+          "marker": "FY27 guidance issued at this release implying non-GAAP EPS growth \u2265 8% (~$4.63+) despite the ~$550M FY27 restructuring drag \u2014 signals operating leverage from the Fiscal 2026 Plan",
+          "checkable_at": "Q4 FY26 earnings 8-K/press release, August 2026"
+        },
+        {
+          "marker": "Hyperscaler AI orders for FY26 at or above the raised $9B target, or a FY27 target above ~$14B, disclosed on the call/press release",
+          "checkable_at": "Q4 FY26 earnings 8-K and FY26 10-K (September 2026)"
+        },
+        {
+          "marker": "Networking revenue growth reaccelerating to \u2265 +20% y/y in FY27 Q1 (ended October 2026) as AI orders convert to revenue",
+          "checkable_at": "FY27 Q1 8-K, November 2026"
+        },
+        {
+          "marker": "Quarterly CFO recovering to \u2265 $4.5B (FCF \u2265 $4B) by FY27 Q2 after the FY26 tax and inventory drags annualize",
+          "checkable_at": "FY27 Q2 10-Q, February 2027"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Q4 FY26 revenue below the $16.7B guidance low end, or product order growth decelerating to low-single-digits y/y, indicating the Q3 order spike was pull-forward",
+          "checkable_at": "Q4 FY26 earnings 8-K/press release, August 2026"
+        },
+        {
+          "marker": "FY27 Q1 non-GAAP gross margin guided or printed below ~64.5% \u2014 evidence that hyperscaler mix, memory costs and tariffs are structurally eroding margin",
+          "checkable_at": "Q4 FY26 8-K (guidance) and FY27 Q1 8-K, November 2026"
+        },
+        {
+          "marker": "Security revenue declining y/y again in FY27 H1 \u2014 Splunk integration failing to reignite the second-largest product category",
+          "checkable_at": "FY27 Q1 and Q2 press releases, November 2026 / February 2027"
+        },
+        {
+          "marker": "Cumulative FY27 hyperscaler AI orders tracking below ~$6B at the half (a guide-post miss versus the $9B FY26 exit rate) \u2014 AI backlog conversion stalling",
+          "checkable_at": "FY27 Q2 8-K, February 2027"
+        },
+        {
+          "marker": "Restructuring charges in FY27 materially exceeding the ~$550M remaining plan (a second plan announced) \u2014 signals the growth investments are not self-funding",
+          "checkable_at": "FY27 10-Qs, November 2026 onward"
+        }
+      ],
+      "what_must_be_true": "CSCO's double-digit FY26 momentum is a real demand cycle, not pull-forward: (1) the $9B FY26 hyperscaler AI order book converts to revenue through FY27 with $16B of purchase commitments already securing supply; (2) the campus refresh sustains Networking growth in the teens even as AI mix, memory costs and tariffs cap gross margin near 62-63% GAAP / ~66% non-GAAP; (3) the Fiscal 2026 Plan ($1B total, ~$550M in FY27) funds silicon/optics/security/AI reinvestment while non-GAAP operating margin holds ~34-35%, letting non-GAAP EPS compound at high single digits; (4) working capital normalizes after the FY26 inventory build and final transition-tax payment, restoring FCF toward ~$16B+ in FY27 to fund the dividend and the $9.6B remaining buyback authorization."
+    },
+    "preview_note": "CSCO reports FQ4'26 (Jul 25 quarter) Wednesday with a rare setup: momentum has never been stronger \u2014 product orders +35% y/y in FQ3, networking orders +50%, hyperscaler AI orders raised twice to $9B \u2014 yet GAAP optics are muddy. Management guided revenue $16.7-16.9B and non-GAAP EPS $1.16-1.18, both of which embed the $450M restructuring charge (GAAP EPS guide $0.80-0.85) and estimated tariff impact. We model $16.8B and $1.19, with GAAP EPS of $0.90 as a negative other-income swing masks underlying margin strength. Three things decide the reaction: (1) whether hyperscaler AI orders print near ~$3.7B for the quarter (needed to hit the $9B) and whether FQ4 AI revenue lands near the implied ~$1.5B; (2) non-GAAP gross margin vs the 65.5-66.5% guide \u2014 memory costs and AI mix are the swing factor; (3) FY27 guidance \u2014 we expect ~$67-68B revenue and ~$4.60-4.65 non-GAAP EPS for the year with FQ1 guided at $16.4-16.8B / $1.10-1.14. Watch CFO conversion after the FY26 tax/inventory drags. An in-line print with strong AI orders and a credible FY27 guide beats a beat-and-lower-quality guide.",
+    "reasoning": "Anchors are filed facts: Q3 FY26 revenue $15,841M, GAAP EPS $0.85, non-GAAP EPS $1.06, CFO $3,757M; guidance $16.7-16.9B / $1.16-1.18 non-GAAP EPS with ~$450M restructuring inside GAAP. Q4 build: revenue $16,800M (+12% y/y, seasonally the year's largest quarter, and consistent with orders +35%, campus refresh and the $16B purchase-commitment wall \u2014 I place the median at guidance midpoint rather than above because Q3's order surge includes pull-forward ahead of tariffs/price increases). GAAP gross margin 62.5% (guidance bridge 63.5-64.5% midpoint minus tariff and AI-mix slippage at the lower bound). Opex up modestly (R&D $2,400M, S&M $2,950M, G&A $660M); intangible amortization steps down to $215M per the 10-Q's remaining-FY26 schedule ($447M total, split COGS/opex). Restructuring $450M exactly as disclosed. GAAP operating income $3,825M (22.8% margin, inside the 23-24% guide). Non-GAAP operating margin 34.5%. Below the line I model a negative other-income swing (-$90M) after Q3's +$242M venture-mark windfall; interest income declines on lower cash. GAAP tax is a small benefit (-$24M): restructuring geographic mix, stock-comp windfalls and the guided ~16% rate applied to a lower non-GAAP-adjusted base. GAAP EPS $0.90 \u2014 above the $0.80-0.85 guide, which carries the usual Cisco conservatism on tax and other income. Non-GAAP net income $4,693M = $1.19/share, a penny above guidance top, consistent with the company's recent pattern of landing at/above the high end. Cash flow: CFO $4,300M (Q4 seasonally strongest; FY25 Q4 $4.2B; no transition-tax payment, but restructuring severance begins and inventory stays elevated), capex $550M (FY26 ~$1.57B total, step-up for AI/silicon capacity), buybacks $1,850M and dividends $1,650M ($0.42 paid July 22), CP/debt roughly flat in other_financing, FX -$20M. Net change in cash = 4,300 - 550 - 3,650 - 20 = +$80M, rolling cash to $7,163M; retained earnings roll to $783M ($704M + $3,579M NI - $1,650M dividends - $1,850M buybacks); total assets $124,443M, liabilities the residual $75,430M, equity $49,013M. FY26 totals: revenue $62,873M (above the $63.0B guide top on a rounding basis \u2014 guidance midpoints), non-GAAP EPS $4.30, FCF ~$13.3B. FY27: revenue $67.9B (+8%) as the $9B AI order book converts and campus refresh persists, partly offset by tougher comps; EPS $4.63 (+8%) with ~$550M FY27 restructuring charges excluded from non-GAAP but depressing GAAP margins (quarterly_path GAAP operating margins 24.5-26.2% reflect H1-weighted charges); capex $1.8B and FCF $16.4B as the tax tailwind (FY26's $2.3B transition payment annualizes) and working-capital normalization restore conversion. FY28/FY29 growth decays toward 5-7% revenue with EPS compounding ~9% on buybacks. FY27 Q1 guidance forecast: $16.4-16.8B revenue and $1.10-1.14 non-GAAP EPS \u2014 normal seasonality (Q1 below Q4) with restructuring noise handled in the GAAP-to-non-GAAP bridge."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-858877-20260812T162231871729Z",
+    "corpus_manifest_sha256": "100ddbcb4c3ee889980b8b81dd8e467d7a8769435ea051746a317366f132e6ee",
+    "corpus_filings": 144,
+    "tool_calls": 17
+  },
+  "tool_calls": 17,
+  "contract_retries": 1,
+  "anchor_retries": 1,
+  "unverified_anchors": [],
+  "model_id": "moonshotai/kimi-k3",
+  "prompt_version": "v5",
+  "usage": {
+    "api_calls": 14,
+    "input_tokens": 1069050,
+    "output_tokens": 47423,
+    "cost_usd": 1.6132566000000002
+  },
+  "status": "ok",
+  "seconds": 1506.3
+}

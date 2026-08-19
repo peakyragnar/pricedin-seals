@@ -1,0 +1,406 @@
+{
+  "model_key": "gpt-luna",
+  "as_of": "2026-08-12T00:00:00Z",
+  "ticker": "CSCO",
+  "validated": {
+    "anchors": [
+      {
+        "name": "Q3 FY2026 revenue",
+        "value": 15841,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000084: Three Months Ended April 25, 2026, Total revenue"
+      },
+      {
+        "name": "Q3 FY2026 GAAP net income",
+        "value": 3373,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000084: Three Months Ended April 25, 2026, Net income"
+      },
+      {
+        "name": "Q3 FY2026 GAAP diluted EPS",
+        "value": 0.85,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000084: Three Months Ended April 25, 2026, Diluted EPS"
+      },
+      {
+        "name": "Q3 FY2026 non-GAAP net income",
+        "value": 4227,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000150: Three Months Ended April 25, 2026, Non-GAAP Net Income"
+      },
+      {
+        "name": "Q3 FY2026 non-GAAP diluted EPS",
+        "value": 1.06,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000038: Q3 FY2026 Non-GAAP Results"
+      },
+      {
+        "name": "Q3 FY2026 operating cash flow",
+        "value": 3757,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000114: Three Months Ended April 25, 2026, Net cash provided by operating activities"
+      },
+      {
+        "name": "Q3 FY2026 cash and restricted cash",
+        "value": 7083,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000107: April 25, 2026, Cash and cash equivalents; block b0000114: ending cash, cash equivalents, restricted cash and restricted cash equivalents"
+      },
+      {
+        "name": "Q3 FY2026 product orders growth",
+        "value": 35,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000009: total product orders up 35% year over year"
+      },
+      {
+        "name": "FY2026 AI infrastructure revenue expectation",
+        "value": 4000,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000013: raising expected FY2026 AI infrastructure revenue to $4 billion"
+      },
+      {
+        "name": "Q3 FY2026 total assets",
+        "value": 125546,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000107: April 25, 2026, Total assets"
+      },
+      {
+        "name": "Q3 FY2026 total liabilities",
+        "value": 76685,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000107: April 25, 2026, Total liabilities"
+      },
+      {
+        "name": "Q3 FY2026 total equity",
+        "value": 48861,
+        "accession": "0000858877-26-000075",
+        "reference": "EX-99.1, block b0000107: April 25, 2026, Total equity"
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 16500.0,
+        "p50": 16850.0,
+        "p90": 17200.0
+      },
+      "eps_adjusted": {
+        "p10": 1.09,
+        "p50": 1.18,
+        "p90": 1.25
+      },
+      "fcf": {
+        "p10": 3000.0,
+        "p50": 3975.0,
+        "p90": 4900.0
+      }
+    },
+    "income_statement": {
+      "revenue": 16850.0,
+      "cost_of_sales": 6066.0,
+      "gross_profit": 10784.0,
+      "rnd": 2400.0,
+      "sales_marketing": 2900.0,
+      "general_admin": 680.0,
+      "amortization": 228.0,
+      "restructuring": 532.0,
+      "operating_income": 4044.0,
+      "interest_income": 210.0,
+      "interest_expense": 370.0,
+      "other_income_net": 110.0,
+      "pretax_income": 3994.0,
+      "income_tax": 639.0,
+      "net_income": 3355.0,
+      "shares_diluted": 3965.0,
+      "eps_diluted": 0.85
+    },
+    "bridge": {
+      "adjustments": {
+        "share_based_compensation": 920.0,
+        "amortization_of_acquisition_related_intangibles": 449.0,
+        "acquisition_divestiture_related_costs": 90.0,
+        "significant_asset_impairments_and_restructurings": 532.0,
+        "gains_and_losses_on_investments": -300.0,
+        "income_tax_effect_and_significant_tax_matters": -367.0
+      },
+      "non_gaap_net_income": 4679.0
+    },
+    "cash_flow": {
+      "net_income": 3355.0,
+      "depreciation_amortization": 650.0,
+      "share_based_comp": 920.0,
+      "other_operating": -500.0,
+      "cfo": 4425.0,
+      "capex": -450.0,
+      "other_investing": -1200.0,
+      "cfi": -1650.0,
+      "buybacks": -1250.0,
+      "dividends": -1670.0,
+      "other_financing": 700.0,
+      "cff": -2220.0,
+      "fx_effect": -20.0,
+      "net_change_cash": 535.0
+    },
+    "balance_sheet": {
+      "cash_and_restricted": 7618.0,
+      "other_assets": 119500.0,
+      "total_assets": 127118.0,
+      "total_liabilities": 77500.0,
+      "retained_earnings": 1139.0,
+      "other_equity": 48479.0,
+      "total_equity": 49618.0
+    },
+    "quarterly_path": {
+      "fq1": {
+        "revenue": {
+          "p10": 16500.0,
+          "p50": 17000.0,
+          "p90": 17500.0
+        },
+        "eps_adjusted": {
+          "p10": 1.08,
+          "p50": 1.16,
+          "p90": 1.24
+        },
+        "gross_margin_pct": 65.8,
+        "operating_margin_pct": 34.2,
+        "capex": 500.0,
+        "fcf": 3900.0
+      },
+      "fq2": {
+        "revenue": {
+          "p10": 16500.0,
+          "p50": 17100.0,
+          "p90": 17800.0
+        },
+        "eps_adjusted": {
+          "p10": 1.08,
+          "p50": 1.16,
+          "p90": 1.25
+        },
+        "gross_margin_pct": 65.9,
+        "operating_margin_pct": 34.4,
+        "capex": 550.0,
+        "fcf": 4000.0
+      },
+      "fq3": {
+        "revenue": {
+          "p10": 16600.0,
+          "p50": 17200.0,
+          "p90": 18000.0
+        },
+        "eps_adjusted": {
+          "p10": 1.09,
+          "p50": 1.17,
+          "p90": 1.26
+        },
+        "gross_margin_pct": 66.0,
+        "operating_margin_pct": 34.6,
+        "capex": 575.0,
+        "fcf": 4200.0
+      },
+      "fq4": {
+        "revenue": {
+          "p10": 16600.0,
+          "p50": 17200.0,
+          "p90": 18300.0
+        },
+        "eps_adjusted": {
+          "p10": 1.1,
+          "p50": 1.18,
+          "p90": 1.28
+        },
+        "gross_margin_pct": 66.1,
+        "operating_margin_pct": 34.8,
+        "capex": 575.0,
+        "fcf": 4400.0
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 16900.0,
+        "high": 17200.0
+      },
+      "eps_adjusted": {
+        "low": 1.14,
+        "high": 1.19
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 62200.0,
+          "p50": 62923.0,
+          "p90": 63700.0
+        },
+        "eps_adjusted": {
+          "p10": 4.17,
+          "p50": 4.29,
+          "p90": 4.4
+        },
+        "capex": 1470.0,
+        "fcf": 12766.0
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 66000.0,
+          "p50": 68500.0,
+          "p90": 71000.0
+        },
+        "eps_adjusted": {
+          "p10": 4.35,
+          "p50": 4.65,
+          "p90": 4.95
+        },
+        "capex": 2200.0,
+        "fcf": 13500.0
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 70000.0,
+          "p50": 73500.0,
+          "p90": 77000.0
+        },
+        "eps_adjusted": {
+          "p10": 4.55,
+          "p50": 5.0,
+          "p90": 5.45
+        }
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 73500.0,
+          "p50": 79000.0,
+          "p90": 84500.0
+        },
+        "eps_adjusted": {
+          "p10": 4.75,
+          "p50": 5.35,
+          "p90": 5.95
+        }
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "Cisco expects AI infrastructure revenue of approximately $4 billion in FY2026 and identified hyperscaler demand as a major growth driver.",
+          "source": "0000858877-26-000075, EX-99.1 blocks b0000011-b0000013",
+          "horizon": "FY2026-FY2029",
+          "flows_into": [
+            "income_statement.revenue",
+            "quarterly_path.fq1.revenue",
+            "quarterly_path.fq2.revenue",
+            "quarterly_path.fq3.revenue",
+            "quarterly_path.fq4.revenue",
+            "horizons.fy1.revenue",
+            "horizons.fy2.revenue",
+            "horizons.fy3.revenue"
+          ]
+        },
+        {
+          "claim": "Cisco described a major multi-year, multi-billion-dollar campus networking refresh cycle and reported campus networking orders above 25% year over year.",
+          "source": "0000858877-26-000075, EX-99.1 blocks b0000014-b0000015",
+          "horizon": "FY2026-FY2029",
+          "flows_into": [
+            "income_statement.revenue",
+            "quarterly_path.fq1.revenue",
+            "quarterly_path.fq2.revenue",
+            "quarterly_path.fq3.revenue",
+            "quarterly_path.fq4.revenue",
+            "horizons.fy1.revenue",
+            "horizons.fy2.revenue",
+            "horizons.fy3.revenue"
+          ]
+        },
+        {
+          "claim": "Cisco announced a restructuring plan of up to $1 billion, including approximately $450 million of charges in Q4 FY2026, to invest in silicon, optics, security and AI.",
+          "source": "0000858877-26-000075, EX-99.1 block b0000173",
+          "horizon": "Q4 FY2026-FY2027",
+          "flows_into": [
+            "income_statement.restructuring",
+            "cash_flow.other_operating",
+            "quarterly_path.fq1.eps_adjusted",
+            "horizons.fy1.eps_adjusted"
+          ]
+        },
+        {
+          "claim": "Cisco maintains capital allocation through quarterly dividends and share repurchases while funding growth investments.",
+          "source": "0000858877-26-000075, EX-99.1 block b0000061",
+          "horizon": "FY2026-FY2029",
+          "flows_into": [
+            "cash_flow.buybacks",
+            "cash_flow.dividends",
+            "balance_sheet.retained_earnings",
+            "horizons.fy0.fcf",
+            "horizons.fy1.fcf"
+          ]
+        },
+        {
+          "claim": "Cisco's stated purpose is to connect and protect organizations in the AI era through AI-powered networking and security solutions.",
+          "source": "0000858877-26-000075, EX-99.1 block b0000188",
+          "horizon": "FY2026-FY2029",
+          "flows_into": [
+            "income_statement.revenue",
+            "quarterly_path.fq1.revenue",
+            "quarterly_path.fq2.revenue",
+            "quarterly_path.fq3.revenue",
+            "quarterly_path.fq4.revenue",
+            "horizons.fy1.revenue",
+            "horizons.fy2.revenue",
+            "horizons.fy3.revenue"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "Networking revenue growth remains at or above 20% year over year and total product orders remain above 20% year over year.",
+          "checkable_at": "FY2026 Q4 earnings release, expected August 2026 8-K"
+        },
+        {
+          "marker": "FY2027 Q1 revenue is at least $17.0 billion with non-GAAP operating margin of at least 34%.",
+          "checkable_at": "FY2027 Q1 earnings release, expected November 2026 8-K"
+        },
+        {
+          "marker": "FY2027 operating cash flow exceeds $13.0 billion and free cash flow exceeds $12.5 billion.",
+          "checkable_at": "FY2027 Form 10-K, expected September 2027"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Networking revenue growth falls below 10% year over year for two consecutive quarters.",
+          "checkable_at": "FY2027 Q1 and Q2 earnings releases, expected November 2026 and February 2027 8-Ks"
+        },
+        {
+          "marker": "Non-GAAP gross margin falls below 64% or non-GAAP operating margin falls below 32% without an offsetting acceleration in revenue.",
+          "checkable_at": "Any subsequent quarterly earnings release"
+        },
+        {
+          "marker": "Quarterly operating cash flow falls below $3.0 billion or inventory increases faster than revenue for two consecutive quarters.",
+          "checkable_at": "Subsequent quarterly Form 10-Q filings"
+        }
+      ],
+      "what_must_be_true": "The thesis requires that AI infrastructure and campus-refresh demand convert into sustained networking revenue growth without permanently impairing gross margin, while restructuring savings and disciplined capital allocation preserve operating leverage and free cash flow."
+    },
+    "preview_note": "Cisco enters the Q4 print with unusually strong demand evidence: total product orders rose 35%, networking orders accelerated above 50%, and management raised FY26 AI infrastructure revenue expectations to $4 billion. I forecast revenue modestly above the issued $16.7-$16.9 billion range, reflecting continued hyperscaler and campus-refresh conversion, but keep margins below the prior quarter because AI-related mix, tariffs and the restructuring charge remain offsets. The key swing factors are shipment timing into hyperscalers, product gross-margin pressure from optics and silicon content, and whether the announced restructuring produces visible expense discipline. The initial reaction will likely depend less on the Q4 beat than on FY27 Q1 guidance: investors need evidence that order momentum converts into durable revenue growth while non-GAAP operating margin remains at or above the mid-34% area.",
+    "reasoning": "The forecast starts with Q3 revenue of $15.841 billion, GAAP EPS of $0.85, non-GAAP EPS of $1.06 and operating cash flow of $3.757 billion. Q3 demand was broad: product orders grew 35%, networking orders grew more than 50%, campus networking orders exceeded 25% growth and data-center switching orders exceeded 40% growth. I therefore forecast Q4 revenue of $16.850 billion, above the midpoint of guidance, with a 64.0% GAAP gross margin. I assume the announced restructuring produces approximately $532 million of Q4 restructuring and other charges, slightly above the approximately $450 million indicated by management, while share-based compensation, acquisition-related amortization and acquisition/divestiture costs remain broadly consistent with recent levels. Investment gains and tax effects are modeled conservatively in the non-GAAP bridge. Cash flow assumes continued working-capital investment in inventory and receivables as demand accelerates, quarterly capital returns near recent levels, and capex rising modestly to support AI, optics and silicon priorities. FY2027 and later estimates assume sustained but moderating AI infrastructure growth, a multi-year campus refresh, gradual gross-margin recovery and operating leverage from restructuring. No sell-side consensus is used."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-858877-20260812T155556955232Z",
+    "corpus_manifest_sha256": "100ddbcb4c3ee889980b8b81dd8e467d7a8769435ea051746a317366f132e6ee",
+    "corpus_filings": 144,
+    "tool_calls": 10
+  },
+  "tool_calls": 10,
+  "contract_retries": 1,
+  "anchor_retries": 1,
+  "unverified_anchors": [],
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "v5",
+  "usage": {
+    "api_calls": 7,
+    "input_tokens": 162730,
+    "output_tokens": 15137,
+    "cost_usd": 0.0
+  },
+  "status": "ok",
+  "seconds": 95.2
+}

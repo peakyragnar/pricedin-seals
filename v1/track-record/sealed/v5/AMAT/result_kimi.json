@@ -1,0 +1,526 @@
+{
+  "model_key": "kimi",
+  "as_of": "2026-08-13T00:00:00Z",
+  "ticker": "AMAT",
+  "validated": {
+    "anchors": [
+      {
+        "name": "Q2 FY2026 (ended Apr 26, 2026) revenue, $M",
+        "value": 7910,
+        "accession": "0001628280-26-035071",
+        "reference": "exhibit991q22026earningsre.htm:b0000025 Results Summary \u2014 'Revenue $7,910'"
+      },
+      {
+        "name": "Q2 FY2026 GAAP diluted EPS, $",
+        "value": 3.51,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000025 \u2014 'Diluted earnings per share $3.51'"
+      },
+      {
+        "name": "Q2 FY2026 non-GAAP diluted EPS, $",
+        "value": 2.86,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000025 \u2014 'Non-GAAP diluted EPS $2.86'"
+      },
+      {
+        "name": "Q2 FY2026 GAAP gross margin, %",
+        "value": 49.9,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000011 \u2014 'GAAP gross margin 49.9 percent'"
+      },
+      {
+        "name": "Q2 FY2026 cash from operations, $M",
+        "value": 845,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000018 \u2014 'generated $845 million in cash from operations'"
+      },
+      {
+        "name": "Q2 FY2026 capital expenditures, $M outflow (filed as parenthetical)",
+        "value": 635,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000089 cash flow statement \u2014 'Capital expenditures (635)'"
+      },
+      {
+        "name": "Q2 FY2026 share repurchases, $M",
+        "value": 400,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000018 \u2014 '$400 million in share repurchases'"
+      },
+      {
+        "name": "Q2 FY2026 dividends paid, $M",
+        "value": 365,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000018 \u2014 '$365 million in dividends'"
+      },
+      {
+        "name": "Q3 FY2026 guidance: total revenue, $M (+/- $500M)",
+        "value": 8950,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000050 Business Outlook table \u2014 'Total revenue $8,950 +/-$500'"
+      },
+      {
+        "name": "Q3 FY2026 guidance: non-GAAP diluted EPS, $ (+/- $0.20)",
+        "value": 3.36,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000050 \u2014 'Non-GAAP diluted EPS $3.36 +/-$0.20'"
+      },
+      {
+        "name": "Cash, cash equivalents and restricted cash at Apr 26, 2026, $M",
+        "value": 6359,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000089 \u2014 'Total cash, cash equivalents, and restricted cash equivalents $6,359'"
+      },
+      {
+        "name": "Total assets at Apr 26, 2026, $M",
+        "value": 40286,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000083 balance sheet \u2014 'Total assets $40,286'"
+      },
+      {
+        "name": "Total stockholders' equity at Apr 26, 2026, $M",
+        "value": 23909,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000083 \u2014 'Total stockholders' equity 23,909'"
+      },
+      {
+        "name": "H1 FY2026 revenue, $M",
+        "value": 14922,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000077 \u2014 six months ended Apr 26, 2026 'Revenue $14,922'"
+      },
+      {
+        "name": "CEO: expected CY2026 semiconductor equipment business growth, >%",
+        "value": 30,
+        "accession": "0001628280-26-035071",
+        "reference": "b0000019 \u2014 'expect our semiconductor equipment business to grow more than 30 percent in calendar 2026'"
+      },
+      {
+        "name": "Q1 FY2026 revenue, $M",
+        "value": 7012,
+        "accession": "0001628280-26-007661",
+        "reference": "exhibit991q12026earningsre.htm:b0000026 \u2014 'Revenue $7,012'"
+      },
+      {
+        "name": "Q1 FY2026 non-GAAP diluted EPS, $",
+        "value": 2.38,
+        "accession": "0001628280-26-007661",
+        "reference": "b0000026 \u2014 'Non-GAAP diluted EPS $2.38'"
+      },
+      {
+        "name": "Q1 FY2026 non-GAAP free cash flow, $M",
+        "value": 1040,
+        "accession": "0001628280-26-007661",
+        "reference": "b0000026 \u2014 'Non-GAAP free cash flow $1,040'"
+      },
+      {
+        "name": "FY2025 total revenue, $M",
+        "value": 28368,
+        "accession": "0001628280-25-051998",
+        "reference": "exhibit991q42025earningsre.htm:b0000021 \u2014 'Net revenue ... FY2025 $28,368'"
+      },
+      {
+        "name": "Q4 FY2025 revenue, $M",
+        "value": 6800,
+        "accession": "0001628280-25-051998",
+        "reference": "b0000021 \u2014 'Q4 FY2025 Net revenue $6,800'"
+      },
+      {
+        "name": "FY2025 non-GAAP diluted EPS, $",
+        "value": 9.42,
+        "accession": "0001628280-25-051998",
+        "reference": "b0000021 \u2014 'FY2025 Non-GAAP diluted EPS $9.42'"
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 8750.0,
+        "p50": 9100.0,
+        "p90": 9450.0
+      },
+      "eps_adjusted": {
+        "p10": 3.28,
+        "p50": 3.52,
+        "p90": 3.76
+      },
+      "fcf": {
+        "p10": 1200.0,
+        "p50": 1700.0,
+        "p90": 2300.0
+      }
+    },
+    "income_statement": {
+      "revenue": 9100.0,
+      "cost_of_sales": 4480.0,
+      "gross_profit": 4620.0,
+      "rnd": 1075.0,
+      "marketing_selling": 248.0,
+      "general_admin": 170.0,
+      "operating_income": 3127.0,
+      "interest_expense": 69.0,
+      "other_income_net": 110.0,
+      "pretax_income": 3168.0,
+      "income_tax": 428.0,
+      "net_income": 2740.0,
+      "shares_diluted": 792.0,
+      "eps_diluted": 3.46
+    },
+    "bridge": {
+      "adjustments": {
+        "acquisition-related intangible amortization": 10.0,
+        "income tax effect of share-based compensation": 8.0,
+        "income tax benefit from intra-entity intangible asset transfers": 32.0,
+        "income tax effect of non-GAAP adjustments": -2.0
+      },
+      "non_gaap_net_income": 2788.0
+    },
+    "cash_flow": {
+      "net_income": 2740.0,
+      "depreciation_amortization": 140.0,
+      "share_based_comp": 175.0,
+      "other_operating": -655.0,
+      "cfo": 2400.0,
+      "capex": -700.0,
+      "other_investing": -150.0,
+      "cfi": -850.0,
+      "buybacks": -1800.0,
+      "dividends": -424.0,
+      "other_financing": -130.0,
+      "cff": -2354.0,
+      "fx_effect": 0.0,
+      "net_change_cash": -804.0
+    },
+    "balance_sheet": {
+      "cash_and_restricted": 5555.0,
+      "other_assets": 35287.0,
+      "total_assets": 40842.0,
+      "total_liabilities": 16111.0,
+      "retained_earnings": 59790.0,
+      "other_equity": -35059.0,
+      "total_equity": 24731.0
+    },
+    "quarterly_path": {
+      "fq4_26": {
+        "revenue": {
+          "p10": 9100.0,
+          "p50": 9600.0,
+          "p90": 10100.0
+        },
+        "eps_adjusted": {
+          "p10": 3.55,
+          "p50": 3.85,
+          "p90": 4.15
+        },
+        "gross_profit": 4925.0,
+        "operating_income": 3405.0,
+        "net_income": 2981.0,
+        "cfo": 2900.0,
+        "capex": -720.0,
+        "fcf": 2180.0,
+        "cfi": -880.0,
+        "cff": -2554.0,
+        "net_change_cash": -534.0
+      },
+      "fq1_27": {
+        "revenue": {
+          "p10": 8800.0,
+          "p50": 9400.0,
+          "p90": 10000.0
+        },
+        "eps_adjusted": {
+          "p10": 3.42,
+          "p50": 3.73,
+          "p90": 4.04
+        },
+        "gross_profit": 4790.0,
+        "operating_income": 3270.0,
+        "net_income": 2868.0,
+        "cfo": 2700.0,
+        "capex": -680.0,
+        "fcf": 2020.0,
+        "cfi": -840.0,
+        "cff": -2446.0,
+        "net_change_cash": -586.0
+      },
+      "fq2_27": {
+        "revenue": {
+          "p10": 9100.0,
+          "p50": 9700.0,
+          "p90": 10300.0
+        },
+        "eps_adjusted": {
+          "p10": 3.58,
+          "p50": 3.91,
+          "p90": 4.24
+        },
+        "gross_profit": 4950.0,
+        "operating_income": 3405.0,
+        "net_income": 2985.0,
+        "cfo": 3100.0,
+        "capex": -660.0,
+        "fcf": 2440.0,
+        "cfi": -820.0,
+        "cff": -2600.0,
+        "net_change_cash": -320.0
+      },
+      "fq3_27": {
+        "revenue": {
+          "p10": 9400.0,
+          "p50": 10100.0,
+          "p90": 10800.0
+        },
+        "eps_adjusted": {
+          "p10": 3.82,
+          "p50": 4.17,
+          "p90": 4.52
+        },
+        "gross_profit": 5170.0,
+        "operating_income": 3600.0,
+        "net_income": 3158.0,
+        "cfo": 3300.0,
+        "capex": -640.0,
+        "fcf": 2660.0,
+        "cfi": -800.0,
+        "cff": -2708.0,
+        "net_change_cash": -208.0
+      },
+      "fq4_27": {
+        "revenue": {
+          "p10": 9700.0,
+          "p50": 10500.0,
+          "p90": 11300.0
+        },
+        "eps_adjusted": {
+          "p10": 4.05,
+          "p50": 4.43,
+          "p90": 4.81
+        },
+        "gross_profit": 5380.0,
+        "operating_income": 3785.0,
+        "net_income": 3318.0,
+        "cfo": 3500.0,
+        "capex": -620.0,
+        "fcf": 2880.0,
+        "cfi": -780.0,
+        "cff": -2803.0,
+        "net_change_cash": -83.0
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 9200.0,
+        "high": 10200.0
+      },
+      "eps_adjusted": {
+        "low": 3.6,
+        "high": 4.0
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 32600.0,
+          "p50": 33622.0,
+          "p90": 34650.0
+        },
+        "eps_adjusted": {
+          "p10": 12.1,
+          "p50": 12.61,
+          "p90": 13.1
+        },
+        "gross_profit": 16927.0,
+        "operating_income": 10886.0,
+        "net_income": 10553.0,
+        "cfo": 7831.0,
+        "capex": -2701.0,
+        "fcf": 5130.0,
+        "total_assets": 41583.0,
+        "total_liabilities": 15989.0,
+        "total_equity": 25594.0
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 36600.0,
+          "p50": 39700.0,
+          "p90": 42800.0
+        },
+        "eps_adjusted": {
+          "p10": 14.9,
+          "p50": 16.25,
+          "p90": 17.6
+        },
+        "gross_profit": 20290.0,
+        "operating_income": 14060.0,
+        "net_income": 12329.0,
+        "cfo": 12600.0,
+        "capex": -2600.0,
+        "fcf": 10000.0,
+        "total_assets": 43906.0,
+        "total_liabilities": 14760.0,
+        "total_equity": 29146.0
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 38000.0,
+          "p50": 42500.0,
+          "p90": 47000.0
+        },
+        "eps_adjusted": {
+          "p10": 15.6,
+          "p50": 17.9,
+          "p90": 20.2
+        },
+        "gross_profit": 21900.0,
+        "operating_income": 15300.0,
+        "net_income": 13600.0,
+        "cfo": 13600.0,
+        "capex": -2500.0,
+        "fcf": 11100.0,
+        "total_assets": 47500.0,
+        "total_liabilities": 15000.0,
+        "total_equity": 32500.0
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 37500.0,
+          "p50": 44000.0,
+          "p90": 50500.0
+        },
+        "eps_adjusted": {
+          "p10": 15.8,
+          "p50": 19.2,
+          "p90": 22.6
+        },
+        "gross_profit": 22700.0,
+        "operating_income": 16100.0,
+        "net_income": 14400.0,
+        "cfo": 14700.0,
+        "capex": -2400.0,
+        "fcf": 12300.0,
+        "total_assets": 51500.0,
+        "total_liabilities": 15200.0,
+        "total_equity": 36300.0
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "EPIC Center: a multi-year, multibillion-dollar collaborative R&D platform in Silicon Valley, now with Samsung, TSMC, SK hynix, Micron, Advantest and university partners, designed to accelerate commercialization of next-generation technologies",
+          "source": "8-K EX-99.1 Q2 FY2026 (0001628280-26-035071, blocks b0000013, b0000028\u2013b0000033); Q1 FY2026 release (0001628280-26-007661, b0000029)",
+          "horizon": "FY2026\u2013FY2029",
+          "flows_into": [
+            "cash_flow.capex",
+            "income_statement.rnd",
+            "horizons.fy0.capex"
+          ]
+        },
+        {
+          "claim": "'We now expect our semiconductor equipment business to grow more than 30 percent in calendar 2026' (CEO Gary Dickerson)",
+          "source": "8-K EX-99.1 Q2 FY2026 (0001628280-26-035071, b0000019)",
+          "horizon": "Q3\u2013Q4 FY2026, FY2027",
+          "flows_into": [
+            "income_statement.revenue",
+            "quarterly_path.fq4_26.revenue",
+            "horizons.fy1.revenue"
+          ]
+        },
+        {
+          "claim": "'We have increased our build plan, inventory positions and logistics capacity' to support customer growth (CFO Brice Hill) \u2014 deliberate working-capital investment ahead of the H2 CY2026 ramp",
+          "source": "8-K EX-99.1 Q2 FY2026 (0001628280-26-035071, b0000020); inventories $6,343M at Apr 26, 2026 (b0000083)",
+          "horizon": "Q3\u2013Q4 FY2026",
+          "flows_into": [
+            "cash_flow.other_operating",
+            "balance_sheet.other_assets"
+          ]
+        },
+        {
+          "claim": "Dividend raised 15% to $0.53/quarter, 'nine consecutive years of dividend increases'; dividend per share more than doubled in four years",
+          "source": "8-K EX-99.1 Q2 FY2026 (0001628280-26-035071, b0000044)",
+          "horizon": "Q3 FY2026 onward",
+          "flows_into": [
+            "cash_flow.dividends",
+            "quarterly_path.fq2_27.cff"
+          ]
+        },
+        {
+          "claim": "Longstanding capital-allocation commitment to return substantially all free cash flow via repurchases plus dividends (10-K capital-return framework; $765M returned in Q2 alone; new $10B repurchase authorization March 2025)",
+          "source": "8-K EX-99.1 Q2 FY2026 (0001628280-26-035071, b0000018); FY2025 Form 10-K capital allocation disclosures",
+          "horizon": "All periods",
+          "flows_into": [
+            "cash_flow.buybacks",
+            "cash_flow.dividends"
+          ]
+        },
+        {
+          "claim": "Structural low effective tax rate from Singapore tax incentive agreements (deferred tax remeasurement benefits disclosed in non-GAAP reconciliations) underpinning a ~13\u201314% non-GAAP tax rate",
+          "source": "8-K EX-99.1 Q2 FY2026 (0001628280-26-035071, b0000100\u2013b0000101, footnotes 5\u20136); FY2025 Form 10-K income taxes note",
+          "horizon": "FY2026\u2013FY2029",
+          "flows_into": [
+            "income_statement.income_tax",
+            "horizons.fy1.net_income"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "Semiconductor Systems segment revenue growth \u2265 +25% YoY (vs $5,390M recast Q3 FY2025 base) with DRAM mix \u2265 30% \u2014 confirms the AI/leading-edge ramp is landing in revenue, not just backlog",
+          "checkable_at": "Q3 FY2026 8-K EX-99.1 segment tables (filed ~2026-08-13) and Q4 FY2026 8-K (~2026-11-12)"
+        },
+        {
+          "marker": "Non-GAAP gross margin \u2265 51% in any of the next two quarters \u2014 evidence that volume leverage and mix are compounding, not being absorbed by ramp costs and tariffs",
+          "checkable_at": "Q3 FY2026 8-K EX-99.1 (~2026-08-13), Q4 FY2026 8-K (~2026-11-12)"
+        },
+        {
+          "marker": "Quarterly cash from operations \u2265 $2.5B as the Q2 working-capital drag (\u2212$1,750M) normalizes while inventories keep rising \u2014 shows the build plan is converting to shippable revenue",
+          "checkable_at": "Q3 FY2026 8-K EX-99.1 cash flow statement (~2026-08-13)"
+        },
+        {
+          "marker": "China revenue share \u2264 22% of total while total revenue still grows double digits \u2014 reduced export-control single-point risk",
+          "checkable_at": "Q3 FY2026 8-K EX-99.1 'Revenue by Geography' table (~2026-08-13)"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Q1 FY2027 guidance (issued with Q4 FY2026 results) below $9.0B total revenue \u2014 signals the CY2026 equipment surge is a pull-forward, not a multi-year ramp",
+          "checkable_at": "Q4 FY2026 8-K EX-99.1 Business Outlook (~2026-11-12)"
+        },
+        {
+          "marker": "Inventories > $7.5B with revenue at or below the low end of guidance in the same print \u2014 the increased build plan becomes stranded working capital",
+          "checkable_at": "Q3 FY2026 10-Q balance sheet (~filed late Aug 2026) and Q4 FY2026 10-K (Dec 2026)"
+        },
+        {
+          "marker": "Applied Global Services revenue growth < +5% YoY \u2014 the installed-base annuity failing to compound would contradict the multi-year growth thesis",
+          "checkable_at": "Q3 FY2026 8-K EX-99.1 segment tables (~2026-08-13) and each subsequent quarterly 8-K"
+        },
+        {
+          "marker": "Disclosure of new export-control actions or license denials quantified at > $500M/quarter revenue impact (BIS Affiliates Rule precedent: ~$110M in Q4 FY2025, larger in FY2026)",
+          "checkable_at": "Any 8-K/10-Q risk-factor or outlook disclosure from Q3 FY2026 10-Q (late Aug 2026) onward"
+        }
+      ],
+      "what_must_be_true": "The AI infrastructure build-out must keep leading-edge logic (GAA at 2nm), DRAM/HBM and advanced packaging capex compounding through CY2027; Applied must convert its deliberately enlarged build plan and inventory into shipments at \u226550% non-GAAP gross margin; China must fade as a share of revenue without shrinking the total; and capital returns (~$8\u20139B/yr buybacks plus a growing dividend) must continue shrinking the share count so mid-teens revenue growth becomes high-teens EPS growth. If WFE spending stalls or export rules remove another slice of China revenue before the AI ramp fully offsets it, FY2027 revenue lands near my p10 (~$36.6B) and the EPS compounding story breaks."
+    },
+    "preview_note": "AMAT reports fiscal Q3 after the close Thursday. Setup: guidance is $8.95B \u00b1 $500M revenue and $3.36 \u00b1 $0.20 non-GAAP EPS, set in May when management raised its CY2026 equipment growth view to >30%. Three factors decide the print and the reaction. First, revenue magnitude versus the top of the range: record bookings, a deliberately enlarged build plan, and H2 CY2026 ramps at TSMC, Samsung and the DRAM makers argue for ~$9.1B; anything below $8.8B would suggest pushouts. Second, gross margin: Q2 printed 50.0% non-GAAP; confirmation of ~51% on richer DRAM/foundry mix matters more than the revenue beat itself. Third, cash: Q2's FCF collapsed to $210M on a $1.75B working-capital swing (inventory build, CP/tax timing) \u2014 investors need CFO back toward $2.5B and evidence the inventory converts. Watch also the strategic-investment marks that swung GAAP EPS +$0.80 last quarter (they reverse both ways) and China color ahead of tightening export rules. The reaction hinges on the Q4 guide: a midpoint \u2265 $9.7B extends the AI-ramp narrative; a guide below ~$9.2B reframes H1 strength as pull-forward and the stock de-rates regardless of the beat.",
+    "reasoning": "Anchors are taken entirely from the filed record: Q2 FY2026 actuals and Q3 guidance from the May 14, 2026 8-K (0001628280-26-035071), Q1 FY2026 from the Feb 12, 2026 8-K (0001628280-26-007661), and FY2025 from the Nov 13, 2025 8-K (0001628280-25-051998). I deliberately deviate modestly above guidance midpoint on revenue ($9.10B vs $8.95B): management raised its CY2026 semi-equipment growth view to >30%, guided Q2 conservatively and beat by $260M, DRAM/HBM and foundry ramps are accelerating into H2 CY2026, and management pre-built inventory and logistics specifically for this window. Gross margin 50.8% GAAP (51.0% non-GAAP) extends the Q2 49.9%/50.0% trajectory on richer mix and volume leverage, partly offset by ramp and tariff costs. GAAP EPS ($3.46) sits far below non-GAAP ($3.52) relative to Q2's $0.65 gap because Q2's gap was a one-off unrealized gain on strategic investments; I assume marks are flat. CFO of $2.4B assumes the Q2 working-capital shock partially normalizes while inventory build continues; capex steps up to $700M/qtr on the EPIC Center and capacity. Buybacks step up to $1.8B given the depressed FCF in Q2 and the $10B authorization. The quarterly path then compounds the CY2026 ramp into FY2027 ($39.7B, +18%), decelerating to +7% in FY2028 and +3.5% in FY2029 as WFE cyclicality reasserts, with share count falling ~3%/yr. Balance sheet rolls strictly from the cash flow: cash 6,359 \u2212 804 = 5,555; retained earnings 59,274 + 2,740 \u2212 424 \u2212 1,800 = 59,790; equity and liabilities derived so assets = liabilities + equity at every horizon."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-6951-20260813T132747042943Z",
+    "corpus_manifest_sha256": "100ddbcb4c3ee889980b8b81dd8e467d7a8769435ea051746a317366f132e6ee",
+    "corpus_filings": 144,
+    "tool_calls": 6
+  },
+  "tool_calls": 6,
+  "contract_retries": 2,
+  "anchor_retries": 1,
+  "unverified_anchors": [],
+  "model_id": "moonshotai/kimi-k3",
+  "prompt_version": "v5.1",
+  "usage": {
+    "api_calls": 8,
+    "input_tokens": 161380,
+    "output_tokens": 42476,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "cost_usd": 0.8448
+  },
+  "status": "ok",
+  "seconds": 1216.4
+}
