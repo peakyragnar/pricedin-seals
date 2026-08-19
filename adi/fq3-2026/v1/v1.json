@@ -1,0 +1,94 @@
+{
+  "aggregate_median": {
+    "eps_adjusted": {
+      "p10": 3.19,
+      "p50": 3.44,
+      "p90": 3.62
+    },
+    "fcf": {
+      "p10": 1150.0,
+      "p50": 1432.94,
+      "p90": 1665.0
+    },
+    "revenue": {
+      "p10": 3820.0,
+      "p50": 3945.0,
+      "p90": 4067.5
+    }
+  },
+  "as_of": "2026-08-19T06:05:00Z",
+  "cik": 6281,
+  "classification": "genuine_forward",
+  "cycle": "FQ3-2026",
+  "excluded_attempts": [],
+  "files_sha256": {
+    "index.html": "ff713ffa3a1a810f3578f3b1a9f315a8eff1b95001815ffabc897dd8146d41cc",
+    "model_fable.html": "ad3294b88725461c81d5c8e0ed6ab6d22791fc75b91cb5bec4ffca0b7440bd4d",
+    "model_gemini37.html": "ef5e77d5932ae2952c394da98cee723b02b1fe35ee8569e7c38c67f7654efe66",
+    "model_gpt-sol.html": "73b53b80aaec5e9f17dde466643b05647219656101c8e9a665c1e0085ea04c99",
+    "model_grok46.html": "53d944790c859bbff93cb1d183bf455d7dbccb967e908a2c5fbde921874afe89",
+    "model_kimi.html": "8bee744e506021f840d570da0453cf38a411632d17273980c958e120f7f6ddcb",
+    "model_muse.html": "947befead748806fde7c554dded6ee3fc85e8c72332ae3128a2293f80f12c86e",
+    "result_fable.json": "4a0b39ecd0d7c27d7ff686d9fdbca07408a739a062966fd2ac2bcf3364c5e750",
+    "result_gemini37.json": "0dc67524bb9728f5c703c9fd7f8fb55a6370520085ac8fd1fffb4ba773a87964",
+    "result_gpt-sol.json": "87cbbe8a7c51cb9aa8e4a1f09f7eadd0c0457d347b307e436e75e687563b7acf",
+    "result_grok46.json": "1d72e080788f8a38ccfc5ce27105466dabdb9d88b10a94b424c5659f5438f321",
+    "result_kimi.json": "d35c2c46f9dc9e05e1950a703172b4b4ff6baddd3a8d8ce769ae9677a3f48a28",
+    "result_muse.json": "85389b0592bde8cbbc13b6f395b4c1ca212363ca8714ed74d03d3b2d3e5c2449"
+  },
+  "models": {
+    "fable": {
+      "intent_id": "intent-20260819T063847631577Z-fd5fce509e11",
+      "model_id": "claude-fable-5",
+      "result_file": "result_fable.json",
+      "snapshot_id": "snap-6281-20260819T064625694543Z"
+    },
+    "gemini37": {
+      "intent_id": "intent-20260819T063854218831Z-81b79ab489db",
+      "model_id": "gemini-3.7-flash",
+      "result_file": "result_gemini37.json",
+      "snapshot_id": "snap-6281-20260819T064031284273Z"
+    },
+    "gpt-sol": {
+      "intent_id": "intent-20260819T063852131000Z-030489fb1b05",
+      "model_id": "gpt-5.6-sol",
+      "result_file": "result_gpt-sol.json",
+      "snapshot_id": "snap-6281-20260819T064257309991Z"
+    },
+    "grok46": {
+      "intent_id": "intent-20260819T063850060262Z-186dcf79649e",
+      "model_id": "grok-4.6",
+      "result_file": "result_grok46.json",
+      "snapshot_id": "snap-6281-20260819T065836301087Z"
+    },
+    "kimi": {
+      "intent_id": "intent-20260819T063851124341Z-8d52577d11e7",
+      "model_id": "moonshotai/kimi-k3",
+      "result_file": "result_kimi.json",
+      "snapshot_id": "snap-6281-20260819T065132667567Z"
+    },
+    "muse": {
+      "intent_id": "intent-20260819T063853216179Z-9489b2be1ccc",
+      "model_id": "muse-spark-1.2",
+      "result_file": "result_muse.json",
+      "snapshot_id": "snap-6281-20260819T064946899434Z"
+    }
+  },
+  "official_preflight": {
+    "capture_mode": "production",
+    "checked_at": "2026-08-19T07:07:50Z",
+    "content_sha256": "4480a709181a4fdd965914cc701d0dfb92b417e370899102810241829eb83c85",
+    "finding": "UNPUBLISHED",
+    "id": "preflight-20260819T070751063536Z-f566803a1b69",
+    "surfaces": [
+      "Analog Devices issuer-authorized PR Newswire release feed",
+      "SEC submissions"
+    ]
+  },
+  "prompt_sha256": "b67969a88d7d19aace8e0650dc03c769fc81052cfb1db1322180123338501395",
+  "prompt_version": "v5.6",
+  "publication_contract": "rff-publication-v1",
+  "published_at": "2026-08-19T07:07:50Z",
+  "ticker": "ADI",
+  "vintage": "v1"
+}

@@ -1,0 +1,515 @@
+{
+  "model_key": "gemini37",
+  "as_of": "2026-08-19T06:05:00Z",
+  "ticker": "ADI",
+  "validated": {
+    "anchors": [
+      {
+        "name": "Q2 FY26 Revenue ($M)",
+        "value": 3623,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011"
+      },
+      {
+        "name": "Q3 FY26 Revenue Outlook Midpoint ($B)",
+        "value": 3.9,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000014"
+      },
+      {
+        "name": "Q2 FY26 Gross Margin ($K)",
+        "value": 2439798,
+        "accession": "0000006281-26-000052",
+        "reference": "0000006281-26-000052:adi-20260502.htm:b0000184"
+      },
+      {
+        "name": "Q1 FY26 Revenue ($M)",
+        "value": 3160,
+        "accession": "0000006281-26-000015",
+        "reference": "0000006281-26-000015:adi1q26exhibit991earnings.htm:b0000012"
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 3820.0,
+        "p50": 3940.0,
+        "p90": 4040.0
+      },
+      "eps_adjusted": {
+        "p10": 3.2,
+        "p50": 3.45,
+        "p90": 3.65
+      },
+      "fcf": {
+        "p10": 1380.0,
+        "p50": 1500.0,
+        "p90": 1620.0
+      }
+    },
+    "income_statement": {
+      "revenue": 3940.0,
+      "cost_of_sales": 1225.0,
+      "gross_margin": 2715.0,
+      "research_development": 535.0,
+      "sga": 375.0,
+      "amortization_intangibles": 188.0,
+      "special_charges": 0.0,
+      "total_operating_expenses": 1098.0,
+      "operating_income": 1617.0,
+      "interest_expense": 88.0,
+      "interest_income": -29.0,
+      "other_nonoperating": -4.0,
+      "total_nonoperating_expense": 55.0,
+      "pretax_income": 1562.0,
+      "income_tax": 195.6,
+      "net_income": 1366.4,
+      "shares_diluted": 488.0,
+      "eps_diluted": 2.8
+    },
+    "bridge": {
+      "adjustments": {
+        "Acquisition-related intangible amortization and fair value adjustments": 368.2,
+        "Tax effect of non-GAAP adjustments": -51.0
+      },
+      "non_gaap_net_income": 1683.6
+    },
+    "cash_flow": {
+      "net_income": 1366.4,
+      "depreciation": 106.0,
+      "amortization_intangibles": 386.0,
+      "stock_compensation": 83.0,
+      "deferred_income_taxes": -60.0,
+      "other_non_cash": -8.0,
+      "working_capital": -223.4,
+      "total_adjustments": 283.6,
+      "cfo": 1650.0,
+      "short_term_investments": 100.0,
+      "capex": -150.0,
+      "other_investing": -20.0,
+      "cfi": -70.0,
+      "debt_proceeds": 0.0,
+      "commercial_paper_proceeds": 3500.0,
+      "commercial_paper_payments": -3500.0,
+      "buybacks": -750.0,
+      "dividends": -536.0,
+      "employee_stock_proceeds": 15.0,
+      "other_financing": 5.0,
+      "cff": -1266.0,
+      "net_change_cash": 314.0
+    },
+    "balance_sheet": {
+      "cash": 2750.92,
+      "other_assets": 45654.48,
+      "total_assets": 48405.4,
+      "total_liabilities": 14500.0,
+      "retained_earnings": 12356.4,
+      "other_equity": 21549.0,
+      "total_equity": 33905.4
+    },
+    "quarterly_path": {
+      "fq4_26": {
+        "revenue": {
+          "p10": 3950.0,
+          "p50": 4100.0,
+          "p90": 4250.0
+        },
+        "eps_adjusted": {
+          "p10": 3.45,
+          "p50": 3.65,
+          "p90": 3.85
+        },
+        "gross_profit": 2850.0,
+        "operating_income": 1730.0,
+        "net_income": 1460.0,
+        "cfo": 1750.0,
+        "capex": -160.0,
+        "fcf": 1590.0,
+        "cfi": -160.0,
+        "cff": -1300.0,
+        "net_change_cash": 290.0,
+        "total_assets": 49000.0,
+        "total_liabilities": 14600.0,
+        "total_equity": 34400.0
+      },
+      "fq1_27": {
+        "revenue": {
+          "p10": 3900.0,
+          "p50": 4050.0,
+          "p90": 4200.0
+        },
+        "eps_adjusted": {
+          "p10": 3.35,
+          "p50": 3.55,
+          "p90": 3.75
+        },
+        "gross_profit": 2800.0,
+        "operating_income": 1680.0,
+        "net_income": 1410.0,
+        "cfo": 1650.0,
+        "capex": -160.0,
+        "fcf": 1490.0,
+        "cfi": -160.0,
+        "cff": -1300.0,
+        "net_change_cash": 190.0,
+        "total_assets": 49500.0,
+        "total_liabilities": 14700.0,
+        "total_equity": 34800.0
+      },
+      "fq2_27": {
+        "revenue": {
+          "p10": 4100.0,
+          "p50": 4250.0,
+          "p90": 4400.0
+        },
+        "eps_adjusted": {
+          "p10": 3.6,
+          "p50": 3.8,
+          "p90": 4.0
+        },
+        "gross_profit": 2980.0,
+        "operating_income": 1820.0,
+        "net_income": 1530.0,
+        "cfo": 1800.0,
+        "capex": -170.0,
+        "fcf": 1630.0,
+        "cfi": -170.0,
+        "cff": -1350.0,
+        "net_change_cash": 280.0,
+        "total_assets": 50200.0,
+        "total_liabilities": 14800.0,
+        "total_equity": 35400.0
+      },
+      "fq3_27": {
+        "revenue": {
+          "p10": 4250.0,
+          "p50": 4400.0,
+          "p90": 4550.0
+        },
+        "eps_adjusted": {
+          "p10": 3.8,
+          "p50": 4.0,
+          "p90": 4.2
+        },
+        "gross_profit": 3100.0,
+        "operating_income": 1920.0,
+        "net_income": 1620.0,
+        "cfo": 1900.0,
+        "capex": -175.0,
+        "fcf": 1725.0,
+        "cfi": -175.0,
+        "cff": -1400.0,
+        "net_change_cash": 325.0,
+        "total_assets": 51000.0,
+        "total_liabilities": 14900.0,
+        "total_equity": 36100.0
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 4000.0,
+        "high": 4200.0
+      },
+      "eps_adjusted": {
+        "low": 3.5,
+        "high": 3.8
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 14700.0,
+          "p50": 14823.5,
+          "p90": 15000.0
+        },
+        "eps_adjusted": {
+          "p10": 12.4,
+          "p50": 12.68,
+          "p90": 13.0
+        },
+        "gross_profit": 10050.0,
+        "operating_income": 5724.0,
+        "net_income": 4833.6,
+        "cfo": 5640.6,
+        "capex": -557.0,
+        "fcf": 5083.6,
+        "cfi": -389.0,
+        "cff": -4710.1,
+        "net_change_cash": 541.5,
+        "total_assets": 49000.0,
+        "total_liabilities": 14600.0,
+        "total_equity": 34400.0
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 16500.0,
+          "p50": 17200.0,
+          "p90": 17900.0
+        },
+        "eps_adjusted": {
+          "p10": 14.5,
+          "p50": 15.35,
+          "p90": 16.2
+        },
+        "gross_profit": 12100.0,
+        "operating_income": 7300.0,
+        "net_income": 6150.0,
+        "cfo": 7200.0,
+        "capex": -680.0,
+        "fcf": 6520.0,
+        "cfi": -680.0,
+        "cff": -5450.0,
+        "net_change_cash": 1070.0,
+        "total_assets": 52000.0,
+        "total_liabilities": 15000.0,
+        "total_equity": 37000.0
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 18000.0,
+          "p50": 19000.0,
+          "p90": 20000.0
+        },
+        "eps_adjusted": {
+          "p10": 16.5,
+          "p50": 17.5,
+          "p90": 18.5
+        },
+        "gross_profit": 13500.0,
+        "operating_income": 8300.0,
+        "net_income": 7000.0,
+        "cfo": 8200.0,
+        "capex": -750.0,
+        "fcf": 7450.0,
+        "cfi": -750.0,
+        "cff": -6200.0,
+        "net_change_cash": 1250.0,
+        "total_assets": 55000.0,
+        "total_liabilities": 15500.0,
+        "total_equity": 39500.0
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 19500.0,
+          "p50": 20800.0,
+          "p90": 22000.0
+        },
+        "eps_adjusted": {
+          "p10": 18.5,
+          "p50": 19.8,
+          "p90": 21.0
+        },
+        "gross_profit": 14900.0,
+        "operating_income": 9300.0,
+        "net_income": 7900.0,
+        "cfo": 9200.0,
+        "capex": -800.0,
+        "fcf": 8400.0,
+        "cfi": -800.0,
+        "cff": -7000.0,
+        "net_change_cash": 1400.0,
+        "total_assets": 58500.0,
+        "total_liabilities": 16000.0,
+        "total_equity": 42500.0
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "Return 100% of Free Cash Flow to shareholders over the cycle via dividends and share repurchases",
+          "source": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011",
+          "horizon": "Long-term capital allocation policy",
+          "flows_into": [
+            "cash_flow.buybacks",
+            "cash_flow.dividends",
+            "horizons.fy0.cff",
+            "horizons.fy1.cff"
+          ]
+        },
+        {
+          "claim": "Capex discipline targeting ~4-5% of revenue via hybrid manufacturing model",
+          "source": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011",
+          "horizon": "Annual / Cycle",
+          "flows_into": [
+            "cash_flow.capex",
+            "quarterly_path.fq4_26.capex",
+            "horizons.fy0.capex",
+            "horizons.fy1.capex"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "B2B order book momentum sustaining YoY revenue growth >= 30% and adjusted operating margin >= 49%",
+          "checkable_at": "Q4 FY26 Form 8-K earnings release (Item 2.02)"
+        },
+        {
+          "marker": "Industrial segment quarterly revenue reaching or exceeding $1,900M with gross margin expansion > 70%",
+          "checkable_at": "Q4 FY26 Form 10-K (Item 8)"
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Free cash flow conversion falling below 30% of revenue or operating margin dropping below 45% adjusted",
+          "checkable_at": "Q4 FY26 Form 8-K earnings release (Item 2.02)"
+        },
+        {
+          "marker": "Broad-based B2B channel inventory build causing QoQ revenue decline > 5% outside of normal seasonality",
+          "checkable_at": "Q1 FY27 Form 10-Q (Item 2)"
+        }
+      ],
+      "what_must_be_true": "Analog Devices continues to benefit from secular inflections in industrial automation, intelligent edge processing, and AI datacenter optical/power communications, driving robust utilization in internal fabs and steady operating leverage across gross and operating margins."
+    },
+    "preview_note": "Analog Devices enters Q3 FY26 with strong cyclical and secular tailwinds across its core B2B markets. Following record Q2 bookings in Industrial, Automotive, and Communications, demand remains robust, particularly in AI infrastructure power/optical components and industrial instrumentation. We expect Q3 FY26 revenue to modestly exceed the midpoint of guidance ($3.9B) at $3.94B, supported by adjusted gross margins around 73% and adjusted operating margins near 49%. The reaction will hinge on Q4 FY26 guidance and whether management sees continued acceleration in broad industrial bookings into early FY27.",
+    "reasoning": "ADI's Q3 FY26 setup reflects strong momentum in industrial automation and communication infrastructure. Operating leverage continues to materialize as fab utilization reaches optimal levels following the inventory digestion cycle of FY24-FY25. Working capital normalizes, allowing FCF generation to track near $1.5B for the quarter."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-6281-20260819T064031284273Z",
+    "corpus_manifest_sha256": "2fe8477b955af9977a6df77f997956651fb39ab6348a6f95765a70aba39d2718",
+    "corpus_filings": 400,
+    "tool_calls": 10,
+    "held_at": "2026-08-19T06:38:54.231433Z",
+    "visual_projection_version": "sec-pdf:rff-visuals-2;ir-pdf:rff-ir-visuals-2",
+    "visual_delivery_version": "rff-visual-delivery-2",
+    "run_intent_id": "intent-20260819T063854218831Z-81b79ab489db",
+    "run_class": "genuine_forward"
+  },
+  "tool_calls": 8,
+  "contract_retries": 1,
+  "incomplete_retries": 0,
+  "anchor_retries": 1,
+  "unverified_anchors": [],
+  "model_id": "gemini-3.7-flash",
+  "prompt_version": "v5.6",
+  "usage": {
+    "api_calls": 11,
+    "input_tokens": 288196,
+    "output_tokens": 16345,
+    "cache_read_tokens": 187653,
+    "cache_write_tokens": 0,
+    "cost_usd": null,
+    "requests": [
+      {
+        "request_no": 1,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 8304,
+        "output_tokens": 42,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 2,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 11147,
+        "output_tokens": 39,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 3,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 11378,
+        "output_tokens": 43,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 4,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 14171,
+        "output_tokens": 67,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 5,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 17582,
+        "output_tokens": 69,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 6,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 20712,
+        "output_tokens": 68,
+        "cache_read_tokens": 16279,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 7,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 38289,
+        "output_tokens": 5898,
+        "cache_read_tokens": 20403,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 8,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 38885,
+        "output_tokens": 5298,
+        "cache_read_tokens": 36719,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 9,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 38912,
+        "output_tokens": 44,
+        "cache_read_tokens": 36720,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 10,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 42664,
+        "output_tokens": 68,
+        "cache_read_tokens": 36724,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 11,
+        "model_id": "gemini-3.7-flash",
+        "input_tokens": 46152,
+        "output_tokens": 4709,
+        "cache_read_tokens": 40808,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      }
+    ]
+  },
+  "visual_inventory_called": true,
+  "visual_inventory_documents": 408,
+  "visual_inspections_status": "inspected",
+  "visual_inspections": [
+    {
+      "source": "ir_page",
+      "accession": "91e0c2964cd4704146ff38eaa6c8e2fb28cfac89859fb06ffd88a4cfedd30bec",
+      "document": null,
+      "page_no": 1,
+      "source_sha256": "a738bdb160ea5a1591d5a1b94003b2991d28f25fd502ac2c063c17803b251fa8",
+      "delivery_sha256": "a738bdb160ea5a1591d5a1b94003b2991d28f25fd502ac2c063c17803b251fa8",
+      "transformation": null
+    }
+  ],
+  "run_intent": {
+    "intent_id": "intent-20260819T063854218831Z-81b79ab489db",
+    "created_at": "2026-08-19T06:38:54.218831Z",
+    "run_class": "genuine_forward",
+    "prompt_sha256": "b67969a88d7d19aace8e0650dc03c769fc81052cfb1db1322180123338501395"
+  },
+  "run_class": "genuine_forward",
+  "status": "ok",
+  "seconds": 106.1
+}

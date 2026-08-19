@@ -1,0 +1,584 @@
+{
+  "model_key": "gpt-sol",
+  "as_of": "2026-08-19T06:05:00Z",
+  "ticker": "ADI",
+  "validated": {
+    "anchors": [
+      {
+        "name": "Fiscal Q2 2026 revenue",
+        "value": 3623,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011"
+      },
+      {
+        "name": "Fiscal Q2 2026 GAAP gross margin",
+        "value": 2440,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011"
+      },
+      {
+        "name": "Fiscal Q2 2026 GAAP operating income",
+        "value": 1380,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011"
+      },
+      {
+        "name": "Fiscal Q2 2026 GAAP diluted EPS",
+        "value": 2.4,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011"
+      },
+      {
+        "name": "Fiscal Q2 2026 adjusted diluted EPS",
+        "value": 3.09,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000011"
+      },
+      {
+        "name": "Fiscal Q2 2026 adjusted operating margin percentage",
+        "value": 49,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000077"
+      },
+      {
+        "name": "Fiscal Q2 2026 operating cash flow",
+        "value": 872,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000064"
+      },
+      {
+        "name": "Fiscal Q2 2026 free cash flow",
+        "value": 734,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000084"
+      },
+      {
+        "name": "Fiscal Q3 2026 revenue guidance midpoint",
+        "value": 3900,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000014"
+      },
+      {
+        "name": "Fiscal Q3 2026 adjusted EPS guidance midpoint",
+        "value": 3.3,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000014"
+      },
+      {
+        "name": "Fiscal Q2 2026 Industrial year-over-year growth percentage",
+        "value": 56,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000071"
+      },
+      {
+        "name": "Fiscal Q2 2026 Communications year-over-year growth percentage",
+        "value": 79,
+        "accession": "0000006281-26-000050",
+        "reference": "0000006281-26-000050:adi2q26exhibit991earnings.htm:b0000071"
+      }
+    ],
+    "headline": {
+      "revenue": {
+        "p10": 3860.0,
+        "p50": 4020.0,
+        "p90": 4160.0
+      },
+      "eps_adjusted": {
+        "p10": 3.2,
+        "p50": 3.44,
+        "p90": 3.62
+      },
+      "fcf": {
+        "p10": 950.0,
+        "p50": 1277.72,
+        "p90": 1550.0
+      }
+    },
+    "income_statement": {
+      "revenue": 4020.0,
+      "cost_of_sales": 1278.36,
+      "gross_margin": 2741.64,
+      "research_development": 540.0,
+      "sga": 416.0,
+      "amortization_intangibles": 188.0,
+      "special_charges": 1.64,
+      "total_operating_expenses": 1145.64,
+      "operating_income": 1596.0,
+      "interest_expense": 88.0,
+      "interest_income": -29.0,
+      "other_nonoperating": 4.0,
+      "total_nonoperating_expense": 63.0,
+      "pretax_income": 1533.0,
+      "income_tax": 194.28,
+      "net_income": 1338.72,
+      "shares_diluted": 488.0,
+      "eps_diluted": 2.7432786885
+    },
+    "bridge": {
+      "adjustments": {
+        "acquisition_related_expenses": 391.0,
+        "special_charges_net": 0.0,
+        "tax_effects_on_adjustments": -51.0
+      },
+      "non_gaap_net_income": 1678.72
+    },
+    "cash_flow": {
+      "net_income": 1338.72,
+      "depreciation": 108.0,
+      "amortization_intangibles": 386.0,
+      "stock_compensation": 85.0,
+      "deferred_income_taxes": -35.0,
+      "other_non_cash": 5.0,
+      "working_capital": -450.0,
+      "total_adjustments": 99.0,
+      "cfo": 1437.72,
+      "short_term_investments": -450.0,
+      "capex": -160.0,
+      "other_investing": 140.0,
+      "cfi": -470.0,
+      "debt_proceeds": 0.0,
+      "commercial_paper_proceeds": 220.0,
+      "commercial_paper_payments": -20.0,
+      "buybacks": -800.0,
+      "dividends": -536.0,
+      "employee_stock_proceeds": 20.0,
+      "other_financing": -5.0,
+      "cff": -1121.0,
+      "net_change_cash": -153.28
+    },
+    "balance_sheet": {
+      "cash": 2283.64,
+      "other_assets": 45916.36,
+      "total_assets": 48200.0,
+      "total_liabilities": 14340.28,
+      "retained_earnings": 12328.72,
+      "other_equity": 21531.0,
+      "total_equity": 33859.72
+    },
+    "quarterly_path": {
+      "fq4_26": {
+        "revenue": {
+          "p10": 3920.0,
+          "p50": 4110.0,
+          "p90": 4280.0
+        },
+        "eps_adjusted": {
+          "p10": 3.2,
+          "p50": 3.5,
+          "p90": 3.75
+        },
+        "gross_profit": 2815.0,
+        "operating_income": 1650.0,
+        "net_income": 1400.0,
+        "cfo": 1500.0,
+        "capex": -180.0,
+        "fcf": 1320.0,
+        "cfi": -200.0,
+        "cff": -1500.0,
+        "net_change_cash": -200.0,
+        "total_assets": 48000.0,
+        "total_liabilities": 14200.0,
+        "total_equity": 33800.0
+      },
+      "fq1_27": {
+        "revenue": {
+          "p10": 3830.0,
+          "p50": 4050.0,
+          "p90": 4260.0
+        },
+        "eps_adjusted": {
+          "p10": 3.05,
+          "p50": 3.38,
+          "p90": 3.65
+        },
+        "gross_profit": 2770.0,
+        "operating_income": 1600.0,
+        "net_income": 1350.0,
+        "cfo": 1450.0,
+        "capex": -170.0,
+        "fcf": 1280.0,
+        "cfi": -180.0,
+        "cff": -1300.0,
+        "net_change_cash": -30.0,
+        "total_assets": 47900.0,
+        "total_liabilities": 14000.0,
+        "total_equity": 33900.0
+      },
+      "fq2_27": {
+        "revenue": {
+          "p10": 4000.0,
+          "p50": 4250.0,
+          "p90": 4490.0
+        },
+        "eps_adjusted": {
+          "p10": 3.35,
+          "p50": 3.7,
+          "p90": 4.02
+        },
+        "gross_profit": 2920.0,
+        "operating_income": 1720.0,
+        "net_income": 1460.0,
+        "cfo": 1550.0,
+        "capex": -180.0,
+        "fcf": 1370.0,
+        "cfi": -190.0,
+        "cff": -1350.0,
+        "net_change_cash": 10.0,
+        "total_assets": 48100.0,
+        "total_liabilities": 13850.0,
+        "total_equity": 34250.0
+      },
+      "fq3_27": {
+        "revenue": {
+          "p10": 4160.0,
+          "p50": 4450.0,
+          "p90": 4730.0
+        },
+        "eps_adjusted": {
+          "p10": 3.55,
+          "p50": 3.95,
+          "p90": 4.32
+        },
+        "gross_profit": 3070.0,
+        "operating_income": 1830.0,
+        "net_income": 1550.0,
+        "cfo": 1650.0,
+        "capex": -190.0,
+        "fcf": 1460.0,
+        "cfi": -200.0,
+        "cff": -1420.0,
+        "net_change_cash": 30.0,
+        "total_assets": 48350.0,
+        "total_liabilities": 13750.0,
+        "total_equity": 34600.0
+      }
+    },
+    "guidance_forecast": {
+      "revenue": {
+        "low": 4000.0,
+        "high": 4200.0
+      },
+      "eps_adjusted": {
+        "low": 3.35,
+        "high": 3.65
+      }
+    },
+    "horizons": {
+      "fy0": {
+        "revenue": {
+          "p10": 14680.0,
+          "p50": 14913.728,
+          "p90": 15130.0
+        },
+        "eps_adjusted": {
+          "p10": 11.95,
+          "p50": 12.48,
+          "p90": 12.85
+        },
+        "gross_profit": 10041.413,
+        "operating_income": 5622.705,
+        "net_income": 4745.896,
+        "cfo": 5178.276,
+        "capex": -587.015,
+        "fcf": 4591.261,
+        "cfi": -828.955,
+        "cff": -4765.091,
+        "net_change_cash": -415.77,
+        "total_assets": 48000.0,
+        "total_liabilities": 14200.0,
+        "total_equity": 33800.0
+      },
+      "fy1": {
+        "revenue": {
+          "p10": 15800.0,
+          "p50": 17050.0,
+          "p90": 18150.0
+        },
+        "eps_adjusted": {
+          "p10": 13.8,
+          "p50": 15.4,
+          "p90": 16.8
+        },
+        "gross_profit": 11700.0,
+        "operating_income": 6900.0,
+        "net_income": 5850.0,
+        "cfo": 6200.0,
+        "capex": -700.0,
+        "fcf": 5500.0,
+        "cfi": -750.0,
+        "cff": -5300.0,
+        "net_change_cash": 150.0,
+        "total_assets": 48200.0,
+        "total_liabilities": 13700.0,
+        "total_equity": 34500.0
+      },
+      "fy2": {
+        "revenue": {
+          "p10": 16300.0,
+          "p50": 18500.0,
+          "p90": 20700.0
+        },
+        "eps_adjusted": {
+          "p10": 14.3,
+          "p50": 17.0,
+          "p90": 19.6
+        },
+        "gross_profit": 12750.0,
+        "operating_income": 7600.0,
+        "net_income": 6400.0,
+        "cfo": 6800.0,
+        "capex": -780.0,
+        "fcf": 6020.0,
+        "cfi": -830.0,
+        "cff": -5700.0,
+        "net_change_cash": 270.0,
+        "total_assets": 49000.0,
+        "total_liabilities": 13200.0,
+        "total_equity": 35800.0
+      },
+      "fy3": {
+        "revenue": {
+          "p10": 16900.0,
+          "p50": 20000.0,
+          "p90": 23200.0
+        },
+        "eps_adjusted": {
+          "p10": 14.8,
+          "p50": 18.7,
+          "p90": 22.3
+        },
+        "gross_profit": 13800.0,
+        "operating_income": 8300.0,
+        "net_income": 7000.0,
+        "cfo": 7500.0,
+        "capex": -850.0,
+        "fcf": 6650.0,
+        "cfi": -900.0,
+        "cff": -6200.0,
+        "net_change_cash": 400.0,
+        "total_assets": 50100.0,
+        "total_liabilities": 12700.0,
+        "total_equity": 37400.0
+      }
+    },
+    "thesis": {
+      "commitments": [
+        {
+          "claim": "ADI expects fiscal 2026 capital expenditures to equal approximately 4% to 6% of fiscal 2026 revenue.",
+          "source": "0000006281-26-000052:adi-20260502.htm:b0000240",
+          "horizon": "Fiscal 2026",
+          "flows_into": [
+            "cash_flow.capex",
+            "quarterly_path.fq4_26.capex",
+            "horizons.fy0.capex"
+          ]
+        },
+        {
+          "claim": "ADI expects quarterly dividends to continue, subject to Board determination and declaration.",
+          "source": "0000006281-26-000052:adi-20260502.htm:b0000242",
+          "horizon": "Quarterly and long term",
+          "flows_into": [
+            "cash_flow.dividends",
+            "cash_flow.cff",
+            "balance_sheet.retained_earnings",
+            "horizons.fy1.cff"
+          ]
+        },
+        {
+          "claim": "ADI plans to continue developing innovative technologies and processes and considers sustained R&D commitment essential to product leadership and future growth.",
+          "source": "0000006281-26-000052:adi-20260502.htm:b0000190",
+          "horizon": "Long term",
+          "flows_into": [
+            "income_statement.research_development",
+            "income_statement.operating_income",
+            "quarterly_path.fq3_27.operating_income",
+            "horizons.fy3.operating_income"
+          ]
+        },
+        {
+          "claim": "The company had $8.5 billion remaining under its authorized stock-repurchase program as of May 2, 2026, with future repurchases dependent on financial position, results, outlook and liquidity.",
+          "source": "0000006281-26-000052:adi-20260502.htm:b0000238",
+          "horizon": "Multi-year",
+          "flows_into": [
+            "cash_flow.buybacks",
+            "cash_flow.cff",
+            "balance_sheet.other_equity",
+            "horizons.fy1.cff"
+          ]
+        }
+      ],
+      "buy_triggers": [
+        {
+          "marker": "Reported fiscal Q3 revenue of at least $4.10 billion together with adjusted operating margin of at least 49.5%.",
+          "checkable_at": "Fiscal Q3 2026 earnings release and accompanying Form 8-K."
+        },
+        {
+          "marker": "Fiscal Q4 guidance midpoint of at least $4.15 billion revenue and at least $3.55 adjusted EPS.",
+          "checkable_at": "Fiscal Q3 2026 earnings release and accompanying Form 8-K."
+        },
+        {
+          "marker": "Trailing-twelve-month free cash flow remains at least 34% of revenue while inventory days decline from the 139 days reported at May 2, 2026.",
+          "checkable_at": "Fiscal Q3 2026 Form 10-Q."
+        }
+      ],
+      "sell_triggers": [
+        {
+          "marker": "Reported fiscal Q3 revenue below $3.80 billion or adjusted operating margin below 47.5%.",
+          "checkable_at": "Fiscal Q3 2026 earnings release and accompanying Form 8-K."
+        },
+        {
+          "marker": "Fiscal Q4 revenue guidance midpoint below $3.90 billion, indicating that the Industrial and Communications recovery is stalling.",
+          "checkable_at": "Fiscal Q3 2026 earnings release and accompanying Form 8-K."
+        },
+        {
+          "marker": "Trailing-twelve-month free cash flow falls below 30% of revenue or inventory days rise above 150 despite sequential revenue growth.",
+          "checkable_at": "Fiscal Q3 2026 Form 10-Q."
+        }
+      ],
+      "what_must_be_true": "Record B2B bookings must convert into shipments without meaningful cancellations, Industrial utilization and data-center Communications mix must sustain GAAP gross-margin expansion, and Automotive must stabilize rather than offset the Industrial recovery. ADI also needs to preserve roughly 49% adjusted operating margin while funding R&D and keeping working-capital absorption temporary."
+    },
+    "preview_note": "ADI enters fiscal Q3 with unusually strong momentum: fiscal Q2 revenue rose 37% year over year, Industrial increased 56%, Communications increased 79%, and management cited record B2B bookings. I forecast $4.02 billion of revenue, modestly above the $4.00 billion top of guidance, and $3.44 of adjusted EPS versus the guided $3.30 midpoint. The principal upside drivers are continued Industrial restocking and AI-related data-center demand; the key offsets are uneven Automotive demand, tougher sequential comparisons and a meaningful working-capital build as ADI supports higher shipments. I expect GAAP gross margin to reach 68.2% and adjusted operating leverage to carry earnings above guidance. The reaction should depend less on a small Q3 beat than on whether fiscal Q4 guidance confirms revenue above $4 billion with adjusted EPS near $3.50. Cash conversion is the secondary watch item: my $1.28 billion FCF estimate assumes the Q2 working-capital outflow begins to normalize but does not fully reverse.",
+    "reasoning": "The forecast starts from fiscal Q2 revenue of approximately $3.623 billion, GAAP gross margin of 67.3%, adjusted operating margin of 49.0% and adjusted EPS of $3.09. The attached end-market visual confirms a 15% sequential revenue increase in Q2, led by 20% Industrial and 22% Communications growth, while Automotive rose 8% and Consumer was flat. Filed commentary attributes the expansion to broad Industrial demand, especially test equipment and aerospace/defense, plus AI-driven data-center infrastructure. I therefore place Q3 revenue 3% above the $3.9 billion guidance midpoint. Higher utilization and favorable mix lift GAAP gross margin to 68.2%, but variable compensation and continued R&D investment limit incremental operating leverage. The adjusted-EPS bridge uses the company's projected $391 million acquisition-related adjustment and $51 million associated tax effect. Cash flow assumes strong earnings and non-cash amortization are partly offset by a $450 million working-capital use as receivables and inventory support higher sales. The longer-range path assumes the current cyclical recovery moderates into high-single-digit structural growth, with gross-margin durability, disciplined capital spending and substantial shareholder distributions."
+  },
+  "snapshot": {
+    "snapshot_id": "snap-6281-20260819T064257309991Z",
+    "corpus_manifest_sha256": "2fe8477b955af9977a6df77f997956651fb39ab6348a6f95765a70aba39d2718",
+    "corpus_filings": 400,
+    "tool_calls": 15,
+    "held_at": "2026-08-19T06:38:52.142782Z",
+    "visual_projection_version": "sec-pdf:rff-visuals-2;ir-pdf:rff-ir-visuals-2",
+    "visual_delivery_version": "rff-visual-delivery-2",
+    "run_intent_id": "intent-20260819T063852131000Z-030489fb1b05",
+    "run_class": "genuine_forward"
+  },
+  "tool_calls": 13,
+  "contract_retries": 1,
+  "incomplete_retries": 0,
+  "anchor_retries": 1,
+  "unverified_anchors": [],
+  "model_id": "gpt-5.6-sol",
+  "prompt_version": "v5.6",
+  "usage": {
+    "api_calls": 10,
+    "input_tokens": 1056941,
+    "output_tokens": 17665,
+    "cache_read_tokens": 915708,
+    "cache_write_tokens": 0,
+    "cost_usd": null,
+    "requests": [
+      {
+        "request_no": 1,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 8100,
+        "output_tokens": 53,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 2,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 97271,
+        "output_tokens": 191,
+        "cache_read_tokens": 8097,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 3,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 99619,
+        "output_tokens": 39,
+        "cache_read_tokens": 97268,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 4,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 101073,
+        "output_tokens": 50,
+        "cache_read_tokens": 99616,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 5,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 113848,
+        "output_tokens": 269,
+        "cache_read_tokens": 101070,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 6,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 114155,
+        "output_tokens": 83,
+        "cache_read_tokens": 113845,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 7,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 117645,
+        "output_tokens": 33,
+        "cache_read_tokens": 114152,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 8,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 128103,
+        "output_tokens": 6980,
+        "cache_read_tokens": 117642,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 9,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 135921,
+        "output_tokens": 5254,
+        "cache_read_tokens": 128100,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      },
+      {
+        "request_no": 10,
+        "model_id": "gpt-5.6-sol",
+        "input_tokens": 141206,
+        "output_tokens": 4713,
+        "cache_read_tokens": 135918,
+        "cache_write_tokens": 0,
+        "cost_usd": null
+      }
+    ]
+  },
+  "visual_inventory_called": true,
+  "visual_inventory_documents": 408,
+  "visual_inspections_status": "inspected",
+  "visual_inspections": [
+    {
+      "source": "ir_page",
+      "accession": "91e0c2964cd4704146ff38eaa6c8e2fb28cfac89859fb06ffd88a4cfedd30bec",
+      "document": null,
+      "page_no": 1,
+      "source_sha256": "a738bdb160ea5a1591d5a1b94003b2991d28f25fd502ac2c063c17803b251fa8",
+      "delivery_sha256": "a738bdb160ea5a1591d5a1b94003b2991d28f25fd502ac2c063c17803b251fa8",
+      "transformation": null
+    }
+  ],
+  "run_intent": {
+    "intent_id": "intent-20260819T063852131000Z-030489fb1b05",
+    "created_at": "2026-08-19T06:38:52.131000Z",
+    "run_class": "genuine_forward",
+    "prompt_sha256": "b67969a88d7d19aace8e0650dc03c769fc81052cfb1db1322180123338501395"
+  },
+  "run_class": "genuine_forward",
+  "status": "ok",
+  "seconds": 252.1
+}
